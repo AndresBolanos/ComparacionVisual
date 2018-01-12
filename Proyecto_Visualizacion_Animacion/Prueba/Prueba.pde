@@ -115,6 +115,7 @@ void StopAnimation(){
 }
 
 void setValueOneByOne(boolean valor){
+  println(valor);
   one_by_one = valor;
 }
 

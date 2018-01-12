@@ -164,6 +164,7 @@ function Clear(){
     document.getElementById("Reset").checked = false;
     iniciadoProceso = false;
     iniciado = false;
+    document.getElementById("OneByOne").checked = false;
 }
 
 var vel = 0;
