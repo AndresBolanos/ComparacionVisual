@@ -1,0 +1,1118 @@
+#Options{
+  position: absolute;
+  top: 270px;
+  left: 1200px;
+  width: 200px; 
+}
+
+#Comenzar{
+  position: absolute;
+  top: 270px;
+  left: 200px;
+  width: 200px;
+}
+
+#ipadback {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 227px;
+    height: 286px;
+    background-image: url(http://campl.us/tweet/ipadback.png);
+    border: solid 1px red;
+}
+
+.selected{
+    color: black;
+}
+.matched{
+    color: green;
+}
+
+.node {
+  position: absolute;
+  list-style: none;
+  cursor: default;
+  padding-left: 2%;  
+}
+
+.node span {
+  font-size: 12px;
+}
+
+.node .caret {
+  font-size: 2px;
+}
+
+ul {
+  background: url(vline.png) repeat-y;
+}
+
+.nav li a {
+  text-decoration:none;
+  padding:31% 62,5%:
+  display:inline-block;
+  margin-left: 0%;
+
+}
+.nav > li {
+  float:left;
+  padding-left: 0;
+}
+
+h1 {
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 160%;
+}
+h2{
+  position: relative;
+  text-align: left;
+  font-size: 160%;
+  margin-top: 62,5%;
+  margin-left: 51%;
+}
+
+#Encabezado{
+  position: relative;
+  width: 312,5%;
+}
+
+#radioSplits{
+  position: absolute;
+  margin-left: 5%;
+  margin-top:15px;
+}
+#radioSplitsA{
+  position: absolute;
+  margin-left: 7%;
+  margin-top:12px;
+}
+
+#radioNuevos{
+  position: absolute;
+  margin-left: 5%;
+  margin-top:40px;
+}
+#radioNuevosA{
+  position: absolute;
+  margin-left: 7%;
+  margin-top:38px;
+}
+
+#Funcionalidades{
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+#TextArea{
+  position: absolute;
+  margin-left: 10%;
+  margin-top:100px;
+  width: 80%;
+}
+
+#radioLineas{
+  position: absolute;
+  margin-left: 45%;
+  margin-top:15px;
+}
+#radioLineasA{
+  position: absolute;
+  margin-left: 47%;
+  margin-top:13px;
+}
+
+#radioMerge{
+  position: absolute;
+  margin-left: 45%;
+  margin-top:40px;
+}
+#radioMergeA{
+  position: absolute;
+  margin-left: 47%;
+  margin-top:40px;
+}
+
+#radioMove{
+  position: absolute;
+  margin-left: 5%;
+  margin-top:70px;
+}
+#radioMoveA{
+  position: absolute;
+  margin-left: 7%;
+  margin-top:65px;
+}
+
+#radioRename{
+  position: absolute;
+  margin-left: 80%;
+  margin-top:12px;
+}
+#radioRenameA{
+  position: absolute;
+  margin-left: 82%;
+  margin-top:9px;
+}
+
+#radioExclusion{
+  position: absolute;
+  margin-left: 45%;
+  margin-top:65px;
+}
+#radioExclusionA{
+  position: absolute;
+  margin-left: 47%;
+  margin-top:65px;
+}
+
+#radioTodos{
+  position: absolute;
+  margin-left: 80%;
+  margin-top:66px;
+}
+
+#radioAllA{
+  position: absolute;
+  margin-left: 82%;
+  margin-top:65px;
+}
+
+#radioLimpiar{
+  position: absolute;
+  margin-left: 80%;
+  margin-top:40px;
+}
+#radioLimpiarA{
+  position: absolute;
+  margin-left: 82%;
+  margin-top:38px;
+}
+
+#estadisticas{
+  position: absolute;
+  margin-left: 45%;
+  margin-top:5px;
+}
+#radioStatics{
+  position: absolute;
+  margin-left: 43%;
+  margin-top:6px;
+}
+
+#Splits{
+  position: absolute;
+  margin-left: 0%;
+  margin-top:40px;
+}
+
+#SplitsA{
+  position: absolute;
+  margin-left: 0%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+#Mergers{
+  position: absolute;
+  margin-left: 17%;
+  margin-top:40px;
+}
+#MergersA{
+  position: absolute;
+  margin-left: 17%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+#News{
+  position: absolute;
+  margin-left: 34%;
+  margin-top:40px;
+}
+
+#NewsA{
+  position: absolute;
+  margin-left: 34%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+#Moves{
+  position: absolute;
+  margin-left: 51%;
+  margin-top:40px;
+}
+
+#MovesA{
+  position: absolute;
+  margin-left: 51%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+#Exclusion{
+  position: absolute;
+  margin-left: 68%;
+  margin-top:40px;
+}
+
+#ExclusionA{
+  position: absolute;
+  margin-left: 68%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+#Rename{
+  position: absolute;
+  margin-left: 85%;
+  margin-top:40px;
+}
+
+#RenameA{
+  position: absolute;
+  margin-left: 85%;
+  margin-top:80px;
+  width: 100px;
+  text-align: center;
+}
+
+a{
+  color:black;
+}
+a:hover {
+    color: orange;
+}
+
+ /* The switch - the box around the slider */
+.switchCongruence {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 40px;
+  top: 65px;
+}
+
+.switchCongruence2 {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 50px;
+  top: 170px;
+}
+
+.switchSplits {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 110px;
+  top: 65px;
+}
+
+.switchMerges {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 175px;
+  top: 65px;
+}
+
+.switchMoves {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 235px;
+  top: 65px;
+}
+
+.switchRenames {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 300px;
+  top: 65px;
+}
+
+.switchNew {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 365px;
+  top: 65px;
+}
+
+.switchExclusions {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 425px;
+  top: 65px;
+}
+
+.switchAll {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 495px;
+  top: 65px;
+}
+
+.switchStats {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  left: 550px;
+  top: 65px;
+}
+
+/* Hide default HTML checkbox */
+.switchCongruence input {display:none;}
+.switchSplits input {display:none;}
+.switchMerges input {display:none;}
+.switchMoves input {display:none;}
+.switchRenames input {display:none;}
+.switchNew input {display:none;}
+.switchExclusions input {display:none;}
+.switchStats input {display:none;}
+.switchAll input {display:none;}
+.switchCongruence2 input {display:none;}
+
+/* Labels */
+.labelCongruence { 
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  left: 20px;
+  top: 45px;
+  color: white;
+}
+
+.labelSplits {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 110px;
+  top: 45px;
+  color: white;
+}
+
+.labelMerges {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 170px;
+  top: 45px;
+  color: white;
+}
+
+.labelMoves {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 235px;
+  top: 45px;
+  color: white;
+}
+
+.labelRenames {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 295px;
+  top: 45px;
+  color: white;
+}
+
+.labelNew {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 370px;
+  top: 45px;
+  color: white;
+}
+
+.labelExclusions {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 415px;
+  top: 45px;
+  color: white;
+}
+
+.labelAll {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 505px;
+  top: 45px;
+  color: white;
+}
+
+.labelStats {
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 550px;
+  top: 45px;
+  color: white;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FFDB1C;    
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider SPLITS */
+.sliderSplits {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderSplits:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderSplits {
+  background-color: #FF00BF;    
+}
+
+input:focus + .sliderSplits {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderSplits:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderSplits.round {
+  border-radius: 34px;
+}
+
+.sliderSplits.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider MOVE */
+.sliderMoves {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderMoves:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderMoves {
+  background-color: #0AE4ED;    
+}
+
+input:focus + .sliderMoves {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderMoves:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderMoves.round {
+  border-radius: 34px;
+}
+
+.sliderMoves.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider CONGRUENT */
+.sliderCongruent {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderCongruent:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderCongruent {
+  background-color: #1712C4;    
+}
+
+input:focus + .sliderCongruent {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderCongruent:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderCongruent.round {
+  border-radius: 34px;
+}
+
+.sliderCongruent.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider MERGES */
+.sliderMerges {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderMerges:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderMerges {
+  background-color: #FF9100;    
+}
+
+input:focus + .sliderMerges {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderMerges:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderMerges.round {
+  border-radius: 34px;
+}
+
+.sliderMerges.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider MERGES */
+.sliderRename {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderRename:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderRename {
+  background-color: #5BFF8E;    
+}
+
+input:focus + .sliderRename {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderRename:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderRename.round {
+  border-radius: 34px;
+}
+
+.sliderRename.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider NEW */
+.sliderNew {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderNew:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderNew {
+  background-color: #088A00;    
+}
+
+input:focus + .sliderNew {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderNew:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderNew.round {
+  border-radius: 34px;
+}
+
+.sliderNew.round:before {
+  border-radius: 50%;
+} 
+
+/* The slider EXCLUSION */
+.sliderExclusion {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderExclusion:before {
+  position: absolute;
+  content: "Off";
+  font: 10px Arial;
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderExclusion {
+  background-color: #DF0101;    
+}
+
+input:focus + .sliderExclusion {
+  box-shadow: 0 0 1px #2196F3;  
+}
+
+input:checked + .sliderExclusion:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+  content: "On";
+  font: 10px Arial;
+}
+
+/* Rounded sliders */
+.sliderExclusion.round {
+  border-radius: 34px;
+}
+
+.sliderExclusion.round:before {
+  border-radius: 50%;
+} 
+
+body {  
+  z-index: 0;
+}
+
+#Contenedor {
+  position: absolute; 
+  height: 100%;
+  width: 2000px;
+  top: 120px;   
+}
+
+#CANVAS{
+  position: absolute;
+  top: 120px;          
+}
+
+
+#mainToolBox{    
+  position: fixed;  
+  float: left;
+  top: 0;
+  left: 0;
+  width: 220%;
+  height: 100px;
+  border: 1px solid black;  
+  background-color: #555;
+  z-index: 1;
+}
+
+#leftToolBox {   
+  overflow: auto;
+  float:left;   
+  z-index: 1;  
+}
+
+#rightToolBox {   
+  position: fixed;
+  overflow: auto;
+  float:right;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.icon-bar {
+  position: fixed;
+  width: 100%;
+  float: left;
+  background-color: gray;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.icon-bar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 15px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+/* STATISTICS */
+.labelCongruenceStats{  
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 800px;
+  top: 45px;
+  color: white;
+}
+
+.labelCongruenceStatsValue{  
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 840px;
+  top: 65px;
+  color: white;
+}
+
+.labelSplitsStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 900px;
+  top: 45px;
+  color: white;
+}
+
+.labelSplitsStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 915px;
+  top: 65px;
+  color: white;
+}
+
+.labelMergesStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 950px;
+  top: 45px;
+  color: white;
+}
+
+.labelMergesStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 970px;
+  top: 65px;
+  color: white;
+}
+
+.labelMovesStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1010px;
+  top: 45px;
+  color: white;
+}
+
+.labelMovesStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1030px;
+  top: 65px;
+  color: white;
+}
+
+.labelRenamesStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1065px;
+  top: 45px;
+  color: white;  
+}
+
+.labelRenamesStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1090px;
+  top: 65px;
+  color: white;  
+}
+
+.labelNewStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1140px;
+  top: 45px;
+  color: white; 
+}
+
+.labelNewStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1150px;
+  top: 65px;
+  color: white; 
+}
+
+.labelExclusionStats{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1180px;
+  top: 45px;
+  color: white;
+}
+
+.labelExclusionStatsValue{
+  position: absolute;  
+  width: 60px;
+  height: 34px;
+  left: 1210px;
+  top: 65px;
+  color: white; 
+}
+
+.verticalLine {
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  left: 670px;
+  top: 50px;
+  border-left: thick solid #fff;
+}
+
+vr { 
+    display: block;
+    width:1px;
+    background-color:#000;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:200px;
+}
+
+#CanvasLineasTenues{
+  position: absolute;
+  margin-left: -1.45%;
+  margin-top: 0%;
+}
+
+#CanvasLineasTenues2{
+  position: absolute;
+  margin-left: -1.45%;
+  margin-top: 0%;
+}

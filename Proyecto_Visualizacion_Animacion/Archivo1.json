@@ -1,0 +1,2844 @@
+﻿{
+	"name":"Giganthorhynchidae",
+	"Rank":"Family",
+	"name_status":"accepted name",
+	"Is_extinct":"false",
+	"Genus":"",
+	"Subgenus":"",
+	"Species":"",
+	"Infraspecies":"",
+	"author":"",
+	"record_scrutiny_date":"",
+	"Source_database":"",
+	"Bibliographic_citation":"",
+	"Distribution":"",
+	"References":"",
+	"children":[
+		{
+			"name":"Gigantorhynchus",
+			"Rank":"Genus",
+			"name_status":"accepted name",
+			"Is_extinct":"false",
+			"Genus":"",
+			"Subgenus":"",
+			"Species":"",
+			"Infraspecies":"",
+			"author":"",
+			"record_scrutiny_date":"",
+			"Source_database":"",
+			"Bibliographic_citation":"",
+			"Distribution":"",
+			"References":"",
+			"children":[
+				{
+					"name":"Gigantorhynchus echinodiscus",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"echinodiscus",
+					"Infraspecies":"",
+					"author":"(Diesing, 1851)",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":null,
+					"year":"1996",
+					"title":null,
+					"source":"NODC Taxonomic Code"
+					},
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					},
+					{
+					"author":"Khatoon, Nasira",
+					"year":"1985",
+					"title":"",
+					"source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus echinodiscus",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4002
+				},
+				{
+					"name":"Gigantorhynchus lopezneyrai",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"lopezneyrai",
+					"Infraspecies":"",
+					"author":"Diaz-Ungria, 1958",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":null,
+					"year":"1996",
+					"title":null,
+					"source":"NODC Taxonomic Code"
+					},
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus lopezneyrai",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4003
+				},
+				{
+					"name":"Gigantorhynchus lutzi",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"lutzi",
+					"Infraspecies":"",
+					"author":"Machado-Filho, 1941",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":null,
+					"year":"1996",
+					"title":null,
+					"source":"NODC Taxonomic Code"
+					},
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus lutzi",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4004
+				},
+				{
+					"name":"Gigantorhynchus ortizi",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"ortizi",
+					"Infraspecies":"",
+					"author":"Sarmiento, 1954",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":null,
+					"year":"1996",
+					"title":null,
+					"source":"NODC Taxonomic Code"
+					},
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					},
+					{
+					"author":"Khatoon, Nasira",
+					"year":"1985",
+					"title":"",
+					"source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus ortizi",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4005
+				},
+				{
+					"name":"Gigantorhynchus pesteri",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"pesteri",
+					"Infraspecies":"",
+					"author":"Tadros, 1966",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus pesteri",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4006
+				},
+				{
+					"name":"Gigantorhynchus ungriai",
+					"Rank":"Species",
+					"name_status":"accepted name",
+					"Is_extinct":"false",
+					"Genus":"Gigantorhynchus",
+					"Subgenus":"",
+					"Species":"ungriai",
+					"Infraspecies":"",
+					"author":"Antonio, 1958",
+					"record_scrutiny_date":"",
+					"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+					"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+					"Distribution":"",
+					"References":[
+					{
+					"author":null,
+					"year":"1996",
+					"title":null,
+					"source":"NODC Taxonomic Code"
+					},
+					{
+					"author":"Amin, Omar M.",
+					"year":"1985",
+					"title":"Classification of the Acanthocephala",
+					"source":"Folia Parasitologica, vol. 60, no. 4"
+					},
+					{
+					"author":"Khatoon, Nasira",
+					"year":"1985",
+					"title":"",
+					"source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+					}
+					],
+					"Synonym":[
+					],
+					"commonnameList":[
+					],
+					"validname":"Gigantorhynchus ungriai",
+					"description":"",
+					"parent":4001,
+					"idTaxonomicRank":4007
+				}
+			],
+			"Synonym":[
+			],
+			"commonnameList":[
+			],
+			"validname":"Gigantorhynchus",
+			"description":"Gigantorhynchus is a genus of parasitic worm, from the family Gigantorhynchida.[1]Contains the following species:Gigantorhynchus echinodiscus Diesing, 1851Gigantorhynchus lopezneyrai Diaz-ungria, 1958Gigantorhynchus lutzi Machado, 1941Gigantorhynchus ortizi Sarmiento, 1954Gigantorhynchus pasteri Tadros, 1966Gigantorhynchus ungriai Antonio, 1958 References^ Catalogue of Life: 2012 Annual Checklist",
+			"parent":4000,
+			"idTaxonomicRank":4001
+			},
+			{
+				"name":"Mediorhynchus",
+				"Rank":"Genus",
+				"name_status":"accepted name",
+				"Is_extinct":"false",
+				"Genus":"",
+				"Subgenus":"",
+				"Species":"",
+				"Infraspecies":"",
+				"author":"",
+				"record_scrutiny_date":"",
+				"Source_database":"",
+				"Bibliographic_citation":"",
+				"Distribution":"",
+				"References":"",
+				"children":[
+					{
+						"name":"Mediorhynchus africanus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"africanus",
+						"Infraspecies":"",
+						"author":"Amin, Evans, Heckmann and El-Naggar, 2013",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Amin, Omar M., Paul Evans, Richard A. Heckmann, and Atif M. El-Naggar",
+						"year":"1985",
+						"title":"The description of Mediorhynchus africanus n. sp. (Acanthocephala: Gigantorhynchidae) from galliform birds in Africa",
+						"source":"Parasitology Research, vol. 112, no. 8"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus africanus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4009
+					},
+					{
+						"name":"Mediorhynchus alecturae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"alecturae",
+						"Infraspecies":"",
+						"author":"(Johnston and Edmonds, 1947)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Australia 348 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus alecturae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4010
+					},
+					{
+						"name":"Mediorhynchus cambellensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"cambellensis",
+						"Infraspecies":"",
+						"author":"Soota, Srivastava and Ghosh, 1969",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus cambellensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4011
+					},
+					{
+						"name":"Mediorhynchus centurorum",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"centurorum",
+						"Infraspecies":"",
+						"author":"Nickol, 1969",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"North America 692 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus centurorum",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4012
+					},
+					{
+						"name":"Mediorhynchus channapettae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"channapettae",
+						"Infraspecies":"",
+						"author":"George and Nadakal, 1984",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus channapettae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4013
+					},
+					{
+						"name":"Mediorhynchus cisticolae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"cisticolae",
+						"Infraspecies":"",
+						"author":"Smales, 2011",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":"Smales, Lesley R.",
+						"year":"1985",
+						"title":"Gigantorhynchidae (Acanthocephala) Including the Description of New Species of Mediorhynchus from Birds from the Côte d'Ivoire, Africa",
+						"source":"Comparative Parasitology, vol. 78, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus cisticolae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4014
+					},
+					{
+						"name":"Mediorhynchus colluricinclae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"colluricinclae",
+						"Infraspecies":"",
+						"author":"Smales, 2002",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Australia 348 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Smales, L. R.",
+						"year":"1985",
+						"title":"Species of Mediorhynchus (Acanthocephala: Gigantorhynchidae) in Australian birds with the description of Mediorhynchus colluricinclae n. sp.",
+						"source":"The Journal of Parasitology, vol. 88, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus colluricinclae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4015
+					},
+					{
+						"name":"Mediorhynchus conirostris",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"conirostris",
+						"Infraspecies":"",
+						"author":"Ward, 1966",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0; Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus conirostris",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4016
+					},
+					{
+						"name":"Mediorhynchus corcoracis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"corcoracis",
+						"Infraspecies":"",
+						"author":"Johnston and Edmonds, 1950",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Australia 348 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus corcoracis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4017
+					},
+					{
+						"name":"Mediorhynchus edmondsi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"edmondsi",
+						"Infraspecies":"",
+						"author":"Schmidt and Kuntz, 1977",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Monks, Scott",
+						"year":"1985",
+						"title":"Phylogeny of the Acanthocephala based on morphological characters",
+						"source":"Systematic Parasitology, vol. 48, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus edmondsi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4018
+					},
+					{
+						"name":"Mediorhynchus emberizae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"emberizae",
+						"Infraspecies":"",
+						"author":"(Rudolphi, 1819)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Caribbean 711 0; South America 297 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus emberizae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4019
+					},
+					{
+						"name":"Mediorhynchus empodius",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"empodius",
+						"Infraspecies":"",
+						"author":"(Skrjabin, 1913)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus empodius",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4020
+					},
+					{
+						"name":"Mediorhynchus fatimaae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"fatimaae",
+						"Infraspecies":"",
+						"author":"Khan, Bilqees and Muti-ur-Rehman, 2004",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Khan, Aly, Fatima Mujib Bilqees, and Muti-Ur-Rehman",
+						"year":"1985",
+						"title":"Two new species of Genus Mediorhynchus Van Cleve, 1916 from birds of Karachi",
+						"source":"Pakistan Journal of Zoology, vol. 36, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus fatimaae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4021
+					},
+					{
+						"name":"Mediorhynchus gallinarum",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"gallinarum",
+						"Infraspecies":"",
+						"author":"(Bhalerao, 1937)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0; Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Smales, L. R.",
+						"year":"1985",
+						"title":"Species of Mediorhynchus (Acanthocephala: Gigantorhynchidae) in Australian birds with the description of Mediorhynchus colluricinclae n. sp.",
+						"source":"The Journal of Parasitology, vol. 88, no. 2"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						},
+						{
+						"author":"Amin, Omar M., Paul Evans, Richard A. Heckmann, and Atif M. El-Naggar",
+						"year":"1985",
+						"title":"The description of Mediorhynchus africanus n. sp. (Acanthocephala: Gigantorhynchidae) from galliform birds in Africa",
+						"source":"Parasitology Research, vol. 112, no. 8"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus gallinarum",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4022
+					},
+					{
+						"name":"Mediorhynchus gibsoni",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"gibsoni",
+						"Infraspecies":"",
+						"author":"Bilqees, Khan, Khatoon and Khatoon, 2007",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus gibsoni",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4023
+					},
+					{
+						"name":"Mediorhynchus giganteus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"giganteus",
+						"Infraspecies":"",
+						"author":"Meyer, 1931",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Meyer, A.",
+						"year":"1985",
+						"title":"Neue Acanthocephalen aus dem Berliner Museum",
+						"source":"Zoologische Jahrbüchen Abteilung fur Systematik, Ökologie und Geographie der Tiere"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus giganteus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4024
+					},
+					{
+						"name":"Mediorhynchus grandis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"grandis",
+						"Infraspecies":"",
+						"author":"Van Cleave, 1916",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"North America 692 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Monks, Scott",
+						"year":"1985",
+						"title":"Phylogeny of the Acanthocephala based on morphological characters",
+						"source":"Systematic Parasitology, vol. 48, no. 2"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus grandis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4025
+					},
+					{
+						"name":"Mediorhynchus indicus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"indicus",
+						"Infraspecies":"",
+						"author":"Varghese-George, Mathai-Nadakal, Kunjanpillai-Vijayakumaran and Rajendran, 1981",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus indicus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4026
+					},
+					{
+						"name":"Mediorhynchus kuntzi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"kuntzi",
+						"Infraspecies":"",
+						"author":"Ward, 1960",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0; Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus kuntzi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4027
+					},
+					{
+						"name":"Mediorhynchus lagodekhiensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"lagodekhiensis",
+						"Infraspecies":"",
+						"author":"Kuraschvili, 1955",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus lagodekhiensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4028
+					},
+					{
+						"name":"Mediorhynchus leptis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"leptis",
+						"Infraspecies":"",
+						"author":"Ward, 1966",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0; Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus leptis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4029
+					},
+					{
+						"name":"Mediorhynchus lophurae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"lophurae",
+						"Infraspecies":"",
+						"author":"Wang, 1966",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Wang, P. C.",
+						"year":"1985",
+						"title":"Notes on Acanthocephala from Fukien",
+						"source":"Acta Zootaxonomica Sinica, vol. 3, no. 1"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus lophurae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4030
+					},
+					{
+						"name":"Mediorhynchus mariae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"mariae",
+						"Infraspecies":"",
+						"author":"George and Nadakal, 1984",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus mariae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4031
+					},
+					{
+						"name":"Mediorhynchus mattei",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"mattei",
+						"Infraspecies":"",
+						"author":"Marchand and Vassiliades, 1982",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus mattei",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4032
+					},
+					{
+						"name":"Mediorhynchus meiringi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"meiringi",
+						"Infraspecies":"",
+						"author":"Bisseru, 1960",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus meiringi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4033
+					},
+					{
+						"name":"Mediorhynchus micracanthus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"micracanthus",
+						"Infraspecies":"",
+						"author":"(Rudolphi, 1819)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus micracanthus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4034
+					},
+					{
+						"name":"Mediorhynchus mirabilis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"mirabilis",
+						"Infraspecies":"",
+						"author":"(de Marval, 1905)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus mirabilis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4035
+					},
+					{
+						"name":"Mediorhynchus murtensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"murtensis",
+						"Infraspecies":"",
+						"author":"Lundström, 1942",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus murtensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4036
+					},
+					{
+						"name":"Mediorhynchus nickoli",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"nickoli",
+						"Infraspecies":"",
+						"author":"Khan, Bilqees and Muti-ur-Rehman, 2004",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Khan, Aly, Fatima Mujib Bilqees, and Muti-Ur-Rehman",
+						"year":"1985",
+						"title":"Two new species of Genus Mediorhynchus Van Cleve, 1916 from birds of Karachi",
+						"source":"Pakistan Journal of Zoology, vol. 36, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus nickoli",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4037
+					},
+					{
+						"name":"Mediorhynchus numidae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"numidae",
+						"Infraspecies":"",
+						"author":"(Baer, 1925)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus numidae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4038
+					},
+					{
+						"name":"Mediorhynchus orientalis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"orientalis",
+						"Infraspecies":"",
+						"author":"Belopolskaya, 1953",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus orientalis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4039
+					},
+					{
+						"name":"Mediorhynchus oswaldocruzi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"oswaldocruzi",
+						"Infraspecies":"",
+						"author":"Travassos, 1923",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"South America 297 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus oswaldocruzi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4040
+					},
+					{
+						"name":"Mediorhynchus otidis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"otidis",
+						"Infraspecies":"",
+						"author":"(Miescher, 1841)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus otidis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4041
+					},
+					{
+						"name":"Mediorhynchus pandei",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"pandei",
+						"Infraspecies":"",
+						"author":"Bhattacharya, 2007",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus pandei",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4042
+					},
+					{
+						"name":"Mediorhynchus papillosus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"papillosus",
+						"Infraspecies":"",
+						"author":"Van Cleave, 1916",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus papillosus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4043
+					},
+					{
+						"name":"Mediorhynchus passerus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"passerus",
+						"Infraspecies":"",
+						"author":"Das, 1951",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						},
+						{
+						"author":"Das, E. N.",
+						"year":"1985",
+						"title":"On a New Species of Acanthocephala of the Genus Mediorhynchus (Van Cleave, 1916) from India",
+						"source":"Records of the Indian Museum, vol. 49, no. 1"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus passerus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4044
+					},
+					{
+						"name":"Mediorhynchus pauciuncinatus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"pauciuncinatus",
+						"Infraspecies":"",
+						"author":"Dollfus, 1959",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus pauciuncinatus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4045
+					},
+					{
+						"name":"Mediorhynchus peckeri",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"peckeri",
+						"Infraspecies":"",
+						"author":"Bhattacharya, 1999",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus peckeri",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4046
+					},
+					{
+						"name":"Mediorhynchus peruensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"peruensis",
+						"Infraspecies":"",
+						"author":"Moya, Martinez and Tantalean, 2011",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus peruensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4047
+					},
+					{
+						"name":"Mediorhynchus petrochenkoi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"petrochenkoi",
+						"Infraspecies":"",
+						"author":"Gvosdev and Soboleva, 1966",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus petrochenkoi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4048
+					},
+
+					{
+						"name":"Mediorhynchus pintoi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"pintoi",
+						"Infraspecies":"",
+						"author":"Travassos, 1923",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus pintoi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4049
+					},
+					{
+						"name":"Mediorhynchus quilonensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"quilonensis",
+						"Infraspecies":"",
+						"author":"Bhattacharya, 2007",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus quilonensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4050
+					},
+					{
+						"name":"Mediorhynchus rajasthanensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"rajasthanensis",
+						"Infraspecies":"",
+						"author":"Gupta, 1976",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus rajasthanensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4051
+					},
+					{
+						"name":"Mediorhynchus robustus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"robustus",
+						"Infraspecies":"",
+						"author":"Van Cleave, 1916",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Van Cleave, H. J.",
+						"year":"1985",
+						"title":"The Acanthocephala of North American Birds",
+						"source":"Transactions of the American Microscopical Society, vol. 37, no. 1"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus robustus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4052
+					},
+					{
+						"name":"Mediorhynchus rodensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"rodensis",
+						"Infraspecies":"",
+						"author":"Cosin, 1971",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus rodensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4053
+					},
+					{
+						"name":"Mediorhynchus sipocotensis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"sipocotensis",
+						"Infraspecies":"",
+						"author":"Tubangui, 1935",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus sipocotensis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4054
+					},
+					{
+						"name":"Mediorhynchus spinaepaucitas",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"spinaepaucitas",
+						"Infraspecies":"",
+						"author":"Smales, 2011",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":"Smales, Lesley R.",
+						"year":"1985",
+						"title":"Gigantorhynchidae (Acanthocephala) Including the Description of New Species of Mediorhynchus from Birds from the Côte d'Ivoire, Africa",
+						"source":"Comparative Parasitology, vol. 78, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus spinaepaucitas",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4055
+					},
+					{
+						"name":"Mediorhynchus taeniatus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"taeniatus",
+						"Infraspecies":"",
+						"author":"(von Linstow, 1901)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0; Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						},
+						{
+						"author":"Smales, Lesley R.",
+						"year":"1985",
+						"title":"Gigantorhynchidae (Acanthocephala) Including the Description of New Species of Mediorhynchus from Birds from the Côte d'Ivoire, Africa",
+						"source":"Comparative Parasitology, vol. 78, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus taeniatus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4056
+					},
+					{
+						"name":"Mediorhynchus tanagrae",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"tanagrae",
+						"Infraspecies":"",
+						"author":"(Rudolphi, 1819)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Amin, Omar M., Nguyen Van Ha, and Richard A. Heckmann",
+						"year":"1985",
+						"title":"Four New Species of Acanthocephalans from Birds in Vietnam",
+						"source":"Comparative Parasitology, vol. 75 no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus tanagrae",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4057
+					},
+					{
+						"name":"Mediorhynchus tenuis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"tenuis",
+						"Infraspecies":"",
+						"author":"Meyer, 1931",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Meyer, A.",
+						"year":"1985",
+						"title":"Neue Acanthocephalen aus dem Berliner Museum",
+						"source":"Zoologische Jahrbüchen Abteilung fur Systematik, Ökologie und Geographie der Tiere"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus tenuis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4058
+					},
+					{
+						"name":"Mediorhynchus textori",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"textori",
+						"Infraspecies":"",
+						"author":"Barus, Six and Majumdar, 1978",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus textori",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4059
+					},
+					{
+						"name":"Mediorhynchus thrushi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"thrushi",
+						"Infraspecies":"",
+						"author":"Bhattacharya, 2000",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Bhattacharya, Subhendu Bikas",
+						"year":"1985",
+						"title":"",
+						"source":"Handbook on Indian Acanthocephala"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus thrushi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4060
+					},
+					{
+						"name":"Mediorhynchus turdi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"turdi",
+						"Infraspecies":"",
+						"author":"Smales, 2011",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Smales, Lesley R.",
+						"year":"1985",
+						"title":"Gigantorhynchidae (Acanthocephala) Including the Description of New Species of Mediorhynchus from Birds from the Côte d'Ivoire, Africa",
+						"source":"Comparative Parasitology, vol. 78, no. 2"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus turdi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4061
+					},
+					{
+						"name":"Mediorhynchus turnixena",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"turnixena",
+						"Infraspecies":"",
+						"author":"(Tubangui, 1931)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Southern Asia 219 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"George, P. V., and A. M. Nadakal",
+						"year":"1985",
+						"title":"Three new species of Acanthocephala (Gigantorhynchidea) from birds of Kerala",
+						"source":"Acta Parasitologica Polonica, vol. 29, no. 12"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus turnixena",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4062
+					},
+					{
+						"name":"Mediorhynchus vaginatus",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"vaginatus",
+						"Infraspecies":"",
+						"author":"(Diesing, 1851)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus vaginatus",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4063
+					},
+					{
+						"name":"Mediorhynchus vancleavei",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"vancleavei",
+						"Infraspecies":"",
+						"author":"(Lundström, 1942)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Europe & Northern Asia (excluding China) 294 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus vancleavei",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4064
+					},
+					{
+						"name":"Mediorhynchus wardi",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"wardi",
+						"Infraspecies":"",
+						"author":"Schmidt and Canaris, 1967",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Africa 945 4; Africa 293 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						},
+						{
+						"author":"Marchand, Bernard, and Georges Vassilliades",
+						"year":"1985",
+						"title":"Mediorhynchus mattei sp. n. (Acanthocephala, Giganthorhynchidae) from Tockus erythrorhynchus (Aves), the Red-beaked Hornbill, in West Africa",
+						"source":"The Journal of Parasitology, vol. 68, no. 6"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus wardi",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4065
+					},
+					{
+						"name":"Mediorhynchus zosteropis",
+						"Rank":"Species",
+						"name_status":"accepted name",
+						"Is_extinct":"false",
+						"Genus":"Mediorhynchus",
+						"Subgenus":"",
+						"Species":"zosteropis",
+						"Infraspecies":"",
+						"author":"(Porta, 1913)",
+						"record_scrutiny_date":"",
+						"Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+						"Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+						"Distribution":"Australia 348 0",
+						"References":[
+						{
+						"author":null,
+						"year":"1996",
+						"title":null,
+						"source":"NODC Taxonomic Code"
+						},
+						{
+						"author":"Amin, Omar M.",
+						"year":"1985",
+						"title":"Classification of the Acanthocephala",
+						"source":"Folia Parasitologica, vol. 60, no. 4"
+						},
+						{
+						"author":"Golvan, Y. J.",
+						"year":"1985",
+						"title":"Nomenclature of the Acanthocephala",
+						"source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+						}
+						],
+						"Synonym":[
+						],
+						"commonnameList":[
+						],
+						"validname":"Mediorhynchus zosteropis",
+						"description":"",
+						"parent":4008,
+						"idTaxonomicRank":4066
+					}
+				],
+				"Synonym":[
+				],
+				"commonnameList":[
+				],
+				"validname":"Mediorhynchus",
+				"description":"Barcode of Life Data Systems BOLD Stats Specimen Records:4Specimens with Sequences:3Specimens with Barcodes:3Species:2Species With Barcodes:2Public Records:3Public Species:2Public BINs:3",
+				"parent":4000,
+				"idTaxonomicRank":4008
+			}
+
+	],
+	"Synonym":[
+	],
+	"commonnameList":[
+	],
+	"validname":"Giganthorhynchidae",
+	"description":"Gigantorhynchida is an order containing a single family, Giganthorhynchidae[1] of microscopic parasitic worms that attach themselves to the intestinal wall of terrestrial vertebrates.Contents1 Genera1.1 Gigantorhynchus1.2 Mediorhynchus2 ReferencesGenera[edit source edit]Gigantorhynchus[edit source edit]Contains the following species:Gigantorhynchus echinodiscus Diesing, 1851Gigantorhynchus lopezneyrai Diaz-ungria, 1958Gigantorhynchus lutzi Machado, 1941Gigantorhynchus ortizi Sarmiento, 1954Gigantorhynchus pasteri Tadros, 1966Gigantorhynchus ungriai Antonio, 1958Mediorhynchus[edit source edit]Contains the following species:Mediorhynchus alecturae Johnston and Edmonds, 1947Mediorhynchus cambellensis Soota, Srivastava, Glosh, 1969Mediorhynchus centurorum Nickol, 1969Mediorhynchus colluricinclaeMediorhynchus conirostris Ward, 1966Mediorhynchus corcoracis Johnston and Edmonds, 1950Mediorhynchus edmondsi Schmidt and Kuntz, 1977Mediorhynchus emberizae Rudolphi, 1819Mediorhynchus empodius Skrjabin, 1913Mediorhynchus gallinarum Bhalerao, 1937Mediorhynchus giganteus Meyer, 1931Mediorhynchus grandis Van Cleve, 1916Mediorhynchus indicus George, et al., 1981Mediorhynchus edmondsiMediorhynchus kuntzi Ward, 1960Mediorhynchus lagodekhiensis Kuraschvili, 1955Mediorhynchus leptis Ward, 1966Mediorhynchus lophurae Wang, 1966Mediorhynchus mattei Marchand and Vassiliades, 1982Mediorhynchus meiringi Bisseru, 1960Mediorhynchus micranthus Rudolphi, 1819Mediorhynchus mirabilis Marval, 1905Mediorhynchus muritensis Lundstrom, 1942Mediorhynchus najasthanensis Gupta, 1976Mediorhynchus numidae Baer, 1925Mediorhynchus orientalis Belopolskaya, 1953Mediorhynchus oswaldocruzi Travassos, 1923Mediorhynchus otidis Miescher, 1841Mediorhynchus papillosus Van Cleve, 1916Mediorhynchus passeris Das, 1951Mediorhynchus pauciuncinatus Dollfus, 1959Mediorhynchus petrochenkoi Gvosdev and Soboleva, 1966Mediorhynchus pintoi Travassos, 1923Mediorhynchus rajasthanensis Gupta, 1976Mediorhynchus robustus Van Cleve, 1916Mediorhynchus rodensis Cosin, 1971Mediorhynchus sharmai Gupta and Lata, 1967Mediorhynchus sipocotensis Tubangui, 1935Mediorhynchus taeniatus Linstow, 1901Mediorhynchus tanagrae Rudolphi, 1819Mediorhynchus tenuis Meyer, 1931Mediorhynchus textori Barus, et al., 1978Mediorhynchus turnixena Tubangui, 1931Mediorhynchus vaginatus Diesing, 1851Mediorhynchus vancleavei Lundstrom, 1942Mediorhynchus wardi Schmidt and Canaris, 1967Mediorhynchus zosteropis Porta, 1913References[edit source edit]^ Encyclopedia of Life www.eol.org",
+	"parent":4000,
+	"idTaxonomicRank":4000
+}

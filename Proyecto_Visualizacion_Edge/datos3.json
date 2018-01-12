@@ -1,0 +1,709 @@
+﻿{  
+   "name":"Apororhynchus",
+   "Rank":"Genus",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "name":"Apororhynchus aculeatus",
+         "author":"Meyer, 1931",
+      }
+   ],
+   "Genus":"",
+   "Subgenus":"",
+   "Species":"",
+   "Infraspecies":"",
+   "author":"",
+   "record_scrutiny_date":"",
+   "Source_database":"",
+   "Source_database_url":"",
+   "Bibliographic_citation":"",
+   "Distribution":"",
+   "References":"",
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus",
+   "description":"Apororhynchida<-- This template has to be warmed up before it can be used, for some reason -->Apororhynchida is an order containing one family, Apororhynchidae, [1] and one genus, Apororhynchus, [1] of microscopic parasitic worms that attach themselves to the intestinal wall of terrestrial vertebrates. SpeciesApororhynchus aculeatus Meyer, 1931[2]Apororhynchus amphistomi Byrd and Denton, 1949[3][4]Apororhynchus bivoluerus Das, 1950[5][6]Apororhynchus chauhani Sen, 1975[7]Apororhynchus hemignathi Shipley, 1899[8]Apororhynchus paulonucleatus Hoklova and Cimbaluk, 1971Apororhynchus silesiacus Okulewicz and Maruszewski, 1980 ReferencesByrd, Elon E. and Denton, J. Fred: The Helminth Parasites of Birds. II. A New Species of Acanthocephala from North American Birds. The Journal of Parasitology Vol. 35, No. 4, The American Society of Parasitologists, 1949, p. 391-410. [1]Byrd, Elon E.: Observations on the anatomy of a male Acanthocephalan. Journal of the Tennessee Academy of Science 243, 1949, p. 174.Crompton, David William Thomasson; Nickol, Brent B.: Biology of the Acanthocephala, Cambridge University Press, 1985, p. 31. [2]Das, Eashwar N.: On a new species of Apororhynchus from the white scavenger vulture Neophron percnopterus Linn. from India. Records of the Indian Museum 483-4, 1950[6], p. 43-50. [3]Dunagan, T. T. amp; Miller, D. M.: Acanthocephalan bibliography. Physiology Department, Southern Illinois University, Carbondale, Illinois, USA. [4]Marval, Louis de: Sur les Acanthocphales DOiseaux. Revue Suisse de Zoologie 123, 1904, p. 573-583. [5], [6], [7]Meyer, A.: Neue Acanthocephalen aus dem Berliner Museum. Begrndung eines neuen Acanthocephalensystems auf Grund einer Untersuchung der Berliner Sammlung. Zoologische Jahrbcher, Abteilung fr Systematick, kologie und Geographie der Tiere 62, 1931, p. 65-68.Sen, J. K.: On a new species of Apororhynchus Shipley, 1899 Apororhynchoidea: Apororhynchidae from India. Dr. B. S. Chauhan Commemorative Volume, Tiwara, K. K. and C. B. Srivastava Eds., Orissa, India, Zoological Society of India, 1975, p. 211-213. [8]Shipley, Arthur E.: Memoirs: On Arhynchus hemignathi, a new Genus of Acanthocephala. Quarterly Journal of Microscopical Science, s2-39 1896-1897, London, 1897, p. 207-218. [9], [10], [11], [12]Shipley, Arthur E.: Memoirs: Note: Arhynchus hemignathi. Quarterly Journal of Microscopical Science, s2-42 1899, London, 1899, p. 361. [13], [14], [15], [16]Thapar, Gobind Singh: On Acanthogyrus n.g. from the Intestine of the Indian Fish Labeo rohita, with a Note on the Classification of the Acanthocephala. Journal of Helminthology, 5, 1927, p. 109-120. [17]Van Cleave, Harley J.: Eorhynchus: A proposed new name for Neorhynchus Hamann preoccupied. Journal of Parasitology 11, 1914, p. 50-51. [18], [19] Notes^ a b Crompton 1985, p. 31^ Meyer 1931, p. 65-68^ Byrd, Helminth Parasites, p. 391-410^ Byrd, Observations, p. 174^ Das 1950, p. 43-50^ a b Dunagan, Acanthocephalan bibliography, p. 249^ Sen 1975, p. 211-213^ Shipley 1899, p. 361Wikispecies has information related to: Apororhynchida",
+   "url":"http://eol.org/pages/52985/overview",
+   "parent":4000,
+   "idTaxonomicRank":4000
+},
+{  
+   "name":"Apororhynchus aculeatus",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/b481959b65f831cf3fe888a052c74ad7",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"aculeatus",
+   "Infraspecies":"",
+   "author":"Meyer, 1931",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"South America 297 0",
+   "References":[  
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Meyer, A.",
+         "year":"1985",
+         "title":"Neue Acanthocephalen aus dem Berliner Museum",
+         "source":"Zoologische Jahrbüchen Abteilung fur Systematik, Ökologie und Geographie der Tiere"
+      },
+      {  
+         "author":"Okulewicz, Jerzy, and Wladyslaw Maruszewski",
+         "year":"1985",
+         "title":"Apororhynchus silesiacus sp. n. (Apororhynchidae, Acanthocephala) - a parasite of passerine birds (Passeriformes)",
+         "source":"Acta Parasitologica Polonica, vol. 27, no. 53"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus aculeatus",
+   "description":"",
+   "url":"http://eol.org/pages/-1/overview",
+   "parent":4000,
+   "idTaxonomicRank":4001
+},
+{  
+   "name":"Apororhynchus amphistomi",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/e5850208ceff1e76bb48ee50ab2394d5",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"amphistomi",
+   "Infraspecies":"",
+   "author":"Byrd and Denton, 1949",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"North America 692 0",
+   "References":[  
+      {  
+         "author":null,
+         "year":"1996",
+         "title":null,
+         "source":"NODC Taxonomic Code"
+      },
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Okulewicz, Jerzy, and Wladyslaw Maruszewski",
+         "year":"1985",
+         "title":"Apororhynchus silesiacus sp. n. (Apororhynchidae, Acanthocephala) - a parasite of passerine birds (Passeriformes)",
+         "source":"Acta Parasitologica Polonica, vol. 27, no. 53"
+      },
+      {  
+         "author":"Byrd, Elon E., and J. Fred Denton",
+         "year":"1985",
+         "title":"The Helminth Parasites of Birds. II. A New Species of Acanthocephala from North American Birds",
+         "source":"The Journal of Parasitology, vol. 35, no. 4"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus amphistomi",
+   "description":"",
+   "url":"http://eol.org/pages/404875/overview",
+   "parent":4000,
+   "idTaxonomicRank":4002
+},
+{  
+   "name":"Apororhynchus bivolucrus",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/9b5442332562286347009e34977a39bf",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"bivolucrus",
+   "Infraspecies":"",
+   "author":"Das, 1950",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"Southern Asia 219 0",
+   "References":[  
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Golvan, Y. J.",
+         "year":"1985",
+         "title":"Nomenclature of the Acanthocephala",
+         "source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+      },
+      {  
+         "author":"Das, E. N.",
+         "year":"1985",
+         "title":"On a new species of Apororhynchus from the White Scavenger Vulture Neophron percnopterus (Linn.) from India",
+         "source":"Records of the Indian Museum, vol. 48, no. 3-4"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus bivolucrus",
+   "description":"",
+   "url":"http://eol.org/pages/-1/overview",
+   "parent":4000,
+   "idTaxonomicRank":4003
+},
+{  
+   "name":"Apororhynchus chauhani",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/93a09f310f8273c81a556f4f78af896f",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"chauhani",
+   "Infraspecies":"",
+   "author":"Sen, 1975",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"Southern Asia 219 0",
+   "References":[  
+      {  
+         "author":null,
+         "year":"1996",
+         "title":null,
+         "source":"NODC Taxonomic Code"
+      },
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Bhattacharya, Subhendu Bikas",
+         "year":"1985",
+         "title":"",
+         "source":"Handbook on Indian Acanthocephala"
+      },
+      {  
+         "author":"Khatoon, Nasira",
+         "year":"1985",
+         "title":"",
+         "source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus chauhani",
+   "description":"",
+   "url":"http://eol.org/pages/404881/overview",
+   "parent":4000,
+   "idTaxonomicRank":4004
+},
+{  
+   "name":"Apororhynchus hemignathi",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/222a428261b75966c0d5de31d95f5419",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"hemignathi",
+   "Infraspecies":"",
+   "author":"(Shipley, 1896)",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"Indo-West Pacific 6941 0; Oceania 221 0",
+   "References":[  
+      {  
+         "author":null,
+         "year":"1996",
+         "title":null,
+         "source":"NODC Taxonomic Code"
+      },
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Okulewicz, Jerzy, and Wladyslaw Maruszewski",
+         "year":"1985",
+         "title":"Apororhynchus silesiacus sp. n. (Apororhynchidae, Acanthocephala) - a parasite of passerine birds (Passeriformes)",
+         "source":"Acta Parasitologica Polonica, vol. 27, no. 53"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus hemignathi",
+   "description":"",
+   "url":"http://eol.org/pages/404873/overview",
+   "parent":4000,
+   "idTaxonomicRank":4005
+},
+{  
+   "name":"Apororhynchus paulonucleatus",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/1aa52e26fce7357b48d6d8a0b03c9ba1",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"paulonucleatus",
+   "Infraspecies":"",
+   "author":"Hokhlova and Cimbaluk, 1971",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"",
+   "References":[  
+      {  
+         "author":null,
+         "year":"1996",
+         "title":null,
+         "source":"NODC Taxonomic Code"
+      },
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Golvan, Y. J.",
+         "year":"1985",
+         "title":"Nomenclature of the Acanthocephala",
+         "source":"Research and Reviews in Parasitology, vol. 54, no. 3"
+      },
+      {  
+         "author":"Okulewicz, Jerzy, and Wladyslaw Maruszewski",
+         "year":"1985",
+         "title":"Apororhynchus silesiacus sp. n. (Apororhynchidae, Acanthocephala) - a parasite of passerine birds (Passeriformes)",
+         "source":"Acta Parasitologica Polonica, vol. 27, no. 53"
+      },
+      {  
+         "author":"Khatoon, Nasira",
+         "year":"1985",
+         "title":"",
+         "source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus paulonucleatus",
+   "description":"",
+   "url":"http://eol.org/pages/404878/overview",
+   "parent":4000,
+   "idTaxonomicRank":4006
+},
+{  
+   "name":"Apororhynchus silesiacus",
+   "Rank":"Species",
+   "name_status":"accepted name",
+   "UrlCol":"http://www.catalogueoflife.org/col/details/species/id/1c62a268fe49080730d30c447de258fd",
+   "Is_extinct":"false",
+   "Classification":[  
+      {  
+         "id":"5ede24b0534ebd5e1f552d5b9f874a6a",
+         "name":"Animalia",
+         "rank":"Kingdom",
+         "name_html":"Animalia",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/5ede24b0534ebd5e1f552d5b9f874a6a"
+      },
+      {  
+         "id":"29cf5a3a0cad337a0216edca32bab745",
+         "name":"Acanthocephala",
+         "rank":"Phylum",
+         "name_html":"Acanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/29cf5a3a0cad337a0216edca32bab745"
+      },
+      {  
+         "id":"f5a88595157e6a7c414a17e1051c402d",
+         "name":"Archiacanthocephala",
+         "rank":"Class",
+         "name_html":"Archiacanthocephala",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/f5a88595157e6a7c414a17e1051c402d"
+      },
+      {  
+         "id":"d776339f4bc4eeab2741c8967e7bcc8b",
+         "name":"Apororhynchida",
+         "rank":"Order",
+         "name_html":"Apororhynchida",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/d776339f4bc4eeab2741c8967e7bcc8b"
+      },
+      {  
+         "id":"62e615cf94d41453dce7a735828a5652",
+         "name":"Apororhynchidae",
+         "rank":"Family",
+         "name_html":"Apororhynchidae",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/62e615cf94d41453dce7a735828a5652"
+      },
+      {  
+         "id":"4cd4d46fb3c72715d20c26be66b4d00f",
+         "name":"Apororhynchus",
+         "rank":"Genus",
+         "name_html":"<i>Apororhynchus</i>",
+         "url":"http://www.catalogueoflife.org/col/browse/tree/id/4cd4d46fb3c72715d20c26be66b4d00f"
+      }
+   ],
+   "Genus":"Apororhynchus",
+   "Subgenus":"",
+   "Species":"silesiacus",
+   "Infraspecies":"",
+   "author":"Okulewicz and Maruszewski, 1980",
+   "record_scrutiny_date":"",
+   "Source_database":"ITIS Global: The Integrated Taxonomic Information System",
+   "Source_database_url":"http://www.itis.gov;\nhttp://www.cbif.gc.ca/acp/eng/itis/search (Canada)",
+   "Bibliographic_citation":"Orrell T. (custodian) (2017). ITIS Global: The Integrated Taxonomic Information System (version Apr 2016). In: Species 2000 & ITIS Catalogue of Life, 2017 Annual Checklist (Roskov Y., Abucay L., Orrell T., Nicolson D., Bailly N., Kirk P.M., Bourgoin T., DeWalt R.E., Decock W., De Wever A., Nieukerken E. van, Zarucchi J., Penev L., eds.). Digital resource at www.catalogueoflife.org/annual-checklist/2017. Species 2000: Naturalis, Leiden, the Netherlands. ISSN 2405-884X.",
+   "Distribution":"Europe & Northern Asia (excluding China) 294 0",
+   "References":[  
+      {  
+         "author":null,
+         "year":"1996",
+         "title":null,
+         "source":"NODC Taxonomic Code"
+      },
+      {  
+         "author":"Amin, Omar M.",
+         "year":"1985",
+         "title":"Classification of the Acanthocephala",
+         "source":"Folia Parasitologica, vol. 60, no. 4"
+      },
+      {  
+         "author":"Okulewicz, Jerzy, and Wladyslaw Maruszewski",
+         "year":"1985",
+         "title":"Apororhynchus silesiacus sp. n. (Apororhynchidae, Acanthocephala) - a parasite of passerine birds (Passeriformes)",
+         "source":"Acta Parasitologica Polonica, vol. 27, no. 53"
+      },
+      {  
+         "author":"Khatoon, Nasira",
+         "year":"1985",
+         "title":"",
+         "source":"Revision of Acanthocephalan of Vertebrates of the World, PhD Dissertation"
+      }
+   ],
+   "synonymsList":[  
+
+   ],
+   "commonnameList":[  
+
+   ],
+   "validname":"Apororhynchus silesiacus",
+   "description":"",
+   "url":"http://eol.org/pages/404876/overview",
+   "parent":4000,
+   "idTaxonomicRank":4007
+}

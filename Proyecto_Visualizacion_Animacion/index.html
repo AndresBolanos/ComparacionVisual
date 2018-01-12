@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+    <head>
+         <meta charset="utf-8"/>
+         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+         <meta name="description" content="Hierarchy comparison - colouring"/>
+         <title> Comparación taxonomías </title>
+         <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+         <script src="bootstrap.min.js"></script>
+         <link href="bootstrap.min.css" rel="stylesheet">
+         <link href="estilo.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="d3.js"></script>
+         <script type="text/javascript" src="treelist.js"></script>
+         <script type="text/javascript" src="scriptCarga.js"></script>
+         <script type="text/javascript" src="funciones.js"></script>
+         <script type="text/javascript" src="funciones_Auxiliares.js"></script>
+         <script src="processing.js"></script>
+         <link href="example" rel="stylesheet/scss" type="text/css">
+    </head>
+    <header>
+      <div class="icon-bar">
+        <a href="../Proyecto_Visualizacion_Edge/index.html"><i class="fa fa-random"> Edge Drawing</i></a> 
+        <a href="../Proyecto_Visualizacion_Matrix/index.html"><i class="fa fa-table"> Matrix</i></a> 
+        <a class="active" href="#"><i class="fa fa-forward"> Animation</i></a> 
+        <a href="../Proyecto_Visualizacion_Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>        
+      </div>
+      <div id="mainToolBox">
+          <div id="leftToolBox">
+            <form> 
+              <label class="labelCongruence">Congruence</label>
+              <label class="switchCongruence">
+                <input  id="Congruencia" type="checkbox" onclick="setconguencyG()">
+                <span class="sliderCongruent round"></span>                
+              </label> 
+              <label class="labelSplits">Splits</label>
+              <label class="switchSplits">
+                <input id="Splits" type="checkbox" onclick="setsplitsG()">
+                <span class="sliderSplits round"></span>                
+              </label> 
+              <label class="labelMerges">Merges</label>
+              <label class="switchMerges">
+                <input id="Mergers" type="checkbox" onclick="setsmergersG()">
+                <span class="sliderMerges round"></span>                
+              </label>
+              <label class="labelMoves">Moves</label>
+              <label class="switchMoves">
+                <input id="Moves" type="checkbox" onclick="setsmovesG()">
+                <span class="sliderMoves round"></span>                
+              </label>
+              <label class="labelRenames">Renames</label>
+              <label class="switchRenames">
+                <input id="Renames" type="checkbox" onclick="setsrenamesG()">
+                <span class="sliderRename round"></span>                
+              </label>
+              <label class="labelNew">New</label>
+              <label class="switchNew">
+                <input id="News" type="checkbox" onclick="setnewsG()">
+                <span class="sliderNew round"></span>                
+              </label>
+              <label class="labelExclusions">Exclusions</label>
+              <label class="switchExclusions">
+                <input id="Exclusions" type="checkbox" onclick="setsexclusionsG()">
+                <span class="sliderExclusion round"></span>                
+              </label>
+              <label class="labelAll">All</label>
+              <label class="switchAll">
+                <input id="All" type="checkbox" onclick="setAllG()">
+                <span class="slider round"></span>                
+              </label>
+              <label class="labelClear">Reset</label>
+             <input id="Reset" type="button" class="fa fa-refresh" onclick="Clear()">
+            </form>
+
+            <label class="labelOneByOne">Gradual</label>
+            
+            <label class="switchOneByOne">
+              <input id="OneByOne" type="checkbox" onclick="setOneByOne()">
+              <span class="sliderOneByOne round"></span>                
+            </label>
+            <div class="verticalLine1"></div>
+            <div class="verticalLine2"></div>
+            <label class="labelCongruenceStats">Congruences</label>
+            <label id="CongruenceStatsValue" class="labelCongruenceStatsValue">0</label>
+            <label class="labelSplitsStats">Splits</label>
+            <label id="SplitsStatsValue" class="labelSplitsStatsValue">0</label>
+            <label class="labelMergesStats">Merges</label>
+            <label id="MergesStatsValue" class="labelMergesStatsValue">0</label>
+            <label class="labelMovesStats">Moves</label>
+            <label id="MovesStatsValue" class="labelMovesStatsValue">0</label>
+            <label class="labelRenamesStats">Renames</label>
+            <label id="RenamesStatsValue" class="labelRenamesStatsValue">0</label>
+            <label class="labelNewStats">New</label>
+            <label id="NewStatsValue" class="labelNewStatsValue">0</label>
+            <label class="labelExclusionStats">Exclusions</label>
+            <label id="ExclusionStatsValue" class="labelExclusionStatsValue">0</label>            
+         </div>  
+            <div id="Options">
+                <span id="menos">_</span>
+                <span id="mas">+</span>
+               <input id="Slider"  class="barra" type="range" min="0" max="4" value="0" step="1" onchange="showVal(this.value)">
+               <button  id = "Comenzar" class="button" type="button" onclick="IniciarAnimacion()"></button>
+          </div>                                             
+        </div>
+    </header>
+    <body>        
+      <canvas id="CANVAS" data-processing-sources="Prueba/Prueba.pde"></canvas>                           
+    </body>
+</html>

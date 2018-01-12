@@ -1,0 +1,4685 @@
+{
+ "name": "Cocos-Island-2017",
+ "Synonym":[],
+ "author":"",
+ "record_scrutiny_date":"",
+ "children": [
+ 	{
+		 "name": "Pteridaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children": [
+		 	{"Familia":"Pteridaceae",
+		 	"name":"Adiantum",
+		 	"author":"Lam.",
+		 	"Publicación":"Encycl. 1:43 (1783)",
+		 	"record_scrutiny_date":"1783",
+		 	"children":[
+		 				{"Familia":"Pteridaceae",
+					 	"name":"Adiantum latifolium",
+					 	"author":"Lam.",
+					 	"Publicación":"Encycl. 1:43 (1783)",
+					 	"record_scrutiny_date":"1783",
+					 	"Synonym":["Adiantum lucidum var. bipinnatum"]
+		 				},
+		 				{"Familia":"Pteridaceae",
+						"name":"Adiantum pulverulentum",
+						"author":"L.",
+						"Publicación":"Sp. Pl. 1096 (1753)",
+						"record_scrutiny_date":"1753",
+						"Synonym":[]
+						},
+						{"Familia":"Pteridaceae",
+						"name":"Adiantum × variopinnatum",
+						"author":"Jermy et T. G. Walker",
+						"Publicación":"Bulletin of the British Museum (Natural History), Botany 13(2): 254, f. 3. 1985",
+						"record_scrutiny_date":"1985",
+						"Synonym":[]
+						},
+						{"Familia":"Pteridaceae",
+						"name":"Acrostichum aureum",
+						"author":"L.",
+						"Publicación":"Sp. Pl. 1069 (1753)",
+						"record_scrutiny_date":"1753",
+						"Synonym":["Acrostichum inaequale","Chrysodium aureum"]
+						}
+		 	]
+		 	},
+			
+			{"Familia":"Pteridaceae",
+			"name":"Pteris",
+			"author":"L.",
+			"Publicación":"Sp. Pl. 1076 (1753)",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Pteridaceae",
+					"name":"Pteris biaurita",
+					"author":"L.",
+					"Publicación":"Sp. Pl. 1076 (1753)",
+					"record_scrutiny_date":"1753",
+					"Synonym":["Litobrochia galeottii"]
+					},
+					{"Familia":"Pteridaceae",
+					"name":"Pteris tripartita",
+					"author":"Sw.",
+					"Publicación":"J. Bot. (Schrader) 1800(2):67 (1801)",
+					"record_scrutiny_date":"1801",
+					"Synonym":["Litobrochia tripartita"]
+					}
+			]
+			},
+			{"Familia":"Pteridaceae",
+			"name":"Anetium citrifolium",
+			"author":"Splitg.",
+			"Publicación":"Tijdschr. Natural. Gesch. Physiol. 7:395 (1840)",
+			"record_scrutiny_date":"1840",
+			"children":[
+					{"Familia":"Pteridaceae",
+					"name":"Anetium citrifolium",
+					"author":"Splitg.",
+					"Publicación":"Tijdschr. Natural. Gesch. Physiol. 7:395 (1840)",
+					"record_scrutiny_date":"1840",
+					"Synonym":["Acrostichum citrifolium"]
+					}
+			]
+			},
+			{"Familia":"Pteridaceae",
+			"name":"Vittaria",
+			"author":"Kaulf.",
+			"Publicación":"Enum. Filic. 192 (1824)",
+			"record_scrutiny_date":"1824",
+			"children":[
+						{"Familia":"Pteridaceae",
+						"name":"Vittaria graminifolia",
+						"author":"Kaulf.",
+						"Publicación":"Enum. Filic. 192 (1824)",
+						"record_scrutiny_date":"1824",
+						"Synonym":["Vittaria filifolia","Vittaria flavicosta"]
+						},
+						{"Familia":"Pteridaceae",
+						"name":"Vittaria lineata",
+						"author":"(L.) Sm.",
+						"Publicación":"Mém. Acad. Roy. Sci. (Turin) 5(1790-1791):421 (1793)",
+						"record_scrutiny_date":"1793",
+						"Synonym":["Pteris lineata","Vittaria costaricensis","Vittaria deppeana","Vittaria setacea"]
+						}
+			]
+			},
+			{"Familia":"Pteridaceae",
+			"name":"Pityrogramma",
+			"author":"(Hook.) Weath. ex L.H. Bailey",
+			"Publicación":"Manual of Cultivated Plants: a flora for the identification of the most common or significant species of plants grown in the continental United States and Canada : for food, ornament, utility, and general interest, both in the open and under glass 64. 1926.",
+			"record_scrutiny_date":"1926",
+			"children":[
+					{"Familia":"Pteridaceae",
+					"name":"Pityrogramma calomelanos var. aureoflava",
+					"author":"(Hook.) Weath. ex L.H. Bailey",
+					"Publicación":"Manual of Cultivated Plants: a flora for the identification of the most common or significant species of plants grown in the continental United States and Canada : for food, ornament, utility, and general interest, both in the open and under glass 64. 1926.",
+					"record_scrutiny_date":"1926",
+					"Synonym":[]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		 "name": "Anacardiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Anacardiaceae",
+		 	"name":"Campnosperma",
+		 	"author":"Standl.",
+		 	"Publicación":"Journal of the Arnold Arboretum 2(2): 111–112. 1920.",
+		 	"record_scrutiny_date":"1920",
+		 	"children":[
+		 			{"Familia":"Anacardiaceae",
+				 	"name":"Campnosperma panamense",
+				 	"author":"Standl.",
+				 	"Publicación":"Journal of the Arnold Arboretum 2(2): 111–112. 1920.",
+				 	"record_scrutiny_date":"1920",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+			{"Familia":"Anacardiaceae",
+			"name":"Mangifera",
+			"author":"L.",
+			"Publicación":"Sp. Pl. 200.  1753",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Anacardiaceae",
+					"name":"Mangifera indica",
+					"author":"L.",
+					"Publicación":"Sp. Pl. 200.  1753",
+					"record_scrutiny_date":"1753",
+					"Synonym":["Mangifera austro-yunnanensis","Rhus laurina"]
+					}
+			]
+			}
+		 ]
+		},
+
+		{
+		 "name": "Apiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Apiaceae",
+		 	"name":"Eryngium",
+		 	"author":"L.",
+		 	"Publicación":"Sp. Pl. 232.  1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 		{"Familia":"Apiaceae",
+			 	"name":"Eryngium foetidum",
+			 	"author":"L.",
+			 	"Publicación":"Sp. Pl. 232.  1753.",
+			 	"record_scrutiny_date":"1753",
+			 	"Synonym":["Eryngium antihystericum","Eryngium foetidum fo. comosum","Eryngium foetidum fo. nudum","Eryngium molleri"]
+			 	}
+		 	]
+		 	}
+		 ]
+		},
+
+		{
+		 "name": "Araliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Araliaceae",
+		 	"name":"Hydrocotyle",
+		 	"author":"L.",
+		 	"Publicación":"Sp. Pl. 234.  1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+	 				{"Familia":"Araliaceae",
+				 	"name":"Hydrocotyle umbellata",
+				 	"author":"L.",
+				 	"Publicación":"Sp. Pl. 234.  1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Hydrocotyle umbellulata"]
+				 	}
+		 	]
+		 	}
+		 	]
+		 },
+
+		 {
+		 "name": "Apocynaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Apocynaceae",
+		 	"name":"Catharanthus",
+		 	"author":"(L.) G. Don",
+		 	"Publicación":"Gen. Hist. 4: 95.  1837",
+		 	"record_scrutiny_date":"1837",
+		 	"children":[
+		 			{"Familia":"Apocynaceae",
+				 	"name":"Catharanthus roseus",
+				 	"author":"(L.) G. Don",
+				 	"Publicación":"Gen. Hist. 4: 95.  1837",
+				 	"record_scrutiny_date":"1837",
+				 	"Synonym":["Vinca rosea","Lochnera rosea"]
+				 	}
+		 	]	
+		 	},
+		 	{"Familia":"Apocynaceae",
+		 	"name":"Tassadia",
+		 	"author":"Decne.",
+		 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 8: 579–580. 1844.",
+		 	"record_scrutiny_date":"1844",
+		 	"children":[
+		 		{"Familia":"Apocynaceae",
+			 	"name":"Tassadia obovata",
+			 	"author":"Decne.",
+			 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 8: 579–580. 1844.",
+			 	"record_scrutiny_date":"1844",
+			 	"Synonym":["Cynanchum apocynellum","Cynanchum recurvum"]
+			 	}
+		 	]
+		 	}
+		 	]
+		 },
+
+		{
+		 "name": "Aquifoliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Aquifoliaceae",
+		 	"name":"Ilex",
+		 	"author":"Cuatrec.",
+		 	"Publicación":"Lloydia 11(3): 210, f. 3. 1948.",
+		 	"record_scrutiny_date":"1948",
+		 	"children":[
+		 			{"Familia":"Aquifoliaceae",
+				 	"name":"Ilex yurumanguinis",
+				 	"author":"Cuatrec.",
+				 	"Publicación":"Lloydia 11(3): 210, f. 3. 1948.",
+				 	"record_scrutiny_date":"1948",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 	]
+		 },
+
+		 {
+		 "name": "Araceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Araceae",
+		 	"name":"Anthurium",
+		 	"author":"(Aubl.) Engl.",
+		 	"Publicación":"en Mart., Fl. bras. 3(2): 78. 1878.",
+		 	"record_scrutiny_date":"1878",
+		 	"children":[
+		 			{"Familia":"Araceae",
+				 	"name":"Anthurium scandens",
+				 	"author":"(Aubl.) Engl.",
+				 	"Publicación":"en Mart., Fl. bras. 3(2): 78. 1878.",
+				 	"record_scrutiny_date":"1878",
+				 	"Synonym":["Anthurium rigidulum","Dracontium scandens"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Araceae",
+		 	"name":"Philodendron",
+		 	"author":"(Jacq.) Schott",
+		 	"Publicación":"Wiener Z. Kunst 1829: 780. 1829.",
+		 	"record_scrutiny_date":"1829",
+		 	"children":[
+		 			{"Familia":"Araceae",
+				 	"name":"Philodendron hederaceum",
+				 	"author":"(Jacq.) Schott",
+				 	"Publicación":"Wiener Z. Kunst 1829: 780. 1829.",
+				 	"record_scrutiny_date":"1829",
+				 	"Synonym":["Arum hederaceum","Philodendron micans","Philodendron oxycardium","Philodendron pittieri","Philodendron scandens"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Araceae",
+		 	"name":"Spathiphyllum",
+		 	"author":"Engl.",
+		 	"Publicación":" Bot. Jahrb. Syst. 37: 120. 1905.",
+		 	"record_scrutiny_date":"1905",
+		 	"children":[
+		 			{"Familia":"Araceae",
+				 	"name":"Spathiphyllum laeve",
+				 	"author":"Engl.",
+				 	"Publicación":" Bot. Jahrb. Syst. 37: 120. 1905.",
+				 	"record_scrutiny_date":"1905",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Araceae",
+		 	"name":"Xanthosoma",
+		 	"author":"(L.) Schott",
+		 	"Publicación":"en Schott & Endl., Melet. bot. 19. 1832.",
+		 	"record_scrutiny_date":"1832",
+		 	"children":[
+		 			{"Familia":"Araceae",
+				 	"name":"Xanthosoma sagittifolium",
+				 	"author":"(L.) Schott",
+				 	"Publicación":"en Schott & Endl., Melet. bot. 19. 1832.",
+				 	"record_scrutiny_date":"1832",
+				 	"Synonym":["Arum sagittifolium","Xanthosoma atrovirens",",Xanthosoma nigrum","Xanthosoma violaceum","Xanthosoma mafaffa","Xanthosoma xanthorrhizon"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Arecaceae",
+		 	"name":"Cocos",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 1188. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 				{"Familia":"Arecaceae",
+					 	"name":"Cocos nucifera",
+					 	"author":"L.",
+					 	"Publicación":"Sp. pl. 1188. 1753.",
+					 	"record_scrutiny_date":"1753",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Arecaceae",
+		 	"name":"Euterpe",
+		 	"author":"Mart.",
+		 	"Publicación":"en A. D. Orb., Voy. Amér. mér. 7(3) Palmiers 10, t. 8 (fig. 2), t. 18A. 1842.",
+		 	"record_scrutiny_date":"1842",
+		 	"children":[
+		 			{"Familia":"Arecaceae",
+				 	"name":"Euterpe precatoria",
+				 	"author":"Mart.",
+				 	"Publicación":"en A. D. Orb., Voy. Amér. mér. 7(3) Palmiers 10, t. 8 (fig. 2), t. 18A. 1842.",
+				 	"record_scrutiny_date":"1842",
+				 	"Synonym":["Euterpe macrospadix","Euterpe microspadix","Euterpe panamensis","Roosereltia fraldiniana"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Araceae",
+		 	"name":"Spathiphyllum",
+		 	"author":"A. Rojas & J.M. Chaves",
+		 	"Publicación":"Brenesia 75–76: 4–6, f. 1A–F. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 				{"Familia":"Araceae",
+					 	"name":"Spathiphyllum abelianum",
+					 	"author":"A. Rojas & J.M. Chaves",
+					 	"Publicación":"Brenesia 75–76: 4–6, f. 1A–F. 2011.",
+					 	"record_scrutiny_date":"2011",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	}
+		 	]
+		 },
+
+		{
+		 "name": "Aspleniaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Aspleniaceae",
+		 	"name":"Asplenium",
+		 	"author":"Willd.",
+		 	"Publicación":"Sp. Pl. 5:321 (1810)",
+		 	"record_scrutiny_date":"1810",
+		 	"children":[
+		 			{"Familia":"Aspleniaceae",
+				 	"name":"Asplenium abscissum",
+				 	"author":"Willd.",
+				 	"Publicación":"Sp. Pl. 5:321 (1810)",
+				 	"record_scrutiny_date":"1810",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Aspleniaceae",
+				 	"name":"Asplenium barclayanum",
+				 	"author":"C. D. Adams",
+				 	"Publicación":"Novon 2:290 (1992)",
+				 	"record_scrutiny_date":"1992",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Aspleniaceae",
+				 	"name":"Asplenium cuspidatum",
+				 	"author":"Lam.",
+				 	"Publicación":"Encycl. 2:310 (1786)",
+				 	"record_scrutiny_date":"1786",
+				 	"Synonym":[]
+				 	},
+					{"Familia":"Aspleniaceae",
+					"name":"Asplenium dissectum",
+					"author":"Sw.",
+					"Publicación":"Prodr. 130 (1788)",
+					"record_scrutiny_date":"1788",
+					"Synonym":[]
+					}
+		 	]
+		 	}
+		 	]
+		 },
+
+		 {
+		 "name": "Blechnaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Blechnaceae",
+			"name":"Blechnum",
+			"author":"L.",
+			"Publicación":"Sp. Pl. 1077 (1753)",
+			"record_scrutiny_date":"1753",
+			"children":[
+				{"Familia":"Blechnaceae",
+				"name":"Blechnum occidentale",
+				"author":"L.",
+				"Publicación":"Sp. Pl. 1077 (1753)",
+				"record_scrutiny_date":"1753",
+				"Synonym":["Blechnum appendiculatum"]
+				},
+				{"Familia":"Blechnaceae",
+				"name":"Blechnum longistipitatum",
+				"author":"A. Rojas",
+				"Publicación":"Brenesia 75–76: 7–8, f. 1A–C. 2011.",
+				"record_scrutiny_date":"2011",
+				"Synonym":[]
+				}	
+			]
+			}
+			]
+		 },
+
+		  {
+		 "name": "Bromeliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Bromeliaceae",
+			"name":"Guzmania",
+			"author":"(André) André ex Mez",
+			"Publicación":"en C. DC., Monogr. phan. 9: 901. 1896.",
+			"record_scrutiny_date":"1896",
+			"children":[
+					{"Familia":"Bromeliaceae",
+					"name":"Guzmania sanguinea",
+					"author":"(André) André ex Mez",
+					"Publicación":"en C. DC., Monogr. phan. 9: 901. 1896.",
+					"record_scrutiny_date":"1896",
+					"Synonym":["Tillandsia sanguinea"]
+					}
+			]
+			},
+			{"Familia":"Bromeliaceae",
+			"name":"Ananas",
+			"author":"(L.) Merr.",
+			"Publicación":"Intrepr. Herb. amboin. 133. 1917.",
+			"record_scrutiny_date":"1917",
+			"children":[
+				{"Familia":"Bromeliaceae",
+				"name":"Ananas",
+				"author":"(L.) Merr.",
+				"Publicación":"Intrepr. Herb. amboin. 133. 1917.",
+				"record_scrutiny_date":"1917",
+				"children":[
+					{"Familia":"Bromeliaceae",
+					"name":"Ananas comosus",
+					"author":"(L.) Merr.",
+					"Publicación":"Intrepr. Herb. amboin. 133. 1917.",
+					"record_scrutiny_date":"1917",
+					"Synonym":["Ananas ananas","Ananas sativa","Ananas sativus","Ananassa sativa","Bromelia ananas","Bromelia comosa"]
+					}
+				]
+				}
+			]
+			}
+			]
+		 },
+
+		{
+		 "name": "Burmanniaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Burmanniaceae",
+		 	"name":"Gymnosiphon",
+		 	"author":"Jonker",
+		 	"Publicación":"Monogr. Burmann. 199. 1938.",
+		 	"record_scrutiny_date":"1938",
+		 	"children":[
+		 			{"Familia":"Burmanniaceae",
+				 	"name":"Gymnosiphon panamensis",
+				 	"author":"Jonker",
+				 	"Publicación":"Monogr. Burmann. 199. 1938.",
+				 	"record_scrutiny_date":"1938",
+				 	"Synonym":["Gymnosiphon divaricatus"]
+				 	}
+		 	]
+		 	}
+			]
+		 },
+
+		 {
+		 "name": "Caryophyllaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Caryophyllaceae",
+		 	"name":"Drymaria",
+		 	"author":"(L.) Willd. ex Schult.",
+		 	"Publicación":"Syst. veg. 5: 406. 1819.",
+		 	"record_scrutiny_date":"1819",
+		 	"children":[
+		 			{"Familia":"Caryophyllaceae",
+				 	"name":"Drymaria cordata",
+				 	"author":"(L.) Willd. ex Schult.",
+				 	"Publicación":"Syst. veg. 5: 406. 1819.",
+				 	"record_scrutiny_date":"1819",
+				 	"Synonym":["Holosteum cordatum","Holosteum diandrum","Drymaria diandra"]
+				 	}
+		 	]
+		 	}
+			]
+		 },
+
+		  {
+		 "name": "Urticaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Urticaceae",
+			"name":"Cecropia",
+			"author":"B. L. Rob.",
+			"Publicación":"Proc. Calif. Acad. Sci. ser. 4, 1: 389.  1912",
+			"record_scrutiny_date":"1912",
+			"children":[
+					{"Familia":"Urticaceae",
+					"name":"Cecropia pittieri",
+					"author":"B. L. Rob.",
+					"Publicación":"Proc. Calif. Acad. Sci. ser. 4, 1: 389.  1912",
+					"record_scrutiny_date":"1912",
+					"Synonym":[]
+					}
+			]
+			},
+			{"Familia":"Urticaceae",
+			"name":"Laportea",
+			"author":"(L.) Chew",
+			"Publicación":"Gard. Bull. Singapore 21(2): 200. 1965.",
+			"record_scrutiny_date":"1965",
+			"children":[
+					{"Familia":"Urticaceae",
+					"name":"Laportea aestuans",
+					"author":"(L.) Chew",
+					"Publicación":"Gard. Bull. Singapore 21(2): 200. 1965.",
+					"record_scrutiny_date":"1965",
+					"Synonym":["Urtica aestuans","Fleuria aestuans"]
+					}
+			]
+			},
+			{"Familia":"Urticaceae",
+			"name":"Pilea",
+			"author":"W. C. Burger",
+			"Publicación":"Phytologia 31(3): 269. 1975.",
+			"record_scrutiny_date":"1975",
+			"children":[
+					{"Familia":"Urticaceae",
+					"name":"Pilea gomeziana",
+					"author":"W. C. Burger",
+					"Publicación":"Phytologia 31(3): 269. 1975.",
+					"record_scrutiny_date":"1975",
+					"Synonym":[]
+					},
+					{"Familia":"Urticaceae",
+					"name":"Pilea microphylla",
+					"author":"(L.) Liebm.",
+					"Publicación":"Kongel. Danske Vidensk. Selsk. Skr., Naturvidensk. Math. Afd., ser. 5 2: 296. 1851.",
+					"record_scrutiny_date":"1851",
+					"Synonym":["Parietaria microphylla","Pilea portula"]
+					}
+			]
+			}
+			]
+		 },
+
+		{
+		 "name": "Chloranthaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Chloranthaceae",
+		 	"name":"Hedyosmum",
+		 	"author":"Kunth",
+		 	"Publicación":"Nov. Gen. Sp. 7: 165, pl. 634-635. 1825.",
+		 	"record_scrutiny_date":"1825",
+		 	"children":[
+		 			{"Familia":"Chloranthaceae",
+				 	"name":"Hedyosmum bonplandianum",
+				 	"author":"Kunth",
+				 	"Publicación":"Nov. Gen. Sp. 7: 165, pl. 634-635. 1825.",
+				 	"record_scrutiny_date":"1825",
+				 	"Synonym":["Hedyosmum callososerratum"]
+				 	},
+				 	{"Familia":"Chloranthaceae",
+					"name":"Hedyosmum costaricense",
+					"author":"C. E. Wood ex W. C. Burger",
+					"Publicación":"Phytologia 26(2): 132--133. 1973",
+					"record_scrutiny_date":"1973",
+					"Synonym":[]
+					}
+		 	]
+		 	}
+			]
+		 },	
+
+		{
+		 "name": "Chrysobalanaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Chrysobalanaceae",
+		 	"name":"Chrysobalanus",
+		 	"author":"L.",
+		 	"Publicación":"Sp. Pl. ed. 1. 1:513.  1753",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 		{"Familia":"Chrysobalanaceae",
+			 	"name":"Chrysobalanus icaco",
+			 	"author":"L.",
+			 	"Publicación":"Sp. Pl. ed. 1. 1:513.  1753",
+			 	"record_scrutiny_date":"1753",
+			 	"Synonym":["Chrysobalanus pellocarpus"]
+			 	},
+			 	{"Familia":"Chrysobalanaceae",
+				"name":"Licania platypus",
+				"author":"(Hemsl.) Fritsch",
+				"Publicación":"Ann. K. K. Naturhist. Hofmus 4; 56. 1889",
+				"record_scrutiny_date":"1889",
+				"Synonym":["Moquilea platypus"]
+				}
+		 	]
+		 	}
+			]
+		 },	
+
+		 {
+		 "name": "Combretaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Combretaceae",
+		 	"name":"Conocarpus erectus",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 176. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"Synonym":[]
+		 	},
+			{"Familia":"Combretaceae",
+			"name":"Terminalia catappa",
+			"author":"L.",
+			"Publicación":"Mant. pl. 1: 128. 1767.",
+			"record_scrutiny_date":"1767",
+			"Synonym":["Catappa domestica","Terminalia badamia","Terminalia rubrigemnis"]
+			}
+			]
+		 },	
+		{
+		 "name": "Combretaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Commelinaceae",
+		 	"name":"Commelina",
+		 	"author":"Burm. f.",
+		 	"Publicación":"Fl. indica 18, pl. 7, fig. 2. 1768.",
+		 	"record_scrutiny_date":"1768",
+		 	"children":[
+		 			{"Familia":"Commelinaceae",
+				 	"name":"Commelina diffusa",
+				 	"author":"Burm. f.",
+				 	"Publicación":"Fl. indica 18, pl. 7, fig. 2. 1768.",
+				 	"record_scrutiny_date":"1768",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+			]
+		 },	
+
+		{
+		 "name": "Convolvulaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Convolvulaceae",
+			"name":"Ipomoea",
+			"author":"L.",
+			"Publicación":"Sp. pl. 161. 1753.",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea alba",
+					"author":"L.",
+					"Publicación":"Sp. pl. 161. 1753.",
+					"record_scrutiny_date":"1753",
+					"Synonym":["Calonyction aculeatum"]
+					},
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea batatas",
+					"author":"(L.) Lam.",
+					"Publicación":"Tabl. encycl. 1: 465. 1793.",
+					"record_scrutiny_date":"1793",
+					"Synonym":["Ipomoea triloba","Convolvulus batatas","Ipomoea purpusii","Ipomoea wallii"]
+					},
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea indica",
+					"author":"(Burm.) Merr.",
+					"Publicación":"Interpr. Herb. amboin. 445. 1917.",
+					"record_scrutiny_date":"1917",
+					"Synonym":["Convolvulus indicus","Ipomoea acuminata","Ipomoea cathartica","Ipomoea leari","Ipomoea mutabilis","Ipomoea learii"]
+					},
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea pes-caprae",
+					"author":"(L.) R. Br.",
+					"Publicación":"Narr. exped. Zaire 477. 1818.",
+					"record_scrutiny_date":"1818",
+					"Synonym":["Convolvulus pes-caprae"]
+					},
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea philomega",
+					"author":"(Vell.) House",
+					"Publicación":"Ann. New York Acad. Sci. 18: 246. 1908.",
+					"record_scrutiny_date":"1908",
+					"Synonym":["Convolvulus philomega","Ipomoea costaricensis","Ipomoea demerariana"]
+					},
+					{"Familia":"Convolvulaceae",
+					"name":"Ipomoea tiliacea",
+					"author":"(Willd.) Choisy",
+					"Publicación":"Prodr. 9: 375. 1845.",
+					"record_scrutiny_date":"1845",
+					"Synonym":["Convolvulus tiliaceus"]
+					}
+			]
+			},
+			{"Familia":"Convolvulaceae",
+			"name":"Stictocardia",
+			"author":"(Desr.) Hallier f.",
+			"Publicación":"Bot. Jahrb. Syst. 18: 159. 1893.",
+			"record_scrutiny_date":"1893",
+			"children":[
+					{"Familia":"Convolvulaceae",
+					"name":"Stictocardia tiliifolia",
+					"author":"(Desr.) Hallier f.",
+					"Publicación":"Bot. Jahrb. Syst. 18: 159. 1893.",
+					"record_scrutiny_date":"1893",
+					"Synonym":["Argyreia campanulata","Argyreia tiliifolia","Convolvulus campanulatus","Convolvulus gangetinus","Convolvulus grandiflorus","Convolvulus melanostictus","Convolvulus tiliifolius","Ipomoea benghalensis","Stictocardia campanulata"]
+					}
+			]
+			}
+			]
+		 },	
+
+		{
+		 "name": "Cucurbitaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Cucurbitaceae",
+			"name":"Momordica",
+			"author":"L.",
+			"Publicación":"Sp. pl. 1009. 1753.",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Cucurbitaceae",
+					"name":"Momordica charantia",
+					"author":"L.",
+					"Publicación":"Sp. pl. 1009. 1753.",
+					"record_scrutiny_date":"1753",
+					"Synonym":[]
+					}
+			]
+			}
+			]
+		 },
+
+		 {
+		 "name": "Cyatheaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Cyatheaceae",
+		 	"name":"Cyathea",
+		 	"author":"L. D. Goméz",
+		 	"Publicación":"American Fern Journal 61(4): 166, t. 25, f. 1–2. 1971.",
+		 	"record_scrutiny_date":"1971",
+		 	"children":[
+			 		{"Familia":"Cyatheaceae",
+				 	"name":"Cyathea alfonsoana",
+				 	"author":"L. D. Goméz",
+				 	"Publicación":"American Fern Journal 61(4): 166, t. 25, f. 1–2. 1971.",
+				 	"record_scrutiny_date":"1971",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Cyatheaceae",
+				 	"name":"Cyathea multiflora",
+				 	"author":"Sm.",
+				 	"Publicación":"Mém. Acad. Roy. Sci. (Turin) 5(1790-1791):416(1793)",
+				 	"record_scrutiny_date":"1793",
+				 	"Synonym":["Alsophila decussata","Alsophila multiflora","Cyathea austroamericana","Cyathea hartii","Hemitelia denticulata","Hemitelia hartii","Hemitelia multiflora","Hemitelia nigricans"]
+				 	},
+				 	{"Familia":"Cyatheaceae",
+				 	"name":"Cyathea nesiotica",
+				 	"author":"(Maxon) Domin",
+				 	"Publicación":"Acta Bot. Bohem. 9:140 (1930)",
+				 	"record_scrutiny_date":"1930",
+				 	"Synonym":["Alsophila nesiotica"]
+				 	},
+				 	{"Familia":"Cyatheaceae",
+				 	"name":"Cyathea notabilis",
+				 	"author":"(Maxon) Domin",
+				 	"Publicación":"Acta Bot Bohem. 9:141 (1930)",
+				 	"record_scrutiny_date":"1930",
+				 	"Synonym":["Alsophila notabilis"]
+				 	}
+		 	]
+		 	}
+			]
+		 },
+
+		 {
+		 "name": "Cyatheaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Cyperaceae",
+		 	"name":"Calyptrocarya",
+		 	"author":"(Brongn.) Urb.","Publicación":"Becquerelia glomerulata Brongn., en Duperrey, Voy. monde Phan. 163. 1833.",
+		 	"record_scrutiny_date":"1833",
+		 	"children":[
+		 			{"Familia":"Cyperaceae",
+				 	"name":"Calyptrocarya glomerulata",
+				 	"author":"(Brongn.) Urb.","Publicación":"Becquerelia glomerulata Brongn., en Duperrey, Voy. monde Phan. 163. 1833.",
+				 	"record_scrutiny_date":"1833",
+				 	"Synonym":["Becquerelia glomerulata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Cyperaceae",
+		 	"name":"Cyperus",
+		 	"author":"(Willd.) Endl.",
+		 	"Publicación":"Cat. hort. Vindob. 1: 93. 1842.",
+		 	"record_scrutiny_date":"1842",
+		 	"children":[
+		 			{"Familia":"Cyperaceae",
+				 	"name":"Cyperus aggregatus",
+				 	"author":"(Willd.) Endl.",
+				 	"Publicación":"Cat. hort. Vindob. 1: 93. 1842.",
+				 	"record_scrutiny_date":"1842",
+				 	"Synonym":["Mariscus aggregatus","Cyperus cayennensis","Cyperus flavus"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus hermaphroditus",
+				 	"author":"(Jacq.) Standl.",
+				 	"Publicación":"Contr. U. S. Natl. Herb. 18: 88. 1916.",
+				 	"record_scrutiny_date":"1916",
+				 	"Synonym":["Carex hermaphrodita","Cyperus randuzii","Marisues hermafroditus"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus ligularis",
+				 	"author":"L.",
+				 	"Publicación":"Syst. nat. ed. 10 867. 1759.",
+				 	"record_scrutiny_date":"1759",
+				 	"Synonym":["Marisus ligularis"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus luzulae",
+				 	"author":"(L.) Rottb. ex Retz.",
+				 	"Publicación":"Observ. bot. 4: 11. 1786.",
+				 	"record_scrutiny_date":"1786",
+				 	"Synonym":["Scirpus luzulae","Cyperus guatemalensis"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus odoratus",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 46. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Cyperus ferax","Torulinium odoratum","Cyperus acicularis","Cyperus haenkei","Torulinium macrocephalum"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus regiomontanus",
+				 	"author":"Britton",
+				 	"Publicación":"Contr. U. S. Natl. Herb. 1: 362. 1895.",
+				 	"record_scrutiny_date":"1895",
+				 	"Synonym":["Cyperus pittieri","Cyperus regiomontanus var. pittieri"]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus rotundus",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 45. 1753",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus sphacelatus",
+				 	"author":"Rottb.",
+				 	"Publicación":"Descr. pl. rar. 21. 1772.",
+				 	"record_scrutiny_date":"1772",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus tenerrimus",
+				 	"author":"J. Presl & C. Presl",
+				 	"Publicación":"en C. Presl, Reliq. haenk. 1: 166. 1828",
+				 	"record_scrutiny_date":"1828",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Cyperaceae",
+				 	"name":"Cyperus tenuis",
+				 	"author":"Sw.",
+				 	"Publicación":"Prodr. 20. 1788.",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":["Cyperus caracasanus","Cyperus tenuis var. brevior","Cyperus tenuis var. grandiceps"]
+				 	}
+		 	]
+		 	},
+			{"Familia":"Cyperaceae",
+			"name":"Eleocharis",
+			"author":"(Roxb.) Schult.",
+			"Publicación":"Mant. 2: 91. 1824.",
+			"record_scrutiny_date":"1824",
+			"children":[
+					{"Familia":"Cyperaceae",
+					"name":"Eleocharis acutangula",
+					"author":"(Roxb.) Schult.",
+					"Publicación":"Mant. 2: 91. 1824.",
+					"record_scrutiny_date":"1824",
+					"Synonym":["Scirpus acutanglus","Eleocharis fistulosa"]
+					}
+			]
+			},
+			{"Familia":"Cyperaceae",
+			"name":"Fimbristylis",
+			"author":"(Retz.) Link",
+			"Publicación":"Hort. berol. 1: 292. 1827.",
+			"record_scrutiny_date":"1827",
+			"children":[
+					{"Familia":"Cyperaceae",
+					"name":"Fimbristylis complanata",
+					"author":"(Retz.) Link",
+					"Publicación":"Hort. berol. 1: 292. 1827.",
+					"record_scrutiny_date":"1827",
+					"Synonym":["Scirpus complanatus"]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Fimbristylis dichotoma",
+					"author":"(L.) Vahl",
+					"Publicación":"Enum. pl. 2: 287. 1805.",
+					"record_scrutiny_date":"1805",
+					"Synonym":["Scirpus dichotomus","Fimbristylis diphylla","Fimbristylis annua"]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Fimbristylis littoralis",
+					"author":"Gaudich.",
+					"Publicación":"Voy. Uranie 413. 1829.",
+					"record_scrutiny_date":"1829",
+					"Synonym":["Fimbristylis miliacea"]
+					}
+			]
+			},
+			{"Familia":"Cyperaceae",
+			"name":"Hypolytrum",
+			"author":"Poepp. & Kunth",
+			"Publicación":"en Kunth, Enum. pl. 2: 272. 1837.",
+			"record_scrutiny_date":"1837",
+			"children":[
+					{"Familia":"Cyperaceae",
+					"name":"Hypolytrum amplum",
+					"author":"Poepp. & Kunth",
+					"Publicación":"en Kunth, Enum. pl. 2: 272. 1837.",
+					"record_scrutiny_date":"1837",
+					"Synonym":["Hypolytrum nicaraguense","Hypolytrum amplissimum"]
+					}
+			]
+			},
+			{"Familia":"Cyperaceae",
+			"name":"Kyllinga",
+			"author":"Rottb.",
+			"Publicación":"Descr. icon. rar. pl.13. 1773.",
+			"record_scrutiny_date":"1773",
+			"children":[
+					{"Familia":"Cyperaceae",
+					"name":"Kyllinga brevifolia",
+					"author":"Rottb.",
+					"Publicación":"Descr. icon. rar. pl.13. 1773.",
+					"record_scrutiny_date":"1773",
+					"Synonym":["Cyperus brevifolius"]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Kyllinga nudiceps",
+					"author":"C. B. Clarke ex Standl.",
+					"Publicación":"Publ. Field. Columbian Mus., Bot. Ser. 4: 199. 1929",
+					"record_scrutiny_date":"1929",
+					"Synonym":["Cyperus nudiceps"]
+					}
+			]
+			},
+			{"Familia":"Cyperaceae",
+			"name":"Rhynchospora",
+			"author":"(Vahl) Vahl",
+			"Publicación":"Enum. pl. 2: 230. 1805",
+			"record_scrutiny_date":"1805",
+			"children":[
+					{"Familia":"Cyperaceae",
+					"name":"Rhynchospora polyphylla",
+					"author":"(Vahl) Vahl",
+					"Publicación":"Enum. pl. 2: 230. 1805",
+					"record_scrutiny_date":"1805",
+					"Synonym":["Schoenus polyphyllus"]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Rhynchospora nervosa subsp. nervosa",
+					"author":"(Vahl) Boeckeler",
+					"Publicación":"",
+					"record_scrutiny_date":"",
+					"Synonym":[]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Rhynchospora puber subsp. parvula",
+					"author":"W.W. Thomas",
+					"Publicación":"Memoirs of The New York Botanical Garden 37: 50, f. 23. 1984.",
+					"record_scrutiny_date":"1984",
+					"Synonym":[]
+					},
+					{"Familia":"Cyperaceae",
+					"name":"Rhynchospora radicans subsp. microcephala",
+					"author":"(Bertero ex Spreng.) W. W. Thomas",
+					"Publicación":"Memoirs of The New York Botanical Garden 37: 60. 1984.",
+					"record_scrutiny_date":"1984",
+					"Synonym":[]
+					}
+					]
+					},
+				{"Familia":"Cyperaceae",
+				"name":"Scleria",
+				"author":"(L.) Urb.",
+				"Publicación":"Symb. antill. 2: 169. 1900",
+				"record_scrutiny_date":"1900",
+				"children":[
+						{"Familia":"Cyperaceae",
+						"name":"Scleria secans",
+						"author":"(L.) Urb.",
+						"Publicación":"Symb. antill. 2: 169. 1900",
+						"record_scrutiny_date":"1900",
+						"Synonym":["Schoenus secans"]
+						}
+				]
+				}
+			]
+		 },
+		{
+		"name": "Dennstaedtiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 		{
+		 		"Familia":"Dennstaedtiaceae",
+		 		"name":"Dennstaedtia",
+		 		"author":"(Sw.) T. Moore",
+		 		"Publicación":"Index Fil. 305 (1861)",
+		 		"record_scrutiny_date":"1861",
+		 		"children":[
+		 				{
+				 		"Familia":"Dennstaedtiaceae",
+				 		"name":"Dennstaedtia dissecta",
+				 		"author":"(Sw.) T. Moore",
+				 		"Publicación":"Index Fil. 305 (1861)",
+				 		"record_scrutiny_date":"1861",
+				 		"Synonym":["Dennstaedtia obtusifolia","Dicksonia dissecta","Dennstaedtia cicutarioides","Dennstaedtia lindsayiformis","Dennstaedtia ordinata","Dicksonia cicutarioides","Dicksonia ordinata","Microlepia lindsayiformis","Polypodium dissectum"]
+				 		}
+		 		]
+		 		},
+		 		{"Familia":"Dennstaedtiaceae",
+		 		"name":"Hypolepis",
+		 		"author":"A. Rojas",
+		 		"Publicación":"Revista de Biología Tropical 49(2): 439–441, f. 2. 2001.",
+		 		"record_scrutiny_date":"2001",
+		 		"children":[
+		 				{"Familia":"Dennstaedtiaceae",
+				 		"name":"Hypolepis lellingeri",
+				 		"author":"A. Rojas",
+				 		"Publicación":"Revista de Biología Tropical 49(2): 439–441, f. 2. 2001.",
+				 		"record_scrutiny_date":"2001",
+				 		"Synonym":[]
+				 		}
+		 		]
+		 		},
+		 		{"Familia":"Dennstaedtiaceae",
+		 		"name":"Pteridium",
+		 		"author":"(L.) Maxon","Publicación":"Proc. U.S. Natl. Mus. 23:631 (1901)",
+		 		"record_scrutiny_date":"1901",
+		 		"children":[
+		 				{"Familia":"Dennstaedtiaceae",
+				 		"name":"Pteridium caudatum",
+				 		"author":"(L.) Maxon","Publicación":"Proc. U.S. Natl. Mus. 23:631 (1901)",
+				 		"record_scrutiny_date":"1901",
+				 		"Synonym":["Pteris caudata","Pteridium aquilinum subsp. caudatum","Pteris aquilina var. mexicana","Pteris aquilinum var. caudatum","Pteris caudata var. mexicana"]
+				 		},
+				 		{"Familia":"Dennstaedtiaceae",
+				 		"name":"Pteridium feei",
+				 		"author":"(W. Schaffn. ex Fée) Faull",
+				 		"Publicación":"Contr. Arnold Arbor. 11:87 (1938)",
+				 		"record_scrutiny_date":"1938",
+				 		"Synonym":["Pteris feei","Pteridium aquilinum var. feei"]
+				 		}
+		 		]
+		 		}
+		 ]
+		},
+		{
+		"name": "Dryopteridaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Olfersia",
+		 	"author":"(L.) Kunze",
+		 	"Publicación":"Flora 7:312 (1824)",
+		 	"record_scrutiny_date":"1824",
+		 	"children":[
+		 			{"Familia":"Dryopteridaceae",
+				 	"name":"Olfersia cervina",
+				 	"author":"(L.) Kunze",
+				 	"Publicación":"Flora 7:312 (1824)",
+				 	"record_scrutiny_date":"1824",
+				 	"Synonym":["Osmunda cervina","Acrostichum cervinum","Olfersia corcovadensis","Polybotrya cervina","Dorcapteris cervina"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Polybotrya",
+		 	"author":"Kunze",
+		 	"Publicación":"Linnaea 9:23 (1834)",
+		 	"record_scrutiny_date":"1834",
+		 	"children":[
+		 			{"Familia":"Dryopteridaceae",
+				 	"name":"Polybotrya caudata",
+				 	"author":"Kunze",
+				 	"Publicación":"Linnaea 9:23 (1834)",
+				 	"record_scrutiny_date":"1834",
+				 	"Synonym":["Polybotrya costaricensis","Polybotrya acuminata var. villosa","Polybotrya villosula"]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Polybotrya osmundacea",
+				 	"author":"Humb. et Bonpl. ex Willd.",
+				 	"Publicación":"Sp. Pl. 5:99 (1810)",
+				 	"record_scrutiny_date":"1810",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Polybotrya polybotryoides",
+				 	"author":"(Baker) H. Christ",
+				 	"Publicación":"Bull. Herb. Boisser sér. 2, 1:70 (1901)",
+				 	"record_scrutiny_date":"1901",
+				 	"Synonym":["Acrostichum polybotryoides","Acrostichum juglandifolium","Polybotrya aucuparia","Polybotrya juglandifolia var. lobata","Polybotrya kalbreyeri"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Megalastrum",
+		 	"author":"(Willd.) A. R. Sm. et R. C. Moran",
+		 	"Publicación":"Amer. Fern J. 77:129 (1987)",
+		 	"record_scrutiny_date":"1987",
+			"children":[
+					{"Familia":"Dryopteridaceae",
+				 	"name":"Megalastrum subincisum",
+				 	"author":"(Willd.) A. R. Sm. et R. C. Moran",
+				 	"Publicación":"Amer. Fern J. 77:129 (1987)",
+				 	"record_scrutiny_date":"1987",
+				 	"Synonym":["Polypodium subincisum","Ctenitis subincisa","Dryopteris subincisa","Dryopteris subattenuata","Aspidium subincisum"]
+				 	}
+			]
+		 	},
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Elaphoglossum",
+		 	"author":"N.T.L. Pena",
+		 	"Publicación":"Phytotaxa 307(2): 159. 2017.",
+		 	"record_scrutiny_date":"2017",
+		 	"children":[
+		 			{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum rojasii",
+				 	"author":"N.T.L. Pena",
+				 	"Publicación":"Phytotaxa 307(2): 159. 2017.",
+				 	"record_scrutiny_date":"2017",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum alvaradoanum",
+				 	"author":"A. Rojas",
+				 	"Publicación":"Brittonia 61(3): 293–295, f. 1, 3A–C. 2009.",
+				 	"record_scrutiny_date":"2009",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum longipilosum",
+				 	"author":"(Atehortua) A. Rojas",
+				 	"Publicación":"Brittonia 61(3): 299–300. 2009.",
+				 	"record_scrutiny_date":"2009",
+				 	"Synonym":["Elaphoglossum auripilum var. longipilosum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Polybotrya",
+		 	"author":"A. Rojas",
+		 	"Publicación":"Brenesia 75–76: 9, f. 3A–C. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 			{"Familia":"Dryopteridaceae",
+				 	"name":"Polybotrya bipinnata",
+				 	"author":"A. Rojas",
+				 	"Publicación":"Brenesia 75–76: 9, f. 3A–C. 2011.",
+				 	"record_scrutiny_date":"2011",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Euphorbiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Euphorbiaceae",
+		 	"name":"Acalypha",
+		 	"author":"Jacq.",
+		 	"Publicación":"Pl. hort. schoenbr. 2: 63, pl. 245. 1797.",
+			"record_scrutiny_date":"1797",
+			"children":[
+					{"Familia":"Euphorbiaceae",
+				 	"name":"Acalypha macrostachya",
+				 	"author":"Jacq.",
+				 	"Publicación":"Pl. hort. schoenbr. 2: 63, pl. 245. 1797.",
+					"record_scrutiny_date":"1797",
+					"Synonym":["Acalypha fertilis","Acalypha hicksii","Acalypha macrophylla","Acalypha pittieri","Acalypha seemannii","Acalypha sidaefolia","Acalypha tarapotensis","Acalypha tristis","Acalypha obtusifolia"]
+					}
+			]
+			},
+			{"Familia":"Euphorbiaceae",
+			"name":"Manihot",
+			"author":"Crantz",
+			"Publicación":"Inst. rei herb. 1: 167. 1766.",
+			"record_scrutiny_date":"1766",
+			"children":[
+					{"Familia":"Euphorbiaceae",
+					"name":"Manihot esculenta",
+					"author":"Crantz",
+					"Publicación":"Inst. rei herb. 1: 167. 1766.",
+					"record_scrutiny_date":"1766",
+					"Synonym":["Manihot dulcis","Manihot utilissima","Jatropha manihot","Jatropha dulcis"]
+					}
+			]
+			},
+			{"Familia":"Euphorbiaceae",
+			"name":"Ricinus",
+			"author":"L.",
+			"Publicación":"Sp. pl. 1007. 1753.",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Euphorbiaceae",
+					"name":"Ricinus communis",
+					"author":"L.",
+					"Publicación":"Sp. pl. 1007. 1753.",
+					"record_scrutiny_date":"1753",
+					"Synonym":["Ricinus communis fo. macrophyllus","Ricinus communis fo. subviridis","Ricinus communis fo. viridis","Ricinus communis var. africanus","Ricinus communis var. benguelensis","Ricinus communis var. genuinus","Ricinus communis var. megalospermus","Ricinus communis var. microcarpus"]
+					}
+			]
+			},
+			{"Familia":"Euphorbiaceae",
+			"name":"Codiaeum",
+			"author":"(L.) Blume",
+			"Publicación":"De Euphorbiacearum Generibus Medicisque earumdem viribus tentamen, tabulis aeneis 18 illustratum 80, 111, pl. 9, f. 30. 1824.",
+			"record_scrutiny_date":"1824",
+			"children":[
+					{"Familia":"Euphorbiaceae",
+					"name":"Codiaeum variegatum",
+					"author":"(L.) Blume",
+					"Publicación":"De Euphorbiacearum Generibus Medicisque earumdem viribus tentamen, tabulis aeneis 18 illustratum 80, 111, pl. 9, f. 30. 1824.",
+					"record_scrutiny_date":"1824",
+					"Synonym":["Croton variegatus"]
+					}
+			]
+			},
+			{"Familia":"Euphorbiaceae",
+			"name":"Euphorbia",
+			"author":"L.",
+			"Publicación":"Sp. pl. 454. 1753.",
+			"record_scrutiny_date":"1753",
+			"children":[
+					{"Familia":"Euphorbiaceae",
+					"name":"Euphorbia hirta",
+					"author":"L.",
+					"Publicación":"Sp. pl. 454. 1753.",
+					"record_scrutiny_date":"1753",
+					"Synonym":["Chamaesyce hirta"]
+					},
+					{"Familia":"Euphorbiaceae",
+					"name":"Euphorbia hyssopifolia",
+					"author":"L.",	
+					"Publicación":"Syst. nat. ed. 10 1048. 1759.",
+					"record_scrutiny_date":"1759",
+					"Synonym":["Chamaesyce hyssopifolia"]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Phyllanthaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Phyllanthaceae",
+		 	"name":"Phyllanthus",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 982. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+			 		{"Familia":"Phyllanthaceae",
+				 	"name":"Phyllanthus urinaria",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 982. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Phyllanthus cantoniensis"]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Gesneriaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Gesneriaceae",
+			"name":"Kohleria",
+			"author":"(Kunth) Oerst.",
+			"Publicación":"Centralamer. Gesner. 27. 1858.",
+			"record_scrutiny_date":"1858",
+			"children":[
+					{"Familia":"Gesneriaceae",
+					"name":"Kohleria spicata",
+					"author":"(Kunth) Oerst.",
+					"Publicación":"Centralamer. Gesner. 27. 1858.",
+					"record_scrutiny_date":"1858",
+					"Synonym":["Gesneria spicata"]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Gesneriaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Gesneriaceae",
+			"name":"Kohleria",
+			"author":"(Kunth) Oerst.",
+			"Publicación":"Centralamer. Gesner. 27. 1858.",
+			"record_scrutiny_date":"1858",
+			"children":[
+					{"Familia":"Gesneriaceae",
+					"name":"Kohleria spicata",
+					"author":"(Kunth) Oerst.",
+					"Publicación":"Centralamer. Gesner. 27. 1858.",
+					"record_scrutiny_date":"1858",
+					"Synonym":["Gesneria spicata"]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Gleicheniaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Gleicheniaceae",
+		 	"name":"Dicranopteris",
+		 	"author":"(Schrad.) Underw.",
+		 	"Publicación":"Bull. Torrey Bot. Club 34:254 (1907)",
+		 	"record_scrutiny_date":"1907",
+		 	"children":[
+		 			{"Familia":"Gleicheniaceae",
+				 	"name":"Dicranopteris flexuosa",
+				 	"author":"(Schrad.) Underw.",
+				 	"Publicación":"Bull. Torrey Bot. Club 34:254 (1907)",
+				 	"record_scrutiny_date":"1907",
+				 	"Synonym":["Gleichenia flexuosa","Mertensia flexuosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Gleicheniaceae",
+		 	"name":"Sticherus",
+		 	"author":"(J. H. Schaffn. ex Underw.) Copel.",
+		 	"Publicación":"Gen. Fil. (Ann Cryptog. Phytopath. 5:) 28 (1947)",
+		 	"record_scrutiny_date":"1947",
+		 	"children":[
+		 			{"Familia":"Gleicheniaceae",
+				 	"name":"Sticherus palmatus",
+				 	"author":"(J. H. Schaffn. ex Underw.) Copel.",
+				 	"Publicación":"Gen. Fil. (Ann Cryptog. Phytopath. 5:) 28 (1947)",
+				 	"record_scrutiny_date":"1947",
+				 	"Synonym":["Dicranopteris palmata","Gleichenia palmata","Mertensia palmata"]
+				 	},
+					{"Familia":"Gleicheniaceae",
+					"name":"Sticherus remotus",
+					"author":"(Kaulf.) Chrysler",
+					"Publicación":"Amer. J. Bot. 31:483 (1944)",
+					"record_scrutiny_date":"1944",
+					"Synonym":["Mertensia remota","Gleichenia remota","Dicranopteris remota","Dicranopteris trachyrhizoma","Dicranopteris williamsii","Gleichenia trachyrhizoma","Sticherus trachyrhizoma"]
+					},
+					{"Familia":"Gleicheniaceae",
+					"name":"Sticherus rubiginosus",
+					"author":"(Mett.) Nakai",
+					"Publicación":"Bull. Natl. Sci. Mus. 29:28 (1950)",
+					"record_scrutiny_date":"1950",
+					"Synonym":["Gleichenia rubiginosa","Dicranopteris brittonii","Dicranopteris rubiginosa","Dicranopteris strictissima","Gleichenia brittonii","Gleichenia crespiana","Gleichenia glaucina","Gleichenia salesiana","Gleichenia strictissima","Sticherus brittonii","Sticherus strictissimus"]
+					}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Polypodiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Ceradenia",
+		 	"author":"(Copel.) L. E. Bishop",
+		 	"Publicación":"Amer. Fern J. 78:5 (1988)",
+		 	"record_scrutiny_date":"1988",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Ceradenia knightii",
+				 	"author":"(Copel.) L. E. Bishop",
+				 	"Publicación":"Amer. Fern J. 78:5 (1988)",
+				 	"record_scrutiny_date":"1988",
+				 	"Synonym":["Ctenopteris knightii","Ctenopteris ambigens","Grammitis ambigens"]
+				 	},
+				 	{"Familia":"Polypodiaceae",
+				 	"name":"Ceradenia pruinosa",
+				 	"author":"(Maxon) L. E. Bishop",
+				 	"Publicación":"Amer. Fern J. 78:5 (1988)",
+				 	"record_scrutiny_date":"1988",
+				 	"Synonym":["Polypodium pruinosum","Ctenopteris pruinosa","Grammitis kirkbridei","Grammitis pruinosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Cochlidium",
+		 	"author":"(Sw.) L. E. Bishop",
+		 	"Publicación":"Amer. Fern J. 68:80 (1978)",
+		 	"record_scrutiny_date":"1978",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Cochlidium serrulatum",
+				 	"author":"(Sw.) L. E. Bishop",
+				 	"Publicación":"Amer. Fern J. 68:80 (1978)",
+				 	"record_scrutiny_date":"1978",
+				 	"Synonym":["Acrostichum serrulatum","Grammitis serrulata","Polypodium duale","Xiphopteris serrulata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Grammitis",
+		 	"author":"(Maxon) F. Seym.",
+		 	"Publicación":"Phytologia 31:172 (1975)",
+		 	"record_scrutiny_date":"1975",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Grammitis bryophila",
+				 	"author":"(Maxon) F. Seym.",
+				 	"Publicación":"Phytologia 31:172 (1975)",
+				 	"record_scrutiny_date":"1975",
+				 	"Synonym":["Polypodium bryophilum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Campyloneurum",
+		 	"author":"(L.) C. Presl",
+		 	"Publicación":"Pterid. 190 (1836)",
+		 	"record_scrutiny_date":"1836",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Campyloneurum phyllitidis",
+				 	"author":"(L.) C. Presl",
+				 	"Publicación":"Pterid. 190 (1836)",
+				 	"record_scrutiny_date":"1836",
+				 	"Synonym":["Polypodium phyllitidis","Cyrtophlebium phyllitidis","Polypodium comosum","Polypodium conjugatum","Polypodium phyllitidis var. linneana"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Microgramma nitida",
+		 	"author":"(J. Sm.) A. R. Sm.",
+		 	"Publicación":"Proc. Calif. Acad Sci. ser. 4, 40:230 (1975)",
+		 	"record_scrutiny_date":"1975",
+		 	"children":[
+		 				{"Familia":"Polypodiaceae",
+					 	"name":"Microgramma nitida",
+					 	"author":"(J. Sm.) A. R. Sm.",
+					 	"Publicación":"Proc. Calif. Acad Sci. ser. 4, 40:230 (1975)",
+					 	"record_scrutiny_date":"1975",
+					 	"Synonym":["Phlebodium nitidum","Phymatodes palmeri","Polypodium palmeri"]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Phlebodium pseudoaureum",
+		 	"author":"(Cav.) Lellinger",
+		 	"Publicación":"Amer. Fern J. 77:101 (1987)",
+		 	"record_scrutiny_date":"1987",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Phlebodium pseudoaureum",
+				 	"author":"(Cav.) Lellinger",
+				 	"Publicación":"Amer. Fern J. 77:101 (1987)",
+				 	"record_scrutiny_date":"1987",
+				 	"Synonym":["Polypodium pseudoaureum","Goniophlebium areolatum","Polypodium areolatum var. loreum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Pleopeltis",
+		 	"author":"(Liebm.) E. Fourn.",
+		 	"Publicación":"Mexic. Pl. 1:87 (1872)",
+		 	"record_scrutiny_date":"1872",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Pleopeltis astrolepis",
+				 	"author":"(Liebm.) E. Fourn.",
+				 	"Publicación":"Mexic. Pl. 1:87 (1872)",
+				 	"record_scrutiny_date":"1872",
+				 	"Synonym":["Polypodium astrolepis","Grammitis elongata","Grammitis lanceolata","Grammitis revoluta","Gymnogramma elongata","Phlebodium astrolepis","Pleopeltis revoluta","Polypodium elongatum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Serpocaulon",
+		 	"author":"(C. Presl) A.R. Sm.",
+		 	"Publicación":"name 55(4): 927–928. 2006.",
+		 	"record_scrutiny_date":"2006",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Serpocaulon attenuatum",
+				 	"author":"(C. Presl) A.R. Sm.",
+				 	"Publicación":"name 55(4): 927–928. 2006.",
+				 	"record_scrutiny_date":"2006",
+				 	"Synonym":["Polypodium attenuatum"]
+		 			},
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Serpocaulon dissimile",
+				 	"author":"(L.) A.R. Sm.",
+				 	"Publicación":"Syst. Nat. ed. 10, 2:1325 (1759)",
+				 	"record_scrutiny_date":"1759",
+				 	"Synonym":["Polypodium dissimile"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Moranopteris",
+		 	"author":"(Jenman) R.Y. Hirai & J. Prado",
+		 	"Publicación":"name 60(4): 1132. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Moranopteris taenifolia",
+				 	"author":"(Jenman) R.Y. Hirai & J. Prado",
+				 	"Publicación":"name 60(4): 1132. 2011.",
+				 	"record_scrutiny_date":"2011",
+				 	"Synonym":["Micropolypodium taenifolium"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Polypodiaceae",
+		 	"name":"Lellingeria vargasiana",
+		 	"author":"A. Rojas",
+		 	"Publicación":"Brenesia 75–76: 8–9, f. 2A, B. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 			{"Familia":"Polypodiaceae",
+				 	"name":"Lellingeria vargasiana",
+				 	"author":"A. Rojas",
+				 	"Publicación":"Brenesia 75–76: 8–9, f. 2A, B. 2011.",
+				 	"record_scrutiny_date":"2011",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Humiriaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Humiriaceae",
+		 	"name":"Sacoglottis",
+		 	"author":"Cuatrec.",
+		 	"Publicación":"Ciencia (Mexico) 23: 138. 1964.",
+		 	"record_scrutiny_date":"1964",
+		 	"children":[
+		 			{"Familia":"Humiriaceae",
+				 	"name":"Sacoglottis holdridgei",
+				 	"author":"Cuatrec.",
+				 	"Publicación":"Ciencia (Mexico) 23: 138. 1964.",
+				 	"record_scrutiny_date":"1964",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Hymenophyllaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "children":[
+		 	{"Familia":"Hymenophyllaceae",
+		 	"name":"Hymenophyllum abruptum",
+		 	"author":"Hook.",
+		 	"Publicación":"Sp. Fil. 1:88 (1844)",
+		 	"record_scrutiny_date":"1844",
+		 	"children":[
+		 			{"Familia":"Hymenophyllaceae",
+				 	"name":"Hymenophyllum abruptum",
+				 	"author":"Hook.",
+				 	"Publicación":"Sp. Fil. 1:88 (1844)",
+				 	"record_scrutiny_date":"1844",
+				 	"Synonym":["Hymenophyllum tablaziense"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Hymenophyllum cocosense",
+				 	"author":"A. Rojas",
+				 	"Publicación":"Brenesia 45–46: 37, f. 3. 1996.",
+				 	"record_scrutiny_date":"1996",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Hymenophyllum polyanthos",
+				 	"author":"(Sw.) Sw.",
+				 	"Publicación":"J. Bot. (Schrader)1800(2) (1801)",
+				 	"record_scrutiny_date":"1801",
+				 	"Synonym":["Trichomanes polyanthos","Hymenophyllum alfredii","Hymenophyllum botryoides","Hymenophyllum costaricanum var. emarginatum","Hymenophyllum fecundum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Hymenophyllaceae",
+		 	"name":"Trichomanes",
+		 	"author":"(Fée) Wess. Boer",
+		 	"Publicación":"Fl. Netherl. Antilles 1 (Pterid.):17 (1962)",
+		 	"record_scrutiny_date":"1962",
+		 	"children":[
+		 			{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes angustifrons",
+				 	"author":"(Fée) Wess. Boer",
+				 	"Publicación":"Fl. Netherl. Antilles 1 (Pterid.):17 (1962)",
+				 	"record_scrutiny_date":"1962",
+				 	"Synonym":["Didymoglossum angustifrons","Trichomanes setiferum","Trichomanes mosenii"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes ankersii",
+				 	"author":"C. Parker et Hook. ex Grev.",
+				 	"Publicación":"Icon. Filic. 2:t. 201 (1831)",
+				 	"record_scrutiny_date":"1831",
+				 	"Synonym":["Lacostea ankersii","Trichomanes conmutatum","Trichomanes guianense"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes crispum",
+				 	"author":"L.",
+				 	"Publicación":"Sp. Pl. 1097 (1753)",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Ptilophyllum crispum","Trichomanes badium","Trichomanes crispum var. remotum","Trichomanes cristatum","Trichomanes gardneri","Trichomanes imbricatum","Trichomanes lindigii","Trichomanes molle","Trichomanes schomburgkii"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes diaphanum",
+				 	"author":"Kunth",
+				 	"Publicación":"Nov. Gen. Sp. 1:25 (1816)",
+				 	"record_scrutiny_date":"1816",
+				 	"Synonym":["Trichomanes bradei","Trichomanes debile"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes elegans",
+				 	"author":"Rich.",
+				 	"Publicación":"Actes Soc. Hist. Nat. Paris 1:114 (1792)",
+				 	"record_scrutiny_date":"1792",
+				 	"Synonym":["Davalliopsis elegans"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes galeottii",
+				 	"author":"E. Fourn.",
+				 	"Publicación":"Bull. Soc. Bot. France 15:147 (1868)",
+				 	"record_scrutiny_date":"1868",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes kapplerianum",
+				 	"author":"J. W. Sturm",
+				 	"Publicación":"Mart., Fl. Bras. 1(2):276 (1859)",
+				 	"record_scrutiny_date":"1859",
+				 	"Synonym":["Didymoglossum cordifolium","Didymoglossum palmatum","Trichomanes mscoides var. minor","Didymoglossum kapplerianum"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes membranaceum",
+				 	"author":"L.",
+				 	"Publicación":"Sp. Pl. 1097(1753)",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Didymoglossum membranaceum","Hemiphlebium membranaceum","Lecanium membranaceum","Lecanolepis membranacea"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes petersii",
+				 	"author":"A. Gray",
+				 	"Publicación":"Amer. J. Sci. Arts ser. 2, 15:326 (1853)",
+				 	"record_scrutiny_date":"1853",
+				 	"Synonym":["Didymoglossum petersii","Hemiphlebium petersii","Microgonium petersii","Trichomanes schaffneri"]
+				 	},
+				 	{"Familia":"Hymenophyllaceae",
+				 	"name":"Trichomanes pinnatum",
+				 	"author":"Hedw.",
+				 	"Publicación":"Fil. Gen. Sp. t. 4, f. 1 (1799)",
+				 	"record_scrutiny_date":"1799",
+				 	"Synonym":["Neuromanes pinnatum","Neurophyllum pinnatum","Ptilophyllum pinnatum","Trichomanes pennatum"]
+					},
+					{"Familia":"Hymenophyllaceae",
+					"name":"Trichomanes collariatum var. alvaradoi",
+					"author":"A. Rojas",
+					"Publicación":"Lankesteriana: La Revista Cientifica .... 4(2): 145–147, f. 2. 2004.",
+					"record_scrutiny_date":"2004",
+					"Synonym":[]
+					},
+					{"Familia":"Hymenophyllaceae",
+					"name":"Abrodictyum rigidum",
+					"author":"(Sw.) Ebihara & Dubuisson",
+					"Publicación":"Blumea 51(2): 243. 2006.",
+					"record_scrutiny_date":"2006",
+					"Synonym":["Trichomanes rigidum"]
+					},
+					{"Familia":"Hymenophyllaceae",
+					"name":"Trichomanes capillaceum var. cocos",
+					"author":"(H. Christ) L.D. Gómez",
+					"Publicación":"Brenesia 6: 37. 1975.",
+					"record_scrutiny_date":"1975",
+					"Synonym":["Trichomanes cocos"]
+					}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Lamiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Lamiaceae",
+		 	"name":"Hyptis",
+		 	"author":"Jacq.",
+		 	"Publicación":"Collectanea 1: 102. 1787.",
+		 	"record_scrutiny_date":"1787",
+		 	"children":[
+		 			{"Familia":"Lamiaceae",
+				 	"name":"Hyptis capitata",
+				 	"author":"Jacq.",
+				 	"Publicación":"Collectanea 1: 102. 1787.",
+				 	"record_scrutiny_date":"1787",
+				 	"Synonym":["Hyptis pittieri","Hyptis capitata var. pilosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Lamiaceae",
+		 	"name":"Salvia occidentalis",
+		 	"author":"Sw.",
+		 	"Publicación":"Prodr. 14. 1788.",
+		 	"record_scrutiny_date":"1788",
+		 	"children":[
+		 			{"Familia":"Lamiaceae",
+				 	"name":"Salvia occidentalis",
+				 	"author":"Sw.",
+				 	"Publicación":"Prodr. 14. 1788.",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Lamiaceae",
+		 	"name":"Cornutia pyramidata",
+		 	"author":"L.",
+		 	"Publicación":"Sp. Pl. 628.  1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Lamiaceae",
+				 	"name":"Cornutia pyramidata",
+				 	"author":"L.",
+				 	"Publicación":"Sp. Pl. 628.  1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Cornutia grandifolia"]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Lauraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Lauraceae",
+		 	"name":"Ocotea",
+		 	"author":"(Meisn.) Mez",
+		 	"Publicación":"Bot. Gart. Berlin 5: 271. 1889.",
+		 	"record_scrutiny_date":"1889",
+		 	"children":[
+		 				{"Familia":"Lauraceae",
+					 	"name":"Ocotea insularis",
+					 	"author":"(Meisn.) Mez",
+					 	"Publicación":"Bot. Gart. Berlin 5: 271. 1889.",
+					 	"record_scrutiny_date":"1889",
+					 	"Synonym":["Phoebe insularis","Aiouea lundelliana"]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Lauraceae",
+		 	"name":"Persea",
+		 	"author":"Mill.",
+		 	"Publicación":"Gard. Dict. ed. 8. 1768.",
+		 	"record_scrutiny_date":"1768",
+		 	"children":[
+		 			{"Familia":"Lauraceae",
+				 	"name":"Persea americana",
+				 	"author":"Mill.",
+				 	"Publicación":"Gard. Dict. ed. 8. 1768.",
+				 	"record_scrutiny_date":"1768",
+				 	"Synonym":["Laurus persea","Persea drymifolia","Persea americana var. nubigena","Persea steyermarkii"]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Lindsaeaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Lindsaeaceae",
+		 	"name":"Lindsaea",
+		 	"author":"Kuntze",
+		 	"Publicación":"Linnaea 9:86 (1835)",
+		 	"record_scrutiny_date":"1835",
+		 	"children":[
+		 			{"Familia":"Lindsaeaceae",
+				 	"name":"Lindsaea arcuata",
+				 	"author":"Kuntze",
+				 	"Publicación":"Linnaea 9:86 (1835)",
+				 	"record_scrutiny_date":"1835",
+				 	"Synonym":["Lindsaea horizontalis","Lindsaea lancea var. angulata"]
+				 	},
+				 	{"Familia":"Lindsaeaceae",
+				 	"name":"Lindsaea lancea",
+				 	"author":"(L.) Bedd.",
+				 	"Publicación":"Suppl. Ferns S. Ind. 6 (1876)",
+				 	"record_scrutiny_date":"1876",
+				 	"Synonym":["Adiantum lanceum","Lindsaea falcata","Lindsaea imbricata","Lindsaea lancea var. falcata","Lindsaea trapeziformis"]
+				 	},
+				 	{"Familia":"Lindsaeaceae",
+				 	"name":"Lindsaea quadrangularis",
+				 	"author":"Raddi",
+				 	"Publicación":"Opusc. Sci. 3:294 (1819)",
+				 	"record_scrutiny_date":"1819",
+				 	"Synonym":["Lindsaea lancea var. quadrangularis"]
+				 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Lindsaeaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Dryopteridaceae",
+		 	"name":"Elaphoglossum",
+		 	"author":"Mickel",
+		 	"Publicación":"Novon 2:372 (1992)",
+		 	"record_scrutiny_date":"1992",
+		 	"children":[
+		 			{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum cocosense",
+				 	"author":"Mickel",
+				 	"Publicación":"Novon 2:372 (1992)",
+				 	"record_scrutiny_date":"1992",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum crinitum",
+				 	"author":"(L.) H. Christ",
+				 	"Publicación":"Neue Denkschr. Allg. Schweinz. Ges. Gesammten Naturwiss. 36(1):102 (1899)",
+				 	"record_scrutiny_date":"1899",
+				 	"Synonym":["Acrostichum crinitum","Hymenodium crinitum"]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum decoratum",
+				 	"author":"(Kunze) T. Moore",
+				 	"Publicación":"Index Fil. 8 (1857)",
+				 	"record_scrutiny_date":"1857",
+				 	"Synonym":["Acrostichum decoratum"]
+				 	},
+				 	{"Familia":"Dryopteridaceae",
+				 	"name":"Elaphoglossum incognitum",
+				 	"author":"A. Rojas",
+					"Publicación":"Revista de Biología Tropical 51(1): 7–8, f. 4. 2003.",
+					"record_scrutiny_date":"2003",
+					"Synonym":[]
+					},
+					{"Familia":"Dryopteridaceae",
+					"name":"Elaphoglossum longicrure",
+					"author":"H. Christ",
+					"Publicación":"Bull. Herb. Boisseir sér. 2, 7:273 (1907)",
+					"record_scrutiny_date":"1907",
+					"Synonym":["Elaphoglossum lepidopodum"]
+					}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Lindsaeaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Lycopodiaceae",
+		 	"name":"Lycopodiella",
+		 	"author":"(L.) Pic. Serm.",
+		 	"Publicación":"Webbia 23:166 (1968)",
+		 	"record_scrutiny_date":"1968",
+		 	"children":[
+		 			{"Familia":"Lycopodiaceae",
+				 	"name":"Lycopodiella cernua",
+				 	"author":"(L.) Pic. Serm.",
+				 	"Publicación":"Webbia 23:166 (1968)",
+				 	"record_scrutiny_date":"1968",
+				 	"Synonym":["Lycopodium cernuum","Lepidotis cernua","Lycopodium capillaceum","Lycopodium cernuum var. capillaceum","Palhinhaea cernura"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Lycopodiaceae",
+		 	"name":"Phlegmariurus brachiatus",
+		 	"author":"(Maxon) B. Øllg.",
+		 	"Publicación":"Phytotaxa 57: 12. 2012.",
+		 	"record_scrutiny_date":"2012",
+		 	"children":[
+		 				{"Familia":"Lycopodiaceae",
+					 	"name":"Phlegmariurus brachiatus",
+					 	"author":"(Maxon) B. Øllg.",
+					 	"Publicación":"Phytotaxa 57: 12. 2012.",
+					 	"record_scrutiny_date":"2012",
+					 	"Synonym":["Huperzia brachiata"]
+					 	},
+					 	{"Familia":"Lycopodiaceae",
+					 	"name":"Phlegmariurus pittieri",
+					 	"author":"(H. Christ) B. Øllg.",
+					 	"Publicación":"Phytotaxa 57: 17. 2012.",
+					 	"record_scrutiny_date":"2012",
+					 	"Synonym":["Huperzia pittieri"]
+					 	}
+		 	]
+		 	}
+		 ]
+		},
+		{
+		"name": "Marattiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Marattiaceae",
+			"name":"Danaea",
+			"author":"Sm.",
+			"Publicación":"Cycl. 11:Danaea no.2 (1808)",
+			"record_scrutiny_date":"1808",
+			"children":[
+					{"Familia":"Marattiaceae",
+					"name":"Danaea elliptica",
+					"author":"Sm.",
+					"Publicación":"Cycl. 11:Danaea no.2 (1808)",
+					"record_scrutiny_date":"1808",
+					"Synonym":["Danaea geniculata","Danaea oligosora"]
+					},
+					{"Familia":"Marattiaceae",
+					"name":"Danaea nodosa",
+					"author":"(L.) Sm.",
+					"Publicación":"Mém. Acad. Roy Sci. (Turin) 5 (1790-1791):420 (1793)",
+					"record_scrutiny_date":"1793",
+					"Synonym":["Acrostichum nodosum","Danaea elata","Danaea media"]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Marcgraviaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Marcgraviaceae",
+			"name":"Marcgravia",
+			"author":"Standl.",
+			"Publicación":"Fl. of Costa Rica 698. 1937.",
+			"record_scrutiny_date":"1937",
+			"children":[
+					{"Familia":"Marcgraviaceae",
+					"name":"Marcgravia waferi",
+					"author":"Standl.",
+					"Publicación":"Fl. of Costa Rica 698. 1937.",
+					"record_scrutiny_date":"1937",
+					"Synonym":[]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Melastomataceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Melastomataceae",
+		 	"name":"Clidemia",
+		 	"author":"Gleason",
+		 	"Publicación":"Brittonia 3: 138. 1939.",
+		 	"record_scrutiny_date":"1939",
+		 	"children":[
+		 			{"Familia":"Melastomataceae",
+				 	"name":"Clidemia ombrophila",
+				 	"author":"Gleason",
+				 	"Publicación":"Brittonia 3: 138. 1939.",
+				 	"record_scrutiny_date":"1939",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Melastomataceae",
+				 	"name":"Clidemia strigillosa",
+				 	"author":"(Sw.) DC.",
+				 	"Publicación":"Prodr. 3: 159. 1828.",
+				 	"record_scrutiny_date":"1828",
+				 	"Synonym":["Melastoma strigillosum","Clidemia umbonata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Melastomataceae",
+		 	"name":"Conostegia",
+		 	"author":"Benth.",
+		 	"Publicación":"Bot. voy. Sulphur 96. 1844.",
+		 	"record_scrutiny_date":"1844",
+		 	"children":[
+		 			{"Familia":"Melastomataceae",
+				 	"name":"Conostegia lasiopoda",
+				 	"author":"Benth.",
+				 	"Publicación":"Bot. voy. Sulphur 96. 1844.",
+				 	"record_scrutiny_date":"1844",
+				 	"Synonym":["Conostegia sororia"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Melastomataceae",
+		 	"name":"Henriettea",
+		 	"author":"(Aubl.) DC.",
+		 	"Publicación":"Prodr. 3: 178. 1828.",
+		 	"record_scrutiny_date":"1828",
+		 	"children":[
+		 			{"Familia":"Melastomataceae",
+				 	"name":"Henriettea succosa",
+				 	"author":"(Aubl.) DC.",
+				 	"Publicación":"Prodr. 3: 178. 1828.",
+				 	"record_scrutiny_date":"1828",
+				 	"Synonym":["Melastoma succosum","Henriettella macrocalyx","Henriettea macrocalyx"]
+				 	},
+				 	{"Familia":"Melastomataceae",
+				 	"name":"Henriettella fascicularis",
+				 	"author":"(Sw.) C. Wright",
+				 	"Publicación":"Anales Acad. Ci. Méd. Habana 5: 435. 1868.",
+				 	"record_scrutiny_date":"1868",
+				 	"Synonym":["Henriettella sylvestris","Ossaea fascicularis","Melastoma fasciculare","Henriettea fascicularis"]
+				 	},
+				 	{"Familia":"Melastomataceae",
+				 	"name":"Henriettella odorata",
+				 	"author":"Markgr.",
+				 	"Publicación":"Bot. Gart. Berlin-Dahlem 15: 380. 1941.",
+				 	"record_scrutiny_date":"1941",
+				 	"Synonym":["Henriettea odorata"]
+				 	}
+		 	]
+		 	},
+			{"Familia":"Melastomataceae",
+			"name":"Maiet",
+			"author":"Mart. ex Cogn.",
+			"Publicación":"Fl. bras. 14(4): 464, t. 99. 1888.",
+			"record_scrutiny_date":"1888",
+			"children":[
+					{"Familia":"Melastomataceae",
+					"name":"Maieta poeppigii",
+					"author":"Mart. ex Cogn.",
+					"Publicación":"Fl. bras. 14(4): 464, t. 99. 1888.",
+					"record_scrutiny_date":"1888",
+					"Synonym":[]
+					}
+			]
+			},
+			{"Familia":"Melastomataceae",
+			"name":"Miconia",
+			"author":"Cogn.",
+			"Publicación":"Fl. bras. 14(4): 243. 1887",
+			"record_scrutiny_date":"1887",
+			"children":[
+					{"Familia":"Melastomataceae",
+					"name":"Miconia dodecandra",
+					"author":"Cogn.",
+					"Publicación":"Fl. bras. 14(4): 243. 1887",
+					"record_scrutiny_date":"1887",
+					"Synonym":["Melastoma dodecandrum"]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Miconia lonchophylla",
+					"author":"Naudin",
+					"Publicación":"Ann. Sci. Nat., Bot. sér. 3, 16: 176. 1850.",
+					"record_scrutiny_date":"1850",
+					"Synonym":[]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Miconia multiplinervia",
+					"author":"Cogn.",
+					"Publicación":"Botanische Jahrbücher für Systematik, Pflanzengeschichte und Pflanzengeographie 8(1): 26–27. 1886.",
+					"record_scrutiny_date":"1886",
+					"Synonym":[]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Miconia prasina",
+					"author":"(Sw.) DC.",
+					"Publicación":"Prodr. 3: 188. 1828.",
+					"record_scrutiny_date":"1828",
+					"Synonym":["Melastoma prasinum","Miconia pteropoda"]
+					}
+			]
+			},
+			{"Familia":"Melastomataceae",
+			"name":"Ossaea",
+			"author":"Triana",
+			"Publicación":"Trans. Linn. Soc. London 28: 147. 1872['1871'].",
+			"record_scrutiny_date":"1871",
+			"children":[
+					{"Familia":"Melastomataceae",
+					"name":"Ossaea bracteata",
+					"author":"Triana",
+					"Publicación":"Trans. Linn. Soc. London 28: 147. 1872['1871'].",
+					"record_scrutiny_date":"1871",
+					"Synonym":[]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Ossaea macrophylla",
+					"author":"(Benth.) Cogn.",
+					"Publicación":" Monogr. phan. 7: 1064. 1891.",
+					"record_scrutiny_date":"1891",
+					"Synonym":["Octopleura macrophylla","Oxymeris macrophylla"]
+					}
+			]
+			},
+			{"Familia":"Melastomataceae",
+			"name":"Schwackaea",
+			"author":"(Benth.) Cogn.",
+			"Publicación":"Index gen. phan. 132. 1888",
+			"record_scrutiny_date":"1888",
+			"children":[
+					{"Familia":"Melastomataceae",
+					"name":"Schwackaea cupheoides",
+					"author":"(Benth.) Cogn.",
+					"Publicación":"Index gen. phan. 132. 1888",
+					"record_scrutiny_date":"1888",
+					"Synonym":["Heeria cupheoides","Acisanthera simplex"]
+					}
+			]
+			},
+			{"Familia":"Melastomataceae",
+			"name":"Miconia",
+			"author":"(Rich.) Urb.",
+			"Publicación":"Symbolae Antillanae seu Fundamenta Florae Indiae Occidentalis 4: 459. 1910.",
+			"record_scrutiny_date":"1910",
+			"children":[
+					{"Familia":"Melastomataceae",
+					"name":"Miconia chrysophylla",
+					"author":"(Rich.) Urb.",
+					"Publicación":"Symbolae Antillanae seu Fundamenta Florae Indiae Occidentalis 4: 459. 1910.",
+					"record_scrutiny_date":"1910",
+					"Synonym":["Melastoma chrysophyllum"]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Miconia cocoensis",
+					"author":"Almeda & Kriebel",
+					"Publicación":"Harvard Papers in Botany 17(1): 53–55, f. 1A–H, 2A, B, 3B. 2012.",
+					"record_scrutiny_date":"2012",
+					"Synonym":[]
+					},
+					{"Familia":"Melastomataceae",
+					"name":"Miconia diegogomezii",
+					"author":"Kriebel & Almeda",
+					"Publicación":"Harvard Papers in Botany 17(1): 55, 59–60, f. 2C, D, 3B, 4A–G. 2012.",
+					"record_scrutiny_date":"2012",
+					"Synonym":[]
+					}
+			]
+			}
+		 ]
+		},
+		{
+		"name": "Moraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Moraceae",
+		 	"name":"Ficus",
+		 	"author":"Aubl.",
+		 	"Publicación":"Hist. pl. Guiane 952. 1775.",
+		 	"record_scrutiny_date":"1775",
+		 	"children":[
+		 			{"Familia":"Moraceae",
+				 	"name":"Ficus americana",
+				 	"author":"Aubl.",
+				 	"Publicación":"Hist. pl. Guiane 952. 1775.",
+				 	"record_scrutiny_date":"1775",
+				 	"Synonym":["Ficus perforta","Ficus oerstediana","Ficus jacquiniaefolia"]
+				 	},
+				 	{"Familia":"Moraceae",
+				 	"name":"Ficus pertusa",
+				 	"author":"L. f.",
+				 	"Publicación":"Suppl. pl. 442. 1782.",
+				 	"record_scrutiny_date":"1782",
+				 	"Synonym":["Ficus baccata","Ficus complicata","Ficus fasciculata","Ficus gemina","Ficus padifolia","Urostigma pertusum"]
+				 	},
+				 	{"Familia":"Moraceae",
+				 	"name":"Ficus trigonata",
+				 	"author":"L.",
+				 	"Publicación":"Plantae Surinamenses 17. 1775.",
+				 	"record_scrutiny_date":"1775",
+				 	"Synonym":["Ficus hemsleyana","Ficus verrucosa","Urostigma verrucosum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Moraceae",
+		 	"name":"Artocarpus",
+		 	"author":"(Parkinson) Fosberg",
+		 	"Publicación":"J. Washington Acad. Sci. 31: 95. 1941.",
+		 	"record_scrutiny_date":"1941",
+		 	"children":[
+		 				{"Familia":"Moraceae",
+					 	"name":"Artocarpus altilis",
+					 	"author":"(Parkinson) Fosberg",
+					 	"Publicación":"J. Washington Acad. Sci. 31: 95. 1941.",
+					 	"record_scrutiny_date":"1941",
+					 	"Synonym":["Artocarpus communis","Sotidium altile"]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Muntingiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Muntingiaceae",
+		 	"name":"Muntingia",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 509. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Muntingiaceae",
+				 	"name":"Muntingia calabura",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 509. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Primulaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Primulaceae",
+		 	"name":"Ardisia",
+		 	"author":"Kunth",
+		 	"Publicación":"Nov. gen. sp. Quarto ed. 3: 245, Folio ed. 3: 192. 1819.",
+		 	"record_scrutiny_date":"1819",
+		 	"children":[
+		 			{"Familia":"Primulaceae",
+				 	"name":"Ardisia compressa",
+				 	"author":"Kunth",
+				 	"Publicación":"Nov. gen. sp. Quarto ed. 3: 245, Folio ed. 3: 192. 1819.",
+				 	"record_scrutiny_date":"1819",
+				 	"Synonym":["Ardisia furfuracella","Ardisia belizensis","Ardisia capollina","Ardisia decipiens","Ardisia edwardsii","Ardisia irasuensis","Ardisia nicaraguensis","Ardisia polytoca","Ardisia rerducta","Ardisia salvadorensis","Icacorea belizensis","Icacorea compressa","Icacorea edwardsii","Icacorea irasuensis","Icacorea nicaraguensis","Icacorea salvadorensis","Tinus capollina","Tinus compressa","Tinus nicaraguensis","Ardisia acumifolia","Ardisia albipetala","Ardisia altonii","Ardisia amauensis","Ardisia baruana","Ardisia bawae","Ardisia chahalana","Ardisia clavelligera","Ardisia cookii","Ardisia costaricensis","Ardisia deminuta","Ardisia edwardisii","Ardisia foveolata","Ardisia guanacastensis","Ardisia guancheana","Ardisia hornitoana","Ardisia kallunkiae","Ardisia maasolae","Ardisia matagalpana","Ardisia maxonii","Ardisia microcalix","Ardisia monteverdeana","Ardisia morii","Ardisia neei","Ardisia opaca","Ardisia parvidenticulata","Ardisia reflexiflora","Ardisia regidifoloa","Ardisia rimiformis","Ardisia rivasensis","Ardisia samalana","Ardisia sheryi","Ardisia storkii","Ardisia triangula","Ardisia utleyi","Ardisia warneri","Ardisia whitei","Auriculardisa bawae","Auriculardisa micrantha","Icacorea acuminifolia","Icacorea albipetala","Icacorea alstonii","Icacorea amanuensis","Icacorea baruana","Icacorea bawae","Icacorea brevipes","Icacorea chahalana","Icacorea clavelligera","Icacorea cookii","Icacorea costaricensis","Icacorea deminuta","Icacorea denticulata","Icacorea foveolata","Icacorea guanacastensis","Icacorea guancheana","Icacorea kallunkiae","Icacorea longicaudata","Icacorea maasolae","Icacorea matagalpana","Icacorea maxonii","Icacorea microcalyx","Icacorea monteverdeana","Icacorea morii","Icacorea neei","Icacorea parvifolia","Icacorea reflexa","Icacorea rimiformis","Icacorea rivasensis","Icacorea samalana","Icacorea scheryi","Icacorea storkii","Icacorea triangula","Icacorea utleyi","Icacorea whitei","Ardisia parvifolia"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Primulaceae",
+		 	"name":"Myrsine",
+		 	"author":"Oerst.",
+		 	"Publicación":"Vidensk. Meddel. Naturhist. Foren. Kjobenhavn 1861: 133. 1861.",
+		 	"record_scrutiny_date":"1861",
+		 	"children":[
+		 				{"Familia":"Primulaceae",
+					 	"name":"Myrsine pellucidopunctata",
+					 	"author":"Oerst.",
+					 	"Publicación":"Vidensk. Meddel. Naturhist. Foren. Kjobenhavn 1861: 133. 1861.",
+					 	"record_scrutiny_date":"1861",
+					 	"Synonym":["Rapanea panamensis","Myrsine panamensis","Myrsine sytsmae"]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Davalliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Davalliaceae",
+		 	"name":"Nephrolepis",
+		 	"author":"(Sw.) Schott",
+		 	"Publicación":"Gen. Fil. t.3 (1834)",
+		 	"record_scrutiny_date":"1834",
+		 	"children":[
+		 			{"Familia":"Davalliaceae",
+				 	"name":"Nephrolepis biserrata",
+				 	"author":"(Sw.) Schott",
+				 	"Publicación":"Gen. Fil. t.3 (1834)",
+				 	"record_scrutiny_date":"1834",
+				 	"Synonym":["Aspidium biserratum","Aspidium acuminatum","Aspidium acutum","Aspidium ensifolium","Nephrodium rufescens","Nephrolepis acuminata","Nephrolepis acuta","Nephrolepis ensifolia","Nephrolepis mollis","Nephrolepis punctulata","Nephrolepis rufescens","Polypodium nephrolepioides","Polypodium punctulatum"]
+				 	},
+				 	{"Familia":"Davalliaceae",
+				 	"name":"Nephrolepis rivularis",
+				 	"author":"(Vahl) Mett. ex Krug",
+				 	"Publicación":"Bot. Jahrb. Syst. 24:122 (1897)",
+				 	"record_scrutiny_date":"1897",
+				 	"Synonym":["Polypodium rivulare","Aspidium sesquipedale","Nephrolepis sesquipedale"]
+				 	},
+				 	{"Familia":"Davalliaceae",
+				 	"name":"Nephrolepis cordifolia",
+				 	"author":"(L.) C. Presl",
+				 	"Publicación":"Tentamen Pteridographiae 79. 1836.",
+				 	"record_scrutiny_date":"1836",
+				 	"Synonym":["Nephrolepis tuberosa","Polypodium cordifolium","Aspidium tuberosum","Nephrolepis hirsutula"]
+				 	},
+				 	{"Familia":"Davalliaceae",
+				 	"name":"Nephrolepis brownii",
+				 	"author":"(Desv.) Hovenkamp & Miyam.",
+				 	"Publicación":"Blumea 50(2): 293. 2005.",
+				 	"record_scrutiny_date":"2005",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Oleandraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Oleandraceae",
+		 	"name":"Oleandra",
+		 	"author":"(Sw.) C. Presl",
+		 	"Publicación":"Tent. Pterid. 78 (1836)",
+		 	"record_scrutiny_date":"1836",
+		 	"children":[
+		 			{"Familia":"Oleandraceae",
+				 	"name":"Oleandra articulata",
+				 	"author":"(Sw.) C. Presl",
+				 	"Publicación":"Tent. Pterid. 78 (1836)",
+				 	"record_scrutiny_date":"1836",
+				 	"Synonym":["Aspidium articulatum","Aspidium nodosum","Oleandra nodosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Onagraceae",
+		 	"name":"Ludwigia",
+		 	"author":"(G. Don) Exell",
+		 	"Publicación":"Garcia de Orta 5: 471. 1957.",
+		 	"record_scrutiny_date":"1957",
+		 	"children":[
+		 			{"Familia":"Onagraceae",
+				 	"name":"Ludwigia hyssopifolia",
+				 	"author":"(G. Don) Exell",
+				 	"Publicación":"Garcia de Orta 5: 471. 1957.",
+				 	"record_scrutiny_date":"1957",
+				 	"Synonym":["Jussiaea hyssopifolia"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Onagraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Onagraceae",
+		 	"name":"Oenothera",
+		 	"author":"L'Her. ex Aiton",
+		 	"Publicación":"Hort. kew. 2: 3. 1789.",
+		 	"record_scrutiny_date":"1789",
+		 	"children":[
+		 			{"Familia":"Onagraceae",
+				 	"name":"Oenothera rosea",
+				 	"author":"L'Her. ex Aiton",
+				 	"Publicación":"Hort. kew. 2: 3. 1789.",
+				 	"record_scrutiny_date":"1789",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Ophioglossaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Ophioglossaceae",
+		 	"name":"Cheiroglossa",
+		 	"author":"(L.) C. Presl",
+		 	"Publicación":"Suppl. Tent. Pterid. 57 (1845)",
+		 	"record_scrutiny_date":"1845",
+		 	"children":[
+		 				{"Familia":"Ophioglossaceae",
+					 	"name":"Cheiroglossa palmata",
+					 	"author":"(L.) C. Presl",
+					 	"Publicación":"Suppl. Tent. Pterid. 57 (1845)",
+					 	"record_scrutiny_date":"1845",
+					 	"Synonym":["Ophioglossum palmatum"]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Orchidaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Orchidaceae",
+		 	"name":"Epidendrum",
+		 	"author":"Hágsater",
+		 	"Publicación":"Icon. Orchid. 3: pl. 325. 1999.",
+		 	"record_scrutiny_date":"1999",
+		 	"children":[
+		 			{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum cocoense",
+				 	"author":"Hágsater",
+				 	"Publicación":"Icon. Orchid. 3: pl. 325. 1999.",
+				 	"record_scrutiny_date":"1999",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum insulanum",
+				 	"author":"Schltr.",
+				 	"Publicación":"Beih. Bot. Centralbl.Abt. 2 36(2): 404. 1918.",
+				 	"record_scrutiny_date":"1918",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum jimenezii",
+				 	"author":"Hágsater",
+				 	"Publicación":"Icon. Orchid. (Mexico) 3: pl. 341. 1999.",
+				 	"record_scrutiny_date":"1999",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Orchidaceae",
+		 	"name":"Ornithidium",
+		 	"author":"(Rchb.f.) M.A.Blanco & Ojeda",
+		 	"Publicación":"Lankesteriana 7: 532. 2007.",
+		 	"record_scrutiny_date":"2007",
+		 	"children":[
+		 			{"Familia":"Orchidaceae",
+				 	"name":"Ornithidium adendrobium",
+				 	"author":"(Rchb.f.) M.A.Blanco & Ojeda",
+				 	"Publicación":"Lankesteriana 7: 532. 2007.",
+				 	"record_scrutiny_date":"2007",
+				 	"Synonym":["Maxillaria adendrobium","Ponera adendrobium","Neo-urbania adendrobium","Pleuranthium adendrobium","Camaridium parviflorum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Orchidaceae",
+		 	"name":"Camaridium",
+		 	"author":"M.A. Blanco",
+		 	"Publicación":"Lankesteriana 7(3): 520. 2007.",
+		 	"record_scrutiny_date":"2007",
+		 	"children":[
+		 			{"Familia":"Orchidaceae",
+				 	"name":"Camaridium micranthum",
+				 	"author":"M.A. Blanco",
+				 	"Publicación":"Lankesteriana 7(3): 520. 2007.",
+				 	"record_scrutiny_date":"2007",
+				 	"Synonym":["Maxillaria parviflora"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Orchidaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Orchidaceae",
+		 	"name":"Epidendrum",
+		 	"author":"Hágsater",
+		 	"Publicación":"Icon. Orchid. 3: pl. 325. 1999.",
+		 	"record_scrutiny_date":"1999",
+		 	"children":[
+		 			{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum cocoense",
+				 	"author":"Hágsater",
+				 	"Publicación":"Icon. Orchid. 3: pl. 325. 1999.",
+				 	"record_scrutiny_date":"1999",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum insulanum",
+				 	"author":"Schltr.",
+				 	"Publicación":"Beih. Bot. Centralbl.Abt. 2 36(2): 404. 1918.",
+				 	"record_scrutiny_date":"1918",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Orchidaceae",
+				 	"name":"Epidendrum jimenezii",
+				 	"author":"Hágsater",
+				 	"Publicación":"Icon. Orchid. (Mexico) 3: pl. 341. 1999.",
+				 	"record_scrutiny_date":"1999",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Phytolaccaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Phytolaccaceae",
+		 	"name":"Phytolacca",
+		 	"author":"Kunth & C. D. Bouché",
+		 	"Publicación":"Sp. nov. hort. berol. 1848 15. 1849.",
+		 	"record_scrutiny_date":"1849",
+		 	"children":[
+		 			{"Familia":"Phytolaccaceae",
+				 	"name":"Phytolacca rivinoides",
+				 	"author":"Kunth & C. D. Bouché",
+				 	"Publicación":"Sp. nov. hort. berol. 1848 15. 1849.",
+				 	"record_scrutiny_date":"1849",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Poaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Poaceae",
+		 	"name":"Axonopus",
+		 	"author":"(Sw.) P. Beauv.",
+		 	"Publicación":"Ess. Agrostogr. 12, 154, 167. 1812.",
+		 	"record_scrutiny_date":"1812",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Axonopus compressus",
+				 	"author":"(Sw.) P. Beauv.",
+				 	"Publicación":"Ess. Agrostogr. 12, 154, 167. 1812.",
+				 	"record_scrutiny_date":"1812",
+				 	"Synonym":["Milium compressum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Cenchrus",
+		 	"author":"Roem. & Schult.",
+		 	"Publicación":"Syst. veg. 2: 258. 1817.",
+		 	"record_scrutiny_date":"1817",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Cenchrus brownii",
+				 	"author":"Roem. & Schult.",
+				 	"Publicación":"Syst. veg. 2: 258. 1817.",
+				 	"record_scrutiny_date":"1817",
+				 	"Synonym":["Cenchrus viridis"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Chloris",
+		 	"author":"Scribn.",
+		 	"Publicación":"Proc. Amer. Acad. Arts 38: 262. 1902.",
+		 	"record_scrutiny_date":"1902",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Chloris paniculata",
+				 	"author":"Scribn.",
+				 	"Publicación":"Proc. Amer. Acad. Arts 38: 262. 1902.",
+				 	"record_scrutiny_date":"1902",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Panicum laxum",
+		 	"author":"Sw.",
+		 	"Publicación":"Prodr. 23. 1788.",
+		 	"record_scrutiny_date":"1788",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Panicum laxum",
+				 	"author":"Sw.",
+				 	"Publicación":"Prodr. 23. 1788.",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":["Panicum boliviense","Steinchisma laxa"]
+				 	},
+				 	{"Familia":"Poaceae",
+				 	"name":"Panicum polygonatum",
+				 	"author":"Schrad.",
+				 	"Publicación":"En Schult., Mant. 2: 256. 1824.",
+				 	"record_scrutiny_date":"1824",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Paspalum",
+		 	"author":"P. J. Bergius",
+		 	"Publicación":"Acta Helv. Phys.-Math. 7: 129, t. 8. 1762.",
+		 	"record_scrutiny_date":"1762",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Paspalum conjugatum",
+				 	"author":"P. J. Bergius",
+				 	"Publicación":"Acta Helv. Phys.-Math. 7: 129, t. 8. 1762.",
+				 	"record_scrutiny_date":"1762",
+				 	"Synonym":["Paspalum conjugatum var. pubescens","Panicum conjugatum"]
+				 	},
+				 	{"Familia":"Poaceae",
+				 	"name":"Paspalum decumbens",
+				 	"author":"Sw.",
+				 	"Publicación":"Prodr. 22. 1788.",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Poaceae",
+				 	"name":"Paspalum nutans",
+				 	"author":"Lam.",
+				 	"Publicación":"Tabl. encycl. 1: 175. 1791.",
+				 	"record_scrutiny_date":"1791",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Poaceae",
+				 	"name":"Paspalum plicatulum",
+				 	"author":"Michx.",
+				 	"Publicación":"Fl. bor.-amer. 1: 45. 1803.",
+				 	"record_scrutiny_date":"1803",
+				 	"Synonym":["Paspalum plicatum var. villosissimum","Paspalum plicatulum var. glabrum"]
+				 	},
+				 	{"Familia":"Poaceae",
+				 	"name":"Paspalum virgatum",
+				 	"author":"L.",
+				 	"Publicación":"Syst. nat. ed. 10 855. 1759.",
+				 	"record_scrutiny_date":"1759",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Pharus",
+		 	"author":"L.",
+		 	"Publicación":"Syst. nat. ed. 10 1269. 1759.",
+		 	"record_scrutiny_date":"1759",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Pharus latifolius",
+				 	"author":"L.",
+				 	"Publicación":"Syst. nat. ed. 10 1269. 1759.",
+				 	"record_scrutiny_date":"1759",
+				 	"Synonym":["Pharus glochidiatus","Pharus latifolius var. elegantissimus","Pharus ovalifolius","Pharus scaber","Pharus scaber var. pictus"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Setaria",
+		 	"author":"(Poir.) Kerguélen",
+		 	"Publicación":"Lejeunia n. s., 120: 161. 1987.",
+		 	"record_scrutiny_date":"1987",
+			"children":[
+					{"Familia":"Poaceae",
+				 	"name":"Setaria parviflora",
+				 	"author":"(Poir.) Kerguélen",
+				 	"Publicación":"Lejeunia n. s., 120: 161. 1987.",
+				 	"record_scrutiny_date":"1987",
+				 	"Synonym":["Cenchrus parviflorus","Setaria geniculata","Setaria gracilis","Setaria imberbis"]
+				 	}
+			]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Sporobolus",
+		 	"author":"(L.) R. Br.",
+		 	"Publicación":"Prodr. 170. 1810.",
+		 	"record_scrutiny_date":"1810",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Sporobolus indicus",
+				 	"author":"(L.) R. Br.",
+				 	"Publicación":"Prodr. 170. 1810.",
+				 	"record_scrutiny_date":"1810",
+				 	"Synonym":["Sporobolus poiretii","Agrostis indica"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Digitaria",
+		 	"author":"Roth ex Roem. & Schult.",
+		 	"Publicación":"Syst. veg. 2: 474. 1817.",
+		 	"record_scrutiny_date":"1817",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Digitaria setigera",
+				 	"author":"Roth ex Roem. & Schult.",
+				 	"Publicación":"Syst. veg. 2: 474. 1817.",
+				 	"record_scrutiny_date":"1817",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Eleusine",
+		 	"author":"(L.) Gaertn.",
+		 	"Publicación":"Fruct. sem. pl. 1: 8. 1788.",
+		 	"record_scrutiny_date":"1788",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Eleusine indica",
+				 	"author":"(L.) Gaertn.",
+				 	"Publicación":"Fruct. sem. pl. 1: 8. 1788.",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":["Cynosurus indicus"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Eragrostis",
+		 	"author":"(L.) R. Br.",
+		 	"Publicación":"En Tuckey, Narr. exped. Zaire 478. 1818.",
+		 	"record_scrutiny_date":"1818",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Eragrostis ciliaris",
+				 	"author":"(L.) R. Br.",
+				 	"Publicación":"En Tuckey, Narr. exped. Zaire 478. 1818.",
+				 	"record_scrutiny_date":"1818",
+				 	"Synonym":["Poa ciliaris"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Hyparrhenia",
+		 	"author":"(Nees) Stapf",
+		 	"Publicación":"En Prain, Fl. trop. Afr. 9: 304. 1919.",
+		 	"record_scrutiny_date":"1919",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Hyparrhenia rufa",
+				 	"author":"(Nees) Stapf",
+				 	"Publicación":"En Prain, Fl. trop. Afr. 9: 304. 1919.",
+				 	"record_scrutiny_date":"1919",
+				 	"Synonym":["Trachypogon rufus"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Ischaemum",
+		 	"author":"Salisb.",
+		 	"Publicación":"Icon. stirp. rar. 1, t. 1. 1791.",
+		 	"record_scrutiny_date":"179",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Ischaemum rugosum",
+				 	"author":"Salisb.",
+				 	"Publicación":"Icon. stirp. rar. 1, t. 1. 1791.",
+				 	"record_scrutiny_date":"179",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Poaceae",
+		 	"name":"Panicum",
+		 	"author":"Jacq.",
+		 	"Publicación":"Icon. pl. rar. 1: 2, t. 13. 1787.",
+		 	"record_scrutiny_date":"1787",
+		 	"children":[
+		 			{"Familia":"Poaceae",
+				 	"name":"Panicum maximum",
+				 	"author":"Jacq.",
+				 	"Publicación":"Icon. pl. rar. 1: 2, t. 13. 1787.",
+				 	"record_scrutiny_date":"1787",
+				 	"Synonym":["Urochloa maxima"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Psilotaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Psilotaceae",
+		 	"name":"Psilotum",
+		 	"author":"(L.) P. Beauv.",
+		 	"Publicación":"Prodr. Aethéogam. 106, 112 (1805)",
+		 	"record_scrutiny_date":"1805",
+		 	"children":[
+		 			{"Familia":"Psilotaceae",
+				 	"name":"Psilotum nudum",
+				 	"author":"(L.) P. Beauv.",
+				 	"Publicación":"Prodr. Aethéogam. 106, 112 (1805)",
+				 	"record_scrutiny_date":"1805",
+				 	"Synonym":["Lycopodium nudum","Psilotum triquetrum"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Lygodiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Lygodiaceae",
+		 	"name":"Lygodium",
+		 	"author":"Sw.",
+		 	"Publicación":"J. Bo t. (Schrader) 1801(2):303 (1803)",
+		 	"record_scrutiny_date":"1803",
+		 	"children":[
+		 			{"Familia":"Lygodiaceae",
+				 	"name":"Lygodium venustum",
+				 	"author":"Sw.",
+				 	"Publicación":"J. Bo t. (Schrader) 1801(2):303 (1803)",
+				 	"record_scrutiny_date":"1803",
+				 	"Synonym":["Lygodium commutatum","Lygodium mexicanum"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Schlegeliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Schlegeliaceae",
+		 	"name":"Schlegelia",
+		 	"author":"Griseb.",
+		 	"Publicación":"Cat. Pl. Cub. 191. 1866.",
+		 	"record_scrutiny_date":"1866",
+		 	"children":[
+		 				{"Familia":"Schlegeliaceae",
+					 	"name":"Schlegelia brachyantha",
+					 	"author":"Griseb.",
+					 	"Publicación":"Cat. Pl. Cub. 191. 1866.",
+					 	"record_scrutiny_date":"1866",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Selaginellaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Selaginellaceae",
+		 	"name":"Selaginella",
+		 	"author":"Spring",
+		 	"Publicación":"Bull. Acad. Roy. Sci. Bruxelles 10(1):228 (1843)",
+		 	"record_scrutiny_date":"1843",
+		 	"children":[
+		 			{"Familia":"Selaginellaceae",
+				 	"name":"Selaginella flagellata",
+				 	"author":"Spring",
+				 	"Publicación":"Bull. Acad. Roy. Sci. Bruxelles 10(1):228 (1843)",
+				 	"record_scrutiny_date":"1843",
+				 	"Synonym":["Selaginella othmeri","Selaginella purdiei","Selaginella regularis","Selaginella rhizophora"]
+				 	},
+				 	{"Familia":"Selaginellaceae",
+				 	"name":"Selaginella horizontalis",
+				 	"author":"(C. Presl) Spring",
+				 	"Publicación":"Bull. Acad. Roy. Sci. Bruxelles 10(1):226 (1843)",
+				 	"record_scrutiny_date":"1843",
+				 	"Synonym":["Lycopodium horizontale"]
+				 	},
+				 	{"Familia":"Selaginellaceae",
+				 	"name":"Selaginella porelloides",
+				 	"author":"(Lam.) Spring",
+				 	"Publicación":"Bull. Acad. Roy. Sci. Bruxelles 10(1):141 (1843)",
+				 	"record_scrutiny_date":"1843",
+				 	"Synonym":["Lycopodium porelloides"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Malvaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Malvaceae",
+		 	"name":"Theobroma",
+		 	"author":"L.",
+		 	"Publicación":"Sp. Pl. 2: 782. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Malvaceae",
+				 	"name":"Theobroma cacao",
+				 	"author":"L.",
+				 	"Publicación":"Sp. Pl. 2: 782. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Theobroma pentagonun","Theobroma leiocarpun","Theobroma sphaerocarpum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Malvaceae",
+		 	"name":"Talipariti",
+		 	"author":"(Arruda) Fryxell",
+		 	"Publicación":"Contributions from the University of Michigan Herbarium 23: 262. 2001.",
+		 	"record_scrutiny_date":"2001",
+		 	"children":[
+		 			{"Familia":"Malvaceae",
+				 	"name":"Talipariti tiliaceum var. pernambucense",
+				 	"author":"(Arruda) Fryxell",
+				 	"Publicación":"Contributions from the University of Michigan Herbarium 23: 262. 2001.",
+				 	"record_scrutiny_date":"2001",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Malvaceae",
+		 	"name":"Hibiscus",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 694. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Malvaceae",
+				 	"name":"Hibiscus rosa-sinensis",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 694. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Malvaceae",
+		 	"name":"Ochroma",
+		 	"author":"(Cav. ex Lam.) Urb.",
+		 	"Publicación":"Repert. Spec. Nov. Regni Veg. Beih. 5: 123. 1920.",
+		 	"record_scrutiny_date":"1920",
+		 	"children":[
+		 			{"Familia":"Malvaceae",
+				 	"name":"Ochroma pyramidale",
+				 	"author":"(Cav. ex Lam.) Urb.",
+				 	"Publicación":"Repert. Spec. Nov. Regni Veg. Beih. 5: 123. 1920.",
+				 	"record_scrutiny_date":"1920",
+				 	"Synonym":["Bombax pyramidale","Ochroma lagopus","Ochroma peruvianum","Ochroma limonensis","Ochroma boliviana"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Malvaceae",
+		 	"name":"Sida",
+		 	"author":"Burm. f.",
+		 	"Publicación":"Flora Indica . . . nec non Prodromus Florae Capensis 147. 1768.",
+		 	"record_scrutiny_date":"1768",
+		 	"children":[
+		 			{"Familia":"Malvaceae",
+				 	"name":"Sida acuta",
+				 	"author":"Burm. f.",
+				 	"Publicación":"Flora Indica . . . nec non Prodromus Florae Capensis 147. 1768.",
+				 	"record_scrutiny_date":"1768",
+				 	"Synonym":["Sida cuspidata","Sida hirsutissima","Sida ulmifolia","Sida acuta var. carpinifolia","Sida acuta var. hispida","Sida acuta var. intermedia","Sida carpinifolia","Sida lanceolata","Sida scoparia","Sida stauntoniana"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Malvaceae",
+		 	"name":"Pavonia",
+		 	"author":"Cav.",
+		 	"Publicación":"Monadelphiae Classis Dissertationes Decem 3: 135, pl. 46, f. 2. 1787.",
+		 	"record_scrutiny_date":"1787",
+		 	"children":[
+		 				{"Familia":"Malvaceae",
+					 	"name":"Pavonia paniculata",
+					 	"author":"Cav.",
+					 	"Publicación":"Monadelphiae Classis Dissertationes Decem 3: 135, pl. 46, f. 2. 1787.",
+					 	"record_scrutiny_date":"1787",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Tectariaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Tectariaceae",
+		 	"name":"Ctenitis",
+		 	"author":"(Poepp. ex Spreng.) C. V. Morton",
+		 	"Publicación":"Amer. Fern J. 59:66 (1969)",
+		 	"record_scrutiny_date":"1969",
+		 	"children":[
+		 			{"Familia":"Tectariaceae",
+				 	"name":"Ctenitis sloanei",
+				 	"author":"(Poepp. ex Spreng.) C. V. Morton",
+				 	"Publicación":"Amer. Fern J. 59:66 (1969)",
+				 	"record_scrutiny_date":"1969",
+				 	"Synonym":["Polypodium sloanei","Ctenitis ampla","Dryopteris ampla","Nephrodium amplum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Tectariaceae",
+		 	"name":"Tectaria incisa",
+		 	"author":"Cav.",
+		 	"Publicación":"Descr. Pl. 249 (1802)",
+		 	"record_scrutiny_date":"1802",
+		 	"children":[
+		 			{"Familia":"Tectariaceae",
+				 	"name":"Tectaria incisa",
+				 	"author":"Cav.",
+				 	"Publicación":"Descr. Pl. 249 (1802)",
+				 	"record_scrutiny_date":"1802",
+				 	"Synonym":["Aspidium macrophyllum var. pittieri","Tectaria martinicensis","Aspidium martinicense"]
+				 	},
+				 	{"Familia":"Tectariaceae",
+				 	"name":"Tectaria lizarzaburui",
+				 	"author":"(Sodiro) C. Chr.",
+				 	"Publicación":"Index Filicum, Supplementum Tertium 181. 1934.",
+				 	"record_scrutiny_date":"1934",
+				 	"Synonym":["Nephrodium lizarzaburui"]
+				 	},
+				 	{"Familia":"Tectariaceae",
+				 	"name":"Tectaria mexicana",
+				 	"author":"(Fée) C. V. Morton",
+				 	"Publicación":"Amer. Fern J. 56:133 (1966)",
+				 	"record_scrutiny_date":"1966",
+				 	"Synonym":["Sagenia mexicana","Aspidium cicutarium","Aspidium cicutarium var. angustius","Aspidium latifolium","Nephrodium cicutarium","Sagenia angustior","Tectaria cicutaria","Tectaria dilacerata"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Pentaphylacaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Pentaphylacaceae",
+		 	"name":"Freziera",
+		 	"author":"Triana & Planch.",
+		 	"Publicación":"Ann. Sci. Nat. Bot. Sér. 4, 18: 261. 1862.",
+		 	"record_scrutiny_date":"1862",
+		 	"children":[
+		 			{"Familia":"Pentaphylacaceae",
+				 	"name":"Freziera calophylla",
+				 	"author":"Triana & Planch.",
+				 	"Publicación":"Ann. Sci. Nat. Bot. Sér. 4, 18: 261. 1862.",
+				 	"record_scrutiny_date":"1862",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Thelypteridaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Macrothelypteris",
+		 	"author":"(Gaudich.) Ching",
+		 	"Publicación":"Acta Phytotax. Sin. 8:310 (1963)",
+		 	"record_scrutiny_date":"1963",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Macrothelypteris torresiana",
+				 	"author":"(Gaudich.) Ching",
+				 	"Publicación":"Acta Phytotax. Sin. 8:310 (1963)",
+				 	"record_scrutiny_date":"1963",
+				 	"Synonym":["Polystichum torresianum","Thelypteris torresiana"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Thelypteris",
+		 	"author":"(Hieron.) C. F. Reed",
+		 	"Publicación":"Phytologia 17:274 (1968)",
+		 	"record_scrutiny_date":"1968",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris eggersii",
+				 	"author":"(Hieron.) C. F. Reed",
+				 	"Publicación":"Phytologia 17:274 (1968)",
+				 	"record_scrutiny_date":"1968",
+				 	"Synonym":["Nephrodium eggersii"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris hispidula",
+				 	"author":"(Decne.) C. F. Reed",
+				 	"Publicación":"Phytologia 17:283 (1968)",
+				 	"record_scrutiny_date":"1968",
+				 	"Synonym":["Aspidium hispidulum","Dryopteris limonensis","Nephrodium quadrangulare","Thelypteris quadrangularis"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris leprieurii",
+				 	"author":"(Hook.) R. M. Tryon",
+				 	"Publicación":"Rhodora 69(777): 6. 1967.",
+				 	"record_scrutiny_date":"1967",
+				 	"Synonym":["Nephrodium leprieurii"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris opulenta",
+				 	"author":"(Kaulf.) Fosberg",
+				 	"Publicación":"Smithsonian Contr. Bot. 8:3 (1972)",
+				 	"record_scrutiny_date":"1972",
+				 	"Synonym":["Aspidium opulentum","Aspidium extensum","Thelypteris extensa"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris serrata",
+				 	"author":"(Cav.) Alston",
+				 	"Publicación":"Bull. Misc. Inform. Kew 1932:309 (1932)",
+				 	"record_scrutiny_date":"1932",
+				 	"Synonym":["Meniscium serratum"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris tetragona",
+				 	"author":"(Sw.) Small",
+				 	"Publicación":"Ferns S. E. States 256 (1938)",
+				 	"record_scrutiny_date":"1938",
+				 	"Synonym":["Polypodium tetragonum","Dryopteris subtetragona","Dryopteris tetragona","Goniopteris tetragona","Polypodium subtetragonum"]
+				 	},
+				 	{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris dentata",
+				 	"author":"(Forssk.) E. P. St. John",
+				 	"Publicación":"Amer. Fern J. 26:44 (1936)",
+				 	"record_scrutiny_date":"1936",
+				 	"Synonym":["Polypodium dentatum","Aspidium molle","Dryopteris dentata","Dryopteris mollis"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Steiropteris",
+		 	"author":"Salino & T.E. Almeida",
+		 	"Publicación":"PhytoKeys 57: 45. 2015.",
+		 	"record_scrutiny_date":"2015",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Steiropteris decussata var. costaricensis",
+				 	"author":"Salino & T.E. Almeida",
+				 	"Publicación":"PhytoKeys 57: 45. 2015.",
+				 	"record_scrutiny_date":"2015",
+				 	"Synonym":["Thelypteris decussata var. costaricensis"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Amauropelta",
+		 	"author":"(Spreng.) A.R. Sm.",
+		 	"Publicación":"PhytoKeys 57: 17. 2015.",
+		 	"record_scrutiny_date":"2015",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Amauropelta balbisii",
+				 	"author":"(Spreng.) A.R. Sm.",
+				 	"Publicación":"PhytoKeys 57: 17. 2015.",
+				 	"record_scrutiny_date":"2015",
+				 	"Synonym":["Thelypteris balbisii"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Goniopteris",
+		 	"author":"(L.D. Gómez) Salino & T.E. Almeida",
+		 	"Publicación":"PhytoKeys 57: 37. 2015.",
+		 	"record_scrutiny_date":"2015",
+		 	"children":[
+		 		{"Familia":"Thelypteridaceae",
+			 	"name":"Goniopteris calypso",
+			 	"author":"(L.D. Gómez) Salino & T.E. Almeida",
+			 	"Publicación":"PhytoKeys 57: 37. 2015.",
+			 	"record_scrutiny_date":"2015",
+			 	"Synonym":["Thelypteris calypso"]
+			 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Amauropelta",
+		 	"author":"(A.R. Sm. & Lellinger) Salino & T.E. Almeida",
+		 	"Publicación":"PhytoKeys 57: 19. 2015.",
+		 	"record_scrutiny_date":"2015",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Amauropelta cocos",
+				 	"author":"(A.R. Sm. & Lellinger) Salino & T.E. Almeida",
+				 	"Publicación":"PhytoKeys 57: 19. 2015.",
+				 	"record_scrutiny_date":"2015",
+				 	"Synonym":["Thelypteris cocos"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Thelypteridaceae",
+		 	"name":"Thelypteris",
+		 	"author":"A. Rojas",
+		 	"Publicación":"Brenesia 75–75: 9–10, f. 4A–C. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 			{"Familia":"Thelypteridaceae",
+				 	"name":"Thelypteris nana",
+				 	"author":"A. Rojas",
+				 	"Publicación":"Brenesia 75–75: 9–10, f. 4A–C. 2011.",
+				 	"record_scrutiny_date":"2011",
+				 	"Synonym":[]
+		 		}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Cannabaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Cannabaceae",
+		 	"name":"Trema",
+		 	"author":"(L.) Blume",
+		 	"Publicación":"Mus. Bot. 2: 58. 1856.",
+		 	"record_scrutiny_date":"1856",
+		 	"children":[
+		 			{"Familia":"Cannabaceae",
+				 	"name":"Trema micrantha",
+				 	"author":"(L.) Blume",
+				 	"Publicación":"Mus. Bot. 2: 58. 1856.",
+				 	"record_scrutiny_date":"1856",
+				 	"Synonym":["Celtis lima","Celtis macrophylla","Celtis micrantha","Celtis schiedeana","Rhamnus micranthus","Sponia canescens","Sponia chichilea","Sponia crassifolia"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Verbenaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+			{"Familia":"Verbenaceae",
+			"name":"Lippia",
+			"author":"(Mill.) N. E. Br. ex Britton & P. Wilson",
+			"Publicación":"Bot. Porto Rico 6: 141. 1925.",
+			"record_scrutiny_date":"1925",
+			"children":[
+					{"Familia":"Verbenaceae",
+					"name":"Lippia alba",
+					"author":"(Mill.) N. E. Br. ex Britton & P. Wilson",
+					"Publicación":"Bot. Porto Rico 6: 141. 1925.",
+					"record_scrutiny_date":"1925",
+					"Synonym":["Lantana alba","Lippia geminata","Lippia geminata var. microphylla","Lippia globiflora var. geminata"]
+					}
+			]
+			},
+			{"Familia":"Verbenaceae",
+			"name":"Verbena",
+			"author":"Kunth",
+			"Publicación":"Nov. Gen. Sp.  2:276, t. 137. 1818.",
+			"record_scrutiny_date":"1818",
+			"children":[
+					{"Familia":"Verbenaceae",
+					"name":"Verbena litoralis",
+					"author":"Kunth",
+					"Publicación":"Nov. Gen. Sp.  2:276, t. 137. 1818.",
+					"record_scrutiny_date":"1818",
+					"Synonym":["Verbena affinis","Verbena approximata","Verbena bonariensis var. litoralis","Verbena brasiliensis","Verbena caracasana","Verbena hansenii","Verbena lanceolata"]
+					}
+			]
+			}
+		 ]	
+		},
+		{
+		"name": "Santalaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Santalaceae",
+		 	"name":"Phoradendron",
+		 	"author":"(Kunth) Trel.",
+		 	"Publicación":"Phoradendron 145. 1916.",
+		 	"record_scrutiny_date":"1916",
+		 	"children":[
+		 			{"Familia":"Santalaceae",
+				 	"name":"Phoradendron piperoides",
+				 	"author":"(Kunth) Trel.",
+				 	"Publicación":"Phoradendron 145. 1916.",
+				 	"record_scrutiny_date":"1916",
+				 	"Synonym":["Loranthus piperoides","Phoradendron biolleyi"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Athyriaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Athyriaceae",
+		 	"name":"Diplazium",
+		 	"author":"(Mett.) T. Moore",
+		 	"Publicación":"Index Fil. 141 (1859)",
+		 	"record_scrutiny_date":"1859",
+		 	"children":[
+		 			{"Familia":"Athyriaceae",
+				 	"name":"Diplazium lechleri",
+				 	"author":"(Mett.) T. Moore",
+				 	"Publicación":"Index Fil. 141 (1859)",
+				 	"record_scrutiny_date":"1859",
+				 	"Synonym":["Asplenium lechleri"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Annonaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Annonaceae",
+		 	"name":"Annona",
+		 	"author":"Mill.",
+		 	"Publicación":"Gard. Dict., ed. 8, Annona no. 5. 1768",
+		 	"record_scrutiny_date":"1768",
+		 	"children":[
+		 			{"Familia":"Annonaceae",
+				 	"name":"Annona cherimola",
+				 	"author":"Mill.",
+				 	"Publicación":"Gard. Dict., ed. 8, Annona no. 5. 1768",
+				 	"record_scrutiny_date":"1768",
+				 	"Synonym":["Annona pubescens","Annona tripetala"]
+				 	},
+				 	{"Familia":"Annonaceae",
+				 	"name":"Annona glabra",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 537. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Annona palustris"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Asteraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Asteraceae",
+		 	"name":"Chromolaena",
+		 	"author":"(Lam.) R. M. King & H. Rob.",
+		 	"Publicación":"Phytologia 20(3): 204. 1970.",
+		 	"record_scrutiny_date":"1970",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Chromolaena odorata",
+				 	"author":"(Lam.) R. M. King & H. Rob.",
+				 	"Publicación":"Phytologia 20(3): 204. 1970.",
+				 	"record_scrutiny_date":"1970",
+				 	"Synonym":["Eupatorium clematitis","Eupatorium condyzoides fo. angustiflorum","Eupatorium conyzoides","Eupatorium conyzoides var. floribunda","Eupatorium dichotomum","Eupatorium floribundum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Clibadium",
+		 	"author":"Benth.",
+		 	"Publicación":"The Botany of the Voyage of H.M.S. Sulphur 114–115. 1844[1845].",
+		 	"record_scrutiny_date":"1845",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Clibadium acuminatum",
+				 	"author":"Benth.",
+				 	"Publicación":"The Botany of the Voyage of H.M.S. Sulphur 114–115. 1844[1845].",
+				 	"record_scrutiny_date":"1845",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Pseudelephantopus",
+		 	"author":"(Juss. ex Aubl.) C.F. Baker",
+		 	"Publicación":"Transactions of the Academy of Science of St. Louis 12(5): 55. 1902.",
+		 	"record_scrutiny_date":"1902",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Pseudelephantopus spicatus",
+				 	"author":"(Juss. ex Aubl.) C.F. Baker",
+				 	"Publicación":"Transactions of the Academy of Science of St. Louis 12(5): 55. 1902.",
+				 	"record_scrutiny_date":"1902",
+				 	"Synonym":["Elephantopus spicatus","Distreptus spicatus","Matamoria spicata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Rolandra",
+		 	"author":"(L.) Kuntze",
+		 	"Publicación":"Revisio Generum Plantarum 1: 360. 1891.",
+		 	"record_scrutiny_date":"1891",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Rolandra fruticosa",
+				 	"author":"(L.) Kuntze",
+				 	"Publicación":"Revisio Generum Plantarum 1: 360. 1891.",
+				 	"record_scrutiny_date":"1891",
+				 	"Synonym":["Echinops fruticosus","Echinops nodiflorus","Rolandra argentea"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Sphagneticola",
+		 	"author":"(L.) Pruski",
+		 	"Publicación":"Memoirs of The New York Botanical Garden 78: 114. 1996.",
+		 	"record_scrutiny_date":"1996",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Sphagneticola trilobata",
+				 	"author":"(L.) Pruski",
+				 	"Publicación":"Memoirs of The New York Botanical Garden 78: 114. 1996.",
+				 	"record_scrutiny_date":"1996",
+				 	"Synonym":["Silphium trilobatum","Wedelia trilobata","Thelechitonia trilobata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Synedrella",
+		 	"author":"(L.) Gaertn.",
+		 	"Publicación":"De Fructibus et Seminibus Plantarum. . . . 2(3): 456–457, t. 171, f. 7. 1791.",
+		 	"record_scrutiny_date":"1791",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Synedrella nodiflora",
+				 	"author":"(L.) Gaertn.",
+				 	"Publicación":"De Fructibus et Seminibus Plantarum. . . . 2(3): 456–457, t. 171, f. 7. 1791.",
+				 	"record_scrutiny_date":"1791",
+				 	"Synonym":["Blainvillea gayana","Ucacou nodiflorum","Verbesina nodiflora"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Asteraceae",
+		 	"name":"Youngia",
+		 	"author":"(L.) DC.",
+		 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 7(1): 194. 1838.",
+		 	"record_scrutiny_date":"1838",
+		 	"children":[
+		 			{"Familia":"Asteraceae",
+				 	"name":"Youngia japonica",
+				 	"author":"(L.) DC.",
+				 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 7(1): 194. 1838.",
+				 	"record_scrutiny_date":"1838",
+				 	"Synonym":["Crepis japonica","Prenanthes japonica"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Calophyllaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Calophyllaceae",
+		 	"name":"Calophyllum",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 513. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Calophyllaceae",
+				 	"name":"Calophyllum inophyllum",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 513. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Balsamaria inophyllum"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Calophyllaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Clusiaceae",
+		 	"name":"Clusia",
+		 	"author":"Jacq.",
+		 	"Publicación":"Enum. syst. pl. 34. 1760.",
+		 	"record_scrutiny_date":"1760",
+		 	"children":[
+		 			{"Familia":"Clusiaceae",
+				 	"name":"Clusia rosea",
+				 	"author":"Jacq.",
+				 	"Publicación":"Enum. syst. pl. 34. 1760.",
+				 	"record_scrutiny_date":"1760",
+				 	"Synonym":["Clusia major"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Fabaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Fabaceae",
+		 	"name":"Cassia",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 377–378. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Cassia fistula",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 377–378. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Bactyrilobium fistula","Cathartocarpus fistula"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Delonixs",
+		 	"author":"(Bojer) Raf.",
+		 	"Publicación":"Flora Telluriana 2: 92. 1836[1837].",
+		 	"record_scrutiny_date":"1837",
+		 	"children":[
+		 				{"Familia":"Fabaceae",
+					 	"name":"Delonix regia",
+					 	"author":"(Bojer) Raf.",
+					 	"Publicación":"Flora Telluriana 2: 92. 1836[1837].",
+					 	"record_scrutiny_date":"1837",
+					 	"Synonym":["Delonix regia var. flavida","Delonix regia var. genuina","Poinciana regia"]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Senna",
+		 	"author":"(Willd.) H. S. Irwin & Barneby",
+		 	"Publicación":"Enumeratio Plantarum Horti Botanici Berolinensis 1: 443. 1809",
+		 	"record_scrutiny_date":"1809",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Senna reticulata",
+				 	"author":"(Willd.) H. S. Irwin & Barneby",
+				 	"Publicación":"Enumeratio Plantarum Horti Botanici Berolinensis 1: 443. 1809",
+				 	"record_scrutiny_date":"1809",
+				 	"Synonym":["Cassia annunciata","Cassia reticulata","Cassia tarantan","Chamaesenna reticulata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Entada",
+		 	"author":"(L.) Fawc. & Rendle",
+		 	"Publicación":"Flora of Jamaica, Containing Descriptions of the Flowering Plants Known from the Island 4: 124. 1920.",
+		 	"record_scrutiny_date":"1920",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Entada gigas",
+				 	"author":"(L.) Fawc. & Rendle",
+				 	"Publicación":"Flora of Jamaica, Containing Descriptions of the Flowering Plants Known from the Island 4: 124. 1920.",
+				 	"record_scrutiny_date":"1920",
+				 	"Synonym":["Entada planoseminata","Entada scandens","Entada umbonata","Mimosa gigas","Entada monostachya","Mimosa scandens"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Zapoteca",
+		 	"author":"(Willd.) H. M. Hern.",
+		 	"Publicación":"Annals of the Missouri Botanical Garden 73(4): 757. 1986[1987].",
+		 	"record_scrutiny_date":"1987",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Zapoteca tetragona",
+				 	"author":"(Willd.) H. M. Hern.",
+				 	"Publicación":"Annals of the Missouri Botanical Garden 73(4): 757. 1986[1987].",
+				 	"record_scrutiny_date":"1987",
+				 	"Synonym":["Acacia tetragona","Anneslia tetragona","Calliandra portoricensis var. multijuga","Calliandra tetragona","Calliandra toroana","Feuilleea tetragona"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Canavalia",
+		 	"author":"(Sw.) DC.",
+		 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 2: 404. 1825.",
+		 	"record_scrutiny_date":"1825",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Canavalia rosea",
+				 	"author":"(Sw.) DC.",
+				 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 2: 404. 1825.",
+				 	"record_scrutiny_date":"1825",
+				 	"Synonym":["Canavalia obcordata","Canavalia obtusifolia","Dolichos emarginatus","Dolichos maritimus","Dolichos obcordatus","Dolichos obtusifolius","Dolichos roseus","Canavalia maritima"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Dalbergia",
+		 	"author":"(Jacq.) Urb.",
+		 	"Publicación":"Bulletin de l'Herbier Boissier 6(9): 731. 1898.",
+		 	"record_scrutiny_date":"1898",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Dalbergia brownei",
+				 	"author":"(Jacq.) Urb.",
+				 	"Publicación":"Bulletin de l'Herbier Boissier 6(9): 731. 1898.",
+				 	"record_scrutiny_date":"1898",
+				 	"Synonym":["Amerimnon brownei","Dalbergia amerimnum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Desmodium",
+		 	"author":"(Sw.) DC.",
+		 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 2: 332. 1825.",
+		 	"record_scrutiny_date":"1825",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Desmodium adscendens",
+				 	"author":"(Sw.) DC.",
+				 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 2: 332. 1825.",
+				 	"record_scrutiny_date":"1825",
+				 	"Synonym":["Hedysarum adscendens","Meibomia adscendens"]
+				 	},
+				 	{"Familia":"Fabaceae",
+				 	"name":"Desmodium incanum",
+				 	"author":"DC.",
+				 	"Publicación":"Prodromus Systematis Naturalis Regni Vegetabilis 2: 332. 1825.",
+				 	"record_scrutiny_date":"1825",
+				 	"Synonym":["Desmodium frutescens"]
+				 	},
+				 	{"Familia":"Fabaceae",
+				 	"name":"Desmodium scorpiurus",
+				 	"author":"(Sw.) Desv.",
+				 	"Publicación":"Dictionnaire des Sciences Naturelles, ed. 2, 13: 110. 1819.",
+				 	"record_scrutiny_date":"1819",
+				 	"Synonym":["Hedysarum scorpiurus"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Dioclea",
+		 	"author":"Hook. f.",
+		 	"Publicación":"Niger Flora 306–307. 1849.",
+		 	"record_scrutiny_date":"1849",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Dioclea reflexa",
+				 	"author":"Hook. f.",
+				 	"Publicación":"Niger Flora 306–307. 1849.",
+				 	"record_scrutiny_date":"1849",
+				 	"Synonym":["Canavalia reflexa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Erythrina",
+		 	"author":"Lour.",
+		 	"Publicación":"Flora Cochinchinensis 2: 427–428. 1790.",
+		 	"record_scrutiny_date":"1790",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Erythrina fusca",
+				 	"author":"Lour.",
+				 	"Publicación":"Flora Cochinchinensis 2: 427–428. 1790.",
+				 	"record_scrutiny_date":"1790",
+				 	"Synonym":["Erythrina glauca","Corallodendron fuscum"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Mucuna",
+		 	"author":"Fawc. & Rendle",
+		 	"Publicación":"Journal of Botany, British and Foreign 55(650): 36. 1917.",
+		 	"record_scrutiny_date":"1917",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Mucuna sloanei",
+				 	"author":"Fawc. & Rendle",
+				 	"Publicación":"Journal of Botany, British and Foreign 55(650): 36. 1917.",
+				 	"record_scrutiny_date":"1917",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Fabaceae",
+				 	"name":"Mucuna urens",
+				 	"author":"(L.) DC.",
+				 	"Publicación":"Vorlesungen der Churpfälzischen physicalisch-ökonomischen Gesellschaft 2: 399. 1787.",
+				 	"record_scrutiny_date":"1787",
+				 	"Synonym":["Dolichos urens","Dolichos altissimus","Stizolobium altissimum","Mucuna altissima"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Vigna",
+		 	"author":"(L.) A. Rich.",
+		 	"Publicación":"Historia Física Política y Natural de la Isla de Cuba, Botánica 10: 191. 1845.",
+		 	"record_scrutiny_date":"1845",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Vigna vexillata",
+				 	"author":"(L.) A. Rich.",
+				 	"Publicación":"Historia Física Política y Natural de la Isla de Cuba, Botánica 10: 191. 1845.",
+				 	"record_scrutiny_date":"1845",
+				 	"Synonym":["Dolichos vexillatus","Phaseolus vexillatus","Vigna vexillata var. pluriflora","Vigna vexillata var. yunnanensis"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Guilandina",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 381. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Guilandina bonduc",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 381. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Caesalpinia bonduc","Caesalpinia crista","Caesalpinia bonducella"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Fabaceae",
+		 	"name":"Desmodium",
+		 	"author":"(Schindl.) B.G. Schub.",
+		 	"Publicación":"Contributions from the Gray Herbarium of Harvard University 129: 8–11. 1940.",
+		 	"record_scrutiny_date":"1940",
+		 	"children":[
+		 			{"Familia":"Fabaceae",
+				 	"name":"Desmodium procumbens var. longipes",
+				 	"author":"(Schindl.) B.G. Schub.",
+				 	"Publicación":"Contributions from the Gray Herbarium of Harvard University 129: 8–11. 1940.",
+				 	"record_scrutiny_date":"1940",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Gentianaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Gentianaceae",
+		 	"name":"Voyria",
+		 	"author":"(Jacq.) Pers.",
+		 	"Publicación":"Synopsis Plantarum 1: 284. 1805.",
+		 	"record_scrutiny_date":"1805",
+		 	"children":[
+		 			{"Familia":"Gentianaceae",
+				 	"name":"Voyria aphylla",
+				 	"author":"(Jacq.) Pers.",
+				 	"Publicación":"Synopsis Plantarum 1: 284. 1805.",
+				 	"record_scrutiny_date":"1805",
+				 	"Synonym":["Ciminalis aphylla","Exacum aphyllum","Gentiana aphylla","Leiphaimos aphylla","Leiphaimos costaricensis","Leiphaimos eximia","Leiphaimos feildenii","Leiphaimos lutea","Leiphaimos pallida"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Gleicheniaceae",
+		 	"name":"Sticherus",
+		 	"author":"(Maxon) Nakai",
+		 	"Publicación":"Bulletin of the National Science Museum 29: 31. 1950.",
+		 	"record_scrutiny_date":"1950",
+		 	"children":[
+		 			{"Familia":"Gleicheniaceae",
+				 	"name":"Sticherus underwoodianus",
+				 	"author":"(Maxon) Nakai",
+				 	"Publicación":"Bulletin of the National Science Museum 29: 31. 1950.",
+				 	"record_scrutiny_date":"1950",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Gleicheniaceae",
+		 	"name":"Gleichenella",
+		 	"author":"(Willd.) Ching",
+		 	"Publicación":"Sunyatsenia 5(4): 276. 1940.",
+		 	"record_scrutiny_date":"1940",
+		 	"children":[
+		 			{"Familia":"Gleicheniaceae",
+				 	"name":"Gleichenella pectinata",
+				 	"author":"(Willd.) Ching",
+				 	"Publicación":"Sunyatsenia 5(4): 276. 1940.",
+				 	"record_scrutiny_date":"1940",
+				 	"Synonym":["Dicranopteris pectinata","Gleichenia pectinata","Gleichenia pectinata var. sublinearis"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Gentianaceae",
+		 	"name":"Tachia",
+		 	"author":"Al. Rodr. & J. Sánchez-Gonz.",
+		 	"Publicación":"",
+		 	"record_scrutiny_date":"",
+		 	"children":[
+		 			{"Familia":"Gentianaceae",
+				 	"name":"Tachia blancoi",
+				 	"author":"Al. Rodr. & J. Sánchez-Gonz.",
+				 	"Publicación":"",
+				 	"record_scrutiny_date":"",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Meliaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Meliaceae",
+		 	"name":"Guarea",
+		 	"author":"C. DC.",
+		 	"Publicación":"Bulletin de l'Herbier Boissier, sér. 2 5(5): 420–421. 1905.",
+		 	"record_scrutiny_date":"1905",
+		 	"children":[
+		 			{"Familia":"Meliaceae",
+				 	"name":"Guarea microcarpa",
+				 	"author":"C. DC.",
+				 	"Publicación":"Bulletin de l'Herbier Boissier, sér. 2 5(5): 420–421. 1905.",
+				 	"record_scrutiny_date":"1905",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Myrtaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Myrtaceae",
+		 	"name":"Eugenia",
+		 	"author":"Barrie",
+		 	"Publicación":"Novon 15: 11. 2005.",
+		 	"record_scrutiny_date":"2005",
+		 	"children":[
+		 			{"Familia":"Myrtaceae",
+				 	"name":"Eugenia cocosensis",
+				 	"author":"Barrie",
+				 	"Publicación":"Novon 15: 11. 2005.",
+				 	"record_scrutiny_date":"2005",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Myrtaceae",
+				 	"name":"Eugenia pacifica",
+				 	"author":"Benth.",
+				 	"Publicación":"Bot. voy. Sulphur 98. 1845.",
+				 	"record_scrutiny_date":"1845",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Myrtaceae",
+		 	"name":"Psidium",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 470, 1753",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Myrtaceae",
+				 	"name":"Psidium guajava",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 470, 1753",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Piperaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Piperaceae",
+		 	"name":"Peperomia",
+		 	"author":"C. DC.",
+		 	"Publicación":"Journal of Botany, British and Foreign 4: 140. 1866.",
+		 	"record_scrutiny_date":"1866",
+		 	"children":[
+		 			{"Familia":"Piperaceae",
+				 	"name":"Peperomia adscendens",
+				 	"author":"C. DC.",
+				 	"Publicación":"Journal of Botany, British and Foreign 4: 140. 1866.",
+				 	"record_scrutiny_date":"1866",
+				 	"Synonym":[]
+				 	},
+				 	{"Familia":"Piperaceae",
+				 	"name":"Peperomia glabella",
+				 	"author":"(Sw.) A. Dietr.",
+				 	"Publicación":"Species Plantarum. Editio sexta 1: 156. 1831.",
+				 	"record_scrutiny_date":"1831",
+				 	"Synonym":["Piper glabellum","Peperomia nigropunctata","Peperomia caulibardis var. jimenesana","Peperomia percuneata","Peperomia jimenesana","Peperomia pilulifera","Peperomia catii","Peperomia flagellispica"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Piperaceae",
+		 	"name":"Piper",
+		 	"author":"Kunth",
+		 	"Publicación":"Linnaea 13: 631. 1839[1840]",
+		 	"record_scrutiny_date":"1840",
+		 	"children":[
+		 			{"Familia":"Piperaceae",
+				 	"name":"Piper jacquemontianum",
+				 	"author":"Kunth",
+				 	"Publicación":"Linnaea 13: 631. 1839[1840]",
+				 	"record_scrutiny_date":"1840",
+				 	"Synonym":["Piper pilibaccum","Piper uvitanum","Piper barbulatum","Piper orosianum","Piper tabanicidium","Piper aeruginosibaccum","Piper dedititium","Piper onerosum","Piper vexans","Piper catalinianum","Piper siquirrense","Piper panamense"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Rhizophoraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Rhizophoraceae",
+		 	"name":"Cassipourea",
+		 	"author":"Aubl.",
+		 	"Publicación":"Encycl., Suppl. 2: 131. 1811.",
+		 	"record_scrutiny_date":"1811",
+		 	"children":[
+		 				{"Familia":"Rhizophoraceae",
+					 	"name":"Cassipourea guianensis",
+					 	"author":"Aubl.",
+					 	"Publicación":"Encycl., Suppl. 2: 131. 1811.",
+					 	"record_scrutiny_date":"1811",
+					 	"Synonym":["Cassipourea elliptica"]
+					 	},
+					 	{"Familia":"Rhizophoraceae",
+					 	"name":"Cassipourea killipii",
+					 	"author":"Cuatrec.",
+					 	"Publicación":"Fieldiana, Botany 27(1): 103–105. 1950.",
+					 	"record_scrutiny_date":"1950",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Rubiaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Bertiera",
+		 	"author":"Benth.",
+		 	"Publicación":"Bot. voy. Sulphur 103. 1845.",
+		 	"record_scrutiny_date":"1845",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Bertiera angustifolia",
+				 	"author":"Benth.",
+				 	"Publicación":"Bot. voy. Sulphur 103. 1845.",
+				 	"record_scrutiny_date":"1845",
+				 	"Synonym":["Bertiera guianensis subsp. pubiflora"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Coffea",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 172. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 				{"Familia":"Rubiaceae",
+					 	"name":"Coffea arabica",
+					 	"author":"L.",
+					 	"Publicación":"Sp. pl. 172. 1753.",
+					 	"record_scrutiny_date":"1753",
+					 	"Synonym":["Coffea arabica var. intermedia","Coffea arabica var. leucocarpa","Coffea arabica var. san ramón","Coffea arabica var. stuhkmannii"]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Diodia",
+		 	"author":"Sw.",
+		 	"Publicación":"Prodr. 30. 1788",
+		 	"record_scrutiny_date":"1788",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Diodia sarmentosa",
+				 	"author":"Sw.",
+				 	"Publicación":"Prodr. 30. 1788",
+				 	"record_scrutiny_date":"1788",
+				 	"Synonym":["Diodella sarmentosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Hoffmannia",
+		 	"author":"Donn. Sm.",
+		 	"Publicación":"Bot. Gaz. 61: 374. 1916.",
+		 	"record_scrutiny_date":"1916",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Hoffmannia nesiota",
+				 	"author":"Donn. Sm.",
+				 	"Publicación":"Bot. Gaz. 61: 374. 1916.",
+				 	"record_scrutiny_date":"1916",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Oldenlandia",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 119. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Oldenlandia corymbosa",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 119. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Hedyotis corymbosa"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Psychotria",
+		 	"author":"C. W. Ham.",
+		 	"Publicación":"Phytologia 64: 222. 1988.",
+		 	"record_scrutiny_date":"1988",
+		 	"children":[
+		 				{"Familia":"Rubiaceae",
+					 	"name":"Psychotria cocosensis",
+					 	"author":"C. W. Ham.",
+					 	"Publicación":"Phytologia 64: 222. 1988.",
+					 	"record_scrutiny_date":"1988",
+					 	"Synonym":[]
+					 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Psychotria",
+		 	"author":"Müll. Arg.",
+		 	"Publicación":"Flora 59: 545. 1876.",
+		 	"record_scrutiny_date":"1876",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Psychotria gracilenta",
+				 	"author":"Müll. Arg.",
+				 	"Publicación":"Flora 59: 545. 1876.",
+				 	"record_scrutiny_date":"1876",
+				 	"Synonym":["Psychotria brachybotrya","Psychotria iquitosensis","Psychotria brachyobotrya"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Richardia",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 330. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Richardia scabra",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 330. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Rustia",
+		 	"author":"(Benth.) Hemsl.",
+		 	"Publicación":"Biol. cent.-amer., Bot. 2: 14. 1881.",
+		 	"record_scrutiny_date":"1881",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Rustia occidentalis",
+				 	"author":"(Benth.) Hemsl.",
+				 	"Publicación":"Biol. cent.-amer., Bot. 2: 14. 1881.",
+				 	"record_scrutiny_date":"1881",
+				 	"Synonym":["Exostemma occidentale","Exostema occidentale"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Spermacoce",
+		 	"author":"(L. O. Williams) C. D. Adams ex W. C. Burger & C. M. Taylor",
+		 	"Publicación":"Fieldiana, Bot. n. s., 33: 316. 1993.",
+		 	"record_scrutiny_date":"1993",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Spermacoce exilis",
+				 	"author":"(L. O. Williams) C. D. Adams ex W. C. Burger & C. M. Taylor",
+				 	"Publicación":"Fieldiana, Bot. n. s., 33: 316. 1993.",
+				 	"record_scrutiny_date":"1993",
+				 	"Synonym":["Borreria exilis","Spermacoce mauritiana","Spermacoce repens","Spermacoce gracilis","Spermacoce ocymoides"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Spermacoce",
+		 	"author":"Willd. ex Roem. & Schult.",
+		 	"Publicación":"Syst. veg. 3: 530. 1818.",
+		 	"record_scrutiny_date":"1818",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Spermacoce ocymifolia",
+				 	"author":"Willd. ex Roem. & Schult.",
+				 	"Publicación":"Syst. veg. 3: 530. 1818.",
+				 	"record_scrutiny_date":"1818",
+				 	"Synonym":["Hemidiodia ocymifolia","Borreria ocymifolia","Diodia ocymifolia"]	
+				 	},
+					{"Familia":"Rubiaceae",
+				 	"name":"Spermacoce prostrata",
+				 	"author":"Aubl.",
+				 	"Publicación":"Hist. pl. Guiane 58, t. 20, fig. 3. 1775.",
+				 	"record_scrutiny_date":"1775",
+				 	"Synonym":["Borreria repens","Borreria parviflora","Borreria postrata","Spermacoce parviflora","Borreria gracilis","Borreria ocymoides","Borreria prostrata"]
+				 	},
+				 	{"Familia":"Rubiaceae",
+				 	"name":"Spermacoce remota",
+				 	"author":"Lam.",
+				 	"Publicación":"Tabl. encycl. 1: 273. 1792.",
+				 	"record_scrutiny_date":"1792",
+				 	"Synonym":["Spermacoce assurgens","Borreria remota","Borreria assurgens"]
+				 	},
+				 	{"Familia":"Rubiaceae",
+				 	"name":"Spermacoce alata",
+				 	"author":"Aubl.",
+				 	"Publicación":"Hist. pl. Guiane 60, t. 22, fig. 7. 1775.",
+				 	"record_scrutiny_date":"1775",
+				 	"Synonym":["Spermacoce latifolia","Borreria latifolia","Borreria alata"]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Hoffmannia",
+		 	"author":"Standl.",
+		 	"Publicación":"J. Washington Acad. Sci. 18: 180. 1928.",
+		 	"record_scrutiny_date":"1928",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Hoffmannia piratarum",
+				 	"author":"Standl.",
+				 	"Publicación":"J. Washington Acad. Sci. 18: 180. 1928.",
+				 	"record_scrutiny_date":"1928",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Guettarda",
+		 	"author":"(Standl.) C. M. Taylor",
+		 	"Publicación":"Novon 11(1): 133, f. 3E, F. 2001.",
+		 	"record_scrutiny_date":"2001",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Guettarda crispiflora subsp. sabiceoides",
+				 	"author":"(Standl.) C. M. Taylor",
+				 	"Publicación":"Novon 11(1): 133, f. 3E, F. 2001.",
+				 	"record_scrutiny_date":"2001",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Rubiaceae",
+		 	"name":"Palicourea",
+		 	"author":"(Müll. Arg.) Delprete & J.H. Kirkbr.",
+		 	"Publicación":"Journal of the Botanical Research Institute of Texas 10(2): 421. 2016.",
+		 	"record_scrutiny_date":"2016",
+		 	"children":[
+		 			{"Familia":"Rubiaceae",
+				 	"name":"Palicourea gracilenta",
+				 	"author":"(Müll. Arg.) Delprete & J.H. Kirkbr.",
+				 	"Publicación":"Journal of the Botanical Research Institute of Texas 10(2): 421. 2016.",
+				 	"record_scrutiny_date":"2016",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Rutaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Rutaceae",
+		 	"name":"Citrus",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 782. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Rutaceae",
+				 	"name":"Citrus X aurantium",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 782. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Citrus sinensis","Citrus aurantium subsp. amara","Citrus hystrix","Citrus vulgaris","Aurantium acre","Citrus nobilis"]
+				 	},
+				 	{"Familia":"Rutaceae",
+				 	"name":"Citrus X aurantiifolia",
+				 	"author":"(Christm.) Swingle",
+				 	"Publicación":"J. Washington Acad. Sci. 3: 465. 1913.",
+				 	"record_scrutiny_date":"1913",
+				 	"Synonym":["Limonia aurantiifolia","Citrus lima"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},{
+		"name": "Scrophulariaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Scrophulariaceae",
+		 	"name":"Capraria",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 2: 628. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Scrophulariaceae",
+				 	"name":"Capraria biflora",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 2: 628. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Linderniaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Linderniaceae",
+		 	"name":"Lindernia",
+		 	"author":"(L.) F. Muell.",
+		 	"Publicación":"Systematic Census of Australian Plants ... 1: 97. 1882[1882/1883].",
+		 	"record_scrutiny_date":"1883",
+		 	"children":[
+		 			{"Familia":"Linderniaceae",
+				 	"name":"Lindernia crustacea",
+				 	"author":"(L.) F. Muell.",
+				 	"Publicación":"Systematic Census of Australian Plants ... 1: 97. 1882[1882/1883].",
+				 	"record_scrutiny_date":"1883",
+				 	"Synonym":["Capraria crustacea","Torenia crustacea","Vandellia crustacea","Pyxidaria crustacea"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Plantaginaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Plantaginaceae",
+		 	"name":"Scoparia",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 116. 1753.",
+		 	"record_scrutiny_date":"175",
+		 	"children":[
+		 			{"Familia":"Plantaginaceae",
+				 	"name":"Scoparia dulcis",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 116. 1753.",
+				 	"record_scrutiny_date":"175",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Plantaginaceae",
+		 	"name":"Stemodia",
+		 	"author":"Kunth",
+		 	"Publicación":"Nova Genera et Species Plantarum (quarto ed.) 2: 358. 1817[1818].",
+		 	"record_scrutiny_date":"1818",
+		 	"children":[
+		 			{"Familia":"Plantaginaceae",
+				 	"name":"Stemodia jorullensis",
+				 	"author":"Kunth",
+				 	"Publicación":"Nova Genera et Species Plantarum (quarto ed.) 2: 358. 1817[1818].",
+				 	"record_scrutiny_date":"1818",
+				 	"Synonym":["Stemodia angulata"]
+				 	}
+		 	]
+		 	}
+
+		 ]	
+		},
+		{
+		"name": "Solanaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Solanaceae",
+		 	"name":"Capsicum",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 188–189. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Solanaceae",
+				 	"name":"Capsicum annuum",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 188–189. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Solanaceae",
+		 	"name":"Nicotiana",
+		 	"author":"L.",
+		 	"Publicación":"Species Plantarum 1: 180. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Solanaceae",
+				 	"name":"Nicotiana tabacum",
+				 	"author":"L.",
+				 	"Publicación":"Species Plantarum 1: 180. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	},
+		 	{"Familia":"Solanaceae",
+		 	"name":"Solanum",
+		 	"author":"Mill.",
+		 	"Publicación":"The Gardeners Dictionary: . . . eighth edition Solanum no. 5. 1768.",
+		 	"record_scrutiny_date":"1768",
+		 	"children":[
+		 				{"Familia":"Solanaceae",
+					 	"name":"Solanum americanum",
+					 	"author":"Mill.",
+					 	"Publicación":"The Gardeners Dictionary: . . . eighth edition Solanum no. 5. 1768.",
+					 	"record_scrutiny_date":"1768",
+					 	"Synonym":["Solanum nodiflorum","Solanum nigrum var. nodiflorum","Solanum nigrum var. americanum"]
+					 	},
+					 	{"Familia":"Solanaceae",
+					 	"name":"Solanum quitoense",
+					 	"author":"Lam.",
+					 	"Publicación":"Tableau Encyclopédique et Methodique ... Botanique 2: 16. 1794.",
+					 	"record_scrutiny_date":"1794",
+					 	"Synonym":["Solanum angulatum","Solanum quitense"]
+					 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Saccolomataceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Saccolomataceae",
+		 	"name":"Saccoloma",
+		 	"author":"A. Rojas & Trusty",
+		 	"Publicación":"Brenesia 62: 3, f. 2. 2004.",
+		 	"record_scrutiny_date":"2004",
+		 	"children":[
+		 			{"Familia":"Saccolomataceae",
+				 	"name":"Saccoloma elegans var. spinosum",
+				 	"author":"A. Rojas & Trusty",
+				 	"Publicación":"Brenesia 62: 3, f. 2. 2004.",
+				 	"record_scrutiny_date":"2004",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Aspleniaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Aspleniaceae",
+		 	"name":"Asplenium",
+		 	"author":"A. Rojas & Trusty",
+		 	"Publicación":"Brenesia 62: 2, f. 1. 2004.",
+		 	"record_scrutiny_date":"2004",
+		 	"children":[
+		 			{"Familia":"Aspleniaceae",
+				 	"name":"Asplenium delicatulum var. cocosense",
+				 	"author":"A. Rojas & Trusty",
+				 	"Publicación":"Brenesia 62: 2, f. 1. 2004.",
+				 	"record_scrutiny_date":"2004",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Passifloraceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Passifloraceae",
+		 	"name":"Passiflora",
+		 	"author":"O. Deg.",
+		 	"Publicación":"Flora Hawaiiensis Fam. 250. 1932.",
+		 	"record_scrutiny_date":"1932",
+		 	"children":[
+		 			{"Familia":"Passifloraceae",
+				 	"name":"Passiflora edulis fo. flavicarpa",
+				 	"author":"O. Deg.",
+				 	"Publicación":"Flora Hawaiiensis Fam. 250. 1932.",
+				 	"record_scrutiny_date":"1932",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Musaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Musaceae",
+		 	"name":"Musa",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 1043. 1753",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Musaceae",
+				 	"name":"Musa × paradisiaca",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 1043. 1753",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Musa sapientum"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Bixaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Bixaceae",
+		 	"name":"Bixa",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 1: 512. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Bixaceae",
+				 	"name":"Bixa orellana",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 1: 512. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Bixa acuminata","Bixa americana","Bixa odorata","Bixa platycarpa","Bixa tinctoria","Bixa urucurana","Orellana americana","Orellana orellana"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Caricaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Caricaceae",
+		 	"name":"Carica",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 2: 1036. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Caricaceae",
+				 	"name":"Carica papaya",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 2: 1036. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":["Papaya carica","Papaya papaya","Carica peltata"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Sapindaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Sapindaceae",
+		 	"name":"Urena",
+		 	"author":"L.",
+		 	"Publicación":"Sp. pl. 692. 1753.",
+		 	"record_scrutiny_date":"1753",
+		 	"children":[
+		 			{"Familia":"Sapindaceae",
+				 	"name":"Urena lobata var. lobata",
+				 	"author":"L.",
+				 	"Publicación":"Sp. pl. 692. 1753.",
+				 	"record_scrutiny_date":"1753",
+				 	"Synonym":[]
+				 	}
+		 	]
+		 	}
+		 ]	
+		},
+		{
+		"name": "Grammitidaceae",
+		 "Synonym":[],
+		 "author":"",
+		 "record_scrutiny_date":"",
+		 "children":[
+		 	{"Familia":"Grammitidaceae",
+		 	"name":"Alansmia",
+		 	"author":"(Bory ex Willd.) Moguel & M. Kessler",
+		 	"Publicación":"Brittonia 63(2): 240. 2011.",
+		 	"record_scrutiny_date":"2011",
+		 	"children":[
+		 			{"Familia":"Grammitidaceae",
+				 	"name":"Alansmia elastica",
+				 	"author":"(Bory ex Willd.) Moguel & M. Kessler",
+				 	"Publicación":"Brittonia 63(2): 240. 2011.",
+				 	"record_scrutiny_date":"2011",
+				 	"Synonym":["Terpsichore cocosensis","Terpsichore esquiveliana","Terpsichore mollissima","Polypodium mollissimum","Ctenopteris mollissima","Grammitis mollissima","Alansmia cocosensis"]
+				 	}
+		 	]
+		 	}
+		 ]	
+		}
+ ]
+}
+
+		 	
