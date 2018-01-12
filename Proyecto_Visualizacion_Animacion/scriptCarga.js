@@ -148,7 +148,6 @@ function Clear(){
     clearG = true;
     processingInstance.setup();
     processingInstance.setValueOneByOne(false);
-    $('#roundedOne')[0].checked = false;
     allG = true;
     setAllG();
     document.getElementById("All").checked = false;
