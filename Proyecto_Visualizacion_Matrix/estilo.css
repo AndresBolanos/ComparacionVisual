@@ -1091,6 +1091,6 @@ body {
   height: 45px;
   left: 670px;
   top: 50px;
-  border-left: thick solid #fff;
+  border-left:double 2px #fff;
 }
 

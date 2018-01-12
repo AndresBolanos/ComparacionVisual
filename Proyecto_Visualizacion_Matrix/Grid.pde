@@ -4,9 +4,9 @@ color[][] colors;
 int saved_i = -1;
 int saved_j = -1;
 
-float scaleFactor = 0.5;
-float translateX = 130.0;
-float translateY = 294.0;
+float scaleFactor = 0.2;
+float translateX = 400.0;
+float translateY = 100.0;
 
 Object [] izquierdos = nodesLeft;
 Object [] derechos = nodesRight;

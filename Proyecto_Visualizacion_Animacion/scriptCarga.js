@@ -19,6 +19,7 @@ var allG = false;
 var clearG = false;
 var LastValue = 0;
 var onebyone = false;
+var terminado;
 
 
 var cantidadSplits;
@@ -109,6 +110,7 @@ function setAllG(){
         newsG = true;
         conguencyG = true;
         allG = true;
+        splits = false;
         document.getElementById("Congruencia").checked = true;
         document.getElementById("Splits").checked = true;
         document.getElementById("Mergers").checked = true;
@@ -172,9 +174,14 @@ function IniciarAnimacion(){
     if (iniciadoProceso == false){
         var processingInstance;
         processingInstance = Processing.getInstanceById('CANVAS');
-        processingInstance.setup();
         processingInstance.beginAnimation();
         iniciadoProceso = true;
+    }
+    else{
+         var processingInstance;
+         processingInstance = Processing.getInstanceById('CANVAS');
+         processingInstance.StopAnimation();
+         iniciadoProceso = false;
     }
     if (iniciado == false){
         showVal(vel);
@@ -190,13 +197,13 @@ function IniciarAnimacion(){
         iniciado = false;
         
     } 
+
     Estadisticas(); 
 }
 
 function showVal(x){
     vel = x;
     valueSlider = document.getElementById('Slider').value;
-    console.log("Slider "+valueSlider);
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     processingInstance.setValueSlider(valueSlider);
@@ -275,3 +282,22 @@ function setOneByOne(){
         processingInstance.setValueOneByOne(false);
     }
 }
+
+function demonio(){
+    //console.log("Se ejecuta");
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
+    var terminado = processingInstance.returnTerminado();
+    if (terminado == true){
+        Clear();
+        //console.log("3 seg");
+        window.setTimeout(demonio, 3000);
+        processingInstance.setTerminado(false);
+    }
+    else{
+        //console.log("1 seg");
+        window.setTimeout(demonio, 1000);
+    }
+}
+
+window.setTimeout(demonio, 1000);
