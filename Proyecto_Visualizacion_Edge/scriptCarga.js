@@ -347,7 +347,7 @@ function render(data, parent) {
 
 });
 
-d3.json("datos2.json", function (err, data) { //This function is developed in the same way as the previous function, read the json just on the right side
+d3.json("jaa.json", function (err, data) { //This function is developed in the same way as the previous function, read the json just on the right side
         var Rtree = d3.layout.treelist()
             .childIndent(20)
             .nodeHeight(20);
