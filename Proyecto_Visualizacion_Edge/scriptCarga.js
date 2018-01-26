@@ -19,6 +19,7 @@ var cantidadNuevos;
 var cantidadCongruentes;
 var availableWidth;
 var availableHeight;
+var widthRight;
 var text;
 
 
@@ -93,6 +94,7 @@ var tocado = true;
 d3.json("datos1.json", function (err, data) {
 var pannel = document.getElementById('Contenedor');
 availableWidth = $(window).width(); //size of the width of the screen
+widthRight =availableWidth*0.10;
 availableHeight = $(window).height()+(pannel.scrollHeight*2);
 
 document.getElementById('CanvasLineasTenues').setAttribute("height", availableHeight+"px");
@@ -347,7 +349,7 @@ function render(data, parent) {
 
 });
 
-d3.json("jaa.json", function (err, data) { //This function is developed in the same way as the previous function, read the json just on the right side
+d3.json("datos2.json", function (err, data) { //This function is developed in the same way as the previous function, read the json just on the right side
         var Rtree = d3.layout.treelist()
             .childIndent(20)
             .nodeHeight(20);

@@ -285,17 +285,8 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 40px;
+  left: 140px;
   top: 65px;
-}
-
-.switchCongruence2 {
-  position: absolute;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  left: 50px;
-  top: 170px;
 }
 
 .switchSplits {
@@ -303,7 +294,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 110px;
+  left: 210px;
   top: 65px;
 }
 
@@ -312,7 +303,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 175px;
+  left: 275px;
   top: 65px;
 }
 
@@ -321,7 +312,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 235px;
+  left: 335px;
   top: 65px;
 }
 
@@ -330,7 +321,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 300px;
+  left: 400px;
   top: 65px;
 }
 
@@ -339,7 +330,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 365px;
+  left: 465px;
   top: 65px;
 }
 
@@ -348,7 +339,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 425px;
+  left: 525px;
   top: 65px;
 }
 
@@ -357,7 +348,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 495px;
+  left: 595px;
   top: 65px;
 }
 
@@ -387,7 +378,7 @@ a:hover {
   position: absolute;
   width: 60px;
   height: 34px;
-  left: 20px;
+  left: 120px;
   top: 45px;
   color: white;
 }
@@ -396,7 +387,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 110px;
+  left: 210px;
   top: 45px;
   color: white;
 }
@@ -405,7 +396,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 170px;
+  left: 275px;
   top: 45px;
   color: white;
 }
@@ -414,7 +405,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 235px;
+  left: 335px;
   top: 45px;
   color: white;
 }
@@ -423,7 +414,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 295px;
+  left: 395px;
   top: 45px;
   color: white;
 }
@@ -432,7 +423,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 370px;
+  left: 470px;
   top: 45px;
   color: white;
 }
@@ -441,7 +432,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 415px;
+  left: 515px;
   top: 45px;
   color: white;
 }
@@ -450,7 +441,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 505px;
+  left: 605px;
   top: 45px;
   color: white;
 }
@@ -885,7 +876,8 @@ body {
 
 #CANVAS{
   position: absolute;
-  top: 120px;          
+  top: 120px;     
+  left: 130px;     
 }
 
 
@@ -949,7 +941,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 800px;
+  left: 920px;
   top: 45px;
   color: white;
 }
@@ -958,7 +950,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 840px;
+  left: 960px;
   top: 65px;
   color: white;
 }
@@ -967,7 +959,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 900px;
+  left: 1020px;
   top: 45px;
   color: white;
 }
@@ -976,7 +968,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 915px;
+  left: 1035px;
   top: 65px;
   color: white;
 }
@@ -985,7 +977,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 950px;
+  left: 1070px;
   top: 45px;
   color: white;
 }
@@ -994,7 +986,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 970px;
+  left: 1090px;
   top: 65px;
   color: white;
 }
@@ -1003,7 +995,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1010px;
+  left: 1130px;
   top: 45px;
   color: white;
 }
@@ -1012,7 +1004,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1030px;
+  left: 1150px;
   top: 65px;
   color: white;
 }
@@ -1021,7 +1013,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1065px;
+  left: 1185px;
   top: 45px;
   color: white;  
 }
@@ -1030,7 +1022,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1090px;
+  left: 1210px;
   top: 65px;
   color: white;  
 }
@@ -1039,7 +1031,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1140px;
+  left: 1260px;
   top: 45px;
   color: white; 
 }
@@ -1048,7 +1040,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1150px;
+  left: 1270px;
   top: 65px;
   color: white; 
 }
@@ -1057,7 +1049,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1180px;
+  left: 1300px;
   top: 45px;
   color: white;
 }
@@ -1066,7 +1058,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1210px;
+  left: 1330px;
   top: 65px;
   color: white; 
 }
@@ -1152,7 +1144,7 @@ body {
   position: absolute;
   width: 60px;
   height: 45px;
-  left: 670px;
+  left: 22.7%;
   top: 50px;
   border-left:double 2px #fff;
 }

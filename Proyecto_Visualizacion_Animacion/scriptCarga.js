@@ -138,6 +138,7 @@ function setAllG(){
     }
 }
 function Clear(){
+    finish = true;
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     document.getElementById("SplitsStatsValue").innerHTML = 0;
@@ -283,16 +284,24 @@ function setOneByOne(){
     }
 }
 
+var finish = true;
 function demonio(){
     //console.log("Se ejecuta");
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     var terminado = processingInstance.returnTerminado();
     if (terminado == true){
-        Clear();
-        //console.log("3 seg");
-        window.setTimeout(demonio, 3000);
-        processingInstance.setTerminado(false);
+        if (finish == true){
+             console.log(finish);
+             finish = false;
+             window.setTimeout(demonio, 3000);
+        }
+        else{
+            Clear();
+            //console.log("3 seg");
+            window.setTimeout(demonio, 3000);
+            processingInstance.setTerminado(false);
+        }
     }
     else{
         //console.log("1 seg");

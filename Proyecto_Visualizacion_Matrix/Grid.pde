@@ -101,9 +101,9 @@ void draw() {
 
 void keyPressed() {
   if (key == 'r' || key == 'R') {
-    scaleFactor = 0.5;
-    translateX = 130.0;
-    translateY = 294.0;
+    scaleFactor = 0.2;
+    translateX =  400.0;
+    translateY = 100.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;

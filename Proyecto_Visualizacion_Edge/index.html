@@ -8,9 +8,12 @@
          <script src="bootstrap.min.js"></script>
          <link href="bootstrap.min.css" rel="stylesheet">
          <link href="estilo.css" rel="stylesheet">
+         <link href="menu.css" rel="stylesheet">
+         <link href="fonts.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <script src="d3.js"></script>
          <script type="text/javascript" src="treelist.js"></script>
+         <script type="text/javascript" src="menu.js"></script>
          <script type="text/javascript" src="scriptCarga.js"></script>
          <script type="text/javascript" src="funciones.js"></script>
          <script type="text/javascript" src="funciones_Auxiliares.js"></script>
@@ -24,6 +27,7 @@
         <a href="../Proyecto_Visualizacion_Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>         
       </div>
       <div id="mainToolBox">
+          <a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>
           <div id="leftToolBox">
             <form> 
               <label class="labelCongruence">Congruence</label>
@@ -85,11 +89,18 @@
           </div>                                                
         </div>
     </header>
-    <body>               
-        <div id = "Encabezado">
+    <body> 
+    <nav>
+          <ul>
+            <li><a href="#"><span class="icon-folder-open"></span>Open Taxonomy</a></li>
+            <li><a href="#"><span class="icon-folder-download"></span>Save Taxonomy</a></li>
+          </ul>
+        </nav>              
+        <!--<div id = "Encabezado">
              <h1>Taxonomy #1</h1>
              <h2>Taxonomy #2</h2>
         </div>
+      -->
         <canvas id="CANVAS" data-processing-sources="Processing.pde"></canvas>
             
       <div id="Contenedor" class="row">

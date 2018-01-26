@@ -1,3 +1,5 @@
+  
+import processing.serial.*;
 
 //definicion de las variables de uso general
 boolean moves = false;

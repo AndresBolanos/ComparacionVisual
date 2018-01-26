@@ -2,11 +2,13 @@
 
 int width;
 int height;
+int widthRigthP;
 conguencia [] CongruenciaIzquierdos;
 conguencia [] CongruenciaDerechos;
 void setup(){
     width = availableWidth;
     height = availableHeight;
+    widthRigthP = widthRight;
     size(width,height);
     background(255); 
 }
@@ -46,13 +48,13 @@ void drawCongruency(String nombre,int grosor){
                     int x1 = izquierdos[i].x+textWidth(izquierdos[i].name);
                 }
 		    	int y1 = izquierdos[i].y-5;
-		    	float x2 = derechos[j].x+anchoDiv;
+		    	float x2 = derechos[j].x+anchoDiv+5;
 		    	int y2 = derechos[j].y-5;
                 int posX = x1;
                 if (izquierdos[i].name.length <= 15){
                     posX = posX + 12;
                 }
-		    	curve(x1*3, y1-50,posX,y1,x2-5,y2,x2/3,y2+50);
+		    	curve(x1*3, y1-50,posX+widthRigthP+50,y1,x2-5,y2,x2,y2+20);
                 congruencia nodoI = new conguencia(izquierdos[i],"Azul");
                 congruencia nodoD = new conguencia(derechos[j],"Azul");
                 append(CongruenciaIzquierdos,nodoI);
@@ -125,7 +127,7 @@ void drawSplits(int grosor,string nombre){
 			    	int y1 = splitsL[i].y-5;
 			    	float x2 = splitsR[j].x+anchoDiv;
 			    	int y2 = splitsR[j].y-5;
-			    	curve(x1*3, y1-50,x1,y1,x2-5,y2,x2/3,y2+50);
+			    	curve(x1*3, y1-50,x1+widthRigthP+50,y1,x2-5,y2,x2,y2+50);
          		}
          		splitsR=[];
                 splitsL=[];
@@ -326,7 +328,7 @@ void drawMoves(bandera,int R, int G,int B,string nombre,int grosor){
                     int y1 = nodosIzquierdos[0].y-5;
                     float x2 = nodosDerechos[0].x+anchoDiv;
                     int y2 = nodosDerechos[0].y-5;
-                    curve(x1*3, y1-50,x1,y1,x2-5,y2,x2/3,y2+50);
+                    curve(x1*3, y1-50,x1+widthRigthP+50,y1,x2-5,y2,x2,y2+50);
                 }
             }
         }
@@ -434,7 +436,7 @@ void merge(string nombre,int grosor){
                     int y1 = izquierdo[i].y-5;
                     float x2 = derecho.x+anchoDiv;
                     int y2 = derecho.y-5;
-                    curve(x1*3, y1-50,x1,y1,x2-5,y2,x2/3,y2+50);
+                    curve(x1*3, y1-50,x1+widthRigthP+50,y1,x2-5,y2,x2,y2+50);
                 }
             }
             cont = 0;

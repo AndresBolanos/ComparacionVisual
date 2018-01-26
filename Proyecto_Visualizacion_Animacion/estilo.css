@@ -14,7 +14,7 @@
   position: absolute;
   width: 40px;
   height: 25px;
-  left: 550px;
+  left: 630px;
   top: 65px;
   border-radius: 5px;
   background-image: url("Reload.png");
@@ -300,7 +300,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 40px;
+  left: 120px;
   top: 65px;
 }
 
@@ -318,7 +318,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 110px;
+  left: 190px;
   top: 65px;
 }
 
@@ -327,7 +327,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 175px;
+  left: 255px;
   top: 65px;
 }
 
@@ -336,7 +336,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 235px;
+  left: 315px;
   top: 65px;
 }
 
@@ -345,7 +345,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 300px;
+  left: 380px;
   top: 65px;
 }
 
@@ -354,7 +354,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 365px;
+  left: 445px;
   top: 65px;
 }
 
@@ -363,7 +363,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 425px;
+  left: 505px;
   top: 65px;
 }
 
@@ -372,7 +372,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 495px;
+  left: 575px;
   top: 65px;
 }
 
@@ -382,16 +382,7 @@ a:hover {
   display: inline-block;
   width: 40px;
   height: 24px;
-  left: 885px;
-  top: 65px;
-}
-
-.switchClear {
-  position: absolute;
-  background: blue;
-  width: 40px;
-  height: 24px;
-  left: 550px;
+  left: 945px;
   top: 65px;
 }
 
@@ -423,7 +414,7 @@ a:hover {
   position: absolute;
   width: 60px;
   height: 34px;
-  left: 20px;
+  left: 100px;
   top: 45px;
   color: white;
 }
@@ -432,7 +423,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 110px;
+  left: 190px;
   top: 45px;
   color: white;
 }
@@ -441,7 +432,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 170px;
+  left: 250px;
   top: 45px;
   color: white;
 }
@@ -450,7 +441,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 235px;
+  left: 315px;
   top: 45px;
   color: white;
 }
@@ -459,7 +450,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 295px;
+  left: 375px;
   top: 45px;
   color: white;
 }
@@ -468,7 +459,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 370px;
+  left: 450px;
   top: 45px;
   color: white;
 }
@@ -477,7 +468,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 415px;
+  left: 495px;
   top: 45px;
   color: white;
 }
@@ -486,7 +477,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 505px;
+  left: 585px;
   top: 45px;
   color: white;
 }
@@ -495,7 +486,7 @@ a:hover {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 550px;
+  left: 630px;
   top: 45px;
   color: white;
 }
@@ -1039,7 +1030,8 @@ body {
 
 #CANVAS{
   position: absolute;
-  top: 120px;          
+  top: 120px;  
+  left:130px;        
 }
 
 
@@ -1103,14 +1095,14 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1000px;
+  left: 1060px;
   top: 45px;
   color: white;
 }
 
 .labelOneByOne{  
   position: absolute;  
-  left: 880px;
+  left: 940px;
   top: 45px;
   color: white;
 }
@@ -1120,7 +1112,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1040px;
+  left: 1100px;
   top: 65px;
   color: white;
 }
@@ -1129,7 +1121,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1100px;
+  left: 1160px;
   top: 45px;
   color: white;
 }
@@ -1138,7 +1130,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1115px;
+  left: 1175px;
   top: 65px;
   color: white;
 }
@@ -1147,7 +1139,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1150px;
+  left: 1210px;
   top: 45px;
   color: white;
 }
@@ -1156,7 +1148,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1170px;
+  left: 1230px;
   top: 65px;
   color: white;
 }
@@ -1165,7 +1157,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1210px;
+  left: 1270px;
   top: 45px;
   color: white;
 }
@@ -1174,7 +1166,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1230px;
+  left: 1290px;
   top: 65px;
   color: white;
 }
@@ -1183,7 +1175,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1265px;
+  left: 1325px;
   top: 45px;
   color: white;  
 }
@@ -1192,7 +1184,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1290px;
+  left: 1350px;
   top: 65px;
   color: white;  
 }
@@ -1201,7 +1193,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1340px;
+  left: 1400px;
   top: 45px;
   color: white; 
 }
@@ -1210,7 +1202,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1350px;
+  left: 1410px;
   top: 65px;
   color: white; 
 }
@@ -1219,7 +1211,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1380px;
+  left: 1440px;
   top: 45px;
   color: white;
 }
@@ -1228,7 +1220,7 @@ body {
   position: absolute;  
   width: 60px;
   height: 34px;
-  left: 1410px;
+  left: 1470px;
   top: 65px;
   color: white; 
 }
@@ -1241,10 +1233,9 @@ body {
 }
 
 #Comenzar{
-
   position: absolute;
   top: -20px;
-  left: 10px;
+  left: 95px;
   width: 40px;
   height: 40px;
   background-image: url("play.png");
@@ -1283,7 +1274,7 @@ body {
 .barra {
   position: absolute;
   top: 25px;
-  left:55px;
+  left:135px;
   -webkit-appearance: none;
   width: 50%;
   height: 15px;
@@ -1321,7 +1312,7 @@ body {
   position: absolute;
   width: 50px;
   height: 45px;
-  left: 970px;
+  left: 1030px;
   top: 50px;
   border-left:double 2px #fff;
 }
@@ -1330,7 +1321,7 @@ body {
   position: absolute;
   width: 50px;
   height: 45px;
-  left: 620px;
+  left: 700px;
   top: 50px;
   border-left:double 2px #fff;
 }
@@ -1339,7 +1330,7 @@ body {
 #menos{
   position: absolute;
   top:-3px;
-  left:65px;
+  left:140px;
   color:white;
   font-weight:bold;
   font-size: 14px;
@@ -1349,7 +1340,7 @@ body {
 #mas{
   position: absolute;
   top: 4px;
-  margin-left: 138%;
+  margin-left: 220%;
   color:white;
   font-weight:bold;
   font-size: 14px;

@@ -1,0 +1,52 @@
+body nav {
+	width:90%;
+	max-width:150px;
+	margin-top: 100px;
+	background-color: #555;
+	margin-left: -400px;
+}
+
+body nav ul {
+	overflow:hidden;
+	list-style:none;
+	border-radius: 5px;
+}
+ 
+body nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+body nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+ 
+body nav ul li span {
+	margin-right:10px;
+}
+ 
+body nav ul li a:hover {
+	background:#4CAF50;
+	color:white;
+}
+
+body nav ul li a:link, body nav ul li a:visited{
+	color: #fff;
+}
+
+.bt-menu{
+	position: absolute;
+	top:55%;
+	left: 0.5%;
+	font-size: 20px;
+	color:#fff;
+}
+
+.bt-menu:link, .bt-menu:visited{
+	color: #fff;
+}
+.bt-menu:hover {color:#4CAF50;}  
