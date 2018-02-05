@@ -1,6 +1,7 @@
  <!DOCTYPE html>
     <head>
          <meta charset="utf-8"/>
+         <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="../Abrir_Taxonomias/index.html">
          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
          <meta name="description" content="Hierarchy comparison - colouring"/>
          <title> Comparación taxonomías </title>
@@ -18,6 +19,7 @@
          <script type="text/javascript" src="funciones.js"></script>
          <script type="text/javascript" src="funciones_Auxiliares.js"></script>
          <script src="processing.js"></script>
+         <meta http-equiv="Access-Control-Allow-Origin" content="*"> 
     </head>
     <header>
       <div class="icon-bar">
@@ -92,8 +94,8 @@
     <body> 
     <nav>
           <ul>
-            <li><a href="#"><span class="icon-folder-open"></span>Open Taxonomy</a></li>
-            <li><a href="#"><span class="icon-folder-download"></span>Save Taxonomy</a></li>
+            <li><a href="#"  onclick="nuevaventana()"><span class="icon-folder-open"></span>Open Taxonomy</a></li>
+            <li><a href="#"  onclick="limpiar()"><span class="icon-folder-download"></span>Save Taxonomy</a></li>
           </ul>
         </nav>              
         <!--<div id = "Encabezado">

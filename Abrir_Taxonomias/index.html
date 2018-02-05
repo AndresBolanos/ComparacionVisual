@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<link href="estilos.css" rel="stylesheet">
+	<script type="text/javascript" src="Verificacion.js"></script>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*"> 
+    <title> Open Taxonomies </title>
+</head>
+<body>
+	<h1>Seleccione los archivos de ambas taxonomias</h1>
+	<div id="content">
+		<label class="Taxonomy1">Taxonomia 1</label>
+		<select id="file1" class="file1">
+		  <option value="amphibia1.json">Amphibia 1</option>
+		  <option value="amphibia2.json">Amphibia 2</option>
+		</select>
+		<label class="Taxonomy2">Taxonomia 2</label>
+		<select id="file2" class="file2">
+		  <option value="amphibia1.json">Amphibia 1</option>
+		  <option value="amphibia2.json">Amphibia 2</option>
+		</select>
+		<input type="button" onclick="VerificarDatos()" name="Save" id="Save" class="Save" value="Load">
+	</div>
+</body>
+</html>

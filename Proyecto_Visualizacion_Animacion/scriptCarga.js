@@ -219,7 +219,7 @@ availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
 
-d3.json("datos1.json", function (err, data) {
+d3.json("Archivos-Datos/"+"datos1.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);
@@ -232,7 +232,7 @@ d3.json("datos1.json", function (err, data) {
 });
 
 
-d3.json("datos2.json", function (err, data) {
+d3.json("Archivos-Datos/"+"datos2.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);

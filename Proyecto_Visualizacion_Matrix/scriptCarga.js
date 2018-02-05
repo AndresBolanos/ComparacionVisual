@@ -29,7 +29,7 @@ availableWidth = $(window).width(); //size of the width of the screen
 //var margin = {top: -5, right: -5, bottom: -5, left: -5};
 var margin = -5;
 
-d3.json("datos1.json", function (err, data) {
+d3.json("Archivos-Datos/"+"datos1.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);
@@ -42,7 +42,7 @@ d3.json("datos1.json", function (err, data) {
 });
 
 
-d3.json("datos2.json", function (err, data) {
+d3.json("Archivos-Datos/"+"datos2.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);
@@ -55,3 +55,11 @@ d3.json("datos2.json", function (err, data) {
         }
         render(data, data);
 });
+
+//$(document).ready(click);
+/*
+function click(){ 
+        console.log("Clickeo"); 
+        
+        console.log("Si");
+}*/
