@@ -15,6 +15,7 @@ boolean Final = false;
 boolean inicio = true;
 Node [] nodosIzquierdos;
 Node [] nodosDerechos;
+Node [] izquierdos_aux;
 Object [] izquierdos;
 Object [] derechos;
 Merge []  Listamergers; // en este arreglo se guardan los objetos de tipo merges un atributo nodo que tiene el nodo de la derecha y un atributo de lista de nombre de los de la izquierda
@@ -29,7 +30,7 @@ Node [] ListaCongruency1;
 Node [] ListaGeneral = [];
 float scaleFactor = 1.0;
 float translateX = 0.0;
-float translateY = 0.0;
+float translateY = 50.0;
 float incrX = 0; //Have the pair numbres
 float incrY = 0;
 int cantidadMoves;
@@ -48,6 +49,7 @@ int posicionNuevos = 0;
 int posicionExclusiones = 0;
 int posicionCongruentes = 0;
 int posicionMoves = 0;
+int posicionRename = 0;
 int posicionMerges = 0;
 int posicionSplits = 0;
 
@@ -90,24 +92,24 @@ void setValueSlider(int valueSlider){
   }
   if (valueSlider >= incrX){
     if (incrX == 0){
-      incrX += abs(valueSlider/1);
-      incrY += abs(valueSlider/1);
+      incrX += abs(valueSlider/1)-0.5;
+      incrY += abs(valueSlider/1)-0.5;
     }
     else{
-      incrX += abs(valueSlider/incrX);
-      incrY += abs(valueSlider/incrY);
+      incrX += abs(valueSlider/incrX)-0.5;
+      incrY += abs(valueSlider/incrY)-0.5;
     }
    }
    else{
      if (valueSlider == 0){
       if (incrX != 0){
-        incrX -= abs(incrX/1);
-        incrY -= abs(incrY/1);
+        incrX -= abs(incrX/1)-0.5;
+        incrY -= abs(incrY/1)-0.5;
       }
     }
     else{
-      incrX -= abs(incrX/valueSlider);
-      incrY -= abs(incrY/valueSlider);
+      incrX -= abs(incrX/valueSlider)-0.5;
+      incrY -= abs(incrY/valueSlider)-0.5;
     }
    }
 }
@@ -116,12 +118,14 @@ void beginAnimation(){
  // inicio = true;
   if (conguencyG || splitsG || mergersG || movesG || renamesG || exclusionsG || newsG){
     animar = true;
+    inicio = true;
     terminado = false;
   }
 }
 
 void StopAnimation(){
   animar = false;
+  inicio = false;
 }
 
 void setValueOneByOne(boolean valor){
@@ -133,8 +137,10 @@ void setup(){
   posicionExclusiones = 0;
   posicionCongruentes = 0;
   posicionMoves = 0;
+  posicionRename = 0;
   posicionMerges = 0;
   posicionSplits = 0;
+  one_by_one = false;
   mergers = false;
   moves = false;
   renames = false;
@@ -150,6 +156,7 @@ void setup(){
   izquierdos = nodesLeft;
   derechos = nodesRight;
   nodosIzquierdos = new Node[izquierdos.length];
+  izquierdos_aux =  new Node[izquierdos.length]
   nodosDerechos = new Node[derechos.length];
   smooth();
   //Here load the nodes
@@ -170,18 +177,15 @@ void draw() {
   background(255);
   pintarNodos(true);
   pintarNodos(false);
+  textSize(20);
+  fill(0);
+  text("Amphibia-A",320,0);
+   text("Amphibia-B",915,0);
   if (one_by_one){
     if (animar){
         if (inicio){
-          if (nodosIzquierdos[0].x >= nodosDerechos[0].x){
             inicio = false;
             congruency = true;
-            removerNodos([0]);
-
-          }
-          else{
-            nodosIzquierdos[0].move(nodosDerechos[0].x,nodosDerechos[0].y);
-          }
         }
         if (mergers){
           if (mergersG){
@@ -269,18 +273,21 @@ void draw() {
 
             int [] posicionesRenames = getPosicionesMoves_Renames(ListaRenames);
             for (int i = 0; i < nodosIzquierdos.length; i++){
-              for (j = 0; j < ListaRenames.length; j++){
-                if (nodosIzquierdos[i].name == ListaRenames[j].nodoIzquierdo.name){
-                  nodosIzquierdos[i].move(ListaRenames[j].nodoDerecho.x,ListaRenames[j].nodoDerecho.y);
-                  if (nodosIzquierdos[i].x >= ListaRenames[j].nodoDerecho.x-6 && (nodosIzquierdos[i].y >= ListaRenames[j].nodoDerecho.y-6 || nodosIzquierdos[i].y >= ListaRenames[j].nodoDerecho.y+6)){
-                    removerNodos(posicionesRenames);
-                    renames = false;
-                    news = true;
+              //for (j = 0; j < ListaRenames.length; j++){
+                if (nodosIzquierdos[i].name == ListaRenames[posicionRename].nodoIzquierdo.name){
+                  nodosIzquierdos[i].move(ListaRenames[posicionRename].nodoDerecho.x,ListaRenames[posicionRename].nodoDerecho.y);
+                  if (nodosIzquierdos[i].x >= ListaRenames[posicionRename].nodoDerecho.x-6 && (nodosIzquierdos[i].y >= ListaRenames[posicionRename].nodoDerecho.y-6 || nodosIzquierdos[i].y >= ListaRenames[posicionRename].nodoDerecho.y+6)){
+                    posicionRename+=1;
+                    removerNodos([i]);
+                     if (posicionRename == ListaRenames.length){
+                        renames = false;
+                        news = true;
+                        break;
+                     }
                   }
                 }
               }
             }
-          }
           else{
             renames = false;
             news = true;
@@ -446,15 +453,8 @@ void draw() {
   else{
     if (animar){
         if (inicio){
-            if (nodosIzquierdos[0].x >= nodosDerechos[0].x){
-              inicio = false;
-              congruency = true;
-              removerNodos([0]);
-
-            }
-            else{
-              nodosIzquierdos[0].move(nodosDerechos[0].x,nodosDerechos[0].y);
-            }
+          inicio = false;
+          congruency = true;
         }
         if (mergers){
           if (mergersG){
@@ -693,7 +693,7 @@ void keyPressed() {
   if (key == 'r' || key == 'R') {
     scaleFactor = 1;
     translateX = 0.0;
-    translateY = 0.0;
+    translateY = 50.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;
@@ -752,6 +752,7 @@ void loadNodes(nodos,flag){
   for (int i = 0; i < nodos.length; i++){
     if (flag){
       nodosIzquierdos[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
+      izquierdos_aux[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
       y += round((availableHeight-40)/nodos.length)+5;
     }
     else{
@@ -765,7 +766,7 @@ void loadNodes(nodos,flag){
 //Funcion que impririme los diferentes nodos creados
 void pintarNodos(flag){
   if (flag){
-     for (int i = 0; i < nodosIzquierdos.length; i++){
+     for (int i = 1; i < nodosIzquierdos.length; i++){
       fill(0);
       textSize(12); 
       if (mergers){
@@ -823,9 +824,20 @@ void pintarNodos(flag){
       }
       if (renames){
          for (int m = 0; m < ListaRenames.length; m++){
-          if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-            textSize(20); 
-            fill(8,138,8);
+           if (one_by_one){
+              if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionRename){
+                textSize(20); 
+                fill(91,255,142);
+               }
+               else if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
+                fill(91,255,142);
+              }
+           }
+           else{
+            if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
+                textSize(20); 
+                fill(91,255,142);
+               }
            }
          }
       }
@@ -904,11 +916,30 @@ void pintarNodos(flag){
           }
       }
       nodosIzquierdos[i].display();
+      for (int r = 1; r < izquierdos_aux.length; r++){
+        if (nodosIzquierdos[i].name == izquierdos_aux[r].name && nodosIzquierdos[i].x > izquierdos_aux[r].x){
+            izquierdos_aux[r].display();
+            break;
+        }
+      }
     }
+     for (int r = 1; r < izquierdos_aux.length; r++){
+        boolean esta = false;
+        for (int m = 1; m < nodosIzquierdos.length; m++){
+            if (nodosIzquierdos[m].name == izquierdos_aux[r].name){
+              esta = true;
+            }
+        }
+        if (esta == false){
+          textSize(12);
+           fill(124,122,122);
+           izquierdos_aux[r].display();
+        }
+      }
   }
   else{
-     for (int i = 0; i < nodosDerechos.length; i++){
-       textSize(12); 
+     for (int i = 1; i < nodosDerechos.length; i++){
+      textSize(12); 
       fill(124,122,122);
       if (mergers){
         if (mergersG){
@@ -942,10 +973,16 @@ void pintarNodos(flag){
       }
       if (renames){
          for (int m = 0; m < ListaRenames.length; m++){
-          if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name){
-            textSize(20); 
-            fill(8,138,8);
-           }
+          if (one_by_one){
+              if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionRename){
+                fill(91,255,142);
+              }
+            }
+            else{
+               if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name){
+                fill(91,255,142);
+              }
+            }
          }
       }
       if (news){
@@ -1121,7 +1158,7 @@ void getMergers(){
 boolean existeNombre_Complejo(nombre,autor,date){
     Object [] izquierdos = nodesLeft;
     for (int nodeL = 0; nodeL < izquierdos.length; nodeL++) {
-        if(izquierdos[nodeL].name == nombre && izquierdos[nodeL].author == autor && izquierdos[nodeL].record_scrutiny_date == date){
+        if(izquierdos[nodeL].name == nombre){
             append(izquierdo,izquierdos[nodeL]);
             return false;
         }
@@ -1245,7 +1282,7 @@ void Moves(){
         String [] padresD = buscar_padres(nombreR,derechos);
         if (padresI.length == padresD.length){
           boolean flag = true;
-          for (int j = 0; j < padresD.length;j++){
+          for (int j = 0; j < padresD.length-1;j++){
               if (padresD[j] != padresI[j]){
                   flag = false;
               }
@@ -1375,12 +1412,16 @@ void News(){
 /////////////////////////////////////////////Congruency functions/////////////////////////////////
 int [] getposicionesCongruengy(){
   int [] posiciones = [];
-  for (int i = 0;i<nodosIzquierdos.length;i++){
-    for (int j = 0;j<nodosDerechos.length;j++){
-      if (nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && nodosIzquierdos[i].record_scrutiny_date == nodosDerechos[j].record_scrutiny_date){
-        append(posiciones,i);
-      }
-      else if(nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author){
+  for (int i = 1;i<nodosIzquierdos.length;i++){
+    boolean acepto = true;
+    for (int j = 1;j<nodosDerechos.length;j++){
+        String [] listaSinonimos = nodosDerechos[j].Synonym;
+        for (int s = 0; s < listaSinonimos.length; s++){
+            if (izquierdos[i].name == listaSinonimos[s]){
+                acepto = false;
+            }
+        }
+       if(nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && acepto == true){
         append(posiciones,i);
       }
     }

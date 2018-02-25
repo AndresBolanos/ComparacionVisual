@@ -6,7 +6,7 @@
  "children": [
  {"name": "Anura",
   "Synonym":[],
-  "author":"Mario Chacon",
+  "author":"Kevin Arias",
   "record_scrutiny_date":"02-Sept-2009",
    "children": [
    {"name": "Aromobatidae",
@@ -58,7 +58,7 @@
    },
    {"name": "Centrolenidae",
     "Synonym":[],
-    "author":"Karla Barrantes",
+    "author":"Raquel Jimenez",
     "record_scrutiny_date":"14-Sept-2009",
     "children": [
   {"name": "Cochranella",
@@ -110,7 +110,7 @@
    {"name": "Plethodontidae","Synonym":[],"author":"Carlos Arguedas","record_scrutiny_date":"04-Oct-2009"},
    {"name": "Bolitoglossa","Synonym":[],"author":"Royner Anchia","record_scrutiny_date":"05-Oct-2009"},
    {"name": "Nototritito","Synonym":["Nototriton","Ronald","Andres"],"author":"Aida Arias","record_scrutiny_date":"06-Oct-2009"},
-   {"name": "Oedipina","Synonym":[],"author":"Andrey Amador","record_scrutiny_date":"07-Oct-2009"}
+   {"name": "Oedipin","Synonym":["Oedipina"],"author":"Pedro Rojas","record_scrutiny_date":"07-Oct-2009"}
    ]
  },
  {"name": "Gymnophiona",

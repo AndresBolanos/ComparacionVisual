@@ -94,17 +94,19 @@
     <body> 
     <nav>
           <ul>
-            <li><a href="#"  onclick="nuevaventana()"><span class="icon-folder-open"></span>Open Taxonomy</a></li>
-            <li><a href="#"  onclick="limpiar()"><span class="icon-folder-download"></span>Save Taxonomy</a></li>
+            <li><a href="#"  onclick="nuevaventana();"><span class="icon-folder-open"></span>Open</a></li>
           </ul>
         </nav>              
         <!--<div id = "Encabezado">
+          
+          loadFiles('amphibia-Extremos-1.json','amphibia-Extremos-2.json');
              <h1>Taxonomy #1</h1>
              <h2>Taxonomy #2</h2>
         </div>
       -->
         <canvas id="CANVAS" data-processing-sources="Processing.pde"></canvas>
-            
+      <h3 class="label1" id="label1">Amphibia-A</h3> 
+      <h3 class="label2" id="label2">Amphibia-B</h3>   
       <div id="Contenedor" class="row">
             <div  class="col-md-6 " id="leftSide">
               <svg id = "CanvasLineasTenues"  width="500">  

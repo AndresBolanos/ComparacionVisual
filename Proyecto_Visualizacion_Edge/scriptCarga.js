@@ -63,7 +63,6 @@ var splitsAux = false;
 $(window).click(function(e) {
     if(splitsAux == false){
          if (!tocado){
-            console.log("Opa");
             resetTextFull();
             var processingInstance;
             processingInstance = Processing.getInstanceById('CANVAS');
@@ -89,7 +88,6 @@ $(window).resize(function() {
 
 
 function limpiar(){
-    console.log("Limpia");
     $( "ul" ).remove( ".treelist" );
     $("#CanvasLineasTenues").empty();
     $("#CanvasLineasTenues2").empty();
@@ -102,6 +100,8 @@ var tocado = true;
 
 function loadFiles (file1, file2){
     limpiar();
+    $(".label1").css("visibility", "visible");
+    $(".label2").css("visibility", "visible");
     d3.json("Archivos-Datos/"+file1, function (err, data) {
     var pannel = document.getElementById('Contenedor');
     availableWidth = $(window).width(); //size of the width of the screen
@@ -130,6 +130,7 @@ function loadFiles (file1, file2){
     function render(data, parent) {
             var nodes = Ltree.nodes(data),
             duration = 1000;
+            nodes.shift();
             function toggleChildren(d) {
                 $("#CanvasLineasTenues").empty();
                 if (d.children) {
@@ -145,7 +146,7 @@ function loadFiles (file1, file2){
             NODOS = nodes;
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 d.id = d.id || ++id;
-                //  AQUI FUE DONDE HICE LOS PROCESOOOOOS
+                //  AQUI FUE DONDE HICE LOS PROCESOOOOOS;
                 buscar_padres(d.name,nodesLeft);
                 if (d.id == nodesLeft[0].id){
                     $("#CanvasLineasTenues").empty();
@@ -154,8 +155,8 @@ function loadFiles (file1, file2){
                 if (padres >= 1){
                     var y = d.y-20;
                     var y2 = y+20;
-                    var x = 0;
-                    for (var i = 0; i < padres; i++){                  
+                    var x = 20;
+                    for (var i = 0; i < padres-1; i++){                  
                         document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.1" />';
                         x+=20;
                     }
@@ -208,7 +209,6 @@ function loadFiles (file1, file2){
                         var arregloIzquierdos =  processingInstance.returnSplitsLeft();
                         for (var i = 0; i < arregloIzquierdos.length; i++){
                             if (arregloIzquierdos[i].name == d.name){
-                                console.log(d.name);
                                 document.getElementById(d.name+"1").style.color ="#FF00BF";
                                 document.getElementById(d.name+"1").style.fontSize = "large";
                             }
@@ -225,14 +225,12 @@ function loadFiles (file1, file2){
                                 var sinonimos = arregloDerechos[i].Synonym;
                                 for (var s = 0; s < sinonimos.length; s++){
                                     if (sinonimos[s] == d.name){
-                                        console.log(arregloDerechos[i].name);
                                         document.getElementById(arregloDerechos[i].name+"2").style.color ="#FF00BF";
                                         document.getElementById(arregloDerechos[i].name+"2").style.fontSize = "large";
                                     }
                                 }
                             }
-                        } 
-                        console.log("sale");     
+                        }     
                      }
                      if (moves == true){
                         processingInstance.drawMoves(false,10,228,237,d.name,2);
@@ -317,7 +315,6 @@ function loadFiles (file1, file2){
                         }
                      }
                      else{
-                        console.log("Siiii");
                      }
                 });
             //add arrows if it is a folder
@@ -368,6 +365,7 @@ function loadFiles (file1, file2){
             function render(data, parent) {
                 var nodes = Rtree.nodes(data),
                     duration = 1000;
+                nodes.shift();
                 function toggleChildren(d) {
                     $("#CanvasLineasTenues2").empty();
                     if (d.children) {
@@ -385,12 +383,11 @@ function loadFiles (file1, file2){
                     if (d.id == nodesRight[0].id){
                         $("#CanvasLineasTenues2").empty();
                     }
-                    //console.log(padres);
                     if (padres >= 1){
                         var y = d.y -20;
                         var y2 = y+20;
-                        var x = 0;
-                        for (var i = 0; i < padres; i++){                  
+                        var x = 20;
+                        for (var i = 0; i < padres-1; i++){                  
                             document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.1" />';
                             x+=20;
                         }
@@ -420,19 +417,19 @@ function loadFiles (file1, file2){
                         }
                         resetText();
                         if (renames == true){
-                            processingInstance.drawMoves(true,8,138,8,d.name,2);
+                            processingInstance.drawMoves(true,91,255,142,d.name,2);
                             var congruente = [];
                             var arregloderecha = processingInstance.returnRename_MovesRight();
                             for (var i = 0; i < arregloderecha.length; i++){
                                 if (arregloderecha[i].name == d.name){
                                     congruente = arregloderecha[i].Synonym;
-                                    document.getElementById(d.name+"2").style.color ="#088A08";
+                                    document.getElementById(d.name+"2").style.color ="#5BFF8E";
                                     document.getElementById(d.name+"2").style.fontSize = "large";
                                 }
                             }
                             if (congruente.length > 0){
                                 for (var s = 0; s < congruente.length; s++){
-                                    document.getElementById(congruente[s]+"1").style.color ="#088A08";
+                                    document.getElementById(congruente[s]+"1").style.color ="#5BFF8E";
                                     document.getElementById(congruente[s]+"1").style.fontSize = "large";
                                 }
                             }    
@@ -465,7 +462,6 @@ function loadFiles (file1, file2){
                                         document.getElementById(congruente[s]+"1").style.fontSize = "large";
                                     }
                                     catch(e){
-                                        console.log("Error");
                                     }
                                 }
                             }    
@@ -502,7 +498,6 @@ function loadFiles (file1, file2){
                             if (document.getElementById(nodoDerecho+"2") != null){
                                 document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
                                 document.getElementById(nodoDerecho+"2").style.fontSize = "large";
-                                console.log(nodosIzquierdos);
                                 for (var i = 0; i < nodosIzquierdos.length; i++){
                                     document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
                                     document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
@@ -560,7 +555,6 @@ function loadFiles (file1, file2){
                     for (var i = 0; i < element.length;i++){
                         element[i].setAttribute("data-targetsize","0.10");
                     }
-                    console.log(element);
                 nodeEls.select("span").on("click", function (d) { 
                         $("#CanvasLineasTenues2").empty();               
                         toggleChildren(d);
@@ -581,7 +575,7 @@ function loadFiles (file1, file2){
 var padres = 0;
 function buscar_padres(nombre,nodos){
     padres = 0;
-    for (var i = 0;i<nodos.length;i++){
+    for (var i = 1;i<nodos.length;i++){
         if (nodos[i].name == nombre){
             buscar_padres_aux(nodos[i]);
             return padres;

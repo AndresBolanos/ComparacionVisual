@@ -137,10 +137,10 @@ var file1 = "";
 var file2 = "";
 
 function nuevaventana (){
+    LimpiarCanvas();
     var win = window.open("../Abrir_Taxonomias/index.html","ventana1","width=400,height=300,scrollbars=NO");
     var trigger = setInterval(function(){
        if (win.closed){
-        console.log(window);
         loadFiles(file1,file2);
         clearInterval(trigger);
         console.log("Success");

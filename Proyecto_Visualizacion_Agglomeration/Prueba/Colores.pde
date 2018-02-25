@@ -1,5 +1,6 @@
 Node [] nodosIzquierdos;
 Node [] nodosDerechos;
+Object [] nodosTenues;
 
 int rightBaseR = 244;
 int rightBaseG = 164;
@@ -32,7 +33,7 @@ void setup(){
   Moves();
   Exclusiones();
   News();
-  Congruencia();  
+  Congruencia(); 
   //cargarColores(izquierdos, derechos, nodosIzquierdos, nodosDerechos);   
   //createAgglomeration(izquierdos,derechos); 
 }
@@ -42,15 +43,28 @@ void draw(){
   scale(scaleFactor);  
   background(255);
   createAgglomeration(izquierdos,derechos);     
-  textSize(30);  
+  textSize(20);
+  fill(130,80, 64);
+  text("Amphibia-A",-300,300);  
+  fill(223, 209, 33);
+  text("Amphibia-B",450,300); 
+  stroke(149,153,149);
+  strokeWeight(-5);
+  for (int i = 1; i < nodosTenues.length; i++){
+    if (nodosTenues[i].children != undefined){
+      CalcularPosicionesLineas(i);
+    }
+  }
+  
+
   //println(agglomeration.length);     
 }
 
 void keyPressed() {
   if (key == 'r' ||  key == 'R') {
-    scaleFactor = 1;
-    translateX = screen.width/2-200;
-    translateY = 0.0;
+  scaleFactor = 1.0;
+  translateX = screen.width/2-200;
+  translateY = 0.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;
@@ -150,8 +164,12 @@ void createAgglomeration(leftStructure,rightStructure){
     derechos[nodeRight].G = nodosDerechos[nodeRight].G;
     derechos[nodeRight].B = nodosDerechos[nodeRight].B;
   }
-  
-  for (int i = 0; i < agglomeration.length; i++){    
+  nodosTenues = agglomeration;
+  for (int i = 1; i < agglomeration.length; i++){ 
+    /*println("Nodo "+agglomeration[i].name);
+    if (agglomeration[i].parent != undefined){
+      println("Padre "+agglomeration[i].parent.name);
+    }*/
     if(agglomeration[i]==null){
       //println("Me vine a null :P");
       //println("Null");
@@ -189,7 +207,7 @@ void createAgglomeration(leftStructure,rightStructure){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
-            if (r == 5 && g == 171 && b == 0){
+            if (r == 91 && g == 255 && b == 142){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
@@ -255,7 +273,7 @@ void createAgglomeration(leftStructure,rightStructure){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
-            if (r == 5 && g == 120 && b == 0){
+            if (r == 66 && g == 184 && b == 102){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
@@ -374,7 +392,7 @@ int returnAmountSplits(){
 boolean existeNombre_Complejo(nombre,autor,date){
     Object [] izquierdos = nodosIzquierdos;
     for (int nodeL = 0; nodeL < izquierdos.length; nodeL++) {
-        if(izquierdos[nodeL].name == nombre && izquierdos[nodeL].author == autor&& izquierdos[nodeL].record_scrutiny_date == date){
+        if(izquierdos[nodeL].name == nombre){
             append(izquierdo,izquierdos[nodeL]);
             return false;
         }
@@ -406,7 +424,7 @@ void getMergers(){
             nodosDerechos[nodeR].setRGB(255,31,0);
             for (int i = 0; i < nodosIzquierdos.length; i++){
               for (int j = 0; j < izquierdo.length; j++){
-                if (nodosIzquierdos[i].name == izquierdo[j].name && nodosIzquierdos[i].author == izquierdo[j].author && nodosIzquierdos[i].record_scrutiny_date == izquierdo[j].record_scrutiny_date){
+                if (nodosIzquierdos[i].name == izquierdo[j].name){
                   nodosIzquierdos[i].setRGB(255,78,0);
                 }
               }
@@ -530,7 +548,7 @@ void Moves(){
         String [] padresD = buscar_padres(nombreR,derechos);
         if (padresI.length == padresD.length){
           boolean flag = true;
-          for (int j = 0; j < padresD.length;j++){
+          for (int j = 0; j < padresD.length-1;j++){
               if (padresD[j] != padresI[j]){
                   flag = false;
               }
@@ -568,14 +586,14 @@ void Moves(){
     for (int left = 0; left < nodosIzquierdos.length; left++){
       for (int leftAux = 0; leftAux < listaIzquierdosR.length; leftAux++){
         if (nodosIzquierdos[left].name == listaIzquierdosR[leftAux].name){
-           nodosIzquierdos[left].setRGB(5,171,0);
+           nodosIzquierdos[left].setRGB(91,255,142);
         }
       }
     }
     for (int left = 0; left < nodosDerechos.length; left++){
       for (int leftAux = 0; leftAux < listaDerechosR.length; leftAux++){
         if (nodosDerechos[left].name == listaDerechosR[leftAux].name){
-           nodosDerechos[left].setRGB(5,120,0);
+           nodosDerechos[left].setRGB(66,184,102);
         }
       }
     }
@@ -751,5 +769,77 @@ class Node{
     R = r;
     G = g;
     B = b
+  }
+}
+
+
+//////////////////////////LIENAS TENUES///////////////////////////////
+
+int contadorNivel = 1;
+int getNivel(nodo){
+  if (nodo.parent == undefined){
+    return contadorNivel;
+  }
+  else{
+    contadorNivel+=1;
+    getNivel(nodo.parent);
+  }
+}
+
+void CalcularPosicionesLineas(int pos){
+  //println("Analizando a "+nodosTenues[pos].name);
+  contadorNivel = 1;
+  getNivel(nodosTenues[pos]);
+  int nivel = contadorNivel;
+  //println("Su nivel es "+nivel);
+  contadorNivel = 1;
+  for (int i = 0; i < nodosTenues.length; i++){
+    contadorNivel = 1;
+    getNivel(nodosTenues[i]);
+    if (contadorNivel < nivel && i > pos){
+       int y1 = 25;
+        for (int x = 0; x < pos; x++){
+          y1+=25;
+        } 
+        int y2 = 25;
+        for (int x = 0; x < i; x++){
+          y2+=25;
+        }     
+        //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
+        if (contadorNivel > 3){
+          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+        }
+        else{
+          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+        }
+        return;
+    }
+    if (contadorNivel == nivel && i > pos){
+        int y1 = 25;
+        for (int x = 0; x < pos; x++){
+          y1+=25;
+        } 
+        int y2 = 25;
+        for (int x = 0; x < i; x++){
+          y2+=25;
+        }     
+        //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
+          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+        return;
+    }
+    if (pos == 0){
+        int y1 = 25;
+        for (int x = 0; x < pos; x++){
+          y1+=25;
+        } 
+        int y2 = 25;
+        for (int x = 0; x < nodosTenues.length-1; x++){
+          y2+=20.2;
+        }  
+        if (pos == 0){
+            line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+        }
+        break;
+    }
   }
 }

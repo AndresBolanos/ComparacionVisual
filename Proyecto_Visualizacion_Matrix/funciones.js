@@ -9,6 +9,7 @@ function CargarLineasIzquierdas(){
     processingInstance = Processing.getInstanceById('CANVAS');
     if (document.getElementById("Congruencia").checked){
         processingInstance.drawCongruency(); 
+         processingInstance.setCongruence(true);
         cantidadCongruentes = processingInstance.returnCongruentes(); 
         document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
     }
@@ -48,6 +49,7 @@ function pintarNuevos(){
     processingInstance = Processing.getInstanceById('CANVAS');
     cantidadNuevos = 0;
     if (document.getElementById("News").checked){
+        processingInstance.setNuevos(true);
         for (var nodeR = 1; nodeR < nodesRight.length; nodeR++){
             if (processingInstance.existeNombreNuevos(nodesRight[nodeR].name,nodesRight[nodeR].author)){
                 var sinonimos = nodesRight[nodeR].Synonym;
@@ -77,6 +79,7 @@ function pintarNuevos(){
     }
     else{       
        document.getElementById("News").checked = false; 
+       processingInstance.setNuevos(false);
        processingInstance.setup();
        document.getElementById("NewStatsValue").innerHTML = "0";
        VerificarChecks();
@@ -94,6 +97,7 @@ function pintarSplits(){
     cantidadSplits = 0;
     if (document.getElementById("Splits").checked){
         processingInstance.drawSplits();
+        processingInstance.setSplits(true);
         var arregloIzquierdos =  processingInstance.returnSplitsLeft();
         var arregloDerechos =  processingInstance.returnSplitsRight();
         cantidadSplits = processingInstance.returnAmountSplits(); 
@@ -102,6 +106,7 @@ function pintarSplits(){
    else{         
         document.getElementById("Splits").checked = false;        
         processingInstance.setup();
+        processingInstance.setSplits(false);
         document.getElementById("SplitsStatsValue").innerHTML = "0";
         VerificarChecks();
     }   
@@ -115,6 +120,7 @@ function merge(){
     processingInstance = Processing.getInstanceById('CANVAS');
     if (document.getElementById("Mergers").checked){
         processingInstance.merge();
+        processingInstance.setMerges(true);
         var izquierdos = processingInstance.returnIzquierdosMerge();
         cantidadMergers = processingInstance.returnCantidadMergers();
         var derechos = processingInstance.returnDerechosMerge();
@@ -140,7 +146,8 @@ function Move(){
         processingInstance.drawMoves(false,108,27,232);
         var izquierdos = processingInstance.returnRename_MovesLeft();
         var derechos = processingInstance.returnRename_MovesRight();
-        cantidadMoves = processingInstance.returnMoves();   
+        cantidadMoves = processingInstance.returnMoves();
+         processingInstance.setMoves(true);  
          document.getElementById("MovesStatsValue").innerHTML = cantidadMoves;     
     }
     else{
@@ -162,7 +169,8 @@ function Rename(){
         processingInstance.drawMoves(true,8,138,8);
         var izquierdos = processingInstance.returnRename_MovesLeft();
         var derechos = processingInstance.returnRename_MovesRight();
-        cantidadRename = processingInstance.returnRenames();  
+        cantidadRename = processingInstance.returnRenames(); 
+        processingInstance.setRenames(true); 
         document.getElementById("RenamesStatsValue").innerHTML = cantidadRename;      
     }
     else{
@@ -179,8 +187,11 @@ function Rename(){
 //use the existeNombreDerecha function to check if exist the name of if exist in the synonyms
 //if not exist we paint the nodes
 function exclusiones(){
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
     cantidadEclusiones = 0;
     if (document.getElementById("Exclusions").checked){
+        processingInstance.setExclusiones(true);
         for (node = 1;node < nodesLeft.length;node++){
             if (existeNombreDerecha(nodesLeft[node].name,nodesLeft[node].author,nodesLeft[node].record_scrutiny_date) == true){
                 cantidadEclusiones = cantidadEclusiones+1;     
@@ -189,6 +200,7 @@ function exclusiones(){
         }
     }
     else{
+        processingInstance.setExclusiones(false);
         document.getElementById("Exclusions").checked = false;
         d3.select("#Canvas").selectAll("*").remove();
         document.getElementById("ExclusionStatsValue").innerHTML = "0";
@@ -215,6 +227,8 @@ function mostrarTodos(){
         CargarLineasIzquierdas();
     }
     else{
+        var processingInstance;
+        processingInstance = Processing.getInstanceById('CANVAS');
         document.getElementById("SplitsStatsValue").innerHTML = "0";
         document.getElementById("MergesStatsValue").innerHTML = "0";
         document.getElementById("MovesStatsValue").innerHTML = "0";
@@ -222,6 +236,8 @@ function mostrarTodos(){
         document.getElementById("ExclusionStatsValue").innerHTML = "0";
         document.getElementById("NewStatsValue").innerHTML = "0";
         document.getElementById("CongruenceStatsValue").innerHTML = "0"; 
+        processingInstance.setNuevos(false);
+        processingInstance.setExclusiones(false);
         LimpiarCanvas();
     }
     

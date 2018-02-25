@@ -4,9 +4,18 @@ color[][] colors;
 int saved_i = -1;
 int saved_j = -1;
 
+boolean congruentes = false;
+boolean splits = false;
+boolean merges = false;
+boolean moves = false;
+boolean renames = false;
+
+boolean nuevos = false;
+boolean exclusiones = false;
+
 float scaleFactor = 0.2;
 float translateX = 400.0;
-float translateY = 100.0;
+float translateY = 180.0;
 
 Object [] izquierdos = nodesLeft;
 Object [] derechos = nodesRight;
@@ -17,10 +26,44 @@ int maxWidth;
 Object [] nodosIzquierdos;
 Object [] nodosDerechos;
 
+void setNuevos(boolean value){
+  nuevos = value;
+}
+
+void setMoves(boolean value){
+  moves = value;
+}
+
+void setRenames(boolean value){
+  renames = value;
+}
+
+void setSplits(boolean value){
+  splits = value;
+}
+
+void setMerges(boolean value){
+  merges = value;
+}
+
+void setCongruence(boolean value){
+  congruentes = value;
+}
+
+void setExclusiones(boolean value){
+  exclusiones = value;
+}
+
 void setup() {  
+  merges = false;
+  splits = false;
+  renames = false;
+  moves = false;
+  congruentes = false;
+
   size(availableWidth, 2000);  
-  cols = derechos.length;
-  rows = izquierdos.length;
+  cols = derechos.length-1;
+  rows = izquierdos.length-1;
   colors = new color[cols][rows];  
   for (int i=0; i<cols; i++) {
     for (int j=0; j<rows; j++) {
@@ -71,12 +114,15 @@ void draw() {
   for (int i = 0;i<izquierdos.length;i++){
     widths[i] = textWidth(izquierdos[i].name);
   }
-  
+  textSize(40);
+  fill(0);
+  text("Amphibia-A",-400,1000);
+  text("Amphibia-A",1400,-700);
   maxWidth = max(widths);
 
   //PROCEDIMIENTO PARA PINTAR LAS LINEAS
   stroke(107,110,107);
-  for (int i = 0; i < nodosIzquierdos.length; i++){
+  for (int i = 1; i < nodosIzquierdos.length; i++){
     if (nodosIzquierdos[i].children != null){
       CalcularPosicionesLineas(i);
     }
@@ -95,7 +141,7 @@ void draw() {
   nodosIzquierdos = nodesLeft;
   int yPrev = 0;
   
-  for(int pos = 0; pos < nodosIzquierdos.length; pos++){
+  for(int pos = 1; pos < nodosIzquierdos.length; pos++){
     var existe = false;
     for (int i = 1; i < nodosDerechos.length; i++){
       if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
@@ -110,19 +156,50 @@ void draw() {
         }
       }
     }
-    if (existe == false && pos > 0){
+    if (existe == false && pos > 0 && exclusiones == true){
       fill(223,1,1);
     } 
     else{
       fill(0);
-    }       
-    text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,nodosIzquierdos[pos].y*2.5);     
+    } 
+     if (congruentes){
+      fill(23, 18, 196);
+    }
+    if (merges){
+       for (int m = 0; m < izquierdosPainted.length; m++){
+        if (nodosIzquierdos[pos].name == izquierdosPainted[m].name){
+          fill(255, 145, 0);
+        }
+      }
+    }
+    if (renames){
+      for (int r = 0; r < RenameLPainted.length; r++){
+        if (nodosIzquierdos[pos].name == RenameLPainted[r].name){
+          fill(91, 255, 142);
+        }
+      }
+    }
+    if (moves){
+       for (int m = 0; m < Move_LPainted.length; m++){
+          if (nodosIzquierdos[pos].name == Move_LPainted[m].name){
+            fill(10, 228, 237);
+          }
+        }
+    }
+    if (splits){
+      for (int s = 0; s < splitslPainted.length; s++){
+        if (nodosIzquierdos[pos].name == splitslPainted[s].name){
+          fill(255, 0, 191);
+        }
+      } 
+    }     
+    text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,(nodosIzquierdos[pos].y*2.5)-50);     
     yPrev = nodosIzquierdos[pos].y;   
   }      
 
   rotate(-PI/2); 
   
-  for(int pos = 0; pos < nodosDerechos.length; pos++){
+  for(int pos = 1; pos < nodosDerechos.length; pos++){
     var existe = false;
     for (int i = 1; i < nodosIzquierdos.length; i++){
       if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
@@ -137,17 +214,49 @@ void draw() {
         }
       }
     }
-    if (existe == false && pos > 0){
+    if (existe == false && pos > 0 && nuevos == true){
       fill(8,138,0);
     } 
     else{
       fill(0);
-    }       
-    text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+520);    
+    }
+    if (congruentes){
+      fill(23, 18, 196);
+    }
+    if (merges){
+      for (int m = 0; m < derechosPainted.length; m++){
+        if (nodosDerechos[pos].name == derechosPainted[m].name){
+          fill(255, 145, 0);
+        }
+      }
+    }
+    if (renames){
+       for (int r = 0; r < RenameRPainted.length; r++){
+            if (nodosDerechos[pos].name == RenameRPainted[r].name){
+              fill(91, 255, 142);
+            }
+          }
+    }
+    if(moves){
+       for (int m = 0; m < Move_RPainted.length; m++){
+          if (nodosDerechos[pos].name == Move_RPainted[m].name){
+            fill(10, 228, 237);
+          }
+        }
+    }
+    if (splits){
+        for (int s = 0; s < splitsRPainted.length; s++){
+          if (nodosDerechos[pos].name == splitsRPainted[s].name){
+            fill(255, 0, 191);
+          }
+        }
+    }
+
+    text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);    
   }
   //PROCEDIMIENTO PARA PINTAR LAS LINEAS HORIZONTALES
   stroke(107,110,107);
-  for (int i = 0; i < nodosDerechos.length; i++){
+  for (int i = 1; i < nodosDerechos.length; i++){
     if (nodosDerechos[i].children != null){
       CalcularPosicionesLineasHorizontal(i);
     }
@@ -160,7 +269,7 @@ void keyPressed() {
   if (key == 'r' || key == 'R') {
     scaleFactor = 0.2;
     translateX =  400.0;
-    translateY = 100.0;
+    translateY = 180.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;
@@ -184,7 +293,7 @@ void mouseDragged(MouseEvent e) {
 int posIzquierda(String nombre){
   for(int i=0; i<izquierdos.length;i++){
     if(izquierdos[i].name == nombre){
-      return i;
+      return i-1;
     }    
   }
 }
@@ -193,7 +302,7 @@ int posIzquierda(String nombre){
 int posDerecha(String nombre){
   for(int i=0; i<derechos.length;i++){
     if(derechos[i].name == nombre){
-      return i;
+      return i-1;
     }
   }
 }
@@ -281,8 +390,10 @@ void verificarSinonimos(arreglo,nombre){
 
 ///////////////////////M O V E//////////////////////////////////
 
-Object [] Move_RenameLPainted = [];
-Object [] Move_RenameRPainted = [];
+Object [] Move_LPainted = [];
+Object [] Move_RPainted = [];
+Object [] RenameLPainted = [];
+Object [] RenameRPainted = [];
 int cantidadRenames = 0;
 int cantidadMoves = 0;
 //Here i have the splits funcions to draw the lines in the canvas
@@ -418,7 +529,7 @@ void drawMoves(bandera,int R, int G,int B){
             String [] padresD = buscar_padres(nombreR,derechos);
             if (padresI.length == padresD.length){
                 boolean flag = true;
-                for (int j = 0; j < padresD.length;j++){
+                for (int j = 0; j < padresD.length-1;j++){
                     if (padresD[j] != padresI[j]){
                         flag = false;
                     }
@@ -427,12 +538,14 @@ void drawMoves(bandera,int R, int G,int B){
                 if (flag == bandera){
                     if (bandera == false){
                         cantidadMoves = cantidadMoves+1;
+                         append(Move_LPainted,nodosIzquierdos[0]);
+                          append(Move_RPainted,nodosDerechos[0]);
                     }
                     if (bandera == true){
                         cantidadRenames = cantidadRenames+1;
+                         append(RenameLPainted,nodosIzquierdos[0]);
+                         append(RenameRPainted,nodosDerechos[0]);
                     }
-                    append(Move_RenameLPainted,nodosIzquierdos[0]);
-                    append(Move_RenameRPainted,nodosDerechos[0]);
                     //Pintar
                     int x1 = nodosIzquierdos[0].x+textWidth(nodosIzquierdos[0].name);
                     int y1 = nodosIzquierdos[0].y-5;
@@ -441,7 +554,12 @@ void drawMoves(bandera,int R, int G,int B){
                     //curve(x1*3, y1-50,x1,y1,x2-5,y2,x2/3,y2+50);
                     posIzq = posIzquierda(nodosIzquierdos[0].name);
                     posDer = posDerecha(nodosDerechos[0].name);
-                    colors[posDer][posIzq]=color(10, 228, 237);
+                    if (bandera == true){ 
+                      colors[posDer][posIzq]=color(91, 255, 142);
+                    }
+                    else{
+                       colors[posDer][posIzq]=color(10, 228, 237);
+                    }
                 }
             }
         }
@@ -466,9 +584,16 @@ void drawCongruency(){
     //curveTightness(-2);
     //strokeWeight(0);
     //smooth();
-    for (int i = 0;i<izquierdos.length;i++){
-      for (int j = 0;j<derechos.length;j++){
-        if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && izquierdos[i].record_scrutiny_date == derechos[j].record_scrutiny_date){
+    for (int i = 1;i<izquierdos.length;i++){
+      boolean acepto = true;
+      for (int j = 1;j<derechos.length;j++){
+        String [] listaSinonimos = derechos[j].Synonym;
+        for (int s = 0; s < listaSinonimos.length; s++){
+                if (izquierdos[i].name == listaSinonimos[s]){
+                    acepto = false;
+                }
+            }
+        if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true){
                 //stroke(23, 18, 196);
             int x1 = izquierdos[i].x+textWidth(izquierdos[i].name);
             int y1 = izquierdos[i].y-5;
@@ -480,7 +605,7 @@ void drawCongruency(){
             colors[posDer][posIzq]=color(23, 18, 196);
             cantidadCongurentes += 1;
         }
-        else if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author){
+        else if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true){
 
             //stroke(0, 227, 255);
             int x1 = izquierdos[i].x+textWidth(izquierdos[i].name);
@@ -514,7 +639,7 @@ object [] derechosPainted = [];
 boolean existeNombre_Complejo(nombre,autor,date){
     Object [] izquierdos = nodesLeft;
     for (int nodeL = 0; nodeL < izquierdos.length; nodeL++) {
-        if(izquierdos[nodeL].name == nombre && izquierdos[nodeL].author && izquierdos[nodeL].record_scrutiny_date == date){
+        if(izquierdos[nodeL].name == nombre){
             append(izquierdo,izquierdos[nodeL]);
             return false;
         }
@@ -695,10 +820,10 @@ void CalcularPosicionesLineas(int pos){
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
         if (contadorNivel > 3){
-          line(nodosIzquierdos[pos].x+25,y1+40,nodosIzquierdos[pos].x+25,y2-10);
+          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
         }
         else{
-          line(nodosIzquierdos[pos].x+25,y1+40,nodosIzquierdos[pos].x+25,y2-10);
+          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
         }
         return;
     }
@@ -712,7 +837,7 @@ void CalcularPosicionesLineas(int pos){
           y2+=50;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosIzquierdos[pos].x+25,y1+40,nodosIzquierdos[pos].x+25,y2-10);
+          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
         return;
     }
     if (pos == 0){
@@ -725,7 +850,7 @@ void CalcularPosicionesLineas(int pos){
           y2+=50;
         }  
         if (pos == 0){
-           line(nodosIzquierdos[nodosIzquierdos.length-1].x-20,y1+40,nodosIzquierdos[nodosIzquierdos.length-1].x-20,y2-40);
+           line(nodosIzquierdos[nodosIzquierdos.length-1].x-20,(y1+40)-50,nodosIzquierdos[nodosIzquierdos.length-1].x-20,(y2-40)-60);
         }
         break;
     }
@@ -751,10 +876,10 @@ void CalcularPosicionesLineasHorizontal(int pos){
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
         if (contadorNivel > 3){
-          line(nodosDerechos[pos].x+25,y1+550,nodosDerechos[pos].x+25,y2+500);
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
         }
         else{
-          line(nodosDerechos[pos].x+25,y1+550,nodosDerechos[pos].x+25,y2+500);
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
         }
         return;
     }
@@ -768,7 +893,7 @@ void CalcularPosicionesLineasHorizontal(int pos){
           y2+=50;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosDerechos[pos].x+25,y1+550,nodosDerechos[pos].x+25,y2+500);
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
         return;
     }
     if (pos == 0){
@@ -781,7 +906,7 @@ void CalcularPosicionesLineasHorizontal(int pos){
           y2+=50;
         }  
         if (pos == 0){
-           line(nodosDerechos[nodosDerechos.length-1].x-20,y1+550,nodosDerechos[nodosDerechos.length-1].x-20,y2+500);
+           line(nodosDerechos[nodosDerechos.length-1].x-20,(y1+550)-50,nodosDerechos[nodosDerechos.length-1].x-20,(y2+500)-60);
         }
         break;
     }

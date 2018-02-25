@@ -187,6 +187,7 @@ function IniciarAnimacion(){
     if (iniciado == false){
         showVal(vel);
         iniciado = true;
+        window.setTimeout(demonio, 1000);
         document.getElementById('Comenzar').style.backgroundImage = "url('stop.png')";
     }
     else{
@@ -219,7 +220,7 @@ availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
 
-d3.json("Archivos-Datos/"+"datos1.json", function (err, data) {
+d3.json("Archivos-Datos/"+"amphibia-Extremos-1.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);
@@ -232,7 +233,7 @@ d3.json("Archivos-Datos/"+"datos1.json", function (err, data) {
 });
 
 
-d3.json("Archivos-Datos/"+"datos2.json", function (err, data) {
+d3.json("Archivos-Datos/"+"amphibia-Extremos-2.json", function (err, data) {
     var Ltree = d3.layout.treelist()
         .childIndent(20)
         .nodeHeight(20);
@@ -270,7 +271,7 @@ function Estadisticas(){
 
 
 function setOneByOne(){
- if (onebyone == false){
+    if (document.getElementById("OneByOne").checked = true){
         onebyone = true;
         var processingInstance;
         processingInstance = Processing.getInstanceById('CANVAS');
@@ -299,7 +300,7 @@ function demonio(){
         else{
             Clear();
             //console.log("3 seg");
-            window.setTimeout(demonio, 3000);
+            
             processingInstance.setTerminado(false);
         }
     }
@@ -309,4 +310,4 @@ function demonio(){
     }
 }
 
-window.setTimeout(demonio, 1000);
+

@@ -301,7 +301,7 @@ void drawMoves(bandera,int R, int G,int B,string nombre,int grosor){
             String [] padresD = buscar_padres(nombreR,derechos);
             if (padresI.length == padresD.length){
                 boolean flag = true;
-                for (int j = 0; j < padresD.length;j++){
+                for (int j = 0; j < padresD.length-1;j++){
                     if (padresD[j] != padresI[j]){
                         flag = false;
                     }
