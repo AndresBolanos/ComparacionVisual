@@ -9,6 +9,7 @@ boolean splits = false;
 boolean merges = false;
 boolean moves = false;
 boolean renames = false;
+boolean iniciar = false;
 
 boolean nuevos = false;
 boolean exclusiones = false;
@@ -17,8 +18,8 @@ float scaleFactor = 0.2;
 float translateX = 400.0;
 float translateY = 180.0;
 
-Object [] izquierdos = nodesLeft;
-Object [] derechos = nodesRight;
+Object [] izquierdos = [];
+Object [] derechos = [];
 
 int[] widths = new int[izquierdos.length];
 int maxWidth;
@@ -26,8 +27,15 @@ int maxWidth;
 Object [] nodosIzquierdos;
 Object [] nodosDerechos;
 
+String archivo1 = "";
+String archivo2 = "";
+
 void setNuevos(boolean value){
   nuevos = value;
+}
+
+void set_Inicio(boolean value){
+  iniciar = value;
 }
 
 void setMoves(boolean value){
@@ -54,16 +62,26 @@ void setExclusiones(boolean value){
   exclusiones = value;
 }
 
-void setup() {  
+void setNames(name1,name2){
+    archivo1 = name1;
+    archivo2 = name2;
+}
+
+void setup() { 
+  background(255); 
   merges = false;
   splits = false;
   renames = false;
   moves = false;
   congruentes = false;
 
+  izquierdos = nodesLeft;
+  derechos = nodesRight;
+
   size(availableWidth, 2000);  
   cols = derechos.length-1;
   rows = izquierdos.length-1;
+
   colors = new color[cols][rows];  
   for (int i=0; i<cols; i++) {
     for (int j=0; j<rows; j++) {
@@ -75,7 +93,12 @@ void setup() {
     widths[i] = textWidth(izquierdos[i].name);
   }
   
-  maxWidth = max(widths);
+   try {
+     maxWidth = max(widths);
+  } catch (IOException e) {
+    
+  }
+  
 
   nodosIzquierdos = nodesLeft;
      for (int i = 0;i < nodosIzquierdos.length;i++){
@@ -106,162 +129,166 @@ String selectedL = "";
 String selectedR = "";
 
 void draw() { 
-  background();
-  translate(translateX,translateY);
-  scale(scaleFactor);
-  background(255);
+  if (iniciar == true){
+    background();
+    translate(translateX,translateY);
+    scale(scaleFactor);
+    background(255);
 
-  for (int i = 0;i<izquierdos.length;i++){
-    widths[i] = textWidth(izquierdos[i].name);
-  }
-  textSize(40);
-  fill(0);
-  text("Amphibia-A",-400,1000);
-  text("Amphibia-A",1400,-700);
-  maxWidth = max(widths);
+    for (int i = 0;i<izquierdos.length;i++){
+      widths[i] = textWidth(izquierdos[i].name);
+    }
+    textSize(40);
+    fill(0);
+    text(archivo1,-400,1000);
+    text(archivo2,1400,-700);
+    maxWidth = max(widths);
 
-  //PROCEDIMIENTO PARA PINTAR LAS LINEAS
-  stroke(107,110,107);
-  for (int i = 1; i < nodosIzquierdos.length; i++){
-    if (nodosIzquierdos[i].children != null){
-      CalcularPosicionesLineas(i);
-    }
-  }
-  stroke(0);
-  for (int i=0; i<cols; i++) {
-    for (int j=0; j<rows; j++) {
-      fill(colors[i][j]);
-      rect(i*boxsize+maxWidth+100, j*boxsize, boxsize, boxsize);      
-    }
-  }
-   
-  fill(0);
-  textSize(30);
-  smooth();
-  nodosIzquierdos = nodesLeft;
-  int yPrev = 0;
-  
-  for(int pos = 1; pos < nodosIzquierdos.length; pos++){
-    var existe = false;
-    for (int i = 1; i < nodosDerechos.length; i++){
-      if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
-        existe = true;
-      }
-      else{
-        String [] sinonimos = nodosDerechos[i].Synonym;
-        for (int j = 0; j < sinonimos.length; j++){
-          if (sinonimos[j] == nodosIzquierdos[pos].name){
-            existe = true;
-          }
-        }
-      }
-    }
-    if (existe == false && pos > 0 && exclusiones == true){
-      fill(223,1,1);
-    } 
-    else{
-      fill(0);
-    } 
-     if (congruentes){
-      fill(23, 18, 196);
-    }
-    if (merges){
-       for (int m = 0; m < izquierdosPainted.length; m++){
-        if (nodosIzquierdos[pos].name == izquierdosPainted[m].name){
-          fill(255, 145, 0);
-        }
-      }
-    }
-    if (renames){
-      for (int r = 0; r < RenameLPainted.length; r++){
-        if (nodosIzquierdos[pos].name == RenameLPainted[r].name){
-          fill(91, 255, 142);
-        }
-      }
-    }
-    if (moves){
-       for (int m = 0; m < Move_LPainted.length; m++){
-          if (nodosIzquierdos[pos].name == Move_LPainted[m].name){
-            fill(10, 228, 237);
-          }
-        }
-    }
-    if (splits){
-      for (int s = 0; s < splitslPainted.length; s++){
-        if (nodosIzquierdos[pos].name == splitslPainted[s].name){
-          fill(255, 0, 191);
-        }
-      } 
-    }     
-    text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,(nodosIzquierdos[pos].y*2.5)-50);     
-    yPrev = nodosIzquierdos[pos].y;   
-  }      
-
-  rotate(-PI/2); 
-  
-  for(int pos = 1; pos < nodosDerechos.length; pos++){
-    var existe = false;
+    //PROCEDIMIENTO PARA PINTAR LAS LINEAS
+    stroke(107,110,107);
     for (int i = 1; i < nodosIzquierdos.length; i++){
-      if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
-        existe = true;
+      if (nodosIzquierdos[i].children != null){
+        CalcularPosicionesLineas(i);
       }
-      else{
-        String [] sinonimos = nodosDerechos[pos].Synonym;
-        for (int j = 0; j < sinonimos.length; j++){
-          if (sinonimos[j] == nodosIzquierdos[i].name){
-            existe = true;
-          }
+    }
+    stroke(0);
+    for (int i=0; i<cols; i++) {
+      for (int j=0; j<rows; j++) {
+        fill(colors[i][j]);
+        rect(i*boxsize+maxWidth+100, j*boxsize, boxsize, boxsize);      
+      }
+    }
+     
+    fill(0);
+    textSize(30);
+    smooth();
+    nodosIzquierdos = nodesLeft;
+    int yPrev = 0;
+    
+    for(int pos = 1; pos < nodosIzquierdos.length; pos++){
+      var existe = false;
+      for (int i = 1; i < nodosDerechos.length; i++){
+        if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
+          existe = true;
         }
-      }
-    }
-    if (existe == false && pos > 0 && nuevos == true){
-      fill(8,138,0);
-    } 
-    else{
-      fill(0);
-    }
-    if (congruentes){
-      fill(23, 18, 196);
-    }
-    if (merges){
-      for (int m = 0; m < derechosPainted.length; m++){
-        if (nodosDerechos[pos].name == derechosPainted[m].name){
-          fill(255, 145, 0);
-        }
-      }
-    }
-    if (renames){
-       for (int r = 0; r < RenameRPainted.length; r++){
-            if (nodosDerechos[pos].name == RenameRPainted[r].name){
-              fill(91, 255, 142);
+        else{
+          String [] sinonimos = nodosDerechos[i].Synonym;
+          for (int j = 0; j < sinonimos.length; j++){
+            if (sinonimos[j] == nodosIzquierdos[pos].name){
+              existe = true;
             }
           }
-    }
-    if(moves){
-       for (int m = 0; m < Move_RPainted.length; m++){
-          if (nodosDerechos[pos].name == Move_RPainted[m].name){
-            fill(10, 228, 237);
+        }
+      }
+      if (existe == false && pos > 0 && exclusiones == true){
+        fill(223,1,1);
+      } 
+      else{
+            if (congruentes){
+              fill(23, 18, 196);
+            }
+      } 
+
+      if (merges){
+         for (int m = 0; m < izquierdosPainted.length; m++){
+          if (nodosIzquierdos[pos].name == izquierdosPainted[m].name){
+            fill(255, 145, 0);
           }
         }
-    }
-    if (splits){
-        for (int s = 0; s < splitsRPainted.length; s++){
-          if (nodosDerechos[pos].name == splitsRPainted[s].name){
+      }
+      if (renames){
+        for (int r = 0; r < RenameLPainted.length; r++){
+          if (nodosIzquierdos[pos].name == RenameLPainted[r].name){
+            fill(91, 255, 142);
+          }
+        }
+      }
+      if (moves){
+         for (int m = 0; m < Move_LPainted.length; m++){
+            if (nodosIzquierdos[pos].name == Move_LPainted[m].name){
+              fill(10, 228, 237);
+            }
+          }
+      }
+      if (splits){
+        for (int s = 0; s < splitslPainted.length; s++){
+          if (nodosIzquierdos[pos].name == splitslPainted[s].name){
             fill(255, 0, 191);
           }
-        }
-    }
+        } 
+      }     
+      text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,(nodosIzquierdos[pos].y*2.5)-50);     
+      yPrev = nodosIzquierdos[pos].y;   
+    }      
 
-    text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);    
-  }
-  //PROCEDIMIENTO PARA PINTAR LAS LINEAS HORIZONTALES
-  stroke(107,110,107);
-  for (int i = 1; i < nodosDerechos.length; i++){
-    if (nodosDerechos[i].children != null){
-      CalcularPosicionesLineasHorizontal(i);
+    rotate(-PI/2); 
+    
+    for(int pos = 1; pos < nodosDerechos.length; pos++){
+      var existe = false;
+      for (int i = 1; i < nodosIzquierdos.length; i++){
+        if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
+          existe = true;
+        }
+        else{
+          String [] sinonimos = nodosDerechos[pos].Synonym;
+          for (int j = 0; j < sinonimos.length; j++){
+            if (sinonimos[j] == nodosIzquierdos[i].name){
+              existe = true;
+            }
+          }
+        }
+      }
+      if (existe == false && pos > 0 && nuevos == true){
+        fill(8,138,0);
+      } 
+      else{
+        if (congruentes){
+          fill(23, 18, 196);
+        }
+      }
+      if (merges){
+        for (int m = 0; m < derechosPainted.length; m++){
+          if (nodosDerechos[pos].name == derechosPainted[m].name){
+            fill(255, 145, 0);
+          }
+        }
+      }
+      if (renames){
+         for (int r = 0; r < RenameRPainted.length; r++){
+              if (nodosDerechos[pos].name == RenameRPainted[r].name){
+                fill(91, 255, 142);
+              }
+            }
+      }
+      if(moves){
+         for (int m = 0; m < Move_RPainted.length; m++){
+            if (nodosDerechos[pos].name == Move_RPainted[m].name){
+              fill(10, 228, 237);
+            }
+          }
+      }
+      if (splits){
+          for (int s = 0; s < splitsRPainted.length; s++){
+            if (nodosDerechos[pos].name == splitsRPainted[s].name){
+              fill(255, 0, 191);
+            }
+          }
+      }
+
+      text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);    
     }
+    //PROCEDIMIENTO PARA PINTAR LAS LINEAS HORIZONTALES
+    stroke(107,110,107);
+    for (int i = 1; i < nodosDerechos.length; i++){
+      if (nodosDerechos[i].children != null){
+        CalcularPosicionesLineasHorizontal(i);
+      }
+    }
+    stroke(0);
   }
-  stroke(0);
+  else{
+
+  }
  
 }
 

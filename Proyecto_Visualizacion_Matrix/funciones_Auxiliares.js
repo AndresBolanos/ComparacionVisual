@@ -122,3 +122,19 @@ function getpostionYSimple(nodes,nombre){
         }
     }
 }
+
+
+var file1 = "";
+var file2 = "";
+function nuevaventana (){
+    LimpiarCanvas();
+    var win = window.open("../Abrir_Taxonomias/index.html","ventana1","width=400,height=300,scrollbars=NO");
+    var trigger = setInterval(function(){
+       if (win.closed){
+        loadFiles(file1,file2);
+        clearInterval(trigger);
+        console.log("Success");
+       }    
+    },1000); 
+    //loadFiles("datos1.json","datos2.json");
+}

@@ -37,6 +37,11 @@ var arregloNuevos = [];
 var encendido = false;
 
 
+//This function is activated on reload page to reset de information page and switchers
+$(window).bind("load", function() {
+    LimpiarCanvas();
+});
+
 function resetText(){
      for (var node1 = 0; node1 < nodesLeft.length; node1++){
          document.getElementById(nodesLeft[node1].name+"1").style.fontSize = "12px";
@@ -100,13 +105,15 @@ var tocado = true;
 
 function loadFiles (file1, file2){
     limpiar();
+    $(".label1").text(file1.replace(".json", ""));
+    $(".label2").text(file2.replace(".json", ""));
     $(".label1").css("visibility", "visible");
     $(".label2").css("visibility", "visible");
     d3.json("Archivos-Datos/"+file1, function (err, data) {
     var pannel = document.getElementById('Contenedor');
     availableWidth = $(window).width(); //size of the width of the screen
     widthRight =availableWidth*0.10;
-    availableHeight = $(window).height()+(pannel.scrollHeight*2);
+    availableHeight = $(window).height()+(pannel.scrollHeight*3);
 
     document.getElementById('CanvasLineasTenues').setAttribute("height", availableHeight+"px");
     document.getElementById('CanvasLineasTenues2').setAttribute("height", availableHeight+"px");
@@ -144,6 +151,7 @@ function loadFiles (file1, file2){
 
             nodesLeft = nodes;  // ww assign the nodes of the left to the global variable to use it in the next functions
             NODOS = nodes;
+            console.log(nodesLeft.length);
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 d.id = d.id || ++id;
                 //  AQUI FUE DONDE HICE LOS PROCESOOOOOS;
@@ -155,9 +163,9 @@ function loadFiles (file1, file2){
                 if (padres >= 1){
                     var y = d.y-20;
                     var y2 = y+20;
-                    var x = 20;
-                    for (var i = 0; i < padres-1; i++){                  
-                        document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.1" />';
+                    var x = 40;
+                    for (var i = 1; i < padres; i++){                  
+                        document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
                         x+=20;
                     }
                 }
@@ -386,9 +394,9 @@ function loadFiles (file1, file2){
                     if (padres >= 1){
                         var y = d.y -20;
                         var y2 = y+20;
-                        var x = 20;
-                        for (var i = 0; i < padres-1; i++){                  
-                            document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.1" />';
+                        var x = 40;
+                        for (var i = 1; i < padres; i++){                  
+                            document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
                             x+=20;
                         }
                     }

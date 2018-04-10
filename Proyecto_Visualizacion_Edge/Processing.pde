@@ -113,12 +113,14 @@ void drawSplits(int grosor,string nombre){
                         strokeWeight(0.5);
                         x1 = splitsL[i].x+(textWidth(splitsL[i].name)*2);
                         String [] sinonimos = splitsR[j].Synonym;
-                        for (int s =  0; s < sinonimos.length; s++){
+                        /*for (int s =  0; s < sinonimos.length; s++){
                             if(sinonimos[s] == nombre){
                                 strokeWeight(3);
                                 x1 = splitsL[i].x+(textWidth(splitsL[i].name)*1.5);
                             }
-                        }
+                        }*/
+                        strokeWeight(3);
+                        x1 = splitsL[i].x+(textWidth(splitsL[i].name)*1.5);
                     }
          			else{
                         strokeWeight(0.5);

@@ -900,7 +900,8 @@ body {
 #CANVAS{
   position: absolute;
   top: 120px; 
-  left: 130px;          
+  left: 130px;  
+  background-color:white;        
 }
 
 

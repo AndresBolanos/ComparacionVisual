@@ -16,6 +16,9 @@ var newsG = false;
 var conguencyG = false;
 var allG = false;
 var clearG = false;
+var file1 = "";
+var file2 = "";
+
 
 function setsplitsG(){
      var processingInstance;
@@ -161,60 +164,80 @@ $(window).resize(function() {
 availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
-
-d3.json("Archivos-Datos/"+"amphibia-Extremos-1.json", function (err, data) {
-    var Ltree = d3.layout.treelist()
-        .childIndent(20)
-        .nodeHeight(20);
-    function render(data, parent) {
-            var nodes = Ltree.nodes(data),
-            duration = 1000;
-            for(var node = 0;node<nodes.length;node++){
-                if(nodes[node].children!=null){
-                    nodes[node]["has_parent"] = "yes";    
-                    nodes[node]["position"] = "left";
-                }
-                else{
-                    nodes[node]["has_parent"] = "no";    
-                    nodes[node]["position"] = "left";
-                }
-            } 
-            nodesLeft = nodes;
-        }
-        render(data, data);
-});
-
-
-d3.json("Archivos-Datos/"+"amphibia-Extremos-2.json", function (err, data) {
-    var Ltree = d3.layout.treelist()
-        .childIndent(20)
-        .nodeHeight(20);
-
-    var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
-    function render(data, parent) {
-            var nodes = Ltree.nodes(data),
-            duration = 1000;
-            for(var node = 0;node<nodes.length;node++){
-                if(nodes[node].children!=null){
-                    nodes[node]["has_parent"] = "yes";    
-                    nodes[node]["position"] = "right";
-                    nodes[node]["R"] = 0;
-                    nodes[node]["G"] = 0;
-                    nodes[node]["B"] = 0;
-                }
-                else{
-                    nodes[node]["has_parent"] = "no";    
-                    nodes[node]["position"] = "right";
-                    nodes[node]["R"] = 0;
-                    nodes[node]["G"] = 0;
-                    nodes[node]["B"] = 0;
-                }
-                
+function loadFiles (file1, file2){
+    d3.json("Archivos-Datos/"+file1, function (err, data) {
+        var Ltree = d3.layout.treelist()
+            .childIndent(20)
+            .nodeHeight(20);
+        function render(data, parent) {
+                var nodes = Ltree.nodes(data),
+                duration = 1000;
+                for(var node = 0;node<nodes.length;node++){
+                    if(nodes[node].children!=null){
+                        nodes[node]["has_parent"] = "yes";    
+                        nodes[node]["position"] = "left";
+                    }
+                    else{
+                        nodes[node]["has_parent"] = "no";    
+                        nodes[node]["position"] = "left";
+                    }
+                } 
+                nodesLeft = nodes;
             }
-            nodesRight = nodes;
-        }
-        render(data, data);
-});
+            render(data, data);
+    });
 
 
+    d3.json("Archivos-Datos/"+file2, function (err, data) {
+        var Ltree = d3.layout.treelist()
+            .childIndent(20)
+            .nodeHeight(20);
 
+        var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
+        function render(data, parent) {
+                var nodes = Ltree.nodes(data),
+                duration = 1000;
+                for(var node = 0;node<nodes.length;node++){
+                    if(nodes[node].children!=null){
+                        nodes[node]["has_parent"] = "yes";    
+                        nodes[node]["position"] = "right";
+                        nodes[node]["R"] = 0;
+                        nodes[node]["G"] = 0;
+                        nodes[node]["B"] = 0;
+                    }
+                    else{
+                        nodes[node]["has_parent"] = "no";    
+                        nodes[node]["position"] = "right";
+                        nodes[node]["R"] = 0;
+                        nodes[node]["G"] = 0;
+                        nodes[node]["B"] = 0;
+                    }
+                    
+                }
+                nodesRight = nodes;
+            }
+            render(data, data);
+             var processingInstance;
+            processingInstance = Processing.getInstanceById('CANVAS');
+            var archivo1 = file1.replace(".json", "");
+            var archivo2 = file2.replace(".json", "");
+            processingInstance.setNames(archivo1,archivo2);   
+            processingInstance.setup();
+    });
+}
+
+
+function nuevaventana (){
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
+    processingInstance.setup();
+    var win = window.open("../Abrir_Taxonomias/index.html","ventana1","width=400,height=300,scrollbars=NO");
+    var trigger = setInterval(function(){
+       if (win.closed){
+        loadFiles(file1,file2);
+        clearInterval(trigger);
+        console.log("Success");
+       }    
+    },1000); 
+    //loadFiles("datos1.json","datos2.json");
+}

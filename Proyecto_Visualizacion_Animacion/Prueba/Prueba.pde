@@ -44,6 +44,8 @@ Node nodo;
 boolean one_by_one = false;
 boolean animar = false;
 boolean terminado = false;
+String archivo1 = "";
+String archivo2 = "";
 
 int posicionNuevos = 0;
 int posicionExclusiones = 0;
@@ -132,6 +134,11 @@ void setValueOneByOne(boolean valor){
   one_by_one = valor;
 }
 
+void setNames(name1,name2){
+    archivo1 = name1;
+    archivo2 = name2;
+}
+
 void setup(){
   posicionNuevos = 0;
   posicionExclusiones = 0;
@@ -151,7 +158,7 @@ void setup(){
   ListaSplitsA = false;
   exclusions = false;
   inicio = true;
-  size (availableWidth,availableHeight);
+  size (availableWidth,2000);
   Final = false;
   izquierdos = nodesLeft;
   derechos = nodesRight;
@@ -179,8 +186,8 @@ void draw() {
   pintarNodos(false);
   textSize(20);
   fill(0);
-  text("Amphibia-A",320,0);
-   text("Amphibia-B",915,0);
+  text(archivo1,320,0);
+  text(archivo2,915,0);
   if (one_by_one){
     if (animar){
         if (inicio){
@@ -197,9 +204,13 @@ void draw() {
               int [] posiciones = getPosicionesMergers();
               for (int i = 0; i < posiciones.length; i++){
                 //for (int j = 0; j < Listamergers.length; j++){
+                if (mergers == false){
+                        break;
+                      }
                    String [] nombres = Listamergers[posicionMerges].nodosMergeIzquierdos;
                    for (int k = 0; k < nombres.length; k++){
-                      if(nombres[k] == nodosIzquierdos[posiciones[i]].name){
+                      try{
+                        if(nombres[k] == nodosIzquierdos[posiciones[i]].name){
                          nodosIzquierdos[posiciones[i]].move(Listamergers[posicionMerges].nodoMergeDerecho.x,Listamergers[posicionMerges].nodoMergeDerecho.y);
                          if (nodosIzquierdos[posiciones[i]].x >= Listamergers[posicionMerges].nodoMergeDerecho.x-10 && (nodosIzquierdos[posiciones[i]].y >= Listamergers[posicionMerges].nodoMergeDerecho.y-10 || nodosIzquierdos[posiciones[i]].y >= Listamergers[posicionMerges].nodoMergeDerecho.y+10)){
                             //removerNodos(posiciones);
@@ -221,6 +232,11 @@ void draw() {
                             }
                           }
                       }
+                    }
+                    catch(e){
+                      break;
+                    }  
+                      
                    }
                     if (paro){
                       break;
@@ -467,12 +483,16 @@ void draw() {
                 for (int j = 0; j < Listamergers.length; j++){
                    String [] nombres = Listamergers[j].nodosMergeIzquierdos;
                    for (int k = 0; k < nombres.length; k++){
+                      if (mergers == false){
+                        break;
+                      }
                       if(nombres[k] == nodosIzquierdos[posiciones[i]].name){
                          nodosIzquierdos[posiciones[i]].move(Listamergers[j].nodoMergeDerecho.x,Listamergers[j].nodoMergeDerecho.y);
                          if (nodosIzquierdos[posiciones[i]].x >= Listamergers[j].nodoMergeDerecho.x-10 && (nodosIzquierdos[posiciones[i]].y >= Listamergers[j].nodoMergeDerecho.y-10 || nodosIzquierdos[posiciones[i]].y >= Listamergers[j].nodoMergeDerecho.y+10)){
                            removerNodos(posiciones);
                            mergers = false;
                            moves = true;
+                           break;
                           }
                       }
                    }
@@ -1136,10 +1156,10 @@ void getMergers(){
       if (sinonimos.length > 1){
            for (int nodeL = 1; nodeL < sinonimos.length;nodeL++){
               if (existeNombre_Complejo(sinonimos[nodeL],nodosDerechos[nodeR].author,nodosDerechos[nodeR].record_scrutiny_date)==false){
-                  cont += 1;  
+                  cont += 1; 
               }
           }
-          if (cont > 1){
+          if (cont >= 1){
             cantidadMerges+=1;
             Node nodo = new Node(derecho.name, derecho.x, derecho.y);
             String [] izq = [];

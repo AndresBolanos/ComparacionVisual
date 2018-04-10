@@ -14,11 +14,19 @@ float scaleFactor = 1.0;
 float translateX = screen.width/2-200;
 float translateY = 0.0;
 
+String archivo1 = "";
+String archivo2 = "";
+
 boolean found = false;
+
+void setNames(name1,name2){
+    archivo1 = name1;
+    archivo2 = name2;
+}
 
 void setup(){ 
   background(255);       
-  size (availableWidth,availableHeight);
+  size (availableWidth,2000);
   izquierdos = nodesLeft;
   derechos = nodesRight; 
   nodosIzquierdos = new Node[izquierdos.length];
@@ -45,9 +53,9 @@ void draw(){
   createAgglomeration(izquierdos,derechos);     
   textSize(20);
   fill(130,80, 64);
-  text("Amphibia-A",-300,300);  
+  text(archivo1,-300,300);  
   fill(223, 209, 33);
-  text("Amphibia-B",450,300); 
+  text(archivo2,450,300); 
   stroke(149,153,149);
   strokeWeight(-5);
   for (int i = 1; i < nodosTenues.length; i++){

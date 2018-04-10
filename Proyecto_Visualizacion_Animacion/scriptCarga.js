@@ -20,6 +20,8 @@ var clearG = false;
 var LastValue = 0;
 var onebyone = false;
 var terminado;
+var file1 = "";
+var file2 = "";
 
 
 var cantidadSplits;
@@ -29,6 +31,29 @@ var cantidadMoves;
 var cantidadEclusiones;
 var cantidadNuevos;
 var cantidadCongruentes;
+
+$(window).bind("load", function() {
+    LimpiarCanvas();
+});
+
+function LimpiarCanvas(){
+    splits = false;
+    moves = false;
+    renames = false;
+    exclusions = false;
+    merges = false;
+    congruencia= false;
+    nuevos = false;
+    document.getElementById("Splits").checked = false;
+    document.getElementById("News").checked = false;
+    document.getElementById("Congruencia").checked = false;    
+    document.getElementById("Mergers").checked = false;
+    document.getElementById("Moves").checked = false;
+    document.getElementById("Renames").checked = false;
+    document.getElementById("Exclusions").checked = false;
+    document.getElementById("All").checked = false;
+}
+
 
 function setsplitsG(){
     if (splitsG == false){
@@ -99,6 +124,8 @@ function setconguencyG(){
     }
     console.log(conguencyG);
 }
+
+
 
 function setAllG(){
     if (allG == false){
@@ -219,33 +246,41 @@ $(window).resize(function() {
 availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
+function loadFiles (file1, file2){
+    d3.json("Archivos-Datos/"+file1, function (err, data) {
+        var Ltree = d3.layout.treelist()
+            .childIndent(20)
+            .nodeHeight(20);
+        function render(data, parent) {
+                var nodes = Ltree.nodes(data),
+                duration = 1000;
+                nodesLeft = nodes;
+            }
+            render(data, data);
+    });
 
-d3.json("Archivos-Datos/"+"amphibia-Extremos-1.json", function (err, data) {
-    var Ltree = d3.layout.treelist()
-        .childIndent(20)
-        .nodeHeight(20);
-    function render(data, parent) {
-            var nodes = Ltree.nodes(data),
-            duration = 1000;
-            nodesLeft = nodes;
-        }
-        render(data, data);
-});
 
+    d3.json("Archivos-Datos/"+file2, function (err, data) {
+        var Ltree = d3.layout.treelist()
+            .childIndent(20)
+            .nodeHeight(20);
 
-d3.json("Archivos-Datos/"+"amphibia-Extremos-2.json", function (err, data) {
-    var Ltree = d3.layout.treelist()
-        .childIndent(20)
-        .nodeHeight(20);
-
-    var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
-    function render(data, parent) {
-            var nodes = Ltree.nodes(data),
-            duration = 1000;
-            nodesRight = nodes;
-        }
-        render(data, data);
-});
+        var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
+        function render(data, parent) {
+                var nodes = Ltree.nodes(data),
+                duration = 1000;
+                nodesRight = nodes;
+            }
+            render(data, data);
+        var processingInstance;
+        processingInstance = Processing.getInstanceById('CANVAS');
+        var archivo1 = file1.replace(".json", "");
+        var archivo2 = file2.replace(".json", "");
+        processingInstance.setNames(archivo1,archivo2);    
+        processingInstance.setup();
+    });
+    
+}
 
  
 
@@ -309,5 +344,23 @@ function demonio(){
         window.setTimeout(demonio, 1000);
     }
 }
+
+
+
+function nuevaventana (){
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
+    processingInstance.setup();
+    var win = window.open("../Abrir_Taxonomias/index.html","ventana1","width=400,height=300,scrollbars=NO");
+    var trigger = setInterval(function(){
+       if (win.closed){
+        loadFiles(file1,file2);
+        clearInterval(trigger);
+        console.log("Success");
+       }    
+    },1000); 
+    //loadFiles("datos1.json","datos2.json");
+}
+
 
 
