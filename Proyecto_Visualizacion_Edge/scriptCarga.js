@@ -55,7 +55,6 @@ function CargaBitacora(){
                 )
                 {
                      document.getElementById("All").checked = true;
-                     setAllG();
                 }
             if (window.sessionStorage.getItem('Congruencia') == "true" ){
                  document.getElementById("Congruencia").checked = true;

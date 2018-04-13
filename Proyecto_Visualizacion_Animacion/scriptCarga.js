@@ -50,34 +50,37 @@ function CargaBitacora(){
                      document.getElementById("All").checked = true;
                      setAllG();
                 }
-            if (window.sessionStorage.getItem('Congruencia') == "true" ){
-                 document.getElementById("Congruencia").checked = true;
-                 setconguencyG();
+            else{
+                if (window.sessionStorage.getItem('Congruencia') == "true" ){
+                     document.getElementById("Congruencia").checked = true;
+                     setconguencyG();
+                }
+                 if (window.sessionStorage.getItem('Splits') == "true" ){
+                     document.getElementById("Splits").checked = true;
+                     setsplitsG();
+                }
+                if (window.sessionStorage.getItem('Merges') == "true" ){
+                     document.getElementById("Mergers").checked = true;
+                     setsmergersG();
+                }
+                if (window.sessionStorage.getItem('Nuevos') == "true" ){
+                     document.getElementById("News").checked = true;
+                     setnewsG();
+                }
+                if (window.sessionStorage.getItem('Moves') == "true" ){
+                     document.getElementById("Moves").checked = true;
+                     setsmovesG();
+                }
+                if (window.sessionStorage.getItem('Renames') == "true" ){
+                     document.getElementById("Renames").checked = true;
+                     setsrenamesG();
+                }
+                if (window.sessionStorage.getItem('Exclusions') == "true" ){
+                     document.getElementById("Exclusions").checked = true;
+                     setsexclusionsG();
+                }
             }
-             if (window.sessionStorage.getItem('Splits') == "true" ){
-                 document.getElementById("Splits").checked = true;
-                 setsplitsG();
-            }
-            if (window.sessionStorage.getItem('Merges') == "true" ){
-                 document.getElementById("Mergers").checked = true;
-                 setsmergersG();
-            }
-            if (window.sessionStorage.getItem('Nuevos') == "true" ){
-                 document.getElementById("News").checked = true;
-                 setnewsG();
-            }
-            if (window.sessionStorage.getItem('Moves') == "true" ){
-                 document.getElementById("Moves").checked = true;
-                 setsmovesG();
-            }
-            if (window.sessionStorage.getItem('Renames') == "true" ){
-                 document.getElementById("Renames").checked = true;
-                 setsrenamesG();
-            }
-            if (window.sessionStorage.getItem('Exclusions') == "true" ){
-                 document.getElementById("Exclusions").checked = true;
-                 setsexclusionsG();
-            }
+            
     }, 1000);
 }
 
