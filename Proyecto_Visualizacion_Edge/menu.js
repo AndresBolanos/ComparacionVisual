@@ -1,11 +1,9 @@
 
-console.log("Hola");
  
 var contador = 1;
  
 function main(){
 	// $('nav').toggle(); 
-	console.log("Pasa");
 	if(contador == 1){
 		$('nav').animate({
 			marginLeft: '-70px'

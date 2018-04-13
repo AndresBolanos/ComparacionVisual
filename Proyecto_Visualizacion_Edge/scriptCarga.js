@@ -36,11 +36,46 @@ var arregloEclusiones = [];
 var arregloNuevos = [];
 var encendido = false;
 
-
 //This function is activated on reload page to reset de information page and switchers
-$(window).bind("load", function() {
-    LimpiarCanvas();
-});
+
+
+
+function CargaBitacora(){
+    
+    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
+       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
+    }
+    setTimeout(function() {
+            if (window.sessionStorage.getItem('All') == "true" ){
+                 document.getElementById("All").checked = true;
+            }
+            if (window.sessionStorage.getItem('Congruencia') == "true" ){
+                 document.getElementById("Congruencia").checked = true;
+            }
+             if (window.sessionStorage.getItem('Splits') == "true" ){
+                 document.getElementById("Splits").checked = true;
+            }
+            if (window.sessionStorage.getItem('Merges') == "true" ){
+                 document.getElementById("Mergers").checked = true;
+            }
+            if (window.sessionStorage.getItem('Nuevos') == "true" ){
+                 document.getElementById("News").checked = true;
+            }
+            if (window.sessionStorage.getItem('Moves') == "true" ){
+                 document.getElementById("Moves").checked = true;
+            }
+            if (window.sessionStorage.getItem('Renames') == "true" ){
+                 document.getElementById("Renames").checked = true;
+            }
+            if (window.sessionStorage.getItem('Exclusions') == "true" ){
+                 document.getElementById("Exclusions").checked = true;
+            }
+
+        VerificarChecks();
+    }, 2000);
+   
+}
+
 
 function resetText(){
      for (var node1 = 0; node1 < nodesLeft.length; node1++){
@@ -151,7 +186,7 @@ function loadFiles (file1, file2){
 
             nodesLeft = nodes;  // ww assign the nodes of the left to the global variable to use it in the next functions
             NODOS = nodes;
-            console.log(nodesLeft.length);
+        
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 d.id = d.id || ++id;
                 //  AQUI FUE DONDE HICE LOS PROCESOOOOOS;
@@ -577,7 +612,8 @@ function loadFiles (file1, file2){
             }
             render(data, data);
         });
-
+        window.sessionStorage.setItem("File1", file1);
+        window.sessionStorage.setItem("File2", file2);
 }
 
 var padres = 0;

@@ -36,6 +36,7 @@ function CargarLineasIzquierdas(){
                 }
             }
         }
+         window.sessionStorage.setItem("Congruencia", true);
          document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
     }
     else{
@@ -49,6 +50,7 @@ function CargarLineasIzquierdas(){
         processingInstance.setup();
         document.getElementById("CongruenceStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Congruencia", false);
     }
     
    
@@ -128,6 +130,7 @@ function pintarNuevos(){
             }
         }
         document.getElementById("NewStatsValue").innerHTML = cantidadNuevos;
+         window.sessionStorage.setItem("Nuevos", true);
     }
     else{
         nuevos = false;
@@ -140,7 +143,8 @@ function pintarNuevos(){
         }
         d3.select("#Canvas").selectAll("*").remove();
         document.getElementById("NewStatsValue").innerHTML = 0;
-       VerificarChecks();
+        VerificarChecks();
+        window.sessionStorage.setItem("Nuevos", false);
     }
     
 }
@@ -169,6 +173,7 @@ function pintarSplits(){
             document.getElementById(arregloDerechos[j].name+"2").style.color ="#FF00BF";
         }
          document.getElementById("SplitsStatsValue").innerHTML = cantidadSplits;
+         window.sessionStorage.setItem("Splits", true);
     }
     else{
         splits = false;
@@ -181,6 +186,7 @@ function pintarSplits(){
         processingInstance.setup();
         document.getElementById("SplitsStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Splits", false);
     }  
 }
 
@@ -207,6 +213,7 @@ function merge(){
             document.getElementById(derechos[i].name+"2").style.color ="#FF9100";
         }
         document.getElementById("MergesStatsValue").innerHTML = cantidadMergers;
+         window.sessionStorage.setItem("Merges", true);
     }
     else{
         merges = false;
@@ -219,6 +226,7 @@ function merge(){
         processingInstance.setup();
         document.getElementById("MergesStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Merges", false);
     }
 }
 
@@ -245,6 +253,7 @@ function Move(){
             document.getElementById(derechos[i].name+"2").style.color ="#0AE4ED";
         }
         document.getElementById("MovesStatsValue").innerHTML = cantidadMoves;
+        window.sessionStorage.setItem("Moves", true);
     }
     else{
         moves = false;
@@ -259,6 +268,7 @@ function Move(){
         processingInstance.setup();
         document.getElementById("MovesStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Moves", false);
     }
     
 }
@@ -284,6 +294,7 @@ function Rename(){
             document.getElementById(derechos[i].name+"2").style.color ="#5BFF8E";
         }
         document.getElementById("RenamesStatsValue").innerHTML = cantidadRename;
+        window.sessionStorage.setItem("Renames", true);
     }
     else{
         //we Clean up the nodes with black color
@@ -297,6 +308,7 @@ function Rename(){
         processingInstance.setup();
         document.getElementById("RenamesStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Renames", false);
     }  
 }
 
@@ -321,6 +333,7 @@ function exclusiones(){
             }
         }
         document.getElementById("ExclusionStatsValue").innerHTML = cantidadEclusiones;
+        window.sessionStorage.setItem("Exclusions", true);
     }
     else{
         exclusions = false;
@@ -333,6 +346,7 @@ function exclusiones(){
         d3.select("#Canvas").selectAll("*").remove();
          document.getElementById("ExclusionStatsValue").innerHTML = 0;
         VerificarChecks();
+        window.sessionStorage.setItem("Exclusions", false);
     }
 }
 
@@ -357,6 +371,7 @@ function mostrarTodos(){
         exclusiones();
         document.getElementById("Renames").checked = true;
         Rename();
+        window.sessionStorage.setItem("All", true);
     }
     else{
         LimpiarCanvas();
@@ -367,6 +382,14 @@ function mostrarTodos(){
         document.getElementById("ExclusionStatsValue").innerHTML = "0";
         document.getElementById("NewStatsValue").innerHTML = "0"; 
         document.getElementById("CongruenceStatsValue").innerHTML = "0";
+        window.sessionStorage.setItem("All", false);
+        window.sessionStorage.setItem("Exclusions", false);
+        window.sessionStorage.setItem("Moves", false);
+        window.sessionStorage.setItem("Renames", false);
+        window.sessionStorage.setItem("Congruencia", false);
+        window.sessionStorage.setItem("Nuevos", false);
+        window.sessionStorage.setItem("Splits", false);
+        window.sessionStorage.setItem("Merges", false);
     }
    
 }

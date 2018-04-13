@@ -166,6 +166,7 @@ void draw() {
     int yPrev = 0;
     
     for(int pos = 1; pos < nodosIzquierdos.length; pos++){
+      fill(0);
       var existe = false;
       for (int i = 1; i < nodosDerechos.length; i++){
         if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
@@ -224,6 +225,7 @@ void draw() {
     rotate(-PI/2); 
     
     for(int pos = 1; pos < nodosDerechos.length; pos++){
+      fill(0);
       var existe = false;
       for (int i = 1; i < nodosIzquierdos.length; i++){
         if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
