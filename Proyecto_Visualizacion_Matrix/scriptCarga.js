@@ -70,7 +70,7 @@ $(window).resize(function() {
     window.location.href = window.location.href;
 });
 availableWidth = $(window).width(); //size of the width of the screen
-
+availableHeight = $(window).height();
 //var margin = {top: -5, right: -5, bottom: -5, left: -5};
 var margin = -5;
 

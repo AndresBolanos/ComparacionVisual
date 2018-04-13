@@ -78,7 +78,7 @@ void setup() {
   izquierdos = nodesLeft;
   derechos = nodesRight;
 
-  size(availableWidth, 2000);  
+  size(availableWidth*2, availableHeight*2);  
   cols = derechos.length-1;
   rows = izquierdos.length-1;
 

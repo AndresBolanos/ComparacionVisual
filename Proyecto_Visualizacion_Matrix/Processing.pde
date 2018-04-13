@@ -7,7 +7,7 @@ conguencia [] CongruenciaDerechos;
 void setup(){
     width = availableWidth;
     height = availableHeight;
-    size(width,height+200);
+    size(width*2,height+200);
     background(255); 
 }
 
