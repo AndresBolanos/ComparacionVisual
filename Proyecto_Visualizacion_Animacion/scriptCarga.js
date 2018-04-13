@@ -32,6 +32,56 @@ var cantidadEclusiones;
 var cantidadNuevos;
 var cantidadCongruentes;
 
+
+function CargaBitacora(){ 
+    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
+       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
+    }
+    setTimeout(function() {
+            if (window.sessionStorage.getItem('All') == "true"  || (window.sessionStorage.getItem('Congruencia') == "true"
+                && (window.sessionStorage.getItem('Splits') == "true")
+                && (window.sessionStorage.getItem('Merges') == "true")
+                && (window.sessionStorage.getItem('Nuevos') == "true")
+                && (window.sessionStorage.getItem('Moves') == "true")
+                && (window.sessionStorage.getItem('Renames') == "true")
+                && (window.sessionStorage.getItem('Exclusions') == "true"))
+                )
+                {
+                     document.getElementById("All").checked = true;
+                     setAllG();
+                }
+            if (window.sessionStorage.getItem('Congruencia') == "true" ){
+                 document.getElementById("Congruencia").checked = true;
+                 setconguencyG();
+            }
+             if (window.sessionStorage.getItem('Splits') == "true" ){
+                 document.getElementById("Splits").checked = true;
+                 setsplitsG();
+            }
+            if (window.sessionStorage.getItem('Merges') == "true" ){
+                 document.getElementById("Mergers").checked = true;
+                 setsmergersG();
+            }
+            if (window.sessionStorage.getItem('Nuevos') == "true" ){
+                 document.getElementById("News").checked = true;
+                 setnewsG();
+            }
+            if (window.sessionStorage.getItem('Moves') == "true" ){
+                 document.getElementById("Moves").checked = true;
+                 setsmovesG();
+            }
+            if (window.sessionStorage.getItem('Renames') == "true" ){
+                 document.getElementById("Renames").checked = true;
+                 setsrenamesG();
+            }
+            if (window.sessionStorage.getItem('Exclusions') == "true" ){
+                 document.getElementById("Exclusions").checked = true;
+                 setsexclusionsG();
+            }
+    }, 1000);
+}
+
+
 $(window).bind("load", function() {
     LimpiarCanvas();
 });
@@ -58,9 +108,11 @@ function LimpiarCanvas(){
 function setsplitsG(){
     if (splitsG == false){
         splitsG = true;
+        window.sessionStorage.setItem("Splits", true);
     }
     else{
         splitsG = false;
+        window.sessionStorage.setItem("Splits", false);
     }
     console.log(splitsG);
 }
@@ -68,9 +120,11 @@ function setsplitsG(){
 function setsmergersG(){
     if (mergersG == false){
         mergersG = true;
+        window.sessionStorage.setItem("Merges", true);
     }
     else{
         mergersG = false;
+        window.sessionStorage.setItem("Merges", false);
     }
     console.log(mergersG);
 }
@@ -78,9 +132,11 @@ function setsmergersG(){
 function setsmovesG(){
     if (movesG == false){
         movesG = true;
+        window.sessionStorage.setItem("Moves", true);
     }
     else{
         movesG = false;
+        window.sessionStorage.setItem("Moves", false);
     }
     console.log(movesG);
 }
@@ -88,9 +144,11 @@ function setsmovesG(){
 function setsrenamesG(){
     if (renamesG == false){
         renamesG = true;
+        window.sessionStorage.setItem("Renames", true);
     }
     else{
         renamesG = false;
+        window.sessionStorage.setItem("Renames", false);
     }
     console.log(renamesG);
 }
@@ -98,9 +156,11 @@ function setsrenamesG(){
 function setsexclusionsG(){
     if (exclusionsG == false){
         exclusionsG = true;
+        window.sessionStorage.setItem("Exclusions", true);
     }
     else{
         exclusionsG = false;
+        window.sessionStorage.setItem("Exclusions", false);
     }
     console.log(exclusionsG);
 }
@@ -108,9 +168,11 @@ function setsexclusionsG(){
 function setnewsG(){
     if (newsG == false){
         newsG = true;
+        window.sessionStorage.setItem("Nuevos", true);
     }
     else{
         newsG = false;
+        window.sessionStorage.setItem("Nuevos", false);
     }
     console.log(newsG);
 }
@@ -118,9 +180,11 @@ function setnewsG(){
 function setconguencyG(){
     if (conguencyG == false){
         conguencyG = true;
+        window.sessionStorage.setItem("Congruencia", true);
     }
     else{
         conguencyG = false;
+        window.sessionStorage.setItem("Congruencia", false);
     }
     console.log(conguencyG);
 }
@@ -145,6 +209,14 @@ function setAllG(){
         document.getElementById("Renames").checked = true;
         document.getElementById("News").checked = true;
         document.getElementById("Exclusions").checked = true;
+        window.sessionStorage.setItem("All", true);
+        window.sessionStorage.setItem("Congruencia", true);
+        window.sessionStorage.setItem("Nuevos", true);
+        window.sessionStorage.setItem("Exclusions", true);
+        window.sessionStorage.setItem("Renames", true);
+        window.sessionStorage.setItem("Moves", true);
+        window.sessionStorage.setItem("Merges", true);
+        window.sessionStorage.setItem("Splits", true);
     }
     else{
         allG = false;
@@ -162,6 +234,14 @@ function setAllG(){
         document.getElementById("Renames").checked = false;
         document.getElementById("News").checked = false;
         document.getElementById("Exclusions").checked = false;
+        window.sessionStorage.setItem("All", false);
+        window.sessionStorage.setItem("Congruencia", false);
+        window.sessionStorage.setItem("Nuevos", false);
+        window.sessionStorage.setItem("Exclusions", false);
+        window.sessionStorage.setItem("Renames", false);
+        window.sessionStorage.setItem("Moves", false);
+        window.sessionStorage.setItem("Merges", false);
+        window.sessionStorage.setItem("Splits", false);
     }
 }
 function Clear(){
@@ -214,7 +294,6 @@ function IniciarAnimacion(){
     if (iniciado == false){
         showVal(vel);
         iniciado = true;
-        window.setTimeout(demonio, 1000);
         document.getElementById('Comenzar').style.backgroundImage = "url('stop.png')";
     }
     else{
@@ -279,7 +358,8 @@ function loadFiles (file1, file2){
         processingInstance.setNames(archivo1,archivo2);    
         processingInstance.setup();
     });
-    
+    window.sessionStorage.setItem("File1", file1);
+    window.sessionStorage.setItem("File2", file2);
 }
 
  

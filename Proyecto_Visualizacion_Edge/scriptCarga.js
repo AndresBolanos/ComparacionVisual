@@ -40,15 +40,23 @@ var encendido = false;
 
 
 
-function CargaBitacora(){
-    
+function CargaBitacora(){ 
     if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
        loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
     }
     setTimeout(function() {
-            if (window.sessionStorage.getItem('All') == "true" ){
-                 document.getElementById("All").checked = true;
-            }
+            if (window.sessionStorage.getItem('All') == "true"  || (window.sessionStorage.getItem('Congruencia') == "true"
+                && (window.sessionStorage.getItem('Splits') == "true")
+                && (window.sessionStorage.getItem('Merges') == "true")
+                && (window.sessionStorage.getItem('Nuevos') == "true")
+                && (window.sessionStorage.getItem('Moves') == "true")
+                && (window.sessionStorage.getItem('Renames') == "true")
+                && (window.sessionStorage.getItem('Exclusions') == "true"))
+                )
+                {
+                     document.getElementById("All").checked = true;
+                     setAllG();
+                }
             if (window.sessionStorage.getItem('Congruencia') == "true" ){
                  document.getElementById("Congruencia").checked = true;
             }
@@ -70,10 +78,10 @@ function CargaBitacora(){
             if (window.sessionStorage.getItem('Exclusions') == "true" ){
                  document.getElementById("Exclusions").checked = true;
             }
-
-        VerificarChecks();
-    }, 2000);
-   
+                 VerificarChecks();
+                  $(window).trigger('click'); 
+                  $(window).trigger('click'); 
+    }, 1000);
 }
 
 
@@ -108,6 +116,7 @@ $(window).click(function(e) {
             processingInstance = Processing.getInstanceById('CANVAS');
             processingInstance.setup();
             VerificarChecks();
+            console.log("Entra");
             splitsAux = false;
         }
         else{

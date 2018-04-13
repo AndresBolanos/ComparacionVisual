@@ -372,6 +372,13 @@ function mostrarTodos(){
         document.getElementById("Renames").checked = true;
         Rename();
         window.sessionStorage.setItem("All", true);
+        window.sessionStorage.setItem("Congruencia", true);
+        window.sessionStorage.setItem("Nuevos", true);
+        window.sessionStorage.setItem("Exclusions", true);
+        window.sessionStorage.setItem("Renames", true);
+        window.sessionStorage.setItem("Moves", true);
+        window.sessionStorage.setItem("Merges", true);
+        window.sessionStorage.setItem("Splits", true);
     }
     else{
         LimpiarCanvas();

@@ -104,15 +104,15 @@
         </div>
          <nav>
           <ul>
-            <li><a href="#" onclick="nuevaventana();"><span class="icon-folder-open"></span>Open</a></li>
+            <li><a href="#" onclick="loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');"><span class="icon-folder-open"></span>Open</a></li>
              <!--
-          loadFiles('AmphibiaA-Case1.json','AmphibiaB-Case1.json');
+          loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
           nuevaventana();
       -->
           </ul>
         </nav>
     </header>
-    <body>        
+    <body onload="CargaBitacora()">        
       <canvas id="CANVAS" data-processing-sources="Prueba/Prueba.pde"></canvas>                           
     </body>
     <script type="text/javascript" src="scriptCarga.js"></script>

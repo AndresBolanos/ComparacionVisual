@@ -22,6 +22,50 @@ var availableHeight;
 var text;
 var iniciar = false;
 
+//This function is execute on body load
+//Restart the latest changes in the page
+function CargaBitacora(){ 
+    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
+       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
+    }
+    setTimeout(function() {
+            if (window.sessionStorage.getItem('All') == "true"  || ((window.sessionStorage.getItem('Congruencia') == "true")
+                && (window.sessionStorage.getItem('Splits') == "true")
+                && (window.sessionStorage.getItem('Merges') == "true")
+                && (window.sessionStorage.getItem('Nuevos') == "true")
+                && (window.sessionStorage.getItem('Moves') == "true")
+                && (window.sessionStorage.getItem('Renames') == "true")
+                && (window.sessionStorage.getItem('Exclusions') == "true"))
+                )
+                {
+                     document.getElementById("All").checked = true;
+                }
+            if (window.sessionStorage.getItem('Congruencia') == "true" ){
+                 document.getElementById("Congruencia").checked = true;
+            }
+             if (window.sessionStorage.getItem('Splits') == "true" ){
+                 document.getElementById("Splits").checked = true;
+            }
+            if (window.sessionStorage.getItem('Merges') == "true" ){
+                 document.getElementById("Mergers").checked = true;
+            }
+            if (window.sessionStorage.getItem('Nuevos') == "true" ){
+                 document.getElementById("News").checked = true;
+            }
+            if (window.sessionStorage.getItem('Moves') == "true" ){
+                 document.getElementById("Moves").checked = true;
+            }
+            if (window.sessionStorage.getItem('Renames') == "true" ){
+                 document.getElementById("Renames").checked = true;
+            }
+            if (window.sessionStorage.getItem('Exclusions') == "true" ){
+                 document.getElementById("Exclusions").checked = true;
+            }
+            VerificarChecks();
+    }, 1000);
+}
+
+
 $(window).resize(function() {
     window.location.href = window.location.href;
 });
@@ -69,7 +113,8 @@ function loadFiles (file1, file2){
             processingInstance.setNuevos(false);
             processingInstance.redraw();
     });
-    
+    window.sessionStorage.setItem("File1", file1);
+    window.sessionStorage.setItem("File2", file2);
 }
 
 
