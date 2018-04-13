@@ -15,7 +15,7 @@ boolean nuevos = false;
 boolean exclusiones = false;
 
 float scaleFactor = 0.2;
-float translateX = 400.0;
+float translateX = 100.0;
 float translateY = 180.0;
 
 Object [] izquierdos = [];
@@ -186,8 +186,12 @@ void draw() {
       } 
       else{
             if (congruentes){
-              fill(23, 18, 196);
+              for (int i = 1; i < nodosDerechos.length; i++){
+                if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
+                    fill(23, 18, 196);
+                }
             }
+          }
       } 
 
       if (merges){
@@ -245,7 +249,11 @@ void draw() {
       } 
       else{
         if (congruentes){
-          fill(23, 18, 196);
+          for (int i = 1; i < nodosIzquierdos.length; i++){
+                if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
+                    fill(23, 18, 196);
+                }
+            }
         }
       }
       if (merges){
@@ -606,7 +614,7 @@ void drawMoves(bandera,int R, int G,int B){
 int cantidadCongurentes = 0;
 void drawCongruency(){
   cantidadCongurentes = 0;
-  Object [] izquierdos = nodesLeft;
+    Object [] izquierdos = nodesLeft;
     Object [] derechos = nodesRight;
     //stroke(23, 18, 196);
     //noFill();
