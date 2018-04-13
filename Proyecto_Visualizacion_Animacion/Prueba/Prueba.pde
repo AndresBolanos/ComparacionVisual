@@ -88,32 +88,17 @@ boolean setTerminado(boolean valor){
 }
 //This function Apply the value of the slider in javascript lo the variable of move
 void setValueSlider(int valueSlider){
-  if (valueSlider == 1){
-    incrX = 1;
-    incrY = 1;
+  if (valueSlider == 0){
   }
-  if (valueSlider >= incrX){
-    if (incrX == 0){
-      incrX += abs(valueSlider/1)-0.5;
-      incrY += abs(valueSlider/1)-0.5;
-    }
-    else{
-      incrX += abs(valueSlider/incrX)-0.5;
-      incrY += abs(valueSlider/incrY)-0.5;
-    }
-   }
-   else{
-     if (valueSlider == 0){
-      if (incrX != 0){
-        incrX -= abs(incrX/1)-0.5;
-        incrY -= abs(incrY/1)-0.5;
-      }
-    }
-    else{
-      incrX -= abs(incrX/valueSlider)-0.5;
-      incrY -= abs(incrY/valueSlider)-0.5;
-    }
-   }
+  else{
+    incrX = abs(valueSlider);
+    incrY = abs(valueSlider);
+    incrX = incrX-(abs(valueSlider*0.5))
+    incrY = incrY-(abs(valueSlider*0.5))
+  }
+  
+   
+
 }
 
 void beginAnimation(){
