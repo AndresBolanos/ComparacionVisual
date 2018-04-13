@@ -70,7 +70,7 @@ function CargaBitacora(){
                 }
             }
             
-    }, 1000);
+    }, 500);
 }
 
 

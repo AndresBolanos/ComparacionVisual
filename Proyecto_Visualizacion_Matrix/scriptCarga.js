@@ -62,7 +62,7 @@ function CargaBitacora(){
                  document.getElementById("Exclusions").checked = true;
             }
             VerificarChecks();
-    }, 1000);
+    }, 500);
 }
 
 

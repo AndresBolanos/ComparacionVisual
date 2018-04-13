@@ -80,7 +80,7 @@ function CargaBitacora(){
                  VerificarChecks();
                   $(window).trigger('click'); 
                   $(window).trigger('click'); 
-    }, 1000);
+    }, 500);
 }
 
 
