@@ -125,14 +125,31 @@ function getpostionYSimple(nodes,nombre){
 }
 
 
+//This function verify that a right node taxonomy exists on left taxonomy
+//Check that author, name and date are equal
 function existeNombre_Complejo_Nuevos(nombre, autor, fecha){
     for (var i = 0; i < nodesLeft.length; i++) {
-        if (nodesLeft[i].name == nombre && nodesLeft[i].author == autor && nodesLeft[i].record_scrutiny_date == fecha){
+        if (nodesLeft[i].name == nombre && nodesLeft[i].author == autor){
             return false;
         }
     }
     return true;
 }
+
+function existeNombre_Complejo_Izquierda(nombre, autor, fecha,sinonimos){
+    for (var i = 0; i < nodesLeft.length; i++) {
+        if (nodesLeft[i].name == nombre && nodesLeft[i].author == autor){
+            return false;
+        }
+        for (var j = 0; j < sinonimos.length; j++){
+            if (sinonimos[j] == nodesLeft[i].name){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 var file1 = "";
 var file2 = "";
 
@@ -151,3 +168,55 @@ function nuevaventana (){
 
 
 
+
+//This function  save the parents names on de nombres_Left variable
+//of the left taxonomy
+var nombres_Left = [];
+var nombres_Right = [];
+function Save_Parents_Names_Left(Children){
+    if (Children != undefined){
+        for (var i = 0; i < Children.length; i++){
+            if (Children[i].children != undefined){
+                Save_Parents_Names_Left(Children[i].children);
+                nombres_Left.push(Children[i].name);
+            }
+            else{
+                nombres_Left.push(Children[i].name);
+            }
+        }
+    }
+    else{
+        return [];
+    }
+}
+
+//This function  save the parents names on de nombres_Right variable
+//of the right taxonomy
+function Save_Parents_Names_Right(Children){
+    if (Children != undefined){
+        for (var i = 0; i < Children.length; i++){
+            if (Children[i].children != undefined){
+                Save_Parents_Names_Right(Children[i].children);
+                nombres_Right.push(Children[i].name);
+            }
+            else{
+                nombres_Right.push(Children[i].name);
+            }
+        }
+    }
+    else{
+        return [];
+    }
+}
+
+//This function return de array with the parents names of left taxonomy 
+// to loadFiles function that requires this data
+function Retornar_Nommbres_Left(){
+    return nombres_Left;
+}
+
+//This function return de array with the parents names of right taxonomy 
+// to loadFiles function that requires this data
+function Retornar_Nommbres_Right(){
+    return nombres_Right;
+}

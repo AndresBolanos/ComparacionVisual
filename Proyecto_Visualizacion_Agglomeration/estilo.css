@@ -374,6 +374,27 @@ a:hover {
 .switchCongruence2 input {display:none;}
 
 /* Labels */
+
+.Tasks{
+  position: absolute;
+  width: 70px;
+  height: 34px;
+  left: 25px;
+  top: 55px;
+  color: white;
+  font-size: 20px;
+}
+
+.Arrow{
+  position: absolute;
+  width: 20px;
+  height: 34px;
+  left: 90px;
+  top: 50px;
+  color: white;
+  font-size: 28px;
+}
+
 .labelCongruence { 
   position: absolute;
   width: 60px;
@@ -381,6 +402,7 @@ a:hover {
   left: 120px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelSplits {
@@ -390,6 +412,7 @@ a:hover {
   left: 210px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelMerges {
@@ -399,6 +422,7 @@ a:hover {
   left: 275px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelMoves {
@@ -408,6 +432,7 @@ a:hover {
   left: 335px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelRenames {
@@ -417,6 +442,7 @@ a:hover {
   left: 395px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelNew {
@@ -426,6 +452,7 @@ a:hover {
   left: 470px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelExclusions {
@@ -435,6 +462,7 @@ a:hover {
   left: 515px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelAll {
@@ -444,6 +472,7 @@ a:hover {
   left: 605px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 .labelClear {
@@ -453,6 +482,7 @@ a:hover {
   left: 550px;
   top: 45px;
   color: white;
+  font-size: 12px;
 }
 
 /* The slider */
@@ -944,6 +974,7 @@ body {
   left: 24%;
   top: 45px;
   color: white;
+  visibility: hidden;
 }
 
 .labelCongruenceStatsValue{  
@@ -953,6 +984,7 @@ body {
   left: 25%;
   top: 65px;
   color: white;
+  visibility: hidden;
 }
 
 .labelSplitsStats{
@@ -962,6 +994,7 @@ body {
   left: 27%;
   top: 45px;
   color: white;
+  visibility: hidden;
 }
 
 .labelSplitsStatsValue{
@@ -971,6 +1004,7 @@ body {
   left: 27.5%;
   top: 65px;
   color: white;
+  visibility: hidden;
 }
 
 .labelMergesStats{
@@ -980,6 +1014,7 @@ body {
   left:29%;
   top: 45px;
   color: white;
+  visibility: hidden;
 }
 
 .labelMergesStatsValue{
@@ -989,6 +1024,7 @@ body {
   left: 29.5%;
   top: 65px;
   color: white;
+  visibility: hidden;
 }
 
 .labelMovesStats{
@@ -998,6 +1034,7 @@ body {
   left: 31%;
   top: 45px;
   color: white;
+  visibility: hidden;
 }
 
 .labelMovesStatsValue{
@@ -1007,6 +1044,7 @@ body {
   left: 31.5%;
   top: 65px;
   color: white;
+  visibility: hidden;
 }
 
 .labelRenamesStats{
@@ -1015,7 +1053,8 @@ body {
   height: 34px;
   left: 33%;
   top: 45px;
-  color: white;  
+  color: white;
+  visibility: hidden;  
 }
 
 .labelRenamesStatsValue{
@@ -1024,7 +1063,8 @@ body {
   height: 34px;
   left: 33.6%;
   top: 65px;
-  color: white;  
+  color: white; 
+  visibility: hidden; 
 }
 
 .labelNewStats{
@@ -1034,6 +1074,7 @@ body {
   left: 35.5%;
   top: 45px;
   color: white; 
+  visibility: hidden;
 }
 
 .labelNewStatsValue{
@@ -1043,6 +1084,7 @@ body {
   left: 35.8%;
   top: 65px;
   color: white; 
+  visibility: hidden;
 }
 
 .labelExclusionStats{
@@ -1052,6 +1094,7 @@ body {
   left: 37%;
   top: 45px;
   color: white;
+  visibility: hidden;
 }
 
 .labelExclusionStatsValue{
@@ -1061,6 +1104,7 @@ body {
   left: 37.7%;
   top: 65px;
   color: white; 
+  visibility: hidden;
 }
 
 #Options{
@@ -1147,4 +1191,5 @@ body {
   left: 22.7%;
   top: 50px;
   border-left:double 2px #fff;
+  visibility: hidden;
 }

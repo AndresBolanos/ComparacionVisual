@@ -9,42 +9,12 @@
   "author":"Kevin Arias",
   "record_scrutiny_date":"02-Sept-2009",
    "children": [
-   {"name": "Aromobatidae",
-    "Synonym":[],
-    "author":"Carlos Soto",
-    "record_scrutiny_date":"03-Sept-2008",
-    "children": [
-        {"name": "Allobates",
-        "Synonym":[],
-        "author":"Ronald Bolanos",
-        "record_scrutiny_date":"04-Sept-2009",
-        "children":[
-            {"name": "Allobates talamancae",
-            "Synonym":[],
-            "author":"Ronald Bolanos",
-            "record_scrutiny_date":"04-Sept-2009"
-          }
-        ]
-      }
-  ]
-   },
+
    {"name": "Bufonidae",
     "Synonym":[],
     "author":"Moises Valdelomar",
     "record_scrutiny_date":"05-Sept-2009",
     "children": [
-  {"name": "Atelopus",
-  "Synonym":[],
-  "author":"Carlos Betancourt",
-  "record_scrutiny_date":"06-Sept-2009",
-  "children":[
-       {"name": "Atelopus chiriquiensis",
-        "Synonym":[],
-        "author":"Carlos Betancourt",
-        "record_scrutiny_date":"06-Sept-2009"
-        }
-  ]
-  },
   {"name": "Incilius",
   "Synonym":[],
   "author":"Valeria Bolanos",
@@ -65,13 +35,6 @@
     "author":"Raquel Jimenez",
     "record_scrutiny_date":"14-Sept-2009",
     "children": [
-  {"name": "Cochranella",
-  "Synonym":[],
-  "author":"Pablo Quesada",
-  "record_scrutiny_date":"15-Sept-2009",
-  "children":[
-    {"name": "Cochranella granulosa","Synonym":[],"author":"Lilina Sancho","record_scrutiny_date":"11-Oct-2009"}
-  ]},
   {"name": "Hyalinobatrachium",
   "Synonym":[],
   "author":"Allison Chavez",
@@ -82,28 +45,6 @@
     {"name": "Hyalinobatrachium talamancae","Synonym":[],"author":"Raquel Quesada","record_scrutiny_date":"18-Sept-2009"},
     {"name": "Hyalinobatrachium valerioi","Synonym":[],"author":"Laura Castro","record_scrutiny_date":"19-Sept-2009"},
     {"name": "Hyalinobatrachium vireovittatum","Synonym":[],"author":"Armando Castro","record_scrutiny_date":"20-Sept-2009"}
-  ]},
-  {"name": "Sachatamia",
-  "Synonym":[],
-  "author":"Adrian Castro",
-  "record_scrutiny_date":"22-Sept-2009",
-  "children":[
-       {"name": "Sachatamia albomaculata","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"},
-       {"name": "Sachatamia ilex","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"}
-    ]},
-  {"name": "Spadarana",
-  "Synonym":[],
-  "author":"Adrian Castro",
-  "record_scrutiny_date":"22-Sept-2009",
-  "children":[
-       {"name": "Spadarana prosoblepon","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"}
-    ]},
-  {"name": "Teratohyla",
-  "Synonym":[],
-  "author":"Eva Porras",
-  "record_scrutiny_date":"24-Sept-2009",
-  "children":[
-      {"name": "Teratohyla spinosa","Synonym":[],"author":"Eva Porras","record_scrutiny_date":"24-Sept-2009"}
   ]}
   ]
    },
@@ -112,14 +53,6 @@
     "author":"Yuliana Rodriguez",
     "record_scrutiny_date":"25-Sept-2009",
     "children":[
-         {"name": "Adelphobates",
-         "Synonym":[],
-         "author":"Yuliana Barrantes",
-         "record_scrutiny_date":"1-Sept-2010",
-         "children":[
-              {"name": "Adelphobates galactonotus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"},
-              {"name": "Adelphobates quinquevittatus","Synonym":[],"author":"Yuliana Castro","record_scrutiny_date":"4-Sept-2010"}
-        ]},
          {"name": "Dendrobates",
          "Synonym":[],
          "author":"Carlos Barrantes",
@@ -135,15 +68,6 @@
     "author":"Karol Rodriguez",
     "record_scrutiny_date":"25-Sept-2009",
     "children":[
-         {"name": "Flectonotus",
-         "Synonym":[],
-         "author":"Karol Barrantes",
-         "record_scrutiny_date":"1-Sept-2010",
-         "children":[
-              {"name": "Flectonotus fissilus","Synonym":[],"author":"Karol Castro","record_scrutiny_date":"4-Sept-2010"},
-              {"name": "Flectonotus goeldii","Synonym":[],"author":"Karol Bremes","record_scrutiny_date":"5-Sept-2010"},
-              {"name": "Flectonotus ohausi","Synonym":[],"author":"Karol Suarez","record_scrutiny_date":"6-Sept-2010"}
-        ]},
          {"name": "Gastroheca",
          "Synonym":[],
          "author":"Karol Barrantes",
@@ -159,15 +83,6 @@
     "author":"Mariana Rodriguez",
     "record_scrutiny_date":"25-Sept-2009",
     "children":[
-         {"name": "Acris",
-         "Synonym":[],
-         "author":"Mariana Barrantes",
-         "record_scrutiny_date":"1-Sept-2010",
-         "children":[
-              {"name": "Acris blanchardi","Synonym":[],"author":"Mariana Castro","record_scrutiny_date":"4-Sept-2010"},
-              {"name": "Acris crepitans","Synonym":[],"author":"Mariana Bremes","record_scrutiny_date":"5-Sept-2010"},
-              {"name": "Acris gryllus","Synonym":[],"author":"Mariana Suarez","record_scrutiny_date":"6-Sept-2010"}
-        ]},
          {"name": "Exerodonta",
          "Synonym":[],
          "author":"Gustavo Barrantes",
@@ -211,20 +126,6 @@
   "author":"Maureen Santamaria",
   "record_scrutiny_date":"03-Oct-2009",
   "children": [
-       {"name": "Sirenidae",
-       "Synonym":[],
-       "author":"Fabricio Rodriguez",
-       "record_scrutiny_date":"1-Sept-2010",
-       "children":[
-           {"name": "Siren",
-           "Synonym":[],
-            "author":"Fabricio Brenes",
-            "record_scrutiny_date":"1-Sept-2010",
-            "children":[
-                 {"name": "Siren Lacertina","Synonym":[],"author":"Fabricio Oviedo","record_scrutiny_date":"02-Oct-2010"}
-            ]}
-       ]
-      },
       {"name": "Rhyacotritonidae",
        "Synonym":[],
        "author":"Alejandra Rodriguez",
@@ -247,30 +148,16 @@
        "author":"Ronald Rodriguez",
        "record_scrutiny_date":"1-Sept-2010",
        "children":[
-           {"name": "Aneides",
-           "Synonym":[],
-            "author":"Ronald Brenes",
-            "record_scrutiny_date":"2-Sept-2010",
-            "children":[
-                 {"name": "Aneides oeneus","Synonym":[],"author":"Ronald Hidalgo","record_scrutiny_date":"01-Oct-2010"},
-                 {"name": "Aneides ferreus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"}
-            ]
-          },
           {"name": "Bolitoglossa",
            "Synonym":[],
             "author":"Marino Brenes",
             "record_scrutiny_date":"2-Sept-2010",
             "children":[
                  {"name": "Bolitoglossa adspersa","Synonym":[],"author":"Marino Hidalgo","record_scrutiny_date":"01-Oct-2010"},
-                 {"name": "Bolitoglossa alberchi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"}
-            ]
-          },
-          {"name": "Karsenia",
-           "Synonym":[],
-            "author":"Olga Brenes",
-            "record_scrutiny_date":"2-Sept-2010",
-            "children":[
-                 {"name": "Karsenia koreana","Synonym":[],"author":"Marino Hidalgo","record_scrutiny_date":"01-Oct-2010"}
+                 {"name": "Bolitoglossa alberchi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa altamazonica","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa alvaradoi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa anthracina","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"}
             ]
           }
        ]
@@ -287,15 +174,6 @@
       "author":"Kevin Soto",
       "record_scrutiny_date":"09-Oct-2010",
       "children":[
-          {"name": "Boulengerula",
-          "Synonym":[],
-          "author":"Andres Castro",
-          "record_scrutiny_date":"03-Oct-2010",
-          "children":[
-              {"name": "Boulengerula boulengeri","Synonym":[],"author":"Maureen Oviedo","record_scrutiny_date":"02-Oct-2010"},
-              {"name": "Boulengerula changamwensis","Synonym":[],"author":"Karen Oviedo","record_scrutiny_date":"03-Oct-2010"}
-          ]
-        },
         {"name": "Cacelia",
           "Synonym":[],
           "author":"Ruth Castro",

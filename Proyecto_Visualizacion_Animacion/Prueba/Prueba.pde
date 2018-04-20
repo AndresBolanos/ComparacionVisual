@@ -169,7 +169,7 @@ void draw() {
   background(255);
   pintarNodos(true);
   pintarNodos(false);
-  textSize(20);
+  textSize(15);
   fill(0);
   text(archivo1,320,0);
   text(archivo2,915,0);
@@ -782,7 +782,7 @@ void pintarNodos(flag){
                     String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                     for (int s = 0; s < nodos.length; s++){
                       if (nodosIzquierdos[i].name == nodos[s]){
-                        textSize(20); 
+                        textSize(15); 
                         fill(255, 145, 0);
                       }
                     }
@@ -800,7 +800,7 @@ void pintarNodos(flag){
                 String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                 for (int s = 0; s < nodos.length; s++){
                   if (nodosIzquierdos[i].name == nodos[s]){
-                    textSize(20); 
+                    textSize(15); 
                     fill(255, 145, 0);
                   }
                 }
@@ -812,7 +812,7 @@ void pintarNodos(flag){
          for (int m = 0; m < ListaMoves.length; m++){
           if (one_by_one){
             if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionMoves){
-                textSize(20); 
+                textSize(15); 
                 fill(10,228,237);
             }
             else if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -821,7 +821,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-              textSize(20); 
+              textSize(15); 
               fill(10,228,237);
              }
           }
@@ -831,7 +831,7 @@ void pintarNodos(flag){
          for (int m = 0; m < ListaRenames.length; m++){
            if (one_by_one){
               if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionRename){
-                textSize(20); 
+                textSize(15); 
                 fill(91,255,142);
                }
                else if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -840,7 +840,7 @@ void pintarNodos(flag){
            }
            else{
             if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(15); 
                 fill(91,255,142);
                }
            }
@@ -850,7 +850,7 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaExcluidos.length; m++){
           if (one_by_one){
             if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name && m == posicionExclusiones){
-              textSize(20); 
+              textSize(15); 
               fill(223,1,1);
             }
             else if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
@@ -859,7 +859,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
-              textSize(20); 
+              textSize(15); 
               fill(223,1,1);
             }
           }
@@ -869,7 +869,7 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaCongruency1.length; m++){
           if (one_by_one){
             if (ListaCongruency1[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
-                textSize(20); 
+                textSize(15); 
                 fill(23, 18, 196);
             }
             else if(ListaCongruency1[m].name == nodosIzquierdos[i].name){ 
@@ -878,7 +878,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaCongruency1[m].name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(15); 
                 fill(23, 18, 196);
               }
           }
@@ -889,7 +889,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSplits.length; m++){
             if (one_by_one){
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionSplits){
-                textSize(20); 
+                textSize(15); 
                 fill(255,0,191);
                }
                else if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -898,7 +898,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(15); 
                 fill(255,0,191);
                }
             }
@@ -908,7 +908,7 @@ void pintarNodos(flag){
       if (splitsAux2){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (ListaSplitsA[m].name == nodosIzquierdos[i].name){
-             textSize(20); 
+             textSize(15); 
              fill(255,0,191);
           }
         }
@@ -1072,13 +1072,13 @@ void pintarNodos(flag){
     for (int i = 0; i < ListaNuevos.length; i++){
       if (one_by_one){
         if (i == posicionNuevos){
-          textSize(20); 
+          textSize(15); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
         }
       }
       else{
-          textSize(20); 
+          textSize(15); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
       }

@@ -19,11 +19,10 @@
         "author":"Ronald Bolanos",
         "record_scrutiny_date":"04-Sept-2009",
         "children":[
-            {"name": "Allobates talamancae",
-            "Synonym":[],
-            "author":"Ronald Bolanos",
-            "record_scrutiny_date":"04-Sept-2009"
-          }
+            {"name": "Allobates talamancae","Synonym":[],"author":"Ronald Bolanos","record_scrutiny_date":"04-Sept-2009"},
+            {"name": "Allobates vanzolinius","Synonym":[],"author":"Alejandra Bolanos","record_scrutiny_date":"05-Sept-2009"},
+            {"name": "Allobates undulatus","Synonym":[],"author":"Marino Bolanos","record_scrutiny_date":"06-Sept-2009"},
+            {"name": "Allobates zaparo","Synonym":[],"author":"Olga Bolanos","record_scrutiny_date":"07-Sept-2009"}
         ]
       }
   ]
@@ -33,18 +32,6 @@
     "author":"Moises Valdelomar",
     "record_scrutiny_date":"05-Sept-2009",
     "children": [
-  {"name": "Atelopus",
-  "Synonym":[],
-  "author":"Carlos Betancourt",
-  "record_scrutiny_date":"06-Sept-2009",
-  "children":[
-       {"name": "Atelopus chiriquiensis",
-        "Synonym":[],
-        "author":"Carlos Betancourt",
-        "record_scrutiny_date":"06-Sept-2009"
-        }
-  ]
-  },
   {"name": "Incilius",
   "Synonym":[],
   "author":"Valeria Bolanos",
@@ -70,7 +57,11 @@
   "author":"Pablo Quesada",
   "record_scrutiny_date":"15-Sept-2009",
   "children":[
-    {"name": "Cochranella granulosa","Synonym":[],"author":"Lilina Sancho","record_scrutiny_date":"11-Oct-2009"}
+    {"name": "Cochranella adenocheira","Synonym":[],"author":"Lilina Sancho","record_scrutiny_date":"11-Oct-2009"},
+    {"name": "Cochranella amelie","Synonym":[],"author":"Ronald Sancho","record_scrutiny_date":"12-Oct-2009"},
+    {"name": "Cochranella erminea","Synonym":[],"author":"Andres Sancho","record_scrutiny_date":"13-Oct-2009"},
+    {"name": "Cochranella granulosa","Synonym":[],"author":"David Sancho","record_scrutiny_date":"14-Oct-2009"},
+    {"name": "Cochranella nola","Synonym":[],"author":"Luis Sancho","record_scrutiny_date":"15-Oct-2009"}
   ]},
   {"name": "Hyalinobatrachium",
   "Synonym":[],
@@ -82,28 +73,6 @@
     {"name": "Hyalinobatrachium talamancae","Synonym":[],"author":"Raquel Quesada","record_scrutiny_date":"18-Sept-2009"},
     {"name": "Hyalinobatrachium valerioi","Synonym":[],"author":"Laura Castro","record_scrutiny_date":"19-Sept-2009"},
     {"name": "Hyalinobatrachium vireovittatum","Synonym":[],"author":"Armando Castro","record_scrutiny_date":"20-Sept-2009"}
-  ]},
-  {"name": "Sachatamia",
-  "Synonym":[],
-  "author":"Adrian Castro",
-  "record_scrutiny_date":"22-Sept-2009",
-  "children":[
-       {"name": "Sachatamia albomaculata","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"},
-       {"name": "Sachatamia ilex","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"}
-    ]},
-  {"name": "Spadarana",
-  "Synonym":[],
-  "author":"Adrian Castro",
-  "record_scrutiny_date":"22-Sept-2009",
-  "children":[
-       {"name": "Spadarana prosoblepon","Synonym":[],"author":"Adrian Castro","record_scrutiny_date":"22-Sept-2009"}
-    ]},
-  {"name": "Teratohyla",
-  "Synonym":[],
-  "author":"Eva Porras",
-  "record_scrutiny_date":"24-Sept-2009",
-  "children":[
-      {"name": "Teratohyla spinosa","Synonym":[],"author":"Eva Porras","record_scrutiny_date":"24-Sept-2009"}
   ]}
   ]
    },
@@ -112,14 +81,6 @@
     "author":"Yuliana Rodriguez",
     "record_scrutiny_date":"25-Sept-2009",
     "children":[
-         {"name": "Adelphobates",
-         "Synonym":[],
-         "author":"Yuliana Barrantes",
-         "record_scrutiny_date":"1-Sept-2010",
-         "children":[
-              {"name": "Adelphobates galactonotus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"},
-              {"name": "Adelphobates quinquevittatus","Synonym":[],"author":"Yuliana Castro","record_scrutiny_date":"4-Sept-2010"}
-        ]},
          {"name": "Dendrobates",
          "Synonym":[],
          "author":"Carlos Barrantes",
@@ -211,20 +172,6 @@
   "author":"Maureen Santamaria",
   "record_scrutiny_date":"03-Oct-2009",
   "children": [
-       {"name": "Sirenidae",
-       "Synonym":[],
-       "author":"Fabricio Rodriguez",
-       "record_scrutiny_date":"1-Sept-2010",
-       "children":[
-           {"name": "Siren",
-           "Synonym":[],
-            "author":"Fabricio Brenes",
-            "record_scrutiny_date":"1-Sept-2010",
-            "children":[
-                 {"name": "Siren Lacertina","Synonym":[],"author":"Fabricio Oviedo","record_scrutiny_date":"02-Oct-2010"}
-            ]}
-       ]
-      },
       {"name": "Rhyacotritonidae",
        "Synonym":[],
        "author":"Alejandra Rodriguez",
@@ -253,7 +200,9 @@
             "record_scrutiny_date":"2-Sept-2010",
             "children":[
                  {"name": "Aneides oeneus","Synonym":[],"author":"Ronald Hidalgo","record_scrutiny_date":"01-Oct-2010"},
-                 {"name": "Aneides ferreus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"}
+                 {"name": "Aneides ferreus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Aneides flavipunctatus","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Aneides hardii","Synonym":[],"author":"Carlos Castro","record_scrutiny_date":"4-Sept-2010"}
             ]
           },
           {"name": "Bolitoglossa",
@@ -262,15 +211,10 @@
             "record_scrutiny_date":"2-Sept-2010",
             "children":[
                  {"name": "Bolitoglossa adspersa","Synonym":[],"author":"Marino Hidalgo","record_scrutiny_date":"01-Oct-2010"},
-                 {"name": "Bolitoglossa alberchi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"}
-            ]
-          },
-          {"name": "Karsenia",
-           "Synonym":[],
-            "author":"Olga Brenes",
-            "record_scrutiny_date":"2-Sept-2010",
-            "children":[
-                 {"name": "Karsenia koreana","Synonym":[],"author":"Marino Hidalgo","record_scrutiny_date":"01-Oct-2010"}
+                 {"name": "Bolitoglossa alberchi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa altamazonica","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa alvaradoi","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"},
+                 {"name": "Bolitoglossa anthracina","Synonym":[],"author":"Marino Castro","record_scrutiny_date":"4-Sept-2010"}
             ]
           }
        ]
@@ -293,7 +237,9 @@
           "record_scrutiny_date":"03-Oct-2010",
           "children":[
               {"name": "Boulengerula boulengeri","Synonym":[],"author":"Maureen Oviedo","record_scrutiny_date":"02-Oct-2010"},
-              {"name": "Boulengerula changamwensis","Synonym":[],"author":"Karen Oviedo","record_scrutiny_date":"03-Oct-2010"}
+              {"name": "Boulengerula changamwensis","Synonym":[],"author":"Karen Oviedo","record_scrutiny_date":"03-Oct-2010"},
+              {"name": "Boulengerula denhardti","Synonym":[],"author":"Karen Oviedo","record_scrutiny_date":"03-Oct-2010"},
+              {"name": "Boulengerula fischeri","Synonym":[],"author":"Karen Oviedo","record_scrutiny_date":"03-Oct-2010"}
           ]
         },
         {"name": "Cacelia",

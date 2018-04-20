@@ -25,7 +25,9 @@
         <a href="../Proyecto_Visualizacion_Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>        
       </div>
       <div id="mainToolBox">
-        <a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        <!--<a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>-->
+          <label class="Tasks">Tasks</label>
+          <label class="Arrow"> ></label>
           <div id="leftToolBox">
             <form> 
               <label class="labelCongruence">Congruence</label>
@@ -72,7 +74,7 @@
              <input id="Reset" type="button" class="fa fa-refresh" onclick="Clear()">
             </form>
 
-            <label class="labelOneByOne">Gradual</label>
+            <label class="labelOneByOne">By Taxon</label>
             
             <label class="switchOneByOne">
               <input id="OneByOne" type="checkbox" onclick="setOneByOne()">
@@ -104,7 +106,7 @@
         </div>
          <nav>
           <ul>
-            <li><a href="#" onclick="loadFiles('AmphibiaTest1.json','AmphibiaTest4.json');"><span class="icon-folder-open"></span>Open</a></li>
+            <li><a href="#" onclick=" loadFiles('AmphibiaTest1.json','AmphibiaTest4.json');"><span class="icon-folder-open"></span>Open</a></li>
              <!--
           loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
           nuevaventana();
@@ -112,7 +114,7 @@
           </ul>
         </nav>
     </header>
-    <body onload="CargaBitacora()">        
+    <body>        
       <canvas id="CANVAS" data-processing-sources="Prueba/Prueba.pde"></canvas>                           
     </body>
     <script type="text/javascript" src="scriptCarga.js"></script>

@@ -36,7 +36,7 @@ function CargarLineasIzquierdas(){
                 }
             }
         }
-         window.sessionStorage.setItem("Congruencia", true);
+         window.sessionStorage.setItem("Congruencia_E", true);
          document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
     }
     else{
@@ -50,7 +50,7 @@ function CargarLineasIzquierdas(){
         processingInstance.setup();
         document.getElementById("CongruenceStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Congruencia", false);
+        window.sessionStorage.setItem("Congruencia_E", false);
     }
     
    
@@ -87,6 +87,48 @@ function LimpiarCanvas(){
     document.getElementById("Renames").checked = false;
     document.getElementById("Exclusions").checked = false;
     document.getElementById("All").checked = false;
+}
+
+
+//A function to paint the new nodes on click nodes
+//This function search nodes in the right taxonomy that not exist in the left taxonomy
+function pintarNuevos_Aux(){
+    if (Click == false){
+        arregloNuevos = [];
+        if (encendido){
+             LimpiarCanvas();
+             encendido = false;
+        }
+        var processingInstance;
+        processingInstance = Processing.getInstanceById('CANVAS');
+        cantidadNuevos = 0;
+        nuevos = true;
+        for (var nodeR = 1; nodeR < nodesRight.length; nodeR++){
+            if (processingInstance.existeNombreNuevos(nodesRight[nodeR].name,nodesRight[nodeR].author) == true){
+                var sinonimos = nodesRight[nodeR].Synonym;
+                if (sinonimos.length == 0){
+                    cantidadNuevos = cantidadNuevos+1;// it is a variable to save the amount of new nodes that exist
+                    arregloNuevos.push(nodesRight[nodeR]);
+                }
+                else{ //enter if exist Synonyms
+                    var flag = false;
+                    for (i=0;i<sinonimos.length;i++){
+                        if (processingInstance.existeNombre(sinonimos[i])){//verify if exist a Synonym in the left taxonomy
+                            flag = false;
+                        }      
+                        else{
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag == false){
+                        cantidadNuevos = cantidadNuevos+1;//variable to save de amount of new nodes that exist
+                        arregloNuevos.push(nodesRight[nodeR]);
+                    }
+                }
+            }
+        }
+    }
 }
 
 //A function to paint the new nodes
@@ -130,7 +172,7 @@ function pintarNuevos(){
             }
         }
         document.getElementById("NewStatsValue").innerHTML = cantidadNuevos;
-         window.sessionStorage.setItem("Nuevos", true);
+         window.sessionStorage.setItem("Nuevos_E", true);
     }
     else{
         nuevos = false;
@@ -144,7 +186,7 @@ function pintarNuevos(){
         d3.select("#Canvas").selectAll("*").remove();
         document.getElementById("NewStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Nuevos", false);
+        window.sessionStorage.setItem("Nuevos_E", false);
     }
     
 }
@@ -173,7 +215,7 @@ function pintarSplits(){
             document.getElementById(arregloDerechos[j].name+"2").style.color ="#FF00BF";
         }
          document.getElementById("SplitsStatsValue").innerHTML = cantidadSplits;
-         window.sessionStorage.setItem("Splits", true);
+         window.sessionStorage.setItem("Splits_E", true);
     }
     else{
         splits = false;
@@ -186,7 +228,7 @@ function pintarSplits(){
         processingInstance.setup();
         document.getElementById("SplitsStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Splits", false);
+        window.sessionStorage.setItem("Splits_E", false);
     }  
 }
 
@@ -213,7 +255,7 @@ function merge(){
             document.getElementById(derechos[i].name+"2").style.color ="#FF9100";
         }
         document.getElementById("MergesStatsValue").innerHTML = cantidadMergers;
-         window.sessionStorage.setItem("Merges", true);
+         window.sessionStorage.setItem("Merges_E", true);
     }
     else{
         merges = false;
@@ -226,7 +268,7 @@ function merge(){
         processingInstance.setup();
         document.getElementById("MergesStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Merges", false);
+        window.sessionStorage.setItem("Merges_E", false);
     }
 }
 
@@ -253,7 +295,7 @@ function Move(){
             document.getElementById(derechos[i].name+"2").style.color ="#0AE4ED";
         }
         document.getElementById("MovesStatsValue").innerHTML = cantidadMoves;
-        window.sessionStorage.setItem("Moves", true);
+        window.sessionStorage.setItem("Moves_E", true);
     }
     else{
         moves = false;
@@ -268,7 +310,7 @@ function Move(){
         processingInstance.setup();
         document.getElementById("MovesStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Moves", false);
+        window.sessionStorage.setItem("Moves_E", false);
     }
     
 }
@@ -294,7 +336,7 @@ function Rename(){
             document.getElementById(derechos[i].name+"2").style.color ="#5BFF8E";
         }
         document.getElementById("RenamesStatsValue").innerHTML = cantidadRename;
-        window.sessionStorage.setItem("Renames", true);
+        window.sessionStorage.setItem("Renames_E", true);
     }
     else{
         //we Clean up the nodes with black color
@@ -308,7 +350,7 @@ function Rename(){
         processingInstance.setup();
         document.getElementById("RenamesStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Renames", false);
+        window.sessionStorage.setItem("Renames_E", false);
     }  
 }
 
@@ -333,7 +375,7 @@ function exclusiones(){
             }
         }
         document.getElementById("ExclusionStatsValue").innerHTML = cantidadEclusiones;
-        window.sessionStorage.setItem("Exclusions", true);
+        window.sessionStorage.setItem("Exclusions_E", true);
     }
     else{
         exclusions = false;
@@ -346,9 +388,43 @@ function exclusiones(){
         d3.select("#Canvas").selectAll("*").remove();
          document.getElementById("ExclusionStatsValue").innerHTML = 0;
         VerificarChecks();
-        window.sessionStorage.setItem("Exclusions", false);
+        window.sessionStorage.setItem("Exclusions_E", false);
     }
 }
+
+function exclusiones_Aux(){
+    arregloEclusiones = [];
+    if (encendido){
+         LimpiarCanvas();
+         encendido = false;
+    }
+    cantidadEclusiones = 0;
+        exclusions = true;
+    for (node = 1;node < nodesLeft.length;node++){
+        if (existeNombreDerecha(nodesLeft[node].name,nodesLeft[node].author,nodesLeft[node].record_scrutiny_date) == true){
+            cantidadEclusiones = cantidadEclusiones+1;
+            arregloEclusiones.push(nodesLeft[node]);
+        }
+    }
+}
+
+
+function Nuevos_Aux(){
+    arregloNuevos = [];
+    if (encendido){
+         LimpiarCanvas();
+         encendido = false;
+    }
+    cantidadNuevos = 0;
+    nuevos = true;
+    for (node = 1;node < nodesRight.length;node++){
+        if (existeNombre_Complejo_Izquierda(nodesRight[node].name,nodesRight[node].author,nodesRight[node].record_scrutiny_date,nodesRight[node].Synonym) == true){
+            cantidadNuevos = cantidadNuevos+1;
+            arregloNuevos.push(nodesRight[node]);
+        }
+    }
+}
+
 
 //Function to show all the functionalities
 function mostrarTodos(){
@@ -371,14 +447,14 @@ function mostrarTodos(){
         exclusiones();
         document.getElementById("Renames").checked = true;
         Rename();
-        window.sessionStorage.setItem("All", true);
-        window.sessionStorage.setItem("Congruencia", true);
-        window.sessionStorage.setItem("Nuevos", true);
-        window.sessionStorage.setItem("Exclusions", true);
-        window.sessionStorage.setItem("Renames", true);
-        window.sessionStorage.setItem("Moves", true);
-        window.sessionStorage.setItem("Merges", true);
-        window.sessionStorage.setItem("Splits", true);
+        window.sessionStorage.setItem("All_E", true);
+        window.sessionStorage.setItem("Congruencia_E", true);
+        window.sessionStorage.setItem("Nuevos_E", true);
+        window.sessionStorage.setItem("Exclusions_E", true);
+        window.sessionStorage.setItem("Renames_E", true);
+        window.sessionStorage.setItem("Moves_E", true);
+        window.sessionStorage.setItem("Merges_E", true);
+        window.sessionStorage.setItem("Splits_E", true);
     }
     else{
         LimpiarCanvas();
@@ -389,14 +465,14 @@ function mostrarTodos(){
         document.getElementById("ExclusionStatsValue").innerHTML = "0";
         document.getElementById("NewStatsValue").innerHTML = "0"; 
         document.getElementById("CongruenceStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("All", false);
-        window.sessionStorage.setItem("Exclusions", false);
-        window.sessionStorage.setItem("Moves", false);
-        window.sessionStorage.setItem("Renames", false);
-        window.sessionStorage.setItem("Congruencia", false);
-        window.sessionStorage.setItem("Nuevos", false);
-        window.sessionStorage.setItem("Splits", false);
-        window.sessionStorage.setItem("Merges", false);
+        window.sessionStorage.setItem("All_E", false);
+        window.sessionStorage.setItem("Exclusions_E", false);
+        window.sessionStorage.setItem("Moves_E", false);
+        window.sessionStorage.setItem("Renames_E", false);
+        window.sessionStorage.setItem("Congruencia_E", false);
+        window.sessionStorage.setItem("Nuevos_E", false);
+        window.sessionStorage.setItem("Splits_E", false);
+        window.sessionStorage.setItem("Merges_E", false);
     }
    
 }

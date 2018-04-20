@@ -33,55 +33,58 @@ var cantidadNuevos;
 var cantidadCongruentes;
 
 
-function CargaBitacora(){ 
-    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
-       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
-    }
+function CargaBitacora(){
     setTimeout(function() {
-            if (window.sessionStorage.getItem('All') == "true"  || (window.sessionStorage.getItem('Congruencia') == "true"
-                && (window.sessionStorage.getItem('Splits') == "true")
-                && (window.sessionStorage.getItem('Merges') == "true")
-                && (window.sessionStorage.getItem('Nuevos') == "true")
-                && (window.sessionStorage.getItem('Moves') == "true")
-                && (window.sessionStorage.getItem('Renames') == "true")
-                && (window.sessionStorage.getItem('Exclusions') == "true"))
+        loadFiles('AmphibiaTest1.json','AmphibiaTest4.json');
+         /*if (window.sessionStorage.getItem('File1_A') != null && window.sessionStorage.getItem('File2_A') != null){
+           loadFiles (window.sessionStorage.getItem('File1_A'), window.sessionStorage.getItem('File2_A'));
+        }*/
+         setTimeout(function() {
+            if (window.sessionStorage.getItem('All_A') == "true"  || (window.sessionStorage.getItem('Congruencia_A') == "true"
+                && (window.sessionStorage.getItem('Splits_A') == "true")
+                && (window.sessionStorage.getItem('Merges_A') == "true")
+                && (window.sessionStorage.getItem('Nuevos_A') == "true")
+                && (window.sessionStorage.getItem('Moves_A') == "true")
+                && (window.sessionStorage.getItem('Renames_A') == "true")
+                && (window.sessionStorage.getItem('Exclusions_A') == "true"))
                 )
                 {
                      document.getElementById("All").checked = true;
                      setAllG();
                 }
             else{
-                if (window.sessionStorage.getItem('Congruencia') == "true" ){
+                if (window.sessionStorage.getItem('Congruencia_A') == "true" ){
                      document.getElementById("Congruencia").checked = true;
                      setconguencyG();
                 }
-                 if (window.sessionStorage.getItem('Splits') == "true" ){
+                 if (window.sessionStorage.getItem('Splits_A') == "true" ){
                      document.getElementById("Splits").checked = true;
                      setsplitsG();
                 }
-                if (window.sessionStorage.getItem('Merges') == "true" ){
+                if (window.sessionStorage.getItem('Merges_A') == "true" ){
                      document.getElementById("Mergers").checked = true;
                      setsmergersG();
                 }
-                if (window.sessionStorage.getItem('Nuevos') == "true" ){
+                if (window.sessionStorage.getItem('Nuevos_A') == "true" ){
                      document.getElementById("News").checked = true;
                      setnewsG();
                 }
-                if (window.sessionStorage.getItem('Moves') == "true" ){
+                if (window.sessionStorage.getItem('Moves_A') == "true" ){
                      document.getElementById("Moves").checked = true;
                      setsmovesG();
                 }
-                if (window.sessionStorage.getItem('Renames') == "true" ){
+                if (window.sessionStorage.getItem('Renames_A') == "true" ){
                      document.getElementById("Renames").checked = true;
                      setsrenamesG();
                 }
-                if (window.sessionStorage.getItem('Exclusions') == "true" ){
+                if (window.sessionStorage.getItem('Exclusions_A') == "true" ){
                      document.getElementById("Exclusions").checked = true;
                      setsexclusionsG();
                 }
             }
             
-    }, 500);
+        }, 1000);
+    },1000);
 }
 
 
@@ -111,11 +114,11 @@ function LimpiarCanvas(){
 function setsplitsG(){
     if (splitsG == false){
         splitsG = true;
-        window.sessionStorage.setItem("Splits", true);
+        window.sessionStorage.setItem("Splits_A", true);
     }
     else{
         splitsG = false;
-        window.sessionStorage.setItem("Splits", false);
+        window.sessionStorage.setItem("Splits_A", false);
     }
     console.log(splitsG);
 }
@@ -123,11 +126,11 @@ function setsplitsG(){
 function setsmergersG(){
     if (mergersG == false){
         mergersG = true;
-        window.sessionStorage.setItem("Merges", true);
+        window.sessionStorage.setItem("Merges_A", true);
     }
     else{
         mergersG = false;
-        window.sessionStorage.setItem("Merges", false);
+        window.sessionStorage.setItem("Merges_A", false);
     }
     console.log(mergersG);
 }
@@ -135,11 +138,11 @@ function setsmergersG(){
 function setsmovesG(){
     if (movesG == false){
         movesG = true;
-        window.sessionStorage.setItem("Moves", true);
+        window.sessionStorage.setItem("Moves_A", true);
     }
     else{
         movesG = false;
-        window.sessionStorage.setItem("Moves", false);
+        window.sessionStorage.setItem("Moves_A", false);
     }
     console.log(movesG);
 }
@@ -147,11 +150,11 @@ function setsmovesG(){
 function setsrenamesG(){
     if (renamesG == false){
         renamesG = true;
-        window.sessionStorage.setItem("Renames", true);
+        window.sessionStorage.setItem("Renames_A", true);
     }
     else{
         renamesG = false;
-        window.sessionStorage.setItem("Renames", false);
+        window.sessionStorage.setItem("Renames_A", false);
     }
     console.log(renamesG);
 }
@@ -159,11 +162,11 @@ function setsrenamesG(){
 function setsexclusionsG(){
     if (exclusionsG == false){
         exclusionsG = true;
-        window.sessionStorage.setItem("Exclusions", true);
+        window.sessionStorage.setItem("Exclusions_A", true);
     }
     else{
         exclusionsG = false;
-        window.sessionStorage.setItem("Exclusions", false);
+        window.sessionStorage.setItem("Exclusions_A", false);
     }
     console.log(exclusionsG);
 }
@@ -171,11 +174,11 @@ function setsexclusionsG(){
 function setnewsG(){
     if (newsG == false){
         newsG = true;
-        window.sessionStorage.setItem("Nuevos", true);
+        window.sessionStorage.setItem("Nuevos_A", true);
     }
     else{
         newsG = false;
-        window.sessionStorage.setItem("Nuevos", false);
+        window.sessionStorage.setItem("Nuevos_A", false);
     }
     console.log(newsG);
 }
@@ -183,11 +186,11 @@ function setnewsG(){
 function setconguencyG(){
     if (conguencyG == false){
         conguencyG = true;
-        window.sessionStorage.setItem("Congruencia", true);
+        window.sessionStorage.setItem("Congruencia_A", true);
     }
     else{
         conguencyG = false;
-        window.sessionStorage.setItem("Congruencia", false);
+        window.sessionStorage.setItem("Congruencia_A", false);
     }
     console.log(conguencyG);
 }
@@ -212,14 +215,14 @@ function setAllG(){
         document.getElementById("Renames").checked = true;
         document.getElementById("News").checked = true;
         document.getElementById("Exclusions").checked = true;
-        window.sessionStorage.setItem("All", true);
-        window.sessionStorage.setItem("Congruencia", true);
-        window.sessionStorage.setItem("Nuevos", true);
-        window.sessionStorage.setItem("Exclusions", true);
-        window.sessionStorage.setItem("Renames", true);
-        window.sessionStorage.setItem("Moves", true);
-        window.sessionStorage.setItem("Merges", true);
-        window.sessionStorage.setItem("Splits", true);
+        window.sessionStorage.setItem("All_A", true);
+        window.sessionStorage.setItem("Congruencia_A", true);
+        window.sessionStorage.setItem("Nuevos_A", true);
+        window.sessionStorage.setItem("Exclusions_A", true);
+        window.sessionStorage.setItem("Renames_A", true);
+        window.sessionStorage.setItem("Moves_A", true);
+        window.sessionStorage.setItem("Merges_A", true);
+        window.sessionStorage.setItem("Splits_A", true);
     }
     else{
         allG = false;
@@ -237,14 +240,14 @@ function setAllG(){
         document.getElementById("Renames").checked = false;
         document.getElementById("News").checked = false;
         document.getElementById("Exclusions").checked = false;
-        window.sessionStorage.setItem("All", false);
-        window.sessionStorage.setItem("Congruencia", false);
-        window.sessionStorage.setItem("Nuevos", false);
-        window.sessionStorage.setItem("Exclusions", false);
-        window.sessionStorage.setItem("Renames", false);
-        window.sessionStorage.setItem("Moves", false);
-        window.sessionStorage.setItem("Merges", false);
-        window.sessionStorage.setItem("Splits", false);
+        window.sessionStorage.setItem("All_A", false);
+        window.sessionStorage.setItem("Congruencia_A", false);
+        window.sessionStorage.setItem("Nuevos_A", false);
+        window.sessionStorage.setItem("Exclusions_A", false);
+        window.sessionStorage.setItem("Renames_A", false);
+        window.sessionStorage.setItem("Moves_A", false);
+        window.sessionStorage.setItem("Merges_A", false);
+        window.sessionStorage.setItem("Splits_A", false);
     }
 }
 function Clear(){
@@ -297,7 +300,7 @@ function IniciarAnimacion(){
     if (iniciado == false){
         showVal(vel);
         iniciado = true;
-        document.getElementById('Comenzar').style.backgroundImage = "url('stop.png')";
+        document.getElementById('Comenzar').style.backgroundImage = "url('Pause.png')";
     }
     else{
         document.getElementById('Comenzar').style.backgroundImage = "url('play.png')";
@@ -361,8 +364,8 @@ function loadFiles (file1, file2){
         processingInstance.setNames(archivo1,archivo2);    
         processingInstance.setup();
     });
-    window.sessionStorage.setItem("File1", file1);
-    window.sessionStorage.setItem("File2", file2);
+    window.sessionStorage.setItem("File1_A", file1);
+    window.sessionStorage.setItem("File2_A", file2);
 }
 
  
@@ -447,3 +450,7 @@ function nuevaventana (){
 
 
 
+//This functions is activated when page is full loaded.
+$(window).bind("load", function() {
+    CargaBitacora(); //Call the function that load the latest state of the page.
+});

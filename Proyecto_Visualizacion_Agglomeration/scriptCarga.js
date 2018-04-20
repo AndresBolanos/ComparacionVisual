@@ -22,55 +22,58 @@ var file2 = "";
 
 
 function CargaBitacora(){ 
-    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
-       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
-    }
-    setTimeout(function() {
-            if (window.sessionStorage.getItem('All') == "true"  || (window.sessionStorage.getItem('Congruencia') == "true"
-                && (window.sessionStorage.getItem('Splits') == "true")
-                && (window.sessionStorage.getItem('Merges') == "true")
-                && (window.sessionStorage.getItem('Nuevos') == "true")
-                && (window.sessionStorage.getItem('Moves') == "true")
-                && (window.sessionStorage.getItem('Renames') == "true")
-                && (window.sessionStorage.getItem('Exclusions') == "true"))
-                )
-                {
-                     document.getElementById("All").checked = true;
-                     allG= false;
-                     setAllG();
+     setTimeout(function(){
+            loadFiles('AmphibiaTest1.json','AmphibiaTest5.json');
+            /*if (window.sessionStorage.getItem('File1_Ag') != null && window.sessionStorage.getItem('File2_Ag') != null){
+               loadFiles (window.sessionStorage.getItem('File1_Ag'), window.sessionStorage.getItem('File2_Ag'));
+            }*/
+            setTimeout(function() {
+                if (window.sessionStorage.getItem('All_Ag') == "true"  || (window.sessionStorage.getItem('Congruencia_Ag') == "true"
+                    && (window.sessionStorage.getItem('Splits_Ag') == "true")
+                    && (window.sessionStorage.getItem('Merges_Ag') == "true")
+                    && (window.sessionStorage.getItem('Nuevos_Ag') == "true")
+                    && (window.sessionStorage.getItem('Moves_Ag') == "true")
+                    && (window.sessionStorage.getItem('Renames_Ag') == "true")
+                    && (window.sessionStorage.getItem('Exclusions_Ag') == "true"))
+                    )
+                    {
+                         document.getElementById("All").checked = true;
+                         allG= false;
+                         setAllG();
+                    }
+                else{
+                    if (window.sessionStorage.getItem('Congruencia_Ag') == "true" ){
+                         document.getElementById("Congruencia").checked = true;
+                         setconguencyG();
+                    }
+                     if (window.sessionStorage.getItem('Splits_Ag') == "true" ){
+                         document.getElementById("Splits").checked = true;
+                         setsplitsG();
+                    }
+                    if (window.sessionStorage.getItem('Merges_Ag') == "true" ){
+                         document.getElementById("Mergers").checked = true;
+                         setsmergersG();
+                    }
+                    if (window.sessionStorage.getItem('Nuevos_Ag') == "true" ){
+                         document.getElementById("News").checked = true;
+                         setnewsG();
+                    }
+                    if (window.sessionStorage.getItem('Moves_Ag') == "true" ){
+                         document.getElementById("Moves").checked = true;
+                         setsmovesG();
+                    }
+                    if (window.sessionStorage.getItem('Renames_Ag') == "true" ){
+                         document.getElementById("Renames").checked = true;
+                         setsrenamesG();
+                    }
+                    if (window.sessionStorage.getItem('Exclusions_Ag') == "true" ){
+                         document.getElementById("Exclusions").checked = true;
+                         setsexclusionsG();
+                    }
                 }
-            else{
-                if (window.sessionStorage.getItem('Congruencia') == "true" ){
-                     document.getElementById("Congruencia").checked = true;
-                     setconguencyG();
-                }
-                 if (window.sessionStorage.getItem('Splits') == "true" ){
-                     document.getElementById("Splits").checked = true;
-                     setsplitsG();
-                }
-                if (window.sessionStorage.getItem('Merges') == "true" ){
-                     document.getElementById("Mergers").checked = true;
-                     setsmergersG();
-                }
-                if (window.sessionStorage.getItem('Nuevos') == "true" ){
-                     document.getElementById("News").checked = true;
-                     setnewsG();
-                }
-                if (window.sessionStorage.getItem('Moves') == "true" ){
-                     document.getElementById("Moves").checked = true;
-                     setsmovesG();
-                }
-                if (window.sessionStorage.getItem('Renames') == "true" ){
-                     document.getElementById("Renames").checked = true;
-                     setsrenamesG();
-                }
-                if (window.sessionStorage.getItem('Exclusions') == "true" ){
-                     document.getElementById("Exclusions").checked = true;
-                     setsexclusionsG();
-                }
-            }
-            
-    }, 500);
+                
+            }, 1000);
+     },1000);
 }
 
 
@@ -81,12 +84,12 @@ function setsplitsG(){
         splitsG = true;
         var  cantidadSplits = processingInstance.returnAmountSplits(); 
         document.getElementById("SplitsStatsValue").innerHTML = cantidadSplits;
-        window.sessionStorage.setItem("Splits", true);      
+        window.sessionStorage.setItem("Splits_Ag", true);      
     }
     else{
         splitsG = false;
         document.getElementById("SplitsStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("Splits", false); 
+        window.sessionStorage.setItem("Splits_Ag", false); 
     }
 }
 
@@ -97,12 +100,12 @@ function setsmergersG(){
         mergersG = true;
         var cantidadMergers = processingInstance.returnCantidadMergers();
         document.getElementById("MergesStatsValue").innerHTML = cantidadMergers;
-        window.sessionStorage.setItem("Merges", true);   
+        window.sessionStorage.setItem("Merges_Ag", true);   
     }
     else{
         mergersG = false;
         document.getElementById("MergesStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("Merges", false);
+        window.sessionStorage.setItem("Merges_Ag", false);
     }
 }
 
@@ -113,12 +116,12 @@ function setsmovesG(){
         movesG = true;
         var cantidadMoves = processingInstance.returnMoves();   
         document.getElementById("MovesStatsValue").innerHTML = cantidadMoves;
-        window.sessionStorage.setItem("Moves", true);     
+        window.sessionStorage.setItem("Moves_Ag", true);     
     }
     else{
         movesG = false;
         document.getElementById("MovesStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("Moves", false);  
+        window.sessionStorage.setItem("Moves_Ag", false);  
     }
 }
 
@@ -129,12 +132,12 @@ function setsrenamesG(){
         renamesG = true;
         var cantidadRename = processingInstance.returnRenames();  
         document.getElementById("RenamesStatsValue").innerHTML = cantidadRename;
-        window.sessionStorage.setItem("Renames", true);  
+        window.sessionStorage.setItem("Renames_Ag", true);  
     }
     else{
         renamesG = false;
         document.getElementById("RenamesStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("Renames", false); 
+        window.sessionStorage.setItem("Renames_Ag", false); 
     }
 }
 
@@ -145,12 +148,12 @@ function setsexclusionsG(){
         exclusionsG = true;
         var cantidadExclusiones = processingInstance.returnExclusiones();
         document.getElementById("ExclusionStatsValue").innerHTML = cantidadExclusiones;
-        window.sessionStorage.setItem("Exclusions", true);           
+        window.sessionStorage.setItem("Exclusions_Ag", true);           
     }
     else{
         exclusionsG = false;
          document.getElementById("ExclusionStatsValue").innerHTML = "0";
-         window.sessionStorage.setItem("Exclusions", false);  
+         window.sessionStorage.setItem("Exclusions_Ag", false);  
     }
 }
 
@@ -161,12 +164,12 @@ function setnewsG(){
         newsG = true;
         var cantidadNuevos = processingInstance.returnNuevos();
         document.getElementById("NewStatsValue").innerHTML = cantidadNuevos;
-        window.sessionStorage.setItem("Nuevos", true);
+        window.sessionStorage.setItem("Nuevos_Ag", true);
     }
     else{
         newsG = false;
          document.getElementById("NewStatsValue").innerHTML = "0";
-         window.sessionStorage.setItem("Nuevos", false);
+         window.sessionStorage.setItem("Nuevos_Ag", false);
     }
 }
 
@@ -179,12 +182,12 @@ function setconguencyG(){
         processingInstance.Congruencia(); 
         var cantidadCongruentes = processingInstance.returnCongruentes(); 
         document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
-        window.sessionStorage.setItem("Congruencia", true);
+        window.sessionStorage.setItem("Congruencia_Ag", true);
     }
     else{
         conguencyG = false;
         document.getElementById("CongruenceStatsValue").innerHTML = "0";
-        window.sessionStorage.setItem("Congruencia", false);
+        window.sessionStorage.setItem("Congruencia_Ag", false);
     }
 }
 
@@ -214,14 +217,14 @@ function setAllG(){
         document.getElementById("News").checked = true;
         document.getElementById("Exclusions").checked = true;
         document.getElementById("All").checked = true;
-        window.sessionStorage.setItem("All", true);
-        window.sessionStorage.setItem("Congruencia", true);
-        window.sessionStorage.setItem("Nuevos", true);
-        window.sessionStorage.setItem("Exclusions", true);
-        window.sessionStorage.setItem("Renames", true);
-        window.sessionStorage.setItem("Moves", true);
-        window.sessionStorage.setItem("Merges", true);
-        window.sessionStorage.setItem("Splits", true);
+        window.sessionStorage.setItem("All_Ag", true);
+        window.sessionStorage.setItem("Congruencia_Ag", true);
+        window.sessionStorage.setItem("Nuevos_Ag", true);
+        window.sessionStorage.setItem("Exclusions_Ag", true);
+        window.sessionStorage.setItem("Renames_Ag", true);
+        window.sessionStorage.setItem("Moves_Ag", true);
+        window.sessionStorage.setItem("Merges_Ag", true);
+        window.sessionStorage.setItem("Splits_Ag", true);
     }
     else{
         console.log("Apaga");
@@ -248,14 +251,14 @@ function setAllG(){
         document.getElementById("News").checked = false;
         document.getElementById("Exclusions").checked = false;
         document.getElementById("All").checked = false;
-        window.sessionStorage.setItem("All", false);
-        window.sessionStorage.setItem("Congruencia", false);
-        window.sessionStorage.setItem("Nuevos", false);
-        window.sessionStorage.setItem("Exclusions", false);
-        window.sessionStorage.setItem("Renames", false);
-        window.sessionStorage.setItem("Moves", false);
-        window.sessionStorage.setItem("Merges", false);
-        window.sessionStorage.setItem("Splits", false);
+        window.sessionStorage.setItem("All_Ag", false);
+        window.sessionStorage.setItem("Congruencia_Ag", false);
+        window.sessionStorage.setItem("Nuevos_Ag", false);
+        window.sessionStorage.setItem("Exclusions_Ag", false);
+        window.sessionStorage.setItem("Renames_Ag", false);
+        window.sessionStorage.setItem("Moves_Ag", false);
+        window.sessionStorage.setItem("Merges_Ag", false);
+        window.sessionStorage.setItem("Splits_Ag", false);
     }
 }
 
@@ -327,8 +330,8 @@ function loadFiles (file1, file2){
             processingInstance.setNames(archivo1,archivo2);   
             processingInstance.setup();
     });
-    window.sessionStorage.setItem("File1", file1);
-    window.sessionStorage.setItem("File2", file2);
+    window.sessionStorage.setItem("File1_Ag", file1);
+    window.sessionStorage.setItem("File2_Ag", file2);
 }
 
 
@@ -346,3 +349,8 @@ function nuevaventana (){
     },1000); 
     //loadFiles("datos1.json","datos2.json");
 }
+
+//This functions is activated when page is full loaded.
+$(window).bind("load", function() {
+    CargaBitacora(); //Call the function that load the latest state of the page.
+});

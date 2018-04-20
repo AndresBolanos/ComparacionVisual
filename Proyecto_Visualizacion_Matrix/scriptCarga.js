@@ -25,44 +25,47 @@ var iniciar = false;
 //This function is execute on body load
 //Restart the latest changes in the page
 function CargaBitacora(){ 
-    if (window.sessionStorage.getItem('File1') != null && window.sessionStorage.getItem('File2') != null){
-       loadFiles (window.sessionStorage.getItem('File1'), window.sessionStorage.getItem('File2'));
-    }
-    setTimeout(function() {
-            if (window.sessionStorage.getItem('All') == "true"  || ((window.sessionStorage.getItem('Congruencia') == "true")
-                && (window.sessionStorage.getItem('Splits') == "true")
-                && (window.sessionStorage.getItem('Merges') == "true")
-                && (window.sessionStorage.getItem('Nuevos') == "true")
-                && (window.sessionStorage.getItem('Moves') == "true")
-                && (window.sessionStorage.getItem('Renames') == "true")
-                && (window.sessionStorage.getItem('Exclusions') == "true"))
-                )
-                {
-                     document.getElementById("All").checked = true;
-                }
-            if (window.sessionStorage.getItem('Congruencia') == "true" ){
-                 document.getElementById("Congruencia").checked = true;
-            }
-             if (window.sessionStorage.getItem('Splits') == "true" ){
-                 document.getElementById("Splits").checked = true;
-            }
-            if (window.sessionStorage.getItem('Merges') == "true" ){
-                 document.getElementById("Mergers").checked = true;
-            }
-            if (window.sessionStorage.getItem('Nuevos') == "true" ){
-                 document.getElementById("News").checked = true;
-            }
-            if (window.sessionStorage.getItem('Moves') == "true" ){
-                 document.getElementById("Moves").checked = true;
-            }
-            if (window.sessionStorage.getItem('Renames') == "true" ){
-                 document.getElementById("Renames").checked = true;
-            }
-            if (window.sessionStorage.getItem('Exclusions') == "true" ){
-                 document.getElementById("Exclusions").checked = true;
-            }
-            VerificarChecks();
-    }, 500);
+    setTimeout(function(){
+        loadFiles('AmphibiaTest1.json','AmphibiaTest3.json');
+        /*if (window.sessionStorage.getItem('File1_M') != null && window.sessionStorage.getItem('File2_M') != null){
+               loadFiles (window.sessionStorage.getItem('File1_M'), window.sessionStorage.getItem('File2_M'));
+            }*/
+            setTimeout(function() {
+                    if (window.sessionStorage.getItem('All_M') == "true"  || ((window.sessionStorage.getItem('Congruencia_M') == "true")
+                        && (window.sessionStorage.getItem('Splits_M') == "true")
+                        && (window.sessionStorage.getItem('Merges_M') == "true")
+                        && (window.sessionStorage.getItem('Nuevos_M') == "true")
+                        && (window.sessionStorage.getItem('Moves_M') == "true")
+                        && (window.sessionStorage.getItem('Renames_M') == "true")
+                        && (window.sessionStorage.getItem('Exclusions_M') == "true"))
+                        )
+                        {
+                             document.getElementById("All").checked = true;
+                        }
+                    if (window.sessionStorage.getItem('Congruencia_M') == "true" ){
+                         document.getElementById("Congruencia").checked = true;
+                    }
+                     if (window.sessionStorage.getItem('Splits_M') == "true" ){
+                         document.getElementById("Splits").checked = true;
+                    }
+                    if (window.sessionStorage.getItem('Merges_M') == "true" ){
+                         document.getElementById("Mergers").checked = true;
+                    }
+                    if (window.sessionStorage.getItem('Nuevos_M') == "true" ){
+                         document.getElementById("News").checked = true;
+                    }
+                    if (window.sessionStorage.getItem('Moves_M') == "true" ){
+                         document.getElementById("Moves").checked = true;
+                    }
+                    if (window.sessionStorage.getItem('Renames_M') == "true" ){
+                         document.getElementById("Renames").checked = true;
+                    }
+                    if (window.sessionStorage.getItem('Exclusions_M') == "true" ){
+                         document.getElementById("Exclusions").checked = true;
+                    }
+                    VerificarChecks();
+            }, 1000);
+        },1000);
 }
 
 
@@ -85,6 +88,7 @@ function loadFiles (file1, file2){
                 nodesLeft = nodes;
             }
             render(data, data);
+            console.log(nodesLeft.length);
     });
 
 
@@ -100,7 +104,7 @@ function loadFiles (file1, file2){
                 nodesRight = nodes;
             }
             render(data, data);
-            console.log(nodesRight)
+            
             iniciar = true;
             var processingInstance;
             processingInstance = Processing.getInstanceById('CANVAS'); 
@@ -111,17 +115,12 @@ function loadFiles (file1, file2){
             processingInstance.set_Inicio(true);
             processingInstance.setExclusiones(false);
             processingInstance.setNuevos(false);
-            processingInstance.redraw();
     });
-    window.sessionStorage.setItem("File1", file1);
-    window.sessionStorage.setItem("File2", file2);
+    window.sessionStorage.setItem("File1_M", file1);
+    window.sessionStorage.setItem("File2_M", file2);
 }
 
-
-//$(document).ready(click);
-/*
-function click(){ 
-        console.log("Clickeo"); 
-        
-        console.log("Si");
-}*/
+//This functions is activated when page is full loaded.
+$(window).bind("load", function() {
+    CargaBitacora(); //Call the function that load the latest state of the page.
+});
