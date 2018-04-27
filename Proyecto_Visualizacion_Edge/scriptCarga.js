@@ -255,7 +255,7 @@ function loadFiles (file1, file2){
                     if (encendido){
                          resetTextFull();
                     }
-                    resetText();
+                    //resetText();
                      if(congruencia == true){
                         processingInstance.drawCongruency(d.name,2);
                         var arregloizuierda = processingInstance.retornarIzquierdosConguencia();
@@ -275,8 +275,10 @@ function loadFiles (file1, file2){
                         }
                      }
                      if (splits == true){
+                        console.log("Entra");
                         processingInstance.drawSplits(2,d.name); //Aqui mando el ancho de la linea
                         var arregloIzquierdos =  processingInstance.returnSplitsLeft();
+                        console.log(arregloIzquierdos);
                         for (var i = 0; i < arregloIzquierdos.length; i++){
                             if (arregloIzquierdos[i].name == d.name){
                                 document.getElementById(d.name+"1").style.color ="#FF00BF";
@@ -383,7 +385,7 @@ function loadFiles (file1, file2){
                                     encendido = true;
                         }
                      }*/
-                     else{
+                     else if (splits == false && exclusions == false && merges == false && renames == false && moves == false && congruencia == false){
 
                         //This section is to include the clickable nodes taxonomies with off switchers
                         resetTextFull();
@@ -671,7 +673,7 @@ function loadFiles (file1, file2){
                             }   
                             splitsAux = true;  
                           }
-                          else{
+                          else if (splits == false && exclusions == false && merges == false && renames == false && moves == false && congruencia == false){
                                 //This section is to include the clickable nodes taxonomies with off switchers
                             resetTextFull();
                             nombres_Right = [];

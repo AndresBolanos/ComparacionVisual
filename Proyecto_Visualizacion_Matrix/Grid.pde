@@ -330,6 +330,7 @@ void Calcular_Nodo_Seleccionado(x, y){
     for (int i = 1; i < ListaPosiciones_I.length; i++){
       if ((y <= ListaPosiciones_I[i].y && y >= ListaPosiciones_I[i].y-25) && (x > ListaPosiciones_I[i].x && x < (ListaPosiciones_I[i].x + textWidth(ListaPosiciones_I[i].name)))){
         println(ListaPosiciones_I[i].name);
+        return;
       }
     }
   }
@@ -337,6 +338,7 @@ void Calcular_Nodo_Seleccionado(x, y){
     for (int i = 1; i < ListaPosiciones_D.length; i++){
       if ((x <= ListaPosiciones_D[i].y && x >= ListaPosiciones_D[i].y-25)  && (abs(y) > ListaPosiciones_D[i].x && abs(y) < (ListaPosiciones_D[i].x + textWidth(ListaPosiciones_D[i].name)))){
         println(ListaPosiciones_D[i].name);
+        return;
       }
     }
   }
