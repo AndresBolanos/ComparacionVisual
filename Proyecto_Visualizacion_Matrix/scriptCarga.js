@@ -88,7 +88,6 @@ function loadFiles (file1, file2){
                 nodesLeft = nodes;
             }
             render(data, data);
-            console.log(nodesLeft.length);
     });
 
 

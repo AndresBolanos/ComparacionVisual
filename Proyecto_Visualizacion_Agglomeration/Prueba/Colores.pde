@@ -26,7 +26,7 @@ void setNames(name1,name2){
 
 void setup(){ 
   background(255);       
-  size (availableWidth,2000);
+  
   izquierdos = nodesLeft;
   derechos = nodesRight; 
   nodosIzquierdos = new Node[izquierdos.length];
@@ -36,6 +36,7 @@ void setup(){
   //Here load the nodes
   loadNodes(izquierdos,true);
   loadNodes(derechos,false);
+  size (availableWidth,availableHeight+((nodesLeft.length+nodesRight.length)*15));
   Splits();
   getMergers();
   Moves();
@@ -44,6 +45,7 @@ void setup(){
   Congruencia(); 
   //cargarColores(izquierdos, derechos, nodosIzquierdos, nodosDerechos);   
   //createAgglomeration(izquierdos,derechos); 
+  
 }
 
 void draw(){    
@@ -814,15 +816,11 @@ void CalcularPosicionesLineas(int pos){
           y2+=25;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-        if (contadorNivel > 3){
-          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
-        }
-        else{
-          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
-        }
+        line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+      
         return;
     }
-    if (contadorNivel == nivel && i > pos){
+    else if (contadorNivel == nivel && i > pos){
         int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=25;
@@ -835,19 +833,16 @@ void CalcularPosicionesLineas(int pos){
           line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
         return;
     }
-    if (pos == 0){
+    else if (i == nodosTenues.length-1){
         int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=25;
         } 
         int y2 = 25;
-        for (int x = 0; x < nodosTenues.length-1; x++){
-          y2+=20.2;
+        for (int x = 0; x < i; x++){
+          y2+=25;
         }  
-        if (pos == 0){
-            line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
-        }
-        break;
+        line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5));
     }
   }
 }
