@@ -7,6 +7,14 @@ boolean renames = false;
 boolean exclusions = false;
 boolean news = false;
 boolean congruency = false;
+
+boolean moves_Second = false;
+boolean renames_Second = false;
+boolean news_Second = false;
+boolean congruency_Second = false;
+boolean splits_Second = false;
+boolean merges_Second = false;
+
 boolean splits = false;
 boolean splitsAux = false;
 boolean splitsAux2 = false;
@@ -125,6 +133,13 @@ void setNames(name1,name2){
 }
 
 void setup(){
+
+  moves_Second = false;
+  renames_Second = false;
+  news_Second = false;
+  congruency_Second = false;
+  splits_Second = false;
+
   posicionNuevos = 0;
   posicionExclusiones = 0;
   posicionCongruentes = 0;
@@ -169,7 +184,7 @@ void draw() {
   background(255);
   pintarNodos(true);
   pintarNodos(false);
-  textSize(15);
+  textSize(20);
   fill(0);
   text(archivo1,320,0);
   text(archivo2,915,0);
@@ -459,6 +474,7 @@ void draw() {
         }
         if (mergers){
           if (mergersG){
+            merges_Second = true;
             if (Listamergers.length == 0){
                mergers = false;
                moves = true;
@@ -491,6 +507,7 @@ void draw() {
         }
         if (moves){
           if (movesG){
+              moves_Second = true;
               if (ListaMoves.length == 0){
                  moves = false;
                 renames = true;
@@ -517,6 +534,7 @@ void draw() {
 
         if (renames){
           if (renamesG){
+            renames_Second = true;
             if (ListaRenames.length == 0){
                renames = false;
                news = true;
@@ -542,6 +560,7 @@ void draw() {
         }
         if (news){
           if (newsG){
+            news_Second = true;
             if (ListaNuevos.length == 0){
                news = false;
               exclusions = true;
@@ -590,6 +609,7 @@ void draw() {
         }
         if (splits){
           if (splitsG){
+            splits_Second = true;
             if (ListaSplits.length == 0){
                splits = false;
                 splitsAux = true;
@@ -661,6 +681,7 @@ void draw() {
         }
         if (congruency){
           if (conguencyG){
+            congruency_Second = true;
               if (ListaCongruency1.length == 0){
                 congruency = false;
                 splits = true;
@@ -782,7 +803,7 @@ void pintarNodos(flag){
                     String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                     for (int s = 0; s < nodos.length; s++){
                       if (nodosIzquierdos[i].name == nodos[s]){
-                        textSize(15); 
+                        textSize(20); 
                         fill(255, 145, 0);
                       }
                     }
@@ -800,7 +821,7 @@ void pintarNodos(flag){
                 String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                 for (int s = 0; s < nodos.length; s++){
                   if (nodosIzquierdos[i].name == nodos[s]){
-                    textSize(15); 
+                    textSize(20); 
                     fill(255, 145, 0);
                   }
                 }
@@ -812,7 +833,7 @@ void pintarNodos(flag){
          for (int m = 0; m < ListaMoves.length; m++){
           if (one_by_one){
             if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionMoves){
-                textSize(15); 
+                textSize(20); 
                 fill(10,228,237);
             }
             else if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -821,7 +842,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-              textSize(15); 
+              textSize(20); 
               fill(10,228,237);
              }
           }
@@ -831,7 +852,7 @@ void pintarNodos(flag){
          for (int m = 0; m < ListaRenames.length; m++){
            if (one_by_one){
               if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionRename){
-                textSize(15); 
+                textSize(20); 
                 fill(91,255,142);
                }
                else if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -840,7 +861,7 @@ void pintarNodos(flag){
            }
            else{
             if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(15); 
+                textSize(20); 
                 fill(91,255,142);
                }
            }
@@ -850,7 +871,7 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaExcluidos.length; m++){
           if (one_by_one){
             if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name && m == posicionExclusiones){
-              textSize(15); 
+              textSize(20); 
               fill(223,1,1);
             }
             else if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
@@ -859,7 +880,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
-              textSize(15); 
+              textSize(20); 
               fill(223,1,1);
             }
           }
@@ -869,7 +890,7 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaCongruency1.length; m++){
           if (one_by_one){
             if (ListaCongruency1[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
-                textSize(15); 
+                textSize(20); 
                 fill(23, 18, 196);
             }
             else if(ListaCongruency1[m].name == nodosIzquierdos[i].name){ 
@@ -878,7 +899,7 @@ void pintarNodos(flag){
           }
           else{
             if (ListaCongruency1[m].name == nodosIzquierdos[i].name){
-                textSize(15); 
+                textSize(20); 
                 fill(23, 18, 196);
               }
           }
@@ -889,7 +910,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSplits.length; m++){
             if (one_by_one){
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionSplits){
-                textSize(15); 
+                textSize(20); 
                 fill(255,0,191);
                }
                else if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -898,7 +919,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(15); 
+                textSize(20); 
                 fill(255,0,191);
                }
             }
@@ -908,7 +929,7 @@ void pintarNodos(flag){
       if (splitsAux2){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (ListaSplitsA[m].name == nodosIzquierdos[i].name){
-             textSize(15); 
+             textSize(20); 
              fill(255,0,191);
           }
         }
@@ -946,7 +967,7 @@ void pintarNodos(flag){
      for (int i = 1; i < nodosDerechos.length; i++){
       textSize(12); 
       fill(124,122,122);
-      if (mergers){
+      if (mergers || merges_Second){
         if (mergersG){
           for (int m = 0; m < Listamergers.length; m++){
             if (one_by_one){
@@ -962,7 +983,7 @@ void pintarNodos(flag){
           }
         }
       }
-      if (moves){
+      if (moves || moves_Second){
          for (int m = 0; m < ListaMoves.length; m++){
           if (one_by_one){
             if (ListaMoves[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionMoves){ 
@@ -976,7 +997,7 @@ void pintarNodos(flag){
           }
          }
       }
-      if (renames){
+      if (renames || renames_Second){
          for (int m = 0; m < ListaRenames.length; m++){
           if (one_by_one){
               if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionRename){
@@ -990,7 +1011,7 @@ void pintarNodos(flag){
             }
          }
       }
-      if (news){
+      if (news || news_Second){
          for (int m = 0; m < ListaNuevos.length; m++){
           if (one_by_one){
             if (ListaNuevos[m].nodoDerecha.name == nodosDerechos[i].name && m < posicionNuevos){
@@ -1004,7 +1025,7 @@ void pintarNodos(flag){
           } 
         }
       }
-      if (congruency){
+      if (congruency || congruency_Second){
         for (int m = 0; m < ListaCongruency1.length; m++){
           if (one_by_one){
             if (ListaCongruency1[m].name == nodosDerechos[i].name && m < posicionCongruentes){
@@ -1036,7 +1057,7 @@ void pintarNodos(flag){
           }
         }
       }
-      if (splitsAux2){
+      if (splitsAux2 || splits_Second){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (one_by_one){
              if (ListaSplitsA[m].name == nodosDerechos[i].name){
@@ -1072,13 +1093,13 @@ void pintarNodos(flag){
     for (int i = 0; i < ListaNuevos.length; i++){
       if (one_by_one){
         if (i == posicionNuevos){
-          textSize(15); 
+          textSize(20); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
         }
       }
       else{
-          textSize(15); 
+          textSize(20); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
       }

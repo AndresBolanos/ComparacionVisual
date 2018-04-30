@@ -53,7 +53,7 @@ void draw(){
   scale(scaleFactor);  
   background(255);
   createAgglomeration(izquierdos,derechos);     
-  textSize(20);
+  textSize(12);
   fill(130,80, 64);
   text(archivo1,-300,300);  
   fill(223, 209, 33);
@@ -242,13 +242,22 @@ void createAgglomeration(leftStructure,rightStructure){
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
             if (r == 14 && g == 80 && b == 217){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B); 
             }
         }
         //println(agglomeration[i].name+" = "+agglomeration[i].R+","+agglomeration[i].G+","+agglomeration[i].B);
         //println("Pinto a "+agglomeration[i].name+" lado: "+agglomeration[i].position+ " PosX: "+agglomeration[i].x+" PosY: "+agglomeration[i].y+" R: "+agglomeration[i].R+" G: "+agglomeration[i].G+" B: "+agglomeration[i].B);
         //fill(221, 198, 0);
-        text(agglomeration[i].name, agglomeration[i].x+5,AbsoluteY+20);
+        
+        if (agglomeration[i].children == null){
+          text(agglomeration[i].name, agglomeration[i].x+30,AbsoluteY+20);
+          fill(166, 166, 166);
+          text(" ― ",  agglomeration[i].x+2,AbsoluteY+20)
+        }
+        else{
+          text(agglomeration[i].name, agglomeration[i].x+20,AbsoluteY+20);
+        }
+        
         AbsoluteY = AbsoluteY+20;
       }
      else{
@@ -312,7 +321,16 @@ void createAgglomeration(leftStructure,rightStructure){
             }
         }
         //fill(221, 198, 0);
-        text(agglomeration[i].name, agglomeration[i].x+5, AbsoluteY+20);
+        if (agglomeration[i].children == null){
+          text(agglomeration[i].name, agglomeration[i].x+30, AbsoluteY+20);
+          fill(166, 166, 166);
+          text(" ― ",  agglomeration[i].x+2,AbsoluteY+20)
+        }
+        else{
+          text(agglomeration[i].name, agglomeration[i].x+5, AbsoluteY+20);
+        }
+        
+        
         AbsoluteY = AbsoluteY+20;
       }
     }     
@@ -816,7 +834,7 @@ void CalcularPosicionesLineas(int pos){
           y2+=25;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-        line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+        line(nodosTenues[pos].x+25,y1-(pos*5),nodosTenues[pos].x+25,y2-(i*5)-30);
       
         return;
     }
@@ -830,19 +848,21 @@ void CalcularPosicionesLineas(int pos){
           y2+=25;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5)-20);
+          line(nodosTenues[pos].x+25,y1-(pos*5),nodosTenues[pos].x+25,y2-(i*5)-30);
         return;
     }
-    else if (i == nodosTenues.length-1){
-        int y1 = 25;
+    else if (i == nodosTenues.length-1 && nivel == 4){
+       int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=25;
         } 
-        int y2 = 25;
+        int y2 = 50;
         for (int x = 0; x < i; x++){
           y2+=25;
-        }  
-        line(nodosTenues[pos].x+10,y1-(pos*5),nodosTenues[pos].x+10,y2-(i*5));
+        }     
+        //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
+        line(nodosTenues[pos].x+25,y1-(pos*5),nodosTenues[pos].x+25,y2-(i*5)-35);
+        return;
     }
   }
 }

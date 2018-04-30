@@ -30,6 +30,8 @@ Object [] nodosIzquierdos; //Almacena la estructura de los nodos izquierdos
 Object [] nodosDerechos;  //Almacena la estructura de los nodos derechos
 Posiciones [] ListaPosiciones_I; //Guarda las posiciones logicas de cada nodo de la izquierda
 Posiciones [] ListaPosiciones_D; //Guarda las posiciones logicas de cada nodo de la izquierda
+Object [] ListaSeleccionados_Conguentres_I = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruencia y izquierdo
+Object [] ListaSeleccionados_Conguentres_D = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruenciay derecho
 
 //Nombre de los archivos o taxonomias que se encuentran cargadas
 String archivo1 = "";
@@ -235,9 +237,25 @@ void draw() {
           }
         } 
       }
+
+      for (int p = 0; p < ListaSeleccionados_Conguentres_I.length; p++){
+          if (nodosIzquierdos[pos].name == ListaSeleccionados_Conguentres_I[p].name){
+            fill(23, 18, 196);
+          }
+      }
       
-      text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,(nodosIzquierdos[pos].y*2.5)-50);
-      ListaPosiciones_I[pos] = new Posiciones(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x+25,(nodosIzquierdos[pos].y*2.5)-50);       
+      if (nodosIzquierdos[pos].children == null){ 
+        text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x,(nodosIzquierdos[pos].y*2.5)-50);
+        fill(166, 166, 166);
+        text("― ",nodosIzquierdos[pos].x-45,(nodosIzquierdos[pos].y*2.5)-50);
+        ListaPosiciones_I[pos] = new Posiciones(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x,(nodosIzquierdos[pos].y*2.5)-50); 
+      }
+      else{
+         text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-25,(nodosIzquierdos[pos].y*2.5)-50);
+         ListaPosiciones_I[pos] = new Posiciones(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-25,(nodosIzquierdos[pos].y*2.5)-50); 
+      }
+      
+            
     }      
 
     rotate(-PI/2); 
@@ -299,8 +317,23 @@ void draw() {
           }
       }
 
-      text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);
-      ListaPosiciones_D[pos] = new Posiciones(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);     
+      //Verifica si hubo o no click en un nodo de congruencia
+      for (int p = 0; p < ListaSeleccionados_Conguentres_D.length; p++){
+          if (nodosDerechos[pos].name == ListaSeleccionados_Conguentres_D[p].name){
+            fill(23, 18, 196);
+          }
+      }
+
+      if (nodosDerechos[pos].children == null){
+          text(nodosDerechos[pos].name,nodosDerechos[pos].x+40,nodosDerechos[pos].y*2.5+460);
+          fill(166, 166, 166);
+          text("― ",nodosDerechos[pos].x+5,nodosDerechos[pos].y*2.5+460);
+          ListaPosiciones_D[pos] = new Posiciones(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);  
+      }
+      else{
+          text(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);
+          ListaPosiciones_D[pos] = new Posiciones(nodosDerechos[pos].name,nodosDerechos[pos].x+25,nodosDerechos[pos].y*2.5+460);  
+      }  
     }
     //PROCEDIMIENTO PARA PINTAR LAS LINEAS HORIZONTALES
     stroke(107,110,107);
@@ -318,9 +351,18 @@ void draw() {
 }
 
 void mouseClicked() {
+  //Se limpia la matriz
+  for (int i=0; i<cols; i++) {
+    for (int j=0; j<rows; j++) {
+      colors[i][j] = color(255);
+    }
+  } 
+  ListaSeleccionados_Conguentres_I = [];
+  ListaSeleccionados_Conguentres_D = [];
   int y = (mouseY - translateY) * (1/scaleFactor);
   int x = (mouseX - translateX) * (1/scaleFactor);
   Calcular_Nodo_Seleccionado(x,y); 
+
 }
 
 
@@ -329,7 +371,8 @@ void Calcular_Nodo_Seleccionado(x, y){
   if (y > ListaPosiciones_I[1].y-25 && x > ListaPosiciones_I[1].x){
     for (int i = 1; i < ListaPosiciones_I.length; i++){
       if ((y <= ListaPosiciones_I[i].y && y >= ListaPosiciones_I[i].y-25) && (x > ListaPosiciones_I[i].x && x < (ListaPosiciones_I[i].x + textWidth(ListaPosiciones_I[i].name)))){
-        println(ListaPosiciones_I[i].name);
+        //println(ListaPosiciones_I[i].name);
+        drawCongruency_Selected([ListaPosiciones_I[i]]);
         return;
       }
     }
@@ -337,7 +380,8 @@ void Calcular_Nodo_Seleccionado(x, y){
   else{
     for (int i = 1; i < ListaPosiciones_D.length; i++){
       if ((x <= ListaPosiciones_D[i].y && x >= ListaPosiciones_D[i].y-25)  && (abs(y) > ListaPosiciones_D[i].x && abs(y) < (ListaPosiciones_D[i].x + textWidth(ListaPosiciones_D[i].name)))){
-        println(ListaPosiciones_D[i].name);
+        //println(ListaPosiciones_D[i].name);
+        drawCongruency_Selected([ListaPosiciones_D[i]]);
         return;
       }
     }
@@ -694,10 +738,57 @@ void drawCongruency(){
             //curve(x1*3, y1-50,x1,y1,x2-5,y2,x2/3,y2+50);
             posIzq = posIzquierda(izquierdos[i].name);
             posDer = posDerecha(derechos[j].name);
-             colors[posDer][posIzq]=color(23, 18, 196);
+            colors[posDer][posIzq]=color(23, 18, 196);
             cantidadCongurentes += 1;
         }
       }
+    }
+}
+
+
+//Funcion auxiliar, se activa cuando se da click a un determinado nodo
+//unicamente permite los congruentes que se encuentran en la lista de nodos seleccionados
+void drawCongruency_Selected(lista_nombres){
+  cantidadCongurentes = 0;
+    Object [] izquierdos = nodesLeft;
+    Object [] derechos = nodesRight;
+    for (int i = 1;i<izquierdos.length;i++){
+      boolean acepto = true;
+      for (int j = 1;j<derechos.length;j++){
+        String [] listaSinonimos = derechos[j].Synonym;
+        for (int s = 0; s < listaSinonimos.length; s++){
+            if (izquierdos[i].name == listaSinonimos[s]){
+                acepto = false;
+            }
+        }
+        for (int pos = 0; pos < lista_nombres.length; pos++){
+              if ((izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true)  && (izquierdos[i].name == lista_nombres[pos].name || derechos[j].name == lista_nombres[pos].name)){
+                  int x1 = izquierdos[i].x+textWidth(izquierdos[i].name);
+                  int y1 = izquierdos[i].y-5;
+                  float x2 = derechos[j].x+anchoDiv;
+                  int y2 = derechos[j].y-5;
+                  posIzq = posIzquierda(izquierdos[i].name);
+                  posDer = posDerecha(derechos[j].name);
+                  colors[posDer][posIzq]=color(23, 18, 196);
+                  cantidadCongurentes += 1;
+                  append(ListaSeleccionados_Conguentres_I,izquierdos[i]);
+                  append(ListaSeleccionados_Conguentres_D,derechos[j]);
+              }
+              else if ((izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true) && (izquierdos[i].name == lista_nombres[pos].name || derechos[j].name == lista_nombres[pos].name)){
+                  int x1 = izquierdos[i].x+textWidth(izquierdos[i].name);
+                  int y1 = izquierdos[i].y-5;
+                  float x2 = derechos[j].x+anchoDiv;
+                  int y2 = derechos[j].y-5;
+                  posIzq = posIzquierda(izquierdos[i].name);
+                  posDer = posDerecha(derechos[j].name);
+                   colors[posDer][posIzq]=color(23, 18, 196);
+                  cantidadCongurentes += 1;
+                  append(ListaSeleccionados_Conguentres_I,izquierdos[i]);
+                  append(ListaSeleccionados_Conguentres_D,derechos[j]);
+              }
+
+          }
+        }
     }
 }
 
@@ -899,10 +990,10 @@ void CalcularPosicionesLineas(int pos){
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
         if (contadorNivel > 3){
-          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
+          line(nodosIzquierdos[pos].x-25,(y1+40)-50,nodosIzquierdos[pos].x-25,(y2-10)-72);
         }
         else{
-          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
+          line(nodosIzquierdos[pos].x-25,(y1+40)-50,nodosIzquierdos[pos].x-25,(y2-10)-72);
         }
         return;
     }
@@ -916,11 +1007,11 @@ void CalcularPosicionesLineas(int pos){
           y2+=50;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10)-60);
+          line(nodosIzquierdos[pos].x-25,(y1+40)-50,nodosIzquierdos[pos].x-25,(y2-10)-60);
         return;
     }
-    else if (i == nodosIzquierdos.length-1){
-        int y1 = 25;
+    else if (i == nodosIzquierdos.length-1 && nivel == 4){
+       int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=50;
         } 
@@ -929,7 +1020,7 @@ void CalcularPosicionesLineas(int pos){
           y2+=50;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosIzquierdos[pos].x+25,(y1+40)-50,nodosIzquierdos[pos].x+25,(y2-10));
+          line(nodosIzquierdos[pos].x-25,(y1+40)-50,nodosIzquierdos[pos].x-25,(y2-10)-23);
         return;
     }
   }
@@ -954,14 +1045,14 @@ void CalcularPosicionesLineasHorizontal(int pos){
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
         if (contadorNivel > 3){
-          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-72);
         }
         else{
-          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-72);
         }
         return;
     }
-    if (contadorNivel == nivel && i > pos){
+    else if (contadorNivel == nivel && i > pos){
         int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=50;
@@ -974,7 +1065,7 @@ void CalcularPosicionesLineasHorizontal(int pos){
           line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-60);
         return;
     }
-    else if (i == nodosDerechos.length-1){
+    else if (i == nodosDerechos.length-1 && nivel == 4){
        int y1 = 25;
         for (int x = 0; x < pos; x++){
           y1+=50;
@@ -984,7 +1075,7 @@ void CalcularPosicionesLineasHorizontal(int pos){
           y2+=50;
         }     
         //line(nodosIzquierdos[pos].x+40, nodosIzquierdos[pos].y*2.5, nodosIzquierdos[pos].x+40, nodosIzquierdos[i].y*2.5);
-          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500));
+          line(nodosDerechos[pos].x+25,(y1+550)-50,nodosDerechos[pos].x+25,(y2+500)-21);
         return;
     }
   }
