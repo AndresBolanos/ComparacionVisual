@@ -179,12 +179,14 @@ void setup(){
 }
 
 void draw() {
+  myFont = createFont("Times New Roman", 30);
+  textFont(myFont);
   translate(translateX,translateY);
   scale(scaleFactor);
   background(255);
   pintarNodos(true);
   pintarNodos(false);
-  textSize(20);
+  textSize(30);
   fill(0);
   text(archivo1,320,0);
   text(archivo2,915,0);
@@ -777,9 +779,17 @@ void loadNodes(nodos,flag){
   int y = round((availableHeight-40)/nodos.length)+5;
   for (int i = 0; i < nodos.length; i++){
     if (flag){
-      nodosIzquierdos[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
-      izquierdos_aux[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
-      y += round((availableHeight-40)/nodos.length)+5;
+      if (i == 1){
+        nodosIzquierdos[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
+        izquierdos_aux[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
+        y += round((availableHeight-40)/nodos.length)+5;
+      }
+      else{
+        nodosIzquierdos[i] = new Node(nodos[i].name, nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
+        izquierdos_aux[i] = new Node(nodos[i].name,nodos[i].x+300,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
+        y += round((availableHeight-40)/nodos.length)+5;
+      }
+      
     }
     else{
       nodosDerechos[i] = new Node(nodos[i].name, nodos[i].x+900,y,nodos[i].Synonym,nodos[i].author, nodos[i].record_scrutiny_date);
@@ -794,7 +804,7 @@ void pintarNodos(flag){
   if (flag){
      for (int i = 1; i < nodosIzquierdos.length; i++){
       fill(0);
-      textSize(12); 
+      textSize(14); 
       if (mergers){
         if (mergersG){
             for (int m = 0; m < Listamergers.length; m++){
@@ -965,7 +975,7 @@ void pintarNodos(flag){
   }
   else{
      for (int i = 1; i < nodosDerechos.length; i++){
-      textSize(12); 
+      textSize(14); 
       fill(124,122,122);
       if (mergers || merges_Second){
         if (mergersG){

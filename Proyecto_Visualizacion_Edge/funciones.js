@@ -473,6 +473,7 @@ function mostrarTodos(){
         window.sessionStorage.setItem("Nuevos_E", false);
         window.sessionStorage.setItem("Splits_E", false);
         window.sessionStorage.setItem("Merges_E", false);
+        window.sessionStorage.setItem("Nuevos_E", false);
     }
    
 }

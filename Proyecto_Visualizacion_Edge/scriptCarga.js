@@ -193,7 +193,7 @@ function loadFiles (file1, file2){
             .attr("id","Canvas");
 
     var Ltree = d3.layout.treelist()
-        .childIndent(20)
+        .childIndent(25)
         .nodeHeight(20);
 
     var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
@@ -220,32 +220,28 @@ function loadFiles (file1, file2){
 
             nodesLeft = nodes;  // ww assign the nodes of the left to the global variable to use it in the next functions
             NODOS = nodes;
-            console.log(nodesLeft.length);
+            contadorNivel = 0;
+            getNivel(nodesLeft[1]);
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 if (d.children == null){
                     x = d.x;
-                    y = d.y-5; 
-                     document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+(x+10)+'" y1="'+y+'" x2="'+(x+18)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
-
+                    y = d.y-10; 
+                     document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+(x+12)+'" y1="'+y+'" x2="'+(x+19)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
                 }
+                /*else{
+                    x = d.x;
+                    y = d.y-10; 
+                     document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+(x+12)+'" y1="'+y+'" x2="'+(x+17)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
+                }*/
                 d.id = d.id || ++id;
-                //  AQUI FUE DONDE HICE LOS PROCESOOOOOS;
-                buscar_padres(d.name,nodesLeft);
-                if (d.id == nodesLeft[0].id){
-                    $("#CanvasLineasTenues").empty();
-                }
-                //console.log(padres);
-                if (padres >= 1){
-                    var y = d.y-20;
-                    var y2 = y+20;
-                    var x = 50;
-                    for (var i = 1; i < padres; i++){ 
-                        document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';              
-                        x+=20;
-                    }
-                }
                 return d.id;
             });
+
+            for (var i = 0; i < nodesLeft.length; i++){
+                if (nodesLeft[i].children != null){
+                    CalcularPosicionesLineas(i, nodesLeft);
+                } 
+            }
             //entered nodes
             //element.setAttribute("data-targetsize", "0.45");
             var entered = nodeEls.enter().append("li")//Here is everything related when you press each of the nodes
@@ -290,7 +286,6 @@ function loadFiles (file1, file2){
                      if (splits == true){
                         processingInstance.drawSplits(2,d.name); //Aqui mando el ancho de la linea
                         var arregloIzquierdos =  processingInstance.returnSplitsLeft();
-                        console.log(arregloIzquierdos);
                         for (var i = 0; i < arregloIzquierdos.length; i++){
                             if (arregloIzquierdos[i].name == d.name){
                                 document.getElementById(d.name+"1").style.color ="#FF00BF";
@@ -389,17 +384,7 @@ function loadFiles (file1, file2){
                             }
                         }
                      }
-                     /*if (renames == false && moves == false && splits == false && merges == false && congruencia == false && nuevos == false && exclusions == false){
-                        for (var i = 0; i < nodesLeft.length; i++){
-                                    document.getElementById(d.name+"1").style.color ="black";
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                    //processingInstance.painSelectedNode(nodesLeft[i].name,nodesLeft[i].author,nodesLeft[i].record_scrutiny_date);
-                                    encendido = true;
-                        }
-                     }*/
                      else if (splits == false && exclusions == false && merges == false && renames == false && moves == false && congruencia == false){
-
-                        //This section is to include the clickable nodes taxonomies with off switchers
                         resetTextFull();
                         nombres_Left = [];
                         if (autoclick == false){
@@ -417,6 +402,7 @@ function loadFiles (file1, file2){
                         }
                         document.getElementById(d.name+"1").style.fontSize = "large";
                         Pintar_Nodos = Retornar_Nommbres_Left();
+                        Pintar_Nodos.push(d.name);
                         processingInstance.drawCongruency_Auxiliar(Pintar_Nodos,1);
                         processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
                         processingInstance.drawSplits_Aux(0.5,Pintar_Nodos);
@@ -466,7 +452,6 @@ function loadFiles (file1, file2){
                                     document.getElementById(Pintar_Nodos[i]+"1").style.color ="#FF00BF";
                                 }
                                 for (var rigth = 0; rigth < derecho_S.length; rigth++){
-                                    console.log(derecho_S[rigth].name);
                                     document.getElementById(derecho_S[rigth].name +"2").style.color ="#FF00BF";
                                     document.getElementById(derecho_S[rigth].name +"2").style.fontSize = "large";
                                 }
@@ -486,7 +471,7 @@ function loadFiles (file1, file2){
                      }
                 });
             //add arrows if it is a folder
-            entered.append("span").style("font-size", "18px").attr("class", function (d) {
+            entered.append("span").style("font-size", "15px").attr("class", function (d) {
 
                 var icon = d.children ? "glyphicon glyphicon-minus" // put the minus to the father node
                     : d._children ? "glyphicon glyphicon-minus" : "";
@@ -494,7 +479,7 @@ function loadFiles (file1, file2){
             });
             entered.append("span").attr("class", "zoomTarget filename")
                 .attr("id",function (d) { return d.name+"1"; })
-                .html(function (d) { return "   "+d.name; });
+                .html(function (d) { return " "+d.name; });
             var element  = document.getElementsByTagName("li");
             for (var i = 0; i < element.length;i++){
                 element[i].setAttribute("data-targetsize","0.10");
@@ -527,7 +512,7 @@ function loadFiles (file1, file2){
 
     d3.json("Archivos-Datos/"+file2, function (err, data) { //This function is developed in the same way as the previous function, read the json just on the right side
             var Rtree = d3.layout.treelist()
-                .childIndent(20)
+                .childIndent(25)
                 .nodeHeight(20);
             var ul = d3.select("#rightSide").append("ul").classed("treelist", "true");
             function render(data, parent) {
@@ -548,26 +533,18 @@ function loadFiles (file1, file2){
                 var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                      if (d.children == null){
                         x = d.x;
-                        y = d.y-5; 
+                        y = d.y-10; 
                          document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+(x+10)+'" y1="'+y+'" x2="'+(x+18)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
 
                     }
                     d.id = d.id || ++id;
-                     buscar_padres(d.name,nodesRight);
-                    if (d.id == nodesRight[0].id){
-                        $("#CanvasLineasTenues2").empty();
-                    }
-                    if (padres >= 1){
-                        var y = d.y -20;
-                        var y2 = y+20;
-                        var x = 50;
-                        for (var i = 1; i < padres; i++){                  
-                            document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+y2+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
-                            x+=20;
-                        }
-                    }
                     return d.id;
                 });
+                for (var i = 0; i < nodesRight.length; i++){
+                    if (nodesRight[i].children != null){
+                        CalcularPosicionesLineasDerecha(i, nodesRight);
+                    } 
+                }
                 //entered nodes
                 var entered = nodeEls.enter().append("li")
                     .attr("class","node")
@@ -717,9 +694,11 @@ function loadFiles (file1, file2){
                             
                             document.getElementById(d.name+"2").style.fontSize = "large";
                             Pintar_Nodos = Retornar_Nommbres_Right();
+                            Pintar_Nodos.push(d.name);
                             processingInstance.drawCongruency_Auxiliar(Pintar_Nodos,1);
                             processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
                             processingInstance.drawSplits_Aux(0.5,Pintar_Nodos);
+                            processingInstance.merge_Aux(Pintar_Nodos,1);
                             Nuevos_Aux();
                             var derecha_M = processingInstance.returnRename_MovesRight();
                             var izquierda_M = processingInstance.returnRename_MovesLeft();
@@ -728,6 +707,8 @@ function loadFiles (file1, file2){
                             var izquierda_R = processingInstance.returnRename_MovesRight();
                             var derecha_S = processingInstance.returnSplitsRight();
                             var izquierda_S = processingInstance.returnSplitsLeft();
+                            var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
+                            var derecho_Merge = processingInstance.returnDerechosMerge();
                             for (var i = 0; i < Pintar_Nodos.length; i++){
                                 for (var right = 0; right < izquierda_C.length; right++){
                                      document.getElementById("Congruencia").checked = true;
@@ -766,6 +747,15 @@ function loadFiles (file1, file2){
                                         document.getElementById(izquierda_S[j].name +"1").style.fontSize = "large";
                                     }
                                 }
+                                 for (var left = 0; left < izquierdo_Merge.length; left++){
+                                        document.getElementById("Mergers").checked = true;
+                                        document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FF9100";
+                                        document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
+                                        for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
+                                            document.getElementById(derecho_Merge[left].name +"2").style.color ="#FF9100";
+                                            document.getElementById(derecho_Merge[left].name +"2").style.fontSize = "large";
+                                        }
+                                    }
                                 document.getElementById(Pintar_Nodos[i]+"2").style.fontSize = "large";
                             }
                             Click = true; 

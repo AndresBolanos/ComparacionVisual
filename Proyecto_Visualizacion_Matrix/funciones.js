@@ -265,7 +265,7 @@ function mostrarTodos(){
          window.sessionStorage.setItem("Congruencia_M", false);
          window.sessionStorage.setItem("Nuevos_M", false);
          window.sessionStorage.setItem("Exclusions_M", false);
-         window.sessionStorage.setItem("Renames", false);
+         window.sessionStorage.setItem("Renames_M", false);
          window.sessionStorage.setItem("Moves_M", false);
          window.sessionStorage.setItem("Merges_M", false);
          window.sessionStorage.setItem("Splits_M", false);

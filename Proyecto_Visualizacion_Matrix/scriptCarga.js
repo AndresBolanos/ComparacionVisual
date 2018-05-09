@@ -80,7 +80,7 @@ var margin = -5;
 function loadFiles (file1, file2){
    d3.json("Archivos-Datos/"+file1, function (err, data) {
         var Ltree = d3.layout.treelist()
-            .childIndent(20)
+            .childIndent(40)
             .nodeHeight(20);
         function render(data, parent) {
                 var nodes = Ltree.nodes(data),
@@ -93,7 +93,7 @@ function loadFiles (file1, file2){
 
     d3.json("Archivos-Datos/"+file2, function (err, data) {
         var Ltree = d3.layout.treelist()
-            .childIndent(20)
+            .childIndent(40)
             .nodeHeight(20);
 
         var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");

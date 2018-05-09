@@ -12,7 +12,7 @@
         "use strict";
         var hierarchy = d3.layout.hierarchy().sort(null).value(null),
             nodeHeight = 20,
-            childIndent = 20,
+            childIndent = 10,
             size;
 
         var treelist = function (d, i) {

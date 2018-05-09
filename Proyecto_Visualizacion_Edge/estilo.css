@@ -38,6 +38,7 @@
 
 .node span {
   font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .node .caret {
