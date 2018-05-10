@@ -193,7 +193,7 @@ function loadFiles (file1, file2){
             .attr("id","Canvas");
 
     var Ltree = d3.layout.treelist()
-        .childIndent(25)
+        .childIndent(17)
         .nodeHeight(20);
 
     var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
@@ -223,11 +223,11 @@ function loadFiles (file1, file2){
             contadorNivel = 0;
             getNivel(nodesLeft[1]);
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
-                if (d.children == null){
+                /*if (d.children == null){
                     x = d.x;
                     y = d.y-10; 
                      document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+(x+12)+'" y1="'+y+'" x2="'+(x+19)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
-                }
+                }*/
                 /*else{
                     x = d.x;
                     y = d.y-10; 
@@ -471,7 +471,7 @@ function loadFiles (file1, file2){
                      }
                 });
             //add arrows if it is a folder
-            entered.append("span").style("font-size", "15px").attr("class", function (d) {
+            entered.append("span").style("font-size", "20px").attr("class", function (d) {
 
                 var icon = d.children ? "glyphicon glyphicon-minus" // put the minus to the father node
                     : d._children ? "glyphicon glyphicon-minus" : "";
@@ -479,7 +479,16 @@ function loadFiles (file1, file2){
             });
             entered.append("span").attr("class", "zoomTarget filename")
                 .attr("id",function (d) { return d.name+"1"; })
-                .html(function (d) { return " "+d.name; });
+                .html(function (d) { 
+                    var nombre = "";
+                    if (d.children == undefined){
+                        nombre = "― "+d.name;
+                    }
+                    else{
+                        nombre = d.name;
+                    }
+                    return nombre; });
+
             var element  = document.getElementsByTagName("li");
             for (var i = 0; i < element.length;i++){
                 element[i].setAttribute("data-targetsize","0.10");
@@ -531,12 +540,12 @@ function loadFiles (file1, file2){
                 }           
                 nodesRight = nodes;
                 var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
-                     if (d.children == null){
+                     /*if (d.children == null){
                         x = d.x;
                         y = d.y-10; 
                          document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+(x+10)+'" y1="'+y+'" x2="'+(x+18)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
 
-                    }
+                    }*/
                     d.id = d.id || ++id;
                     return d.id;
                 });
@@ -774,7 +783,15 @@ function loadFiles (file1, file2){
             
                entered.append("span").attr("class", "zoomTarget filename")
                 .attr("id",function (d) { return d.name+"2"; })
-                .html(function (d) { return "  "+d.name; });
+                .html(function (d) { var nombre = "";
+                    if (d.children == undefined){
+                        nombre = "― "+d.name;
+                    }
+                    else{
+                        nombre = d.name;
+                    }
+                    return nombre; });
+
                 nodeEls.select("span").attr("class", function (d) {
                     var icon = d.children ? "glyphicon glyphicon-minus"
                         : d._children ? "glyphicon glyphicon-plus" : "";
