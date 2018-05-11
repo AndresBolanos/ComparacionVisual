@@ -16,9 +16,9 @@ boolean nuevos = false;
 boolean exclusiones = false;
 
 //Definicion de variables para uso de zoom
-float scaleFactor = 0.5;
-float translateX = 100.0;
-float translateY = 180.0;
+float scaleFactor = 0.4;
+float translateX = 200.0;
+float translateY = 450.0;
 
 Object [] izquierdos = [];
 Object [] derechos = [];
@@ -99,7 +99,7 @@ void setup() {
   izquierdos = nodesLeft;
   derechos = nodesRight;
 
-  size(availableWidth*2, availableHeight*2);  
+  size(availableWidth*2, availableHeight*3);  
   cols = derechos.length-1;
   rows = izquierdos.length-1;
 
@@ -506,9 +506,9 @@ void Calcular_Nodo_Seleccionado(x, y){
 
 void keyPressed() {
   if (key == 'r' || key == 'R') {
-    scaleFactor = 0.2;
-    translateX =  400.0;
-    translateY = 180.0;
+    scaleFactor = 0.4;
+    translateX =  200.0;
+    translateY = 450.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;
@@ -607,11 +607,6 @@ void drawSplits_Selected(nombre,taxonomia){
     Object [] derechos = nodesRight;
     Object [] splitsL = [];
     Object [] splitsR = [];
-    //stroke(255, 0, 191);
-    //noFill();
-    //curveTightness(-2);
-    //strokeWeight(-1);
-    //smooth();
   for (int nodeL = 0;nodeL<izquierdos.length;nodeL++){
      String name = izquierdos[nodeL].name;
      String autor = izquierdos[nodeL].author;
@@ -661,7 +656,6 @@ void drawSplits_Selected(nombre,taxonomia){
                            posIzq = posIzquierda(splitsL[i].name);
                            posDer = posDerecha(splitsR[j].name);
                            colors[posDer][posIzq]=color(255, 0, 191);
-                           
                          }
                          splitsR=[];
                          splitsL=[];

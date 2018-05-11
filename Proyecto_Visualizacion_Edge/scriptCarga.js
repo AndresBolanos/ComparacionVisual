@@ -221,7 +221,6 @@ function loadFiles (file1, file2){
             nodesLeft = nodes;  // ww assign the nodes of the left to the global variable to use it in the next functions
             NODOS = nodes;
             contadorNivel = 0;
-            getNivel(nodesLeft[1]);
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 /*if (d.children == null){
                     x = d.x;
@@ -236,10 +235,9 @@ function loadFiles (file1, file2){
                 d.id = d.id || ++id;
                 return d.id;
             });
-
             for (var i = 0; i < nodesLeft.length; i++){
                 if (nodesLeft[i].children != null){
-                    CalcularPosicionesLineas(i, nodesLeft);
+                    CalcularPosicionesLineas(i, nodesLeft, Quantity_Nodes(nodesLeft));
                 } 
             }
             //entered nodes
@@ -551,7 +549,7 @@ function loadFiles (file1, file2){
                 });
                 for (var i = 0; i < nodesRight.length; i++){
                     if (nodesRight[i].children != null){
-                        CalcularPosicionesLineasDerecha(i, nodesRight);
+                        CalcularPosicionesLineasDerecha(i, nodesRight, Quantity_Nodes(nodesLeft));
                     } 
                 }
                 //entered nodes

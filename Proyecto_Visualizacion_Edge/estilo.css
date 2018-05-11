@@ -1160,16 +1160,6 @@ body {
   visibility: hidden;
 }
 
-vr { 
-    display: block;
-    width:1px;
-    background-color:#000;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:200px;
-}
-
 #CanvasLineasTenues{
   position: absolute;
   margin-left: -1.45%;
@@ -1180,6 +1170,7 @@ vr {
   position: absolute;
   margin-left: -1.45%;
   margin-top: 0%;
+  stroke: black;
 }
 
 #leftSide{

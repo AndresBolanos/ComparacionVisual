@@ -1,3 +1,4 @@
+///////////////////////Variables//////////////////////////////////////////
 Node [] nodosIzquierdos;
 Node [] nodosDerechos;
 Object [] nodosTenues;
@@ -16,20 +17,39 @@ float translateY = 0.0;
 
 String archivo1 = "";
 String archivo2 = "";
-boolean Congruence = false;       //Flag activates the printing according to selected node
+boolean Congruence = false;   //Flag activates the printing according to selected congruence node
+boolean moves = false;        //Flag activates the printing according to selected moves node
+boolean renames = false;      //Flag activates the printing according to selected rename node
+boolean exclusiones = false;  //Flag activates the printing according to selected exclusions node
+boolean nuevos = false;       //Flag activates the printing according to selected news node
+boolean splits = false;       //Flag activates the printing according to selected splits node
+boolean merges = false;
+
 Posiciones [] ListaPosiciones_I;  //Guarda las posiciones logicas de cada nodo de la izquierda
 Posiciones [] ListaPosiciones_D;  //Guarda las posiciones logicas de cada nodo de la izquierda
 String [] ListaConguentesPainted_I = [];
 Object [] ListaSeleccionados_Conguentres_I = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruencia y izquierdo
 Object [] ListaSeleccionados_Conguentres_D = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruenciay derecho
+Object [] ListaSeleccionados_Moves_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de moves y izquierdo
+Object [] ListaSeleccionados_Moves_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de moves y derecho
+Object [] ListaSeleccionados_Rename_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de renames y izquierdo
+Object [] ListaSeleccionados_Rename_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de renames y derecho
+Object [] ListaSeleccionados_Exclusiones = [];//Almacena los nodos que se encuentran seleccionados en el momento de exclusiones
+Object [] ListaSeleccionados_Nuevos = [];//Almacena los nodos que se encuentran seleccionados en el momento de nuevos
+Object [] ListaSeleccionados_Splits_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de splits y izquierda
+Object [] ListaSeleccionados_Splits_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de splits y derecha
+Object [] ListaSeleccionados_Merges_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de merges y izquierda
+Object [] ListaSeleccionados_Merges_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de merges y derecha
 
 boolean found = false;
 
+////////////////////////////////Functions///////////////////////////////////
 void setNames(name1,name2){
     archivo1 = name1;
     archivo2 = name2;
 }
 
+//This function setup the configuration values of the frame 
 void setup(){ 
   background(255);       
   izquierdos = nodesLeft;
@@ -53,6 +73,12 @@ void setup(){
       ListaPosiciones_D = new ListaPosiciones_D[nodosDerechos.length-1]; 
   }
   Congruence = false;
+  moves = false;
+  renames = false;
+  exclusiones = false;
+  nuevos = false;
+  splits = false;
+  merges = false;
 }
 
 void draw(){   
@@ -181,6 +207,18 @@ void createAgglomeration(leftStructure,rightStructure){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
+        if (splits){
+          for (int s = 0; s < ListaSeleccionados_Splits_I.length; s++){
+            if (agglomeration[i].name == ListaSeleccionados_Splits_I[s].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 255 && g == 13 && b == 255){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
+        }
         if (mergersG){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
@@ -190,21 +228,56 @@ void createAgglomeration(leftStructure,rightStructure){
           }
         }
         if (movesG){
-            int r = agglomeration[i].R;
-            int g = agglomeration[i].G;
-            int b = agglomeration[i].B;
-            if (r == 11 && g == 255 && b == 255){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 11 && g == 255 && b == 255){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
+        }
+        if(merges){
+          for (int m = 0; m < ListaSeleccionados_Merges_I.length; m++){
+            if (agglomeration[i].name == ListaSeleccionados_Merges_I[m].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 255 && g == 78 && b == 0){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
             }
+          }
+        }
+        if (moves){
+          for (int m = 0; m < ListaSeleccionados_Moves_I.length; m++){
+            if (agglomeration[i].name == ListaSeleccionados_Moves_I[m].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 11 && g == 255 && b == 255){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
         }
         if (renamesG){
-
-            int r = agglomeration[i].R;
-            int g = agglomeration[i].G;
-            int b = agglomeration[i].B;
-            if (r == 91 && g == 255 && b == 142){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 91 && g == 255 && b == 142){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
+        }
+        if (renames){
+          for (int r = 0; r < ListaSeleccionados_Rename_I.length; r++){
+            if (agglomeration[i].name == ListaSeleccionados_Rename_I[r].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 91 && g == 255 && b == 142){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
             }
+          }
         }
         if (exclusionsG){
             int r = agglomeration[i].R;
@@ -214,17 +287,29 @@ void createAgglomeration(leftStructure,rightStructure){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
-        if (conguencyG ){
-            int r = agglomeration[i].R;
-            int g = agglomeration[i].G;
-            int b = agglomeration[i].B;
-            if (r == 14 && g == 80 && b == 217){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+        if (exclusiones){
+          for (int e = 0; e < ListaSeleccionados_Exclusiones.length; e++){
+            if (agglomeration[i].name == ListaSeleccionados_Exclusiones[e].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 223 && g == 1 && b == 1){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
             }
+          }
+        }
+        if (conguencyG ){
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 14 && g == 80 && b == 217){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
         }
         if (Congruence){
-          for (int c = 0; c < ListaConguentesPainted_I.length; c++){
-            if (ListaConguentesPainted_I[c] == agglomeration[i].name){
+          for (int c = 0; c < ListaSeleccionados_Conguentres_I.length; c++){
+            if (ListaSeleccionados_Conguentres_I[c].name == agglomeration[i].name){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
@@ -254,6 +339,18 @@ void createAgglomeration(leftStructure,rightStructure){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
+        if (splits){
+          for (int s = 0; s < ListaSeleccionados_Splits_D.length; s++){
+            if (agglomeration[i].name == ListaSeleccionados_Splits_D[s].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 181 && g == 9 && b == 95){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
+        }
          if (mergersG){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
@@ -262,13 +359,37 @@ void createAgglomeration(leftStructure,rightStructure){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
+        if (merges){
+          for (int m = 0; m < ListaSeleccionados_Merges_D.length; m++){
+            if (agglomeration[i].name == ListaSeleccionados_Merges_D[m].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 255 && g == 31 && b == 0){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
+        }
         if (movesG){
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 7 && g == 194 && b == 184){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
+        }
+        if (moves){
+          for (int m = 0; m < ListaSeleccionados_Moves_D.length; m++){
+            if (agglomeration[i].name == ListaSeleccionados_Moves_D[m].name){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
-            if (r == 7 && g == 194 && b == 184){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+             if (r == 7 && g == 194 && b == 184){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
             }
+          }
         }
         if (renamesG){
             int r = agglomeration[i].R;
@@ -278,6 +399,18 @@ void createAgglomeration(leftStructure,rightStructure){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
+        if (renames){
+           for (int r = 0; r < ListaSeleccionados_Rename_D.length; r++){
+            if (agglomeration[i].name == ListaSeleccionados_Rename_D[r].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 66 && g == 184 && b == 102){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
+        }
          if (newsG){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
@@ -286,36 +419,58 @@ void createAgglomeration(leftStructure,rightStructure){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
-        if (conguencyG){
-            int r = agglomeration[i].R;
-            int g = agglomeration[i].G;
-            int b = agglomeration[i].B;
-            if (r == 13 && g == 34 && b == 102){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+        if (nuevos){
+           for (int n = 0; n < ListaSeleccionados_Nuevos.length; n++){
+            if (agglomeration[i].name == ListaSeleccionados_Nuevos[n].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 7 && g == 255 && b == 0){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
             }
+          }
+        }
+        if (conguencyG){
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 13 && g == 34 && b == 102){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
+        }
+        if (Congruence){
+          for (int c = 0; c < ListaSeleccionados_Conguentres_D.length; c++){
+            if (agglomeration[i].name == ListaSeleccionados_Conguentres_D[c].name){
+              int r = agglomeration[i].R;
+              int g = agglomeration[i].G;
+              int b = agglomeration[i].B;
+              if (r == 13 && g == 34 && b == 102){
+                fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+              }
+            }
+          }
         }
          if (conguencyG){
-            int r = agglomeration[i].R;
-            int g = agglomeration[i].G;
-            int b = agglomeration[i].B;
-            if (r == 13 && g == 34 && b == 102){
-              fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
-            }
+          int r = agglomeration[i].R;
+          int g = agglomeration[i].G;
+          int b = agglomeration[i].B;
+          if (r == 13 && g == 34 && b == 102){
+            fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
+          }
         }
-
-          text(agglomeration[i].name, agglomeration[i].x+30, AbsoluteY+20);
-          fill(166, 166, 166);
-          text(" ― ",  agglomeration[i].x+2,AbsoluteY+20)
-          ListaPosiciones_D[posD] = new Posiciones(agglomeration[i].name, agglomeration[i].x+30, AbsoluteY+20);
-          posD = posD+1;
-        
+        text(agglomeration[i].name, agglomeration[i].x+30, AbsoluteY+20);
+        fill(166, 166, 166);
+        text(" ― ",  agglomeration[i].x+2,AbsoluteY+20)
+        ListaPosiciones_D[posD] = new Posiciones(agglomeration[i].name, agglomeration[i].x+30, AbsoluteY+20);
+        posD = posD+1;   
         AbsoluteY = AbsoluteY+20;
       }
     }     
   } 
 }
 
-//Verifica si existe un elemento en un arreglo se strings
+//Verify if exist an element in a String array
 boolean existe_Elemento_Array(ele, arreglo){
   for (int i = 0; i < arreglo.length; i++){
     if (arreglo[i] == ele){
@@ -325,10 +480,10 @@ boolean existe_Elemento_Array(ele, arreglo){
   return false;
 }
 
-/*
+
 void mouseClicked() {
   ListaConguentesPainted_I = [];
-  //Se limpia la matriz
+  //Clean the variables that have the selected nodess
   ListaSeleccionados_Conguentres_I = [];
   ListaSeleccionados_Conguentres_D = [];
   ListaSeleccionados_Moves_I = [];
@@ -346,42 +501,43 @@ void mouseClicked() {
   int x = (mouseX - translateX) * (1/scaleFactor);
   Calcular_Nodo_Seleccionado(x,y); 
 }
-*/
 
-//Verifica cual nodo se esta seleccionado
+
+//Verify wich nodes are selected
 void Calcular_Nodo_Seleccionado(x, y){
   //Clean boolean flags to clear the canvas
   Congruence = false;
+  moves = false;
+  renames = false;
+  exclusiones = false;
+  nuevos = false;
+  splits = false;
+  merges = false;
   boolean existe_Elemento = false;
-    for (int i = 1; i < ListaPosiciones_I.length; i++){
-      if ((y <= ListaPosiciones_I[i].y && y >= ListaPosiciones_I[i].y-25) && (x > ListaPosiciones_I[i].x && x < (ListaPosiciones_I[i].x+15 + textWidth(ListaPosiciones_I[i].name)))){
-        //Congruencia_Selected(ListaPosiciones_I[i].name);
-        /*//println(ListaPosiciones_I[i].name);
-        drawCongruency_Selected([ListaPosiciones_I[i]]);
-        drawMoves_Selected(false,108,27,232,ListaPosiciones_I[i].name,true);
-        drawMoves_Selected(true,108,27,232,ListaPosiciones_I[i].name,true);
-        Exclusiones(ListaPosiciones_I[i].name);
-        drawSplits_Selected(ListaPosiciones_I[i].name,true);
-        merge_Selected(ListaPosiciones_I[i].name,true);
-        existe_Elemento = true;*/
-        println(ListaPosiciones_I[i].name);
-        return;
-      }
-    }
-    for (int i = 1; i < ListaPosiciones_D.length; i++){
-      if ((y <= ListaPosiciones_D[i].y && y >= ListaPosiciones_D[i].y-25) && (x > ListaPosiciones_D[i].x && x < (ListaPosiciones_D[i].x+15 + textWidth(ListaPosiciones_D[i].name)))){
-        /*drawCongruency_Selected([ListaPosiciones_D[i]]);
-        drawSplits_Selected(ListaPosiciones_D[i].name,false);
-        drawMoves_Selected(false,108,27,232,ListaPosiciones_D[i].name,false);
-        drawMoves_Selected(true,108,27,232,ListaPosiciones_D[i].name,false);
-        Nuevos(ListaPosiciones_D[i].name);
-        merge_Selected(ListaPosiciones_D[i].name,false);
-        existe_Elemento = true;*/
-        println(ListaPosiciones_D[i].name);
-        return;
-      }
+  for (int i = 1; i < ListaPosiciones_I.length; i++){
+    if ((y <= ListaPosiciones_I[i].y && y >= ListaPosiciones_I[i].y-25) && (x > ListaPosiciones_I[i].x && x < (ListaPosiciones_I[i].x+15 + textWidth(ListaPosiciones_I[i].name)))){
+      Congruencia_Selected(ListaPosiciones_I[i].name);
+      Moves_Selected(false,ListaPosiciones_I[i].name,true);
+      Moves_Selected(true,ListaPosiciones_I[i].name,true);
+      Exclusiones_Selected(ListaPosiciones_I[i].name);
+      News_Selected(ListaPosiciones_I[i].name);
+      Splits_Selected(ListaPosiciones_I[i].name, true);
+      getMergers_Selected(ListaPosiciones_I[i].name, true);
+      return;
     }
   }
+  for (int i = 1; i < ListaPosiciones_D.length; i++){
+    if ((y <= ListaPosiciones_D[i].y && y >= ListaPosiciones_D[i].y-25) && (x > ListaPosiciones_D[i].x && x < (ListaPosiciones_D[i].x+15 + textWidth(ListaPosiciones_D[i].name)))){
+      Congruencia_Selected(ListaPosiciones_D[i].name);
+      Moves_Selected(false,ListaPosiciones_D[i].name,false);
+      Moves_Selected(true,ListaPosiciones_D[i].name,false);
+      News_Selected(ListaPosiciones_D[i].name);
+      Splits_Selected(ListaPosiciones_D[i].name, false);
+      getMergers_Selected(ListaPosiciones_D[i].name, false);
+      return;
+    }
+  }
+}
 
 //Funcion para cargar los nodos al un arreglo de nodos
 //si flag es true entonces cargar los izquierdos si es false carga los derechos
@@ -401,7 +557,7 @@ void loadNodes(nodos,flag){
 
 
 ////////////////////////////////////////////////////////////////////////
-//Asignar colores splits
+//Set color splits
 void verificarSinonimos(arreglo,nombre){
     for (int i=0; i<arreglo.length;i++){
         if (arreglo[i] == nombre){
@@ -455,12 +611,81 @@ void Splits(){
   }
 }
 
+void Splits_Selected(nombre,taxonomia){
+  Object [] splitsL = [];
+  Object [] splitsR = [];
+  Node [] derechos = [];
+  cantidadSplits = 0;
+  for (int i = 0;i<nodosIzquierdos.length;i++){
+    String name = nodosIzquierdos[i].name;
+    String autor = nodosIzquierdos[i].author;
+    String date = nodosIzquierdos[i].record_scrutiny_date;
+    append(splitsL,nodosIzquierdos[i]);
+    int cont = 0;
+    for (int j = 0;j<nodosDerechos.length;j++){
+      if ( (name == nodosDerechos[j].name || verificarSinonimos(nodosDerechos[j].Synonym,name)) && autor == nodosDerechos[j].author && date == nodosDerechos[j].record_scrutiny_date){
+        cont= cont+1;
+        append(splitsR,nodosDerechos[j]);
+      }
+    }
+     if (cont>1){
+      splits = true;
+      if (taxonomia){
+        boolean subarbol = false;
+         for (int verify = 0;verify<splitsR.length;verify++){
+          if (existe_Elemento_Array(nombre, buscar_padres(splitsR[verify].name, nodesRight))){
+            subarbol = true;
+          }
+         }
+        for (int left = 0;left<nodosIzquierdos.length;left++){
+          for (int leftAux = 0;leftAux<splitsL.length;leftAux++){
+            if (nodosIzquierdos[left].name == splitsL[leftAux].name && (splitsL[leftAux].name == nombre 
+              || existe_Elemento_Array(nombre, buscar_padres(nodosIzquierdos[left].name, izquierdos))
+              || subarbol ) ){
+              cantidadSplits = cantidadSplits+1;
+              append(ListaSeleccionados_Splits_I,nodosIzquierdos[left]);
+              for (int right = 0; right<splitsR.length;right++){
+                append(ListaSeleccionados_Splits_D,splitsR[right]);
+              }
+            }
+          }
+        }
+      }
+      else{
+        boolean verificado = false;
+        //Verify if the selected node exist y a less one element of right splits and if exist add the right node
+        for (int verify = 0;verify<splitsR.length;verify++){
+          if (splitsR[verify].name == nombre){
+            verificado = true;
+            for (int left = 0; left<splitsL.length;left++){
+              append(ListaSeleccionados_Splits_I,splitsL[left]);
+            }
+          }
+        }
+         for (int right = 0;right<nodosDerechos.length;right++){
+          for (int rightAux = 0;rightAux<splitsR.length;rightAux++){
+            if (nodosDerechos[right].name == splitsR[rightAux].name && verificado){
+              append(ListaSeleccionados_Splits_D,splitsR[rightAux]);
+              //nodosDerechos[right].setRGB(181,9,95);
+            }
+          }
+        }
+      } 
+        splitsR=[];
+        splitsL=[];
+        derechos = [];
+     }
+     splitsR=[];
+     splitsL=[];
+  }
+}
+
 int returnAmountSplits(){
     return cantidadSplits;
 }
 
 //////////////////////////////////////////////////////////////////////////
-//Funcion set color merges
+//Function set color merges
 
 boolean existeNombre_Complejo(nombre,autor,date){
     Object [] izquierdos = nodosIzquierdos;
@@ -508,6 +733,62 @@ void getMergers(){
    }
 }
 
+//This function is used when merge nodes is clicked
+void getMergers_Selected(nombre, taxonomia){
+  izquierdo = []; 
+  cantidadMergers = 0;
+  for (int nodeR = 0; nodeR < nodosDerechos.length; nodeR++){
+      derecho = nodosDerechos[nodeR];
+      String [] sinonimos = nodosDerechos[nodeR].Synonym;  
+      int cont = 0;  
+      if (sinonimos.length > 1){
+           for (int nodeL = 0; nodeL < sinonimos.length;nodeL++){
+              if (existeNombre_Complejo(sinonimos[nodeL],nodosDerechos[nodeR].author,nodosDerechos[nodeR].record_scrutiny_date)==false){
+                  cont += 1;  
+              }
+          }
+          if (cont > 1){
+            if(taxonomia == false){
+              if (nodosDerechos[nodeR].name == nombre){
+                merges = true;
+                cantidadMergers = cantidadMergers+1;
+                append(ListaSeleccionados_Merges_D,nodosDerechos[nodeR]);
+                for (int i = 0; i < nodosIzquierdos.length; i++){
+                  for (int j = 0; j < izquierdo.length; j++){
+                    if (nodosIzquierdos[i].name == izquierdo[j].name){
+                      append(ListaSeleccionados_Merges_I,izquierdo[j]);
+                    }
+                  }
+                }
+              }
+            }
+            else{
+              boolean subarbol = false;
+              boolean verificado = false;
+              for (int j = 0; j < izquierdo.length; j++){
+                if (existe_Elemento_Array(nombre, buscar_padres(izquierdo[j].name, izquierdos))){
+                  subarbol = true;
+                }
+                if (nombre == izquierdo[j].name || subarbol){
+                  verificado = true;
+                  merges = true;
+                  append(ListaSeleccionados_Merges_D,nodosDerechos[nodeR]);
+                }
+              }
+              if (verificado){
+                 for (int j = 0; j < izquierdo.length; j++){
+                    append(ListaSeleccionados_Merges_I,izquierdo[j]);
+                  }
+              }
+
+            } 
+            
+          }
+          izquierdo = []; 
+      } 
+   }
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FUNCIONES DE MOVES
 //This function is to get all the fathers of a species
@@ -516,11 +797,9 @@ void getMergers(){
 //So receive an array of nodes that is the complete taxonomy
 String padres = [];
 String [] buscar_padres(nombre,nodos){
-    //println(nombre);
     padres = [];
     for (int i = 0;i<nodos.length;i++){
         if (nodos[i].name == nombre){
-            //println(nombre);
             buscar_padres_aux(nodos[i]);
             return padres;
         }
@@ -541,7 +820,6 @@ void buscar_padres_aux(nodo){
 
 //Load the name of the fathers in the padres array
 void get_padre_name(nodo){
-    //println("Encuentra padre "+nodo.name);
     append(padres, nodo.name);
 }
 
@@ -573,6 +851,7 @@ int returnRenames(){
     return cantidadRenames;
 }
 
+//Find the moves of slider buttoms
 void Moves(){
    Object [] Derechos = [];
    Object [] Izquierdos = [];
@@ -674,8 +953,89 @@ void Moves(){
     }
   }
 
+//Find the moves and renames of seleted node
+void Moves_Selected(bandera, nombre, taxonomia){
+   Object [] Derechos = [];
+   Object [] Izquierdos = [];
+   Object [] listaIzquierdosM = [];
+   Object [] listaDerechosM = [];
+   Object [] listaIzquierdosR = [];
+   Object [] listaDerechosR = [];
+   for (int nodeL = 0; nodeL < izquierdos.length;nodeL++){
+      int cont = 0;
+      String nameL = izquierdos[nodeL].name;
+      String autorL = izquierdos[nodeL].author;
+      String dateL = izquierdos[nodeL].record_scrutiny_date;
+      for (nodeR=0;nodeR<nodosDerechos.length;nodeR++){
+          boolean subarbol = false;
+          if (existe_Elemento_Array(nombre, buscar_padres(izquierdos[nodeL].name, izquierdos))){
+            subarbol = true;
+          }
+          if (existe_Elemento_Array(nombre, buscar_padres(derechos[nodeR].name, derechos))){
+            subarbol = true;
+          }
+          String [] sinonimos = nodosDerechos[nodeR].Synonym;
+          String nombreR = nodosDerechos[nodeR].name;
+          String autorR = nodosDerechos[nodeR].author;
+          String fechaR = nodosDerechos[nodeR].record_scrutiny_date;
+          if (sinonimos.length == 1){
+              if ((nameL  == sinonimos[0] && autorL == autorR) && (nameL == nombre  ||  nombreR == nombre || subarbol)){
+                cont = cont+1; //Exist one move
+                append(Derechos,nodosDerechos[nodeR]);
+                append(Izquierdos,izquierdos[nodeL]);
+              }
+          }
+          else{ 
+            int existe = 0;
+            for (int i=0;i<sinonimos.length;i++){
+              if(existeNombre(izquierdos,sinonimos[i])==false){
+                existe = existe+1;
+                if (nameL == sinonimos[i] && autorL == autorR && (nameL == nombre  || nombreR == nombre || subarbol) && existe == 0){
+                    cont = cont+1;
+                    append(Derechos,nodosDerechos[nodeR]);
+                    append(Izquierdos,izquierdos[nodeL]);
+              }
+            }
+          }
+        }
+      }
+      if (cont == 1){
+        String nombreL = Izquierdos[0].name;
+        String authorL = Izquierdos[0].author;
+        String dateL = Izquierdos[0].record_scrutiny_date;
+        String nombreR = Derechos[0].name;
+        String authorR = Derechos[0].author;
+        String dateR = Derechos[0].record_scrutiny_date;
+        String [] padresI = buscar_padres(nombreL,izquierdos);
+        String [] padresD = buscar_padres(nombreR,derechos);
+        if (padresI.length == padresD.length){
+          boolean flag = true;
+          for (int j = 0; j < padresD.length-1;j++){
+              if (padresD[j] != padresI[j]){
+                  flag = false;
+              }
+          }
+          if (flag == false){
+             moves = true;
+            cantidadMoves = cantidadMoves+1;
+            append(ListaSeleccionados_Moves_I,Izquierdos[0]);
+            append(ListaSeleccionados_Moves_D,Derechos[0]);
+          }
+          else{
+            renames = true;
+            cantidadRenames = cantidadRenames+1;
+            append(ListaSeleccionados_Rename_I,Izquierdos[0]);
+            append(ListaSeleccionados_Rename_D,Derechos[0]);
+
+          }
+        }
+      }
+      Izquierdos = [];
+      Derechos = [];
+    }
+  }
 //////////////////////////////////////////////////////////////////////////
-//Eclusiones pintar
+//Set color exclusions
 
 boolean existeNombreComplejo(nodos,nombre,author,date){
      for (int nodeL = 0;nodeL<nodos.length;nodeL++){
@@ -706,12 +1066,27 @@ void Exclusiones(){
   }
 }
 
+void Exclusiones_Selected(nombre){
+  cantidadExclusiones = 0;
+  for (int i = 0; i < nodosIzquierdos.length; i++){
+    boolean subarbol = false;
+    if (existe_Elemento_Array(nombre, buscar_padres(izquierdos[i].name, izquierdos))){
+      subarbol = true;
+    }
+    if ((existeNombreComplejo(nodosDerechos, nodosIzquierdos[i].name, nodosIzquierdos[i].author, nodosIzquierdos[i].record_scrutiny_date)) && (nombre == nodosIzquierdos[i].name || subarbol) ){
+      exclusiones = true;
+      append(ListaSeleccionados_Exclusiones, nodosIzquierdos[i]);
+      cantidadExclusiones = cantidadExclusiones+1;
+    }
+  }
+}
+
 
 int returnExclusiones(){
   return cantidadExclusiones;
 }
 /////////////////////////////////////////////////////////////////////////
-//set color nuevos
+//set color news
 int cantidadNuevos = 0;
 
 int returnNuevos(){
@@ -754,8 +1129,39 @@ void News(){
   }
 }
 
+void News_Selected(nombre){
+  cantidadNuevos = 0;
+  for (int i = 0; i < nodosDerechos.length; i++){
+    boolean subarbol = false;
+    if (existe_Elemento_Array(nombre, buscar_padres(derechos[i].name, derechos))){
+      subarbol = true;
+    }
+    if ((existeNombre_ComplejoNuevos(nodosDerechos[i].name,nodosDerechos[i].author)) && (nombre == nodosDerechos[i].name || subarbol)) {
+      String [] sinonimos = nodosDerechos[i].Synonym;
+      if (sinonimos.length == 0){
+        append(ListaSeleccionados_Nuevos,nodosDerechos[i]);
+        cantidadNuevos = cantidadNuevos+1;
+        nuevos = true;
+      }
+      else{
+        boolean flag = true;
+        for (int j = 0; j < sinonimos.length; j++){
+          if (existeNombre(nodosIzquierdos,sinonimos[j]) == false){
+            flag = false;
+          }
+        }
+        if (flag){
+          nuevos = true;
+          append(ListaSeleccionados_Nuevos,nodosDerechos[i]);
+          cantidadNuevos = cantidadNuevos+1;
+        }
+      }
+    }
+  }
+}
+
 ////////////////////////////////////////////////////////////////
-//set colo congruencia
+//set color congruence
 int cantidadCongurentes = 0;
 
 int returnCongruentes(){
@@ -818,21 +1224,19 @@ void Congruencia_Selected(nombre){
   for (int i = 0;i<nodosIzquierdos.length;i++){
     for (int j = 0;j<nodosDerechos.length;j++){
       boolean subarbol = false;
-      if (existe_Elemento_Array(nombre, buscar_padres(nodosIzquierdos[i].name, nodosIzquierdos))){
+      if (existe_Elemento_Array(nombre, buscar_padres(nodosDerechos[j].name, derechos))){
         subarbol = true;
       }
-      if (existe_Elemento_Array(nombre, buscar_padres(nodosDerechos[j].name, nodosDerechos))){
+      if (existe_Elemento_Array(nombre, buscar_padres(nodosIzquierdos[i].name, izquierdos))){
         subarbol = true;
       }
       if (nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && (nombre == nodosIzquierdos[i].name || nombre == nodosDerechos[j].name || subarbol)){
-        println(nodosIzquierdos[i].name);
         String [] sinonimos = nodosDerechos[j].Synonym;
         if (sinonimos.length == 0){
-            nodosIzquierdos[i].setRGB(14,80,217);
-            nodosDerechos[j].setRGB(13,34,102);
             cantidadCongurentes += 1;
             Congruence = true;
-            append(ListaConguentesPainted_I,nodosIzquierdos[i].name);
+            append(ListaSeleccionados_Conguentres_I,nodosIzquierdos[i]);
+            append(ListaSeleccionados_Conguentres_D,nodosDerechos[j]);
         }
         else{
           boolean falg = true;
@@ -842,9 +1246,10 @@ void Congruencia_Selected(nombre){
             }
           }
           if (flag){
-              nodosIzquierdos[i].setRGB(14,80,217);
-              nodosDerechos[j].setRGB(13,34,102);
-              cantidadCongurentes += 1;
+            Congruence = true;
+            append(ListaSeleccionados_Conguentres_I,nodosIzquierdos[i]);
+            append(ListaSeleccionados_Conguentres_D,nodosDerechos[j]);
+            cantidadCongurentes += 1;
           }
         }
       }
@@ -863,10 +1268,6 @@ class Node{
   int R;
   int G;
   int B;
-
-  String parent;
-  String position;
-
   Node(String nombre, int posx, int posy, String [] sin, String aut, String fec, String par, String pos){
     name = nombre;
     x = posx;

@@ -219,6 +219,20 @@ function Retornar_Nommbres_Right(){
     return nombres_Right;
 }
 
+function Quantity_Nodes(taxonomy){
+    console.log(taxonomy.length);
+    var level = 0;
+    for (var i = 0; i < taxonomy.length; i++){
+        contadorNivel = 1;
+        getNivel(taxonomy[i]);
+        if ( contadorNivel > level){
+            level = contadorNivel;
+        }
+    }
+    return level;
+}
+
+//Return the number of level according to each node
 var contadorNivel = 1;
 function getNivel(nodo){
   if (nodo.parent == undefined){
@@ -230,7 +244,7 @@ function getNivel(nodo){
   }
 }
 
-function CalcularPosicionesLineas(pos, nodosIzquierdos){
+function CalcularPosicionesLineas(pos, nodosIzquierdos, max){
     contadorNivel = 1;
     getNivel(nodosIzquierdos[pos]);
     var nodoNivel = contadorNivel;
@@ -253,7 +267,7 @@ function CalcularPosicionesLineas(pos, nodosIzquierdos){
             console.log(nodoNivel);
         }
         if ((elementoNivel == nodoNivel && i > pos) || (i == nodosIzquierdos.length - 1)){
-          if (nodoNivel == 4){
+          if (nodoNivel == max-1){
             document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+xe+'" y1="'+y2+'" x2="'+xe+'" y2="'+(limit-1)+'" style="stroke:rgb(0,0,0);stroke-width:0.4" />';
           }
           else{
@@ -269,31 +283,31 @@ function CalcularPosicionesLineas(pos, nodosIzquierdos){
     }
 }
 
-function CalcularPosicionesLineasDerecha(pos, nodosIzquierdos){
+function CalcularPosicionesLineasDerecha(pos, nodosDerechos, max){
     contadorNivel = 1;
-    getNivel(nodosIzquierdos[pos]);
+    getNivel(nodosDerechos[pos]);
     var nodoNivel = contadorNivel;
     var y1 = 0;
     var y2 = 40;
     var limit = 0;
-    var xe = nodosIzquierdos[pos].x+45;
+    var xe = nodosDerechos[pos].x+45;
     for (var x = 0; x < pos; x++){
         y2+=20;
     } 
     y1 = y2 + 20; 
-    for (var i = 0; i < nodosIzquierdos.length; i++){
+    for (var i = 0; i < nodosDerechos.length; i++){
         contadorNivel = 1;
-        getNivel(nodosIzquierdos[i]);
+        getNivel(nodosDerechos[i]);
         var elementoNivel = contadorNivel;
         if (elementoNivel == nodoNivel+1 && i > pos){
             limit = y1;
         }
-        if ((elementoNivel == nodoNivel && i > pos) || (i == nodosIzquierdos.length - 1)){
-            if (nodoNivel == 4){
-                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-3)+'" style="stroke:rgb(0,0,0);stroke-width:0.4" />';
+        if ((elementoNivel == nodoNivel && i > pos) || (i == nodosDerechos.length - 1)){
+            if (nodoNivel == max-1){
+                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-3)+'" style="stroke:black;stroke-width:0.4" />';
             }
             else{
-                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-10)+'" style="stroke:rgb(0,0,0);stroke-width:0.4" />';
+                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-10)+'" style="stroke:black;stroke-width:0.4" />';
             }
               //line(nodosIzquierdos[pos].x-35,limit-15,nodosIzquierdos[pos].x-35,y2);
               return;
