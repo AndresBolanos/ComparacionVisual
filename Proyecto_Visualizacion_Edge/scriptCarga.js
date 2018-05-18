@@ -134,21 +134,16 @@ function resetTextFull(){
 var tocado = true;
 var splitsAux = false;
 $(window).click(function(e) {
-    if(splitsAux == false){
-         if (!tocado){
-            resetTextFull();
-            var processingInstance;
-            processingInstance = Processing.getInstanceById('CANVAS');
-            processingInstance.setup();
-            VerificarChecks();
-            splitsAux = false;
-        }
-        else{
-            tocado = false;
-            splitsAux = false;
-        }
+     if (!tocado){
+        resetTextFull();
+        var processingInstance;
+        processingInstance = Processing.getInstanceById('CANVAS');
+        processingInstance.setup();
+        VerificarChecks();
+        splitsAux = false;
     }
     else{
+        tocado = false;
         splitsAux = false;
     }
 });
@@ -193,7 +188,7 @@ function loadFiles (file1, file2){
             .attr("id","Canvas");
 
     var Ltree = d3.layout.treelist()
-        .childIndent(17)
+        .childIndent(25)
         .nodeHeight(20);
 
     var ul = d3.select("#leftSide").append("ul").classed("treelist", "true");
@@ -206,7 +201,9 @@ function loadFiles (file1, file2){
     function render(data, parent) {
             var nodes = Ltree.nodes(data),
             duration = 1000;
-            nodes.shift();
+            
+            //nodes.shift();
+            
             function toggleChildren(d) {
                 $("#CanvasLineasTenues").empty();
                 if (d.children) {
@@ -221,6 +218,7 @@ function loadFiles (file1, file2){
             nodesLeft = nodes;  // ww assign the nodes of the left to the global variable to use it in the next functions
             NODOS = nodes;
             contadorNivel = 0;
+            getNivel(nodesLeft[1]);
             var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
                 /*if (d.children == null){
                     x = d.x;
@@ -235,9 +233,10 @@ function loadFiles (file1, file2){
                 d.id = d.id || ++id;
                 return d.id;
             });
+            var mayor = MaximoNivel(nodesLeft);
             for (var i = 0; i < nodesLeft.length; i++){
                 if (nodesLeft[i].children != null){
-                    CalcularPosicionesLineas(i, nodesLeft, Quantity_Nodes(nodesLeft));
+                    CalcularPosicionesLineas(i, nodesLeft, mayor-1);
                 } 
             }
             //entered nodes
@@ -262,127 +261,128 @@ function loadFiles (file1, file2){
                     if (encendido){
                          resetTextFull();
                     }
-                    //resetText();
-                     if(congruencia == true){
-                        processingInstance.drawCongruency(d.name,2);
-                        var arregloizuierda = processingInstance.retornarIzquierdosConguencia();
-                        for (var i = 0; i < arregloizuierda.length; i++){
-                            if (arregloizuierda[i].nodo.name == d.name){
-                                if (arregloizuierda[i].color == "Azul"){
-                                    document.getElementById(d.name+"1").style.color ="#1712C4";
-                                    document.getElementById(d.name+"2").style.color ="#1712C4";
-                                }
-                                else{
-                                    document.getElementById(d.name+"1").style.color ="#00E3FF";
-                                    document.getElementById(d.name+"2").style.color ="#00E3FF";
-                                }
-                                document.getElementById(d.name+"1").style.fontSize = "large";
-                                document.getElementById(d.name+"2").style.fontSize = "large";
-                            }
-                        }
-                     }
-                     if (splits == true){
-                        processingInstance.drawSplits(2,d.name); //Aqui mando el ancho de la linea
-                        var arregloIzquierdos =  processingInstance.returnSplitsLeft();
-                        for (var i = 0; i < arregloIzquierdos.length; i++){
-                            if (arregloIzquierdos[i].name == d.name){
-                                document.getElementById(d.name+"1").style.color ="#FF00BF";
-                                document.getElementById(d.name+"1").style.fontSize = "large";
-                            }
-                        }
-                        var arregloDerechos =  processingInstance.returnSplitsRight();
-                        for (var i = 0; i < arregloDerechos.length; i++){
-                            if (arregloDerechos[i].Synonym.length == 0){
-                                if (arregloDerechos[i].name == d.name){
-                                    document.getElementById(d.name+"2").style.color ="#FF00BF";
+                    if (!tocado){
+                        if(congruencia == true){
+                            processingInstance.drawCongruency(d.name,2);
+                            var arregloizuierda = processingInstance.retornarIzquierdosConguencia();
+                            for (var i = 0; i < arregloizuierda.length; i++){
+                                if (arregloizuierda[i].nodo.name == d.name){
+                                    if (arregloizuierda[i].color == "Azul"){
+                                        document.getElementById(d.name+"1").style.color ="#1712C4";
+                                        document.getElementById(d.name+"2").style.color ="#1712C4";
+                                    }
+                                    else{
+                                        document.getElementById(d.name+"1").style.color ="#00E3FF";
+                                        document.getElementById(d.name+"2").style.color ="#00E3FF";
+                                    }
+                                    document.getElementById(d.name+"1").style.fontSize = "large";
                                     document.getElementById(d.name+"2").style.fontSize = "large";
                                 }
                             }
-                            else{
-                                var sinonimos = arregloDerechos[i].Synonym;
+                         }
+                         if (splits == true){
+                            processingInstance.drawSplits(2,d.name); //Aqui mando el ancho de la linea
+                            var arregloIzquierdos =  processingInstance.returnSplitsLeft();
+                            for (var i = 0; i < arregloIzquierdos.length; i++){
+                                if (arregloIzquierdos[i].name == d.name){
+                                    document.getElementById(d.name+"1").style.color ="#FF00BF";
+                                    document.getElementById(d.name+"1").style.fontSize = "large";
+                                }
+                            }
+                            var arregloDerechos =  processingInstance.returnSplitsRight();
+                            for (var i = 0; i < arregloDerechos.length; i++){
+                                if (arregloDerechos[i].Synonym.length == 0){
+                                    if (arregloDerechos[i].name == d.name){
+                                        document.getElementById(d.name+"2").style.color ="#FF00BF";
+                                        document.getElementById(d.name+"2").style.fontSize = "large";
+                                    }
+                                }
+                                else{
+                                    var sinonimos = arregloDerechos[i].Synonym;
+                                    for (var s = 0; s < sinonimos.length; s++){
+                                        if (sinonimos[s] == d.name){
+                                            document.getElementById(arregloDerechos[i].name+"2").style.color ="#FF00BF";
+                                            document.getElementById(arregloDerechos[i].name+"2").style.fontSize = "large";
+                                        }
+                                    }
+                                }
+                            }     
+                         }
+                         if (moves == true){
+                            processingInstance.drawMoves(false,10,228,237,d.name,2);
+                            var arregloizuierda = processingInstance.returnRename_MovesLeft();
+                            for (var i = 0; i < arregloizuierda.length; i++){
+                                if (arregloizuierda[i].name == d.name){
+                                    document.getElementById(d.name+"1").style.color ="#0AE4ED";
+                                    document.getElementById(d.name+"1").style.fontSize = "large";
+                                }
+                            }
+                            var arregloderecha = processingInstance.returnRename_MovesRight();
+                            for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
+                                var sinonimos = arregloderecha[i].Synonym;
                                 for (var s = 0; s < sinonimos.length; s++){
                                     if (sinonimos[s] == d.name){
-                                        document.getElementById(arregloDerechos[i].name+"2").style.color ="#FF00BF";
-                                        document.getElementById(arregloDerechos[i].name+"2").style.fontSize = "large";
+                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#0AE4ED";
+                                        document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
+                                    }
+                                }
+                            }                  
+                         }
+                         if (renames == true){
+                            processingInstance.drawMoves(true,91,255,142,d.name,2);
+                            var arregloizuierda = processingInstance.returnRename_MovesLeft();
+                            for (var i = 0; i < arregloizuierda.length; i++){
+                                if (arregloizuierda[i].name == d.name){
+                                    document.getElementById(d.name+"1").style.color ="#5BFF8E";
+                                    document.getElementById(d.name+"1").style.fontSize = "large";
+                                }
+                            }
+                            var arregloderecha = processingInstance.returnRename_MovesRight();
+                            for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
+                                var sinonimos = arregloderecha[i].Synonym;
+                                for (var s = 0; s < sinonimos.length; s++){
+                                    if (sinonimos[s] == d.name){
+                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#5BFF8E";
+                                        document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
+                                    }
+                                }
+                            }                  
+                         }
+                         if (exclusions == true){
+                            exclusiones();
+                            for (var i = 0; i < arregloEclusiones.length; i++){
+                                if (arregloEclusiones[i].name == d.name){
+                                    document.getElementById(d.name+"1").style.color ="#DF0101";
+                                    document.getElementById(d.name+"1").style.fontSize = "large";
+                                }
+                            } 
+                            arregloEclusiones = []; 
+                         }
+                         if (merges == true){
+                            processingInstance.merge(d.name,2);
+                            var nodoDerecho = "";
+                            var nodosIzquierdos = [];
+                            var arregloderecha = processingInstance.returnDerechosMerge();
+                            for (var i = 0; i < arregloderecha.length; i++){
+                                var sinonimos = arregloderecha[i].Synonym;
+                                for (var j = 0; j < sinonimos.length;j++){
+                                    if (sinonimos[j] == d.name){
+                                        nodoDerecho =  arregloderecha[i].name;
+                                        nodosIzquierdos = sinonimos;
                                     }
                                 }
                             }
-                        }     
-                     }
-                     if (moves == true){
-                        processingInstance.drawMoves(false,10,228,237,d.name,2);
-                        var arregloizuierda = processingInstance.returnRename_MovesLeft();
-                        for (var i = 0; i < arregloizuierda.length; i++){
-                            if (arregloizuierda[i].name == d.name){
-                                document.getElementById(d.name+"1").style.color ="#0AE4ED";
-                                document.getElementById(d.name+"1").style.fontSize = "large";
-                            }
-                        }
-                        var arregloderecha = processingInstance.returnRename_MovesRight();
-                        for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
-                            var sinonimos = arregloderecha[i].Synonym;
-                            for (var s = 0; s < sinonimos.length; s++){
-                                if (sinonimos[s] == d.name){
-                                    document.getElementById(arregloderecha[i].name+"2").style.color ="#0AE4ED";
-                                    document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
+                            if (document.getElementById(nodoDerecho+"2") != null){
+                                document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
+                                document.getElementById(nodoDerecho+"2").style.fontSize = "large";
+                                for (var i = 0; i < nodosIzquierdos.length; i++){
+                                    document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
+                                    document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
                                 }
                             }
-                        }                  
-                     }
-                     if (renames == true){
-                        processingInstance.drawMoves(true,91,255,142,d.name,2);
-                        var arregloizuierda = processingInstance.returnRename_MovesLeft();
-                        for (var i = 0; i < arregloizuierda.length; i++){
-                            if (arregloizuierda[i].name == d.name){
-                                document.getElementById(d.name+"1").style.color ="#5BFF8E";
-                                document.getElementById(d.name+"1").style.fontSize = "large";
-                            }
-                        }
-                        var arregloderecha = processingInstance.returnRename_MovesRight();
-                        for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
-                            var sinonimos = arregloderecha[i].Synonym;
-                            for (var s = 0; s < sinonimos.length; s++){
-                                if (sinonimos[s] == d.name){
-                                    document.getElementById(arregloderecha[i].name+"2").style.color ="#5BFF8E";
-                                    document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
-                                }
-                            }
-                        }                  
-                     }
-                     if (exclusions == true){
-                        exclusiones();
-                        for (var i = 0; i < arregloEclusiones.length; i++){
-                            if (arregloEclusiones[i].name == d.name){
-                                document.getElementById(d.name+"1").style.color ="#DF0101";
-                                document.getElementById(d.name+"1").style.fontSize = "large";
-                            }
-                        } 
-                        arregloEclusiones = []; 
-                     }
-                     if (merges == true){
-                        processingInstance.merge(d.name,2);
-                        var nodoDerecho = "";
-                        var nodosIzquierdos = [];
-                        var arregloderecha = processingInstance.returnDerechosMerge();
-                        for (var i = 0; i < arregloderecha.length; i++){
-                            var sinonimos = arregloderecha[i].Synonym;
-                            for (var j = 0; j < sinonimos.length;j++){
-                                if (sinonimos[j] == d.name){
-                                    nodoDerecho =  arregloderecha[i].name;
-                                    nodosIzquierdos = sinonimos;
-                                }
-                            }
-                        }
-                        if (document.getElementById(nodoDerecho+"2") != null){
-                            document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
-                            document.getElementById(nodoDerecho+"2").style.fontSize = "large";
-                            for (var i = 0; i < nodosIzquierdos.length; i++){
-                                document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
-                                document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
-                            }
-                        }
-                     }
-                     else if (splits == false && exclusions == false && merges == false && renames == false && moves == false && congruencia == false){
+                         }
+                    }
+                     else {
                         resetTextFull();
                         nombres_Left = [];
                         if (autoclick == false){
@@ -466,10 +466,11 @@ function loadFiles (file1, file2){
                             document.getElementById(Pintar_Nodos[i]+"1").style.fontSize = "large";
                         }
                         Click = true;
+                        tocado = true;
                      }
                 });
             //add arrows if it is a folder
-            entered.append("span").style("font-size", "20px").attr("class", function (d) {
+            entered.append("span").style("font-size", "15px").attr("class", function (d) {
 
                 var icon = d.children ? "glyphicon glyphicon-minus" // put the minus to the father node
                     : d._children ? "glyphicon glyphicon-minus" : "";
@@ -478,14 +479,13 @@ function loadFiles (file1, file2){
             entered.append("span").attr("class", "zoomTarget filename")
                 .attr("id",function (d) { return d.name+"1"; })
                 .html(function (d) { 
-                    var nombre = "";
                     if (d.children == undefined){
-                        nombre = "― "+d.name;
+                        return "– "+d.name;
                     }
                     else{
-                        nombre = d.name;
+                        return " "+d.name;
                     }
-                    return nombre; });
+                     });
 
             var element  = document.getElementsByTagName("li");
             for (var i = 0; i < element.length;i++){
@@ -525,7 +525,9 @@ function loadFiles (file1, file2){
             function render(data, parent) {
                 var nodes = Rtree.nodes(data),
                     duration = 1000;
-                nodes.shift();
+
+                //nodes.shift(); //Si se quiere q salga de anura adelante
+
                 function toggleChildren(d) {
                     $("#CanvasLineasTenues2").empty();
                     if (d.children) {
@@ -538,7 +540,7 @@ function loadFiles (file1, file2){
                 }           
                 nodesRight = nodes;
                 var nodeEls = ul.selectAll("li.node").data(nodes, function (d) {
-                     /*if (d.children == null){
+                    /* if (d.children == null){
                         x = d.x;
                         y = d.y-10; 
                          document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+(x+10)+'" y1="'+y+'" x2="'+(x+18)+'" y2="'+y+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
@@ -547,9 +549,11 @@ function loadFiles (file1, file2){
                     d.id = d.id || ++id;
                     return d.id;
                 });
+
+                var mayor = MaximoNivel(nodesRight);
                 for (var i = 0; i < nodesRight.length; i++){
                     if (nodesRight[i].children != null){
-                        CalcularPosicionesLineasDerecha(i, nodesRight, Quantity_Nodes(nodesLeft));
+                        CalcularPosicionesLineasDerecha(i, nodesRight, mayor-1);
                     } 
                 }
                 //entered nodes
@@ -573,115 +577,117 @@ function loadFiles (file1, file2){
                              resetTextFull();
                         }
                         resetText();
-                        if (renames == true){
-                            processingInstance.drawMoves(true,91,255,142,d.name,2);
-                            var congruente = [];
-                            var arregloderecha = processingInstance.returnRename_MovesRight();
-                            for (var i = 0; i < arregloderecha.length; i++){
-                                if (arregloderecha[i].name == d.name){
-                                    congruente = arregloderecha[i].Synonym;
-                                    document.getElementById(d.name+"2").style.color ="#5BFF8E";
-                                    document.getElementById(d.name+"2").style.fontSize = "large";
+                        if (!tocado){
+                            if (renames == true){
+                                processingInstance.drawMoves(true,91,255,142,d.name,2);
+                                var congruente = [];
+                                var arregloderecha = processingInstance.returnRename_MovesRight();
+                                for (var i = 0; i < arregloderecha.length; i++){
+                                    if (arregloderecha[i].name == d.name){
+                                        congruente = arregloderecha[i].Synonym;
+                                        document.getElementById(d.name+"2").style.color ="#5BFF8E";
+                                        document.getElementById(d.name+"2").style.fontSize = "large";
+                                    }
                                 }
-                            }
-                            if (congruente.length > 0){
-                                for (var s = 0; s < congruente.length; s++){
-                                    document.getElementById(congruente[s]+"1").style.color ="#5BFF8E";
-                                    document.getElementById(congruente[s]+"1").style.fontSize = "large";
-                                }
-                            }    
-                        }
-                        if (nuevos == true){
-                            pintarNuevos();
-                            for (var i = 0; i < arregloNuevos.length; i++){
-                                if (arregloNuevos[i].name == d.name){
-                                    document.getElementById(d.name+"2").style.color ="#088A00";
-                                    document.getElementById(d.name+"2").style.fontSize = "large";
-                                }
-                            }
-                            arregloNuevos = [];
-                        }
-                         if (moves == true){
-                            processingInstance.drawMoves(false,10,228,237,d.name,2);
-                            var congruente = [];
-                            var arregloderecha = processingInstance.returnRename_MovesRight();
-                            for (var i = 0; i < arregloderecha.length; i++){
-                                if (arregloderecha[i].name == d.name){
-                                    congruente = arregloderecha[i].Synonym;
-                                    document.getElementById(d.name+"2").style.color ="#0AE4ED";
-                                    document.getElementById(d.name+"2").style.fontSize = "large";
-                                }
-                            }
-                            if (congruente.length > 0){
-                                for (var s = 0; s < congruente.length; s++){
-                                    try{
-                                        document.getElementById(congruente[s]+"1").style.color ="#0AE4ED";
+                                if (congruente.length > 0){
+                                    for (var s = 0; s < congruente.length; s++){
+                                        document.getElementById(congruente[s]+"1").style.color ="#5BFF8E";
                                         document.getElementById(congruente[s]+"1").style.fontSize = "large";
                                     }
-                                    catch(e){
-                                    }
-                                }
-                            }    
-                         }
-                          if(congruencia == true){
-                             processingInstance.drawCongruency(d.name,2);
-                            var arregloderecha = processingInstance.retornarDerechosConguencia();
-                            for (var i = 0; i < arregloderecha.length; i++){
-                                if (arregloderecha[i].nodo.name == d.name){
-                                    if (arregloderecha[i].color == "Azul"){
-                                        document.getElementById(d.name+"1").style.color ="#1712C4";
-                                        document.getElementById(d.name+"2").style.color ="#1712C4";
-                                    }
-                                    else{
-                                        document.getElementById(d.name+"1").style.color ="#00E3FF";
-                                        document.getElementById(d.name+"2").style.color ="#00E3FF";
-                                    }
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                    document.getElementById(d.name+"2").style.fontSize = "large";
-                                }
+                                }    
                             }
-                          }
-                          if (merges == true){
-                            processingInstance.merge(d.name,2);
-                            var nodoDerecho = "";
-                            var nodosIzquierdos = [];
-                            var arregloderecha = processingInstance.returnDerechosMerge();
-                            for (var i = 0; i < arregloderecha.length; i++){
-                                if (arregloderecha[i].name == d.name){
-                                    nodoDerecho =  arregloderecha[i].name;
-                                    nodosIzquierdos = arregloderecha[i].Synonym;;
-                                }
-                            }
-                            if (document.getElementById(nodoDerecho+"2") != null){
-                                document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
-                                document.getElementById(nodoDerecho+"2").style.fontSize = "large";
-                                for (var i = 0; i < nodosIzquierdos.length; i++){
-                                    document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
-                                    document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
-                                }
-                            }
-                          }
-                          if (splits == true){
-                            processingInstance.drawSplits(2,""); //Aqui mando el ancho de la linea
-                            var arregloDerechos =  processingInstance.returnSplitsRight();
-                            for (var i = 0; i < arregloDerechos.length; i++){
-                                if (arregloDerechos[i].Synonym.length == 0){
-                                    if (arregloDerechos[i].name == d.name){
-                                        document.getElementById( d.name+"1").click();
+                            if (nuevos == true){
+                                pintarNuevos();
+                                for (var i = 0; i < arregloNuevos.length; i++){
+                                    if (arregloNuevos[i].name == d.name){
+                                        document.getElementById(d.name+"2").style.color ="#088A00";
+                                        document.getElementById(d.name+"2").style.fontSize = "large";
                                     }
                                 }
-                                else{
-                                    var sinonimos = arregloDerechos[i].Synonym;
-                                    for (var s = 0; s < sinonimos.length; s++){
-                                        if (arregloDerechos[i].name == d.name){
-                                            document.getElementById(sinonimos[s]+"1").click();
+                                arregloNuevos = [];
+                            }
+                             if (moves == true){
+                                processingInstance.drawMoves(false,10,228,237,d.name,2);
+                                var congruente = [];
+                                var arregloderecha = processingInstance.returnRename_MovesRight();
+                                for (var i = 0; i < arregloderecha.length; i++){
+                                    if (arregloderecha[i].name == d.name){
+                                        congruente = arregloderecha[i].Synonym;
+                                        document.getElementById(d.name+"2").style.color ="#0AE4ED";
+                                        document.getElementById(d.name+"2").style.fontSize = "large";
+                                    }
+                                }
+                                if (congruente.length > 0){
+                                    for (var s = 0; s < congruente.length; s++){
+                                        try{
+                                            document.getElementById(congruente[s]+"1").style.color ="#0AE4ED";
+                                            document.getElementById(congruente[s]+"1").style.fontSize = "large";
+                                        }
+                                        catch(e){
                                         }
                                     }
+                                }    
+                             }
+                              if(congruencia == true){
+                                 processingInstance.drawCongruency(d.name,2);
+                                var arregloderecha = processingInstance.retornarDerechosConguencia();
+                                for (var i = 0; i < arregloderecha.length; i++){
+                                    if (arregloderecha[i].nodo.name == d.name){
+                                        if (arregloderecha[i].color == "Azul"){
+                                            document.getElementById(d.name+"1").style.color ="#1712C4";
+                                            document.getElementById(d.name+"2").style.color ="#1712C4";
+                                        }
+                                        else{
+                                            document.getElementById(d.name+"1").style.color ="#00E3FF";
+                                            document.getElementById(d.name+"2").style.color ="#00E3FF";
+                                        }
+                                        document.getElementById(d.name+"1").style.fontSize = "large";
+                                        document.getElementById(d.name+"2").style.fontSize = "large";
+                                    }
                                 }
-                            }   
-                            splitsAux = true;  
-                          }
-                          else if (splits == false && exclusions == false && merges == false && renames == false && moves == false && congruencia == false){
+                              }
+                              if (merges == true){
+                                processingInstance.merge(d.name,2);
+                                var nodoDerecho = "";
+                                var nodosIzquierdos = [];
+                                var arregloderecha = processingInstance.returnDerechosMerge();
+                                for (var i = 0; i < arregloderecha.length; i++){
+                                    if (arregloderecha[i].name == d.name){
+                                        nodoDerecho =  arregloderecha[i].name;
+                                        nodosIzquierdos = arregloderecha[i].Synonym;;
+                                    }
+                                }
+                                if (document.getElementById(nodoDerecho+"2") != null){
+                                    document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
+                                    document.getElementById(nodoDerecho+"2").style.fontSize = "large";
+                                    for (var i = 0; i < nodosIzquierdos.length; i++){
+                                        document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
+                                        document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
+                                    }
+                                }
+                              }
+                              if (splits == true){
+                                processingInstance.drawSplits(2,""); //Aqui mando el ancho de la linea
+                                var arregloDerechos =  processingInstance.returnSplitsRight();
+                                for (var i = 0; i < arregloDerechos.length; i++){
+                                    if (arregloDerechos[i].Synonym.length == 0){
+                                        if (arregloDerechos[i].name == d.name){
+                                            document.getElementById( d.name+"1").click();
+                                        }
+                                    }
+                                    else{
+                                        var sinonimos = arregloDerechos[i].Synonym;
+                                        for (var s = 0; s < sinonimos.length; s++){
+                                            if (arregloDerechos[i].name == d.name){
+                                                document.getElementById(sinonimos[s]+"1").click();
+                                            }
+                                        }
+                                    }
+                                }   
+                                splitsAux = true;  
+                              }
+                            }
+                          else{
                                 //This section is to include the clickable nodes taxonomies with off switchers
                             resetTextFull();
                             nombres_Right = [];
@@ -766,6 +772,7 @@ function loadFiles (file1, file2){
                                 document.getElementById(Pintar_Nodos[i]+"2").style.fontSize = "large";
                             }
                             Click = true; 
+                            tocado = true;
                          }
                     });
                     var element  = document.getElementsByTagName("li");
@@ -781,14 +788,14 @@ function loadFiles (file1, file2){
             
                entered.append("span").attr("class", "zoomTarget filename")
                 .attr("id",function (d) { return d.name+"2"; })
-                .html(function (d) { var nombre = "";
+                .html(function (d) { 
                     if (d.children == undefined){
-                        nombre = "― "+d.name;
+                        return "–  "+d.name; 
                     }
                     else{
-                        nombre = d.name;
+                        return "  "+d.name; 
                     }
-                    return nombre; });
+                    });
 
                 nodeEls.select("span").attr("class", function (d) {
                     var icon = d.children ? "glyphicon glyphicon-minus"

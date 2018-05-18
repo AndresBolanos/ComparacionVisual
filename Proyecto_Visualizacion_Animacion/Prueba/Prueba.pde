@@ -57,7 +57,7 @@ Excl_News [] ListaNuevos;
 Node [] ListaCongruency1;
 Node [] ListaGeneral = [];
 float scaleFactor = 1.0;  //Cercanía que tiene la pantalla
-float translateX = 0.0;   //Draw on X point
+float translateX = -100.0;   //Draw on X point
 float translateY = 50.0;  //Draw on Y pointW
 float incrX = 0;          //Increase this variable to moves the nodes, step size on X
 float incrY = 0;          //Increase this variable to moves the nodes, step size on Y 
@@ -225,8 +225,8 @@ void draw() {
   pintarNodos(false);
   textSize(22);
   fill(0);
-  text(archivo1,318,0);
-  text(archivo2,915,0);
+  text(archivo1,300,-10);
+  text(archivo2,900,-10);
   if (one_by_one){
     if (animar){
         if (inicio){
@@ -896,6 +896,22 @@ void mouseClicked() {
   ListaSeleccionados_Exclusiones = [];
   ListaSeleccionados_Rename_I = [];
   ListaSeleccionados_Rename_D = [];
+  autoClickNuevos_OFF();
+  autoClickCongruence_OFF();
+  autoClickSplits_OFF();
+  autoClickMerges_OFF();
+  autoClickMoves_OFF();
+  autoClickRenames_OFF();
+  autoClickExclusion_OFF();
+  autoClickAll_OFF();
+  mergers = false;
+  moves = false;
+  renames = false;
+  news = false;
+  congruency = false;
+  splits = false;
+  splitsAux = false;
+  exclusions = false;
   int y = (mouseY - translateY) * (1/scaleFactor);
   int x = (mouseX - translateX) * (1/scaleFactor);
   Calcular_Nodo_Seleccionado(x,y); 
@@ -926,7 +942,7 @@ void Calcular_Nodo_Seleccionado(x, y){
 void keyPressed() {
   if (key == 'r' || key == 'R') {
     scaleFactor = 1;
-    translateX = 0.0;
+    translateX = -100.0;
     translateY = 50.0;
   }
   if (key == 'i' || key == 'I'){
@@ -999,7 +1015,7 @@ void loadNodes(nodos,flag){
 //Funcion que impririme los diferentes nodos creados
 void pintarNodos(flag){
   if (flag){
-     for (int i = 1; i < nodosIzquierdos.length; i++){
+     for (int i = 0; i < nodosIzquierdos.length; i++){
       fill(0);
       textSize(14); 
       if (mergers || merges_click){
@@ -1010,7 +1026,7 @@ void pintarNodos(flag){
                     String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                     for (int s = 0; s < nodos.length; s++){
                       if (nodosIzquierdos[i].name == nodos[s]){
-                        textSize(20); 
+                        textSize(16); 
                         fill(255, 145, 0);
                       }
                     }
@@ -1028,7 +1044,7 @@ void pintarNodos(flag){
                 String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                 for (int s = 0; s < nodos.length; s++){
                   if (nodosIzquierdos[i].name == nodos[s]){
-                    textSize(20); 
+                    textSize(16); 
                     fill(255, 145, 0);
                   }
                 }
@@ -1041,7 +1057,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSeleccionados_Moves_I.length; m++){
             if (one_by_one){
               if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name && m == posicionMoves){
-                  textSize(20); 
+                  textSize(16); 
                   fill(10,228,237);
               }
               else if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name){
@@ -1050,7 +1066,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(10,228,237);
               }
             }
@@ -1060,7 +1076,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaMoves.length; m++){
             if (one_by_one){
               if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionMoves){
-                  textSize(20); 
+                  textSize(16); 
                   fill(10,228,237);
               }
               else if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -1069,7 +1085,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(10,228,237);
               }
             }
@@ -1082,7 +1098,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSeleccionados_Rename_I.length; m++){
            if (one_by_one){
               if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name && m == posicionRename){
-                textSize(20); 
+                textSize(16); 
                 fill(91,255,142);
                }
                else if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name){
@@ -1091,7 +1107,7 @@ void pintarNodos(flag){
            }
            else{
             if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(91,255,142);
                }
            }
@@ -1101,7 +1117,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaRenames.length; m++){
            if (one_by_one){
               if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionRename){
-                textSize(20); 
+                textSize(16); 
                 fill(91,255,142);
                }
                else if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -1110,7 +1126,7 @@ void pintarNodos(flag){
            }
            else{
             if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(91,255,142);
                }
            }
@@ -1122,7 +1138,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSeleccionados_Exclusiones.length; m++){
             if (one_by_one){
               if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name && m == posicionExclusiones){
-                textSize(20); 
+                textSize(16); 
                 fill(223,1,1);
               }
               else if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name){
@@ -1131,7 +1147,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(223,1,1);
               }
             }
@@ -1141,7 +1157,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaExcluidos.length; m++){
             if (one_by_one){
               if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name && m == posicionExclusiones){
-                textSize(20); 
+                textSize(16); 
                 fill(223,1,1);
               }
               else if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
@@ -1150,7 +1166,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(223,1,1);
               }
             }
@@ -1163,7 +1179,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSeleccionados_Conguentres_D.length; m++){
             if (one_by_one){
               if (ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
-                  textSize(20); 
+                  textSize(16); 
                   fill(23, 18, 196);
               }
               else if(ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name){ 
@@ -1172,7 +1188,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name){
-                  textSize(20); 
+                  textSize(16); 
                   fill(23, 18, 196);
                 }
             }
@@ -1182,7 +1198,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaCongruency1.length; m++){
             if (one_by_one){
               if (ListaCongruency1[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
-                  textSize(20); 
+                  textSize(16); 
                   fill(23, 18, 196);
               }
               else if(ListaCongruency1[m].name == nodosIzquierdos[i].name){ 
@@ -1191,7 +1207,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaCongruency1[m].name == nodosIzquierdos[i].name){
-                  textSize(20); 
+                  textSize(16); 
                   fill(23, 18, 196);
                 }
             }
@@ -1203,7 +1219,7 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSplits.length; m++){
             if (one_by_one){
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionSplits){
-                textSize(20); 
+                textSize(16); 
                 fill(255,0,191);
                }
                else if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
@@ -1212,7 +1228,7 @@ void pintarNodos(flag){
             }
             else{
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
-                textSize(20); 
+                textSize(16); 
                 fill(255,0,191);
                }
             }
@@ -1222,7 +1238,7 @@ void pintarNodos(flag){
       if (splitsAux2){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (ListaSplitsA[m].name == nodosIzquierdos[i].name){
-             textSize(20); 
+             textSize(16); 
              fill(255,0,191);
           }
         }
@@ -1257,7 +1273,7 @@ void pintarNodos(flag){
       }
   }
   else{
-     for (int i = 1; i < nodosDerechos.length; i++){
+     for (int i = 0; i < nodosDerechos.length; i++){
       textSize(14); 
       fill(124,122,122);
       if (mergers || merges_Second || merges_click_auxiliary){
@@ -1437,13 +1453,13 @@ void pintarNodos(flag){
     for (int i = 0; i < ListaNuevos.length; i++){
       if (one_by_one){
         if (i == posicionNuevos){
-          textSize(20); 
+          textSize(16); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
         }
       }
       else{
-          textSize(20); 
+          textSize(16); 
           fill(8,138,0);
           ListaNuevos[i].nodoDerecha.display();
       }
@@ -1547,7 +1563,7 @@ void getMergers_Selected(nombre){
       int cont = 0;  
       leftsNodes = [];
       if (sinonimos.length > 1){
-           for (int nodeL = 1; nodeL < sinonimos.length;nodeL++){
+           for (int nodeL = 0; nodeL < sinonimos.length;nodeL++){
               if (existeNombre_Complejo(sinonimos[nodeL],nodosDerechos[nodeR].author,nodosDerechos[nodeR].record_scrutiny_date)==false){
                   cont += 1; 
                   append(leftsNodes, sinonimos[nodeL]);
@@ -1562,6 +1578,8 @@ void getMergers_Selected(nombre){
                 }
             }
             if (subarbol){
+              //Javascript function to turn on the congruence slider (autoClickSlider.js)
+              autoClickMerges_ON();
               merges_click = true;
               merges_click_auxiliary = true;
               cantidadMerges+=1;
@@ -1807,6 +1825,8 @@ void Moves_Selected(nombre){
               }
           }
           if (flag == false){
+            //Javascript function to turn on the congruence slider (autoClickSlider.js)
+            autoClickMoves_ON();
             append(ListaSeleccionados_Moves_I,Izquierdos[0]);
             append(ListaSeleccionados_Moves_D,Derechos[0]);
             moves_click =  true;
@@ -1814,6 +1834,8 @@ void Moves_Selected(nombre){
             cantidadMoves+=1;
           }
           else{
+            //Javascript function to turn on the congruence slider (autoClickSlider.js)
+            autoClickRenames_ON();
             append(ListaSeleccionados_Rename_I,Izquierdos[0]);
             append(ListaSeleccionados_Rename_D,Derechos[0]);
             renames_click = true;
@@ -1886,6 +1908,8 @@ void Exclusiones_Selected(nombre){
     }
     if (existeNombreComplejo(nodosDerechos, nodosIzquierdos[i].name, nodosIzquierdos[i].author, nodosIzquierdos[i].record_scrutiny_date)  && (nombre == nodosIzquierdos[i].name || subarbol) ){
       append(ListaSeleccionados_Exclusiones, nodosIzquierdos[i]);
+      //Javascript function to turn on the exclusions slider (autoClickSlider.js)
+      autoClickExclusion_ON();
       exclusions_click = true;
       pos+=1;
       cantidadExclusiones+=1;
@@ -2006,6 +2030,8 @@ void Congruencia_Selected(nombre){
       if ((nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && acepto == true) && (nodosIzquierdos[i].name == nombre || nodosDerechos[j].name == nombre || subarbol)){
         cantidadCongruentes += 1;
         congruency_click = true;
+        //Javascript function to turn on the congruence slider (autoClickSlider.js)
+        autoClickCongruence_ON();
         append(ListaSeleccionados_Conguentres_I,nodosIzquierdos[i]);
         append(ListaSeleccionados_Conguentres_D,nodosDerechos[j]);
       }
@@ -2130,6 +2156,8 @@ void Splits_Selected(nombre){
           }
         }
         if (subarbol){
+          //Javascript function to turn on the exclusions slider (autoClickSlider.js)
+          autoClickSplits_ON();
           splits_click = true;
           Node nodoIzq = new Node(splitsL[0].name,splitsL[0].x,splitsL[0].y);
           //appencontd(ListaSplits,splitsL[m]);

@@ -2,6 +2,7 @@
 //START THE SECTION OF FUNCTIONS FOR THE RADIO BUTTONS
 //THE EXTRA FUNCTIONS THAT APEAR IN THE CODE ARE PLACED IN funciones_auxiliares.js
 
+//This functions call congruende processing and turn on or off the slider
 //Function to call processing function that paint the lines in the screen
 //the lines are painted from right to left
 function CargarLineasIzquierdas(){
@@ -27,9 +28,6 @@ function CargarLineasIzquierdas(){
 
 //It is a function to celan up the screen
 //Clean the color of the nodes and the lines that exist in the canvas
-
-//Funcion para quitar las lineas de la pantalla
-//Limpia tanto el color de los nodos asi como todas las lineas que existan en el canvas
 function LimpiarCanvas(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');    
@@ -90,6 +88,7 @@ function pintarNuevos(){
     }
     
 }
+
 
 //This function is to paint the splits that exist in the taxonomy
 //First we clean up both taxonomies with de for

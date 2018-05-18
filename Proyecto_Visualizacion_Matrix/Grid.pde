@@ -16,9 +16,9 @@ boolean nuevos = false;
 boolean exclusiones = false;
 
 //Definicion de variables para uso de zoom
-float scaleFactor = 0.4;
+float scaleFactor = 0.3;
 float translateX = 200.0;
-float translateY = 450.0;
+float translateY = 350.0;
 
 Object [] izquierdos = [];
 Object [] derechos = [];
@@ -174,7 +174,7 @@ void draw() {
 
     //PROCEDIMIENTO PARA PINTAR LAS LINEAS
     stroke(107,110,107);
-    for (int i = 1; i < nodosIzquierdos.length; i++){
+    for (int i = 0; i < nodosIzquierdos.length; i++){
       if (nodosIzquierdos[i].children != null){
         CalcularPosicionesLineas(i);
       }
@@ -196,10 +196,10 @@ void draw() {
     nodosIzquierdos = nodesLeft;
     int yPrev = 0;
     
-    for(int pos = 1; pos < nodosIzquierdos.length; pos++){
+    for(int pos = 0; pos < nodosIzquierdos.length; pos++){
       fill(0);
       var existe = false;
-      for (int i = 1; i < nodosDerechos.length; i++){
+      for (int i = 0; i < nodosDerechos.length; i++){
         if (nodosIzquierdos[pos].name == nodosDerechos[i].name && nodosIzquierdos[pos].author == nodosDerechos[i].author && pos > 0){
           existe = true;
         }
@@ -296,20 +296,20 @@ void draw() {
         }
       } 
     
-      text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-40,(nodosIzquierdos[pos].y*2.5)-50);
+      text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-60,(nodosIzquierdos[pos].y*2.5)-50);
       fill(166, 166, 166);
       if (pos > 1){
-        text("― ",nodosIzquierdos[pos].x-75,(nodosIzquierdos[pos].y*2.5)-50);
+        text("― ",nodosIzquierdos[pos].x-85,(nodosIzquierdos[pos].y*2.5)-50);
       }
-      ListaPosiciones_I[pos] = new Posiciones(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-40,(nodosIzquierdos[pos].y*2.5)-50);      
+      ListaPosiciones_I[pos] = new Posiciones(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-60,(nodosIzquierdos[pos].y*2.5)-50);      
     }      
 
     //rotate(-PI/2); //Si se quiere doblado hay q activarlo
     
-    for(int pos = 1; pos < nodosDerechos.length; pos++){
+    for(int pos = 0; pos < nodosDerechos.length; pos++){
       fill(0);
       var existe = false;
-      for (int i = 1; i < nodosIzquierdos.length; i++){
+      for (int i = 0; i < nodosIzquierdos.length; i++){
         if (nodosDerechos[pos].name == nodosIzquierdos[i].name && nodosDerechos[pos].author == nodosIzquierdos[i].author && pos > 0){
           existe = true;
         }
@@ -430,7 +430,7 @@ void draw() {
     rotate(-PI/2);
     
     stroke(107,110,107);
-    for (int i = 1; i < nodosDerechos.length; i++){
+    for (int i = 0; i < nodosDerechos.length; i++){
       if (nodosDerechos[i].children != null){
         CalcularPosicionesLineasHorizontal(i);
       }
@@ -454,6 +454,21 @@ void mouseClicked() {
   ListaSeleccionados_Splits_D = [];
   ListaSeleccionados_Merges_I = [];
   ListaSeleccionados_Merges_D = [];
+  autoClickNuevos_OFF();
+  autoClickCongruence_OFF();
+  autoClickSplits_OFF();
+  autoClickMerges_OFF();
+  autoClickMoves_OFF();
+  autoClickRenames_OFF();
+  autoClickExclusion_OFF();
+  autoClickAll_OFF();
+  nuevos = false;
+  congruentes = false;
+  splits = false;
+  merges = false;
+  moves = false;
+  renames = false;
+  exclusiones = false;
 
   int y = (mouseY - translateY) * (1/scaleFactor);
   int x = (mouseX - translateX) * (1/scaleFactor);
@@ -464,6 +479,11 @@ void mouseClicked() {
 
 //Verifica cual nodo se esta seleccionado
 void Calcular_Nodo_Seleccionado(x, y){
+  for (int i=0; i<cols; i++) {
+    for (int j=0; j<rows; j++) {
+      colors[i][j] = color(255);
+    }
+  } 
   boolean existe_Elemento = false;
   if (y > ListaPosiciones_I[1].y-25 && x > ListaPosiciones_I[1].x ){ 
     for (int i = 1; i < ListaPosiciones_I.length; i++){
@@ -506,9 +526,9 @@ void Calcular_Nodo_Seleccionado(x, y){
 
 void keyPressed() {
   if (key == 'r' || key == 'R') {
-    scaleFactor = 0.4;
+    scaleFactor = 0.3;
     translateX =  200.0;
-    translateY = 450.0;
+    translateY = 350.0;
   }
   if (key == 'i' || key == 'I'){
     scaleFactor += 0.03;
@@ -626,6 +646,7 @@ void drawSplits_Selected(nombre,taxonomia){
                     append(ListaSeleccionados_Splits_I,splitsL[i]);
                     cantidadSplits = cantidadSplits+1;
                     for (int j = 0;j<splitsR.length;j++){
+                        autoClickSplits_ON();
                        append(ListaSeleccionados_Splits_D,splitsR[j]);
                        int x1 = splitsL[i].x+textWidth(splitsL[i].name);
                        int y1 = splitsL[i].y-5;
@@ -647,6 +668,8 @@ void drawSplits_Selected(nombre,taxonomia){
                         append(ListaSeleccionados_Splits_I,splitsL[i]);
                         cantidadSplits = cantidadSplits+1;
                         for (int j = 0;j<splitsR.length;j++){
+                          //Javascript function tha turn on the sliders
+                           autoClickSplits_ON();
                            append(ListaSeleccionados_Splits_D,splitsR[j]);
                            int x1 = splitsL[i].x+textWidth(splitsL[i].name);
                            int y1 = splitsL[i].y-5;
@@ -937,11 +960,13 @@ void drawMoves_Selected(bandera,int R, int G,int B, nombre, taxonomia){
                 if (flag == bandera){
                   if (bandera == false){
                       cantidadMoves = cantidadMoves+1;
+                      autoClickMoves_ON();
                       append(ListaSeleccionados_Moves_I,nodosIzquierdos[0]);
                       append(ListaSeleccionados_Moves_D,nodosDerechos[0]);
                   }
                   if (bandera == true){
                       cantidadRenames = cantidadRenames+1;
+                      autoClickRenames_ON();
                       append(ListaSeleccionados_Rename_I,nodosIzquierdos[0]);
                       append(ListaSeleccionados_Rename_D,nodosDerechos[0]);
                   }
@@ -1074,6 +1099,8 @@ void drawCongruency_Selected(lista_nombres){
                   posDer = posDerecha(derechos[j].name);
                   colors[posDer][posIzq]=color(23, 18, 196);
                   cantidadCongurentes += 1;
+                  //Javascript function tha turn on the sliders
+                  autoClickCongruence_ON();
                   append(ListaSeleccionados_Conguentres_I,izquierdos[i]);
                   append(ListaSeleccionados_Conguentres_D,derechos[j]);
               }
@@ -1086,6 +1113,7 @@ void drawCongruency_Selected(lista_nombres){
                   posDer = posDerecha(derechos[j].name);
                    colors[posDer][posIzq]=color(23, 18, 196);
                   cantidadCongurentes += 1;
+                  autoClickCongruence_ON();
                   append(ListaSeleccionados_Conguentres_I,izquierdos[i]);
                   append(ListaSeleccionados_Conguentres_D,derechos[j]);
               }
@@ -1202,7 +1230,7 @@ void merge_Selected(nombre, taxonomia){
                 boolean subarbol = false;
                 if (taxonomia){
                    for (int i = 0; i < izquierdo.length;i++){
-                       if (existe_Elemento_Array(nombre, buscar_padres(izquierdo[i].name, izquierdos))){
+                       if (existe_Elemento_Array(nombre, buscar_padres(izquierdo[i].name, izquierdos)) || izquierdo[i].name == nombre){
                            subarbol = true;
                         }
                    }
@@ -1214,6 +1242,8 @@ void merge_Selected(nombre, taxonomia){
                   append(ListaSeleccionados_Merges_D,derecho);
                   for (int i = 0; i < izquierdo.length;i++){
                       append(ListaSeleccionados_Merges_I,izquierdo[i]);
+                      //Javascript function tha turn on the sliders
+                      autoClickMerges_ON();
                       int x1 = izquierdo[i].x+textWidth(izquierdo[i].name);
                       int y1 = izquierdo[i].y-5;
                       float x2 = derecho.x+anchoDiv;
@@ -1335,6 +1365,7 @@ void Exclusiones(nombre){
         }
       }
       if ((existe == false && subarbol) || (existe == false && nombre == izquierdos[left].name)){
+        autoClickExclusion_ON();
         append(ListaSeleccionados_Exclusiones,izquierdos[left]);
       }
   }
@@ -1363,6 +1394,7 @@ void Nuevos(nombre){
       }
       if ((existe == false && subarbol) || (existe == false && nombre == derechos[rigth].name)){
         append(ListaSeleccionados_Nuevos,derechos[rigth]);
+        autoClickNuevos_ON();
       } 
   }
 }
@@ -1405,7 +1437,7 @@ void CalcularPosicionesLineas(int pos){
       limit = y1;
     }
     if ((elementoNivel == nodoNivel && i > pos) || (i == nodosIzquierdos.length - 1)){
-      line(nodosIzquierdos[pos].x-35,limit-15,nodosIzquierdos[pos].x-35,y2);
+      line(nodosIzquierdos[pos].x-50,limit-15,nodosIzquierdos[pos].x-50,y2);
       return;
     }
     else if (elementoNivel > nodoNivel && i > pos){

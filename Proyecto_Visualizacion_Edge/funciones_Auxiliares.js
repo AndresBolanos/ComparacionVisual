@@ -219,20 +219,18 @@ function Retornar_Nommbres_Right(){
     return nombres_Right;
 }
 
-function Quantity_Nodes(taxonomy){
-    console.log(taxonomy.length);
-    var level = 0;
-    for (var i = 0; i < taxonomy.length; i++){
+function MaximoNivel(nodos){
+    var mayor = 0;
+    for (var i = 0; i < nodos.length; i++){
         contadorNivel = 1;
-        getNivel(taxonomy[i]);
-        if ( contadorNivel > level){
-            level = contadorNivel;
+        getNivel(nodos[i]);
+        if (mayor < contadorNivel){
+            mayor = contadorNivel;
         }
     }
-    return level;
+    return mayor;
 }
 
-//Return the number of level according to each node
 var contadorNivel = 1;
 function getNivel(nodo){
   if (nodo.parent == undefined){
@@ -244,35 +242,34 @@ function getNivel(nodo){
   }
 }
 
-function CalcularPosicionesLineas(pos, nodosIzquierdos, max){
+function CalcularPosicionesLineas(pos, nodosIzquierdos, mayor){
     contadorNivel = 1;
     getNivel(nodosIzquierdos[pos]);
     var nodoNivel = contadorNivel;
     var y1 = 0;
     var y2 = 40;
     var limit = 0;
-    var xe = nodosIzquierdos[pos].x+37;
+    var xe = nodosIzquierdos[pos].x+45;
     for (var x = 0; x < pos; x++){
         y2+=20;
     } 
     y1 = y2 + 20; 
     limit = y1;
-    var hoja = true;
     for (var i = 0; i < nodosIzquierdos.length; i++){
         contadorNivel = 1;
         getNivel(nodosIzquierdos[i]);
         var elementoNivel = contadorNivel;
         if (elementoNivel == nodoNivel+1 && i > pos){
             limit = y1;
-            console.log(nodoNivel);
         }
         if ((elementoNivel == nodoNivel && i > pos) || (i == nodosIzquierdos.length - 1)){
-          if (nodoNivel == max-1){
-            document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+xe+'" y1="'+y2+'" x2="'+xe+'" y2="'+(limit-1)+'" style="stroke:rgb(0,0,0);stroke-width:0.4" />';
-          }
-          else{
-            document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+xe+'" y1="'+y2+'" x2="'+xe+'" y2="'+(limit-9)+'" style="stroke:rgb(0,0,0);stroke-width:0.4" />';
-          }
+            console.log(mayor);
+            if (nodoNivel == mayor){
+                document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+xe+'" y1="'+y2+'" x2="'+xe+'" y2="'+(limit-8)+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
+            }
+            else{
+                document.getElementById("CanvasLineasTenues").innerHTML += '<line x1="'+xe+'" y1="'+y2+'" x2="'+xe+'" y2="'+(limit-10)+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
+            }
           
           //line(nodosIzquierdos[pos].x-35,limit-15,nodosIzquierdos[pos].x-35,y2);
           return;
@@ -283,31 +280,31 @@ function CalcularPosicionesLineas(pos, nodosIzquierdos, max){
     }
 }
 
-function CalcularPosicionesLineasDerecha(pos, nodosDerechos, max){
+function CalcularPosicionesLineasDerecha(pos, nodosIzquierdos, mayor){
     contadorNivel = 1;
-    getNivel(nodosDerechos[pos]);
+    getNivel(nodosIzquierdos[pos]);
     var nodoNivel = contadorNivel;
     var y1 = 0;
     var y2 = 40;
     var limit = 0;
-    var xe = nodosDerechos[pos].x+45;
+    var xe = nodosIzquierdos[pos].x+45;
     for (var x = 0; x < pos; x++){
         y2+=20;
     } 
     y1 = y2 + 20; 
-    for (var i = 0; i < nodosDerechos.length; i++){
+    for (var i = 0; i < nodosIzquierdos.length; i++){
         contadorNivel = 1;
-        getNivel(nodosDerechos[i]);
+        getNivel(nodosIzquierdos[i]);
         var elementoNivel = contadorNivel;
         if (elementoNivel == nodoNivel+1 && i > pos){
             limit = y1;
         }
-        if ((elementoNivel == nodoNivel && i > pos) || (i == nodosDerechos.length - 1)){
-            if (nodoNivel == max-1){
-                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-3)+'" style="stroke:black;stroke-width:0.4" />';
+        if ((elementoNivel == nodoNivel && i > pos) || (i == nodosIzquierdos.length - 1)){
+            if (nodoNivel == mayor){
+                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-4)+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
             }
             else{
-                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-10)+'" style="stroke:black;stroke-width:0.4" />';
+                document.getElementById("CanvasLineasTenues2").innerHTML += '<line x1="'+xe+'" y1="'+(y2)+'" x2="'+xe+'" y2="'+(limit-10)+'" style="stroke:rgb(0,0,0);stroke-width:0.2" />';
             }
               //line(nodosIzquierdos[pos].x-35,limit-15,nodosIzquierdos[pos].x-35,y2);
               return;

@@ -934,7 +934,7 @@ body {
 #label1{
   position: absolute; 
   top: 90px;  
-  left:350px;
+  left:240px;
   font-size: 20px;
   visibility: hidden;
 }
@@ -942,15 +942,15 @@ body {
 #label2{
   position: absolute; 
   top: 90px;  
-  left:1150px;
+  left:1040px;
   font-size: 20px;
   visibility: hidden;
 }
 
 #CANVAS{
   position: absolute;
-  top: 120px;
-  left: 130px;          
+  top: 140px;
+  left: 30px;          
 }
 
 
@@ -1160,19 +1160,34 @@ body {
   visibility: hidden;
 }
 
+vr { 
+    display: block;
+    width:1px;
+    background-color:#000;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:200px;
+}
+
 #CanvasLineasTenues{
   position: absolute;
   margin-left: -1.45%;
-  margin-top: 0%;
+  margin-top: -2%;
 }
 
 #CanvasLineasTenues2{
   position: absolute;
   margin-left: -1.45%;
-  margin-top: 0%;
-  stroke: black;
+  margin-top: -2%;
 }
 
 #leftSide{
-    left: 10%;
+    margin-top: 1%;
+    left: 5%;
+}
+
+#rightSide{
+    margin-top: 1%;
+    left: -5%;
 }

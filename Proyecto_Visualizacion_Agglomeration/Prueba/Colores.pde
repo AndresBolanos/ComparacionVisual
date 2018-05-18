@@ -95,7 +95,7 @@ void draw(){
   text(archivo2,450,300); 
   stroke(149,153,149);
   strokeWeight(-5);
-  for (int i = 1; i < nodosTenues.length; i++){
+  for (int i = 0; i < nodosTenues.length; i++){
     if (nodosTenues[i].children != undefined){
       CalcularPosicionesLineas(i);
     }
@@ -192,7 +192,7 @@ void createAgglomeration(leftStructure,rightStructure){
   nodosTenues = agglomeration;
   int posI = 1;
   int posD = 1;
-  for (int i = 1; i < agglomeration.length; i++){ 
+  for (int i = 0; i < agglomeration.length; i++){ 
     if(agglomeration[i]==null){
       break
     }
@@ -496,7 +496,23 @@ void mouseClicked() {
   ListaSeleccionados_Splits_D = [];
   ListaSeleccionados_Merges_I = [];
   ListaSeleccionados_Merges_D = [];
-
+  //Clean to turn off the sliders (autoClickSlider.js)
+  autoClickNuevos_OFF();
+  autoClickCongruence_OFF();
+  autoClickSplits_OFF();
+  autoClickMerges_OFF();
+  autoClickMoves_OFF();
+  autoClickRenames_OFF();
+  autoClickExclusion_OFF();
+  autoClickAll_OFF();
+  //Set to false the flags, anything painted before click
+  conguencyG = false;
+  newsG = false;
+  exclusionsG = false;
+  renamesG = false;
+  movesG = false;
+  mergersG = false;
+  splitsG = false;
   int y = (mouseY - translateY) * (1/scaleFactor);
   int x = (mouseX - translateX) * (1/scaleFactor);
   Calcular_Nodo_Seleccionado(x,y); 
@@ -643,6 +659,8 @@ void Splits_Selected(nombre,taxonomia){
               || existe_Elemento_Array(nombre, buscar_padres(nodosIzquierdos[left].name, izquierdos))
               || subarbol ) ){
               cantidadSplits = cantidadSplits+1;
+              //JavaScript function to turn on the slider (autoClickSlider.js)
+              autoClickSplits_ON();
               append(ListaSeleccionados_Splits_I,nodosIzquierdos[left]);
               for (int right = 0; right<splitsR.length;right++){
                 append(ListaSeleccionados_Splits_D,splitsR[right]);
@@ -658,6 +676,8 @@ void Splits_Selected(nombre,taxonomia){
           if (splitsR[verify].name == nombre){
             verificado = true;
             for (int left = 0; left<splitsL.length;left++){
+              //JavaScript function to turn on the slider (autoClickSlider.js)
+              autoClickSplits_ON();
               append(ListaSeleccionados_Splits_I,splitsL[left]);
             }
           }
@@ -752,6 +772,8 @@ void getMergers_Selected(nombre, taxonomia){
               if (nodosDerechos[nodeR].name == nombre){
                 merges = true;
                 cantidadMergers = cantidadMergers+1;
+                //JavaScript function to turn on the slider (autoClickSlider.js)
+                autoClickSplits_ON();
                 append(ListaSeleccionados_Merges_D,nodosDerechos[nodeR]);
                 for (int i = 0; i < nodosIzquierdos.length; i++){
                   for (int j = 0; j < izquierdo.length; j++){
@@ -772,6 +794,8 @@ void getMergers_Selected(nombre, taxonomia){
                 if (nombre == izquierdo[j].name || subarbol){
                   verificado = true;
                   merges = true;
+                  //JavaScript function to turn on the slider (autoClickSlider.js)
+                  autoClickMerges_ON();
                   append(ListaSeleccionados_Merges_D,nodosDerechos[nodeR]);
                 }
               }
@@ -963,6 +987,7 @@ void Moves_Selected(bandera, nombre, taxonomia){
    Object [] listaDerechosR = [];
    for (int nodeL = 0; nodeL < izquierdos.length;nodeL++){
       int cont = 0;
+      int cantidadNodos = 0;
       String nameL = izquierdos[nodeL].name;
       String autorL = izquierdos[nodeL].author;
       String dateL = izquierdos[nodeL].record_scrutiny_date;
@@ -979,27 +1004,58 @@ void Moves_Selected(bandera, nombre, taxonomia){
           String autorR = nodosDerechos[nodeR].author;
           String fechaR = nodosDerechos[nodeR].record_scrutiny_date;
           if (sinonimos.length == 1){
-              if ((nameL  == sinonimos[0] && autorL == autorR) && (nameL == nombre  ||  nombreR == nombre || subarbol)){
+            if (taxonomia){
+              if (nameL  == sinonimos[0] && autorL == autorR){
+                cont = cont+1;
+              }
+              if ((nameL  == sinonimos[0] && autorL == autorR) && (nameL == nombre  || subarbol)){
                 cont = cont+1; //Exist one move
                 append(Derechos,nodosDerechos[nodeR]);
                 append(Izquierdos,izquierdos[nodeL]);
               }
+            }
+            else{
+              if (nameL  == sinonimos[0] && autorL == autorR ){
+                cont = cont+1;
+              }
+              if ((nameL  == sinonimos[0] && autorL == autorR ) && (nombreR == nombre  || subarbol)){
+                cont = cont+1;
+                append(Derechos,nodosDerechos[nodeR]);
+                append(Izquierdos,izquierdos[nodeL]);
+              }
+            }    
           }
           else{ 
             int existe = 0;
             for (int i=0;i<sinonimos.length;i++){
               if(existeNombre(izquierdos,sinonimos[i])==false){
-                existe = existe+1;
-                if (nameL == sinonimos[i] && autorL == autorR && (nameL == nombre  || nombreR == nombre || subarbol) && existe == 0){
+                if (taxonomia){
+                  existe = existe+1;
+                  if (nameL == sinonimos[i] && autorL == autorR){
+                    cont = cont +1;
+                  }
+                  if (nameL == sinonimos[i] && autorL == autorR && (nameL == nombre  || subarbol) && existe == 0){
                     cont = cont+1;
                     append(Derechos,nodosDerechos[nodeR]);
                     append(Izquierdos,izquierdos[nodeL]);
-              }
+                  }
+                }
+                else{
+                  existe = existe+1;
+                  if (nameL == sinonimos[i] && autorL == autorR){
+                    cont = cont +1;
+                  }
+                  if (nameL == sinonimos[i] && autorL == autorR && (nombreR == nombre  || subarbol) && existe == 0){
+                    cont = cont+1;
+                    append(Derechos,nodosDerechos[nodeR]);
+                    append(Izquierdos,izquierdos[nodeL]);
+                  }
+                }
             }
           }
         }
       }
-      if (cont == 1){
+      if (cont == 2){
         String nombreL = Izquierdos[0].name;
         String authorL = Izquierdos[0].author;
         String dateL = Izquierdos[0].record_scrutiny_date;
@@ -1018,11 +1074,15 @@ void Moves_Selected(bandera, nombre, taxonomia){
           if (flag == false){
              moves = true;
             cantidadMoves = cantidadMoves+1;
+            //JavaScript function to turn on the slider (autoClickSlider.js)
+            autoClickMoves_ON();
             append(ListaSeleccionados_Moves_I,Izquierdos[0]);
             append(ListaSeleccionados_Moves_D,Derechos[0]);
           }
           else{
             renames = true;
+            //JavaScript function to turn on the slider (autoClickSlider.js)
+            autoClickRenames_ON();
             cantidadRenames = cantidadRenames+1;
             append(ListaSeleccionados_Rename_I,Izquierdos[0]);
             append(ListaSeleccionados_Rename_D,Derechos[0]);
@@ -1075,6 +1135,8 @@ void Exclusiones_Selected(nombre){
     }
     if ((existeNombreComplejo(nodosDerechos, nodosIzquierdos[i].name, nodosIzquierdos[i].author, nodosIzquierdos[i].record_scrutiny_date)) && (nombre == nodosIzquierdos[i].name || subarbol) ){
       exclusiones = true;
+      //JavaScript function to turn on the slider (autoClickSlider.js)
+      autoClickExclusion_ON();
       append(ListaSeleccionados_Exclusiones, nodosIzquierdos[i]);
       cantidadExclusiones = cantidadExclusiones+1;
     }
@@ -1139,6 +1201,8 @@ void News_Selected(nombre){
     if ((existeNombre_ComplejoNuevos(nodosDerechos[i].name,nodosDerechos[i].author)) && (nombre == nodosDerechos[i].name || subarbol)) {
       String [] sinonimos = nodosDerechos[i].Synonym;
       if (sinonimos.length == 0){
+        //JavaScript function to turn on the slider (autoClickSlider.js)
+        autoClickNuevos_ON();
         append(ListaSeleccionados_Nuevos,nodosDerechos[i]);
         cantidadNuevos = cantidadNuevos+1;
         nuevos = true;
@@ -1152,6 +1216,8 @@ void News_Selected(nombre){
         }
         if (flag){
           nuevos = true;
+          //JavaScript function to turn on the slider (autoClickSlider.js)
+          autoClickNuevos_ON();
           append(ListaSeleccionados_Nuevos,nodosDerechos[i]);
           cantidadNuevos = cantidadNuevos+1;
         }
@@ -1170,7 +1236,7 @@ int returnCongruentes(){
 
 void Congruencia(){
   cantidadCongurentes = 0;
-  for (int i = 0;i<nodosIzquierdos.length;i++){
+  for (int i = 1;i<nodosIzquierdos.length;i++){
     for (int j = 0;j<nodosDerechos.length;j++){
       if (nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && nodosIzquierdos[i].record_scrutiny_date == nodosDerechos[j].record_scrutiny_date){
         String [] sinonimos = nodosDerechos[j].Synonym;
@@ -1221,7 +1287,7 @@ void Congruencia(){
 //This function search congruents nodes, according to the selected name passed as parameter
 void Congruencia_Selected(nombre){
   cantidadCongurentes = 0;
-  for (int i = 0;i<nodosIzquierdos.length;i++){
+  for (int i = 1;i<nodosIzquierdos.length;i++){
     for (int j = 0;j<nodosDerechos.length;j++){
       boolean subarbol = false;
       if (existe_Elemento_Array(nombre, buscar_padres(nodosDerechos[j].name, derechos))){
@@ -1235,6 +1301,8 @@ void Congruencia_Selected(nombre){
         if (sinonimos.length == 0){
             cantidadCongurentes += 1;
             Congruence = true;
+            //JavaScript function to turn on the slider (autoClickSlider.js)
+            autoClickCongruence_ON();
             append(ListaSeleccionados_Conguentres_I,nodosIzquierdos[i]);
             append(ListaSeleccionados_Conguentres_D,nodosDerechos[j]);
         }
@@ -1247,6 +1315,8 @@ void Congruencia_Selected(nombre){
           }
           if (flag){
             Congruence = true;
+            //JavaScript function to turn on the slider (autoClickSlider.js)
+            autoClickCongruence_ON();
             append(ListaSeleccionados_Conguentres_I,nodosIzquierdos[i]);
             append(ListaSeleccionados_Conguentres_D,nodosDerechos[j]);
             cantidadCongurentes += 1;
@@ -1307,7 +1377,7 @@ void CalcularPosicionesLineas(int pos){
   getNivel(nodosTenues[pos]);
   int nodoNivel = contadorNivel;
   int y1 = 0;
-  int y2 = 25;
+  int y2 = 45;
   int limit = 0;
   for (int x = 0; x < pos; x++){
     y2+=20;
