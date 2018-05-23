@@ -168,8 +168,23 @@ void draw() {
     }
     textSize(40);
     fill(0);
-    text(archivo1,-400,1000);
+   
+   /* text(archivo1,-400,1000);
     text(archivo2,1400,-1000);
+    */
+
+    text(archivo1,-120,-80);
+
+    textAlign(CENTER, CENTER);
+    int largo_nombre = archivo2.length;
+    int y_largo = -20;
+    while(largo_nombre >= 0){
+      //println(nombre[largo]);
+      y_largo = y_largo-40;
+      largo_nombre = largo_nombre -1;
+      text(archivo2[largo_nombre],400,y_largo);
+    }
+    
     maxWidth = max(widths);
 
     //PROCEDIMIENTO PARA PINTAR LAS LINEAS

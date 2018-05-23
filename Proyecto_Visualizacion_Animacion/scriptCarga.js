@@ -286,6 +286,7 @@ function Clear(){
 var vel = 0;
 function IniciarAnimacion(){
     if (iniciadoProceso == false){
+        console.log("Entra");
         var processingInstance;
         processingInstance = Processing.getInstanceById('CANVAS');
         processingInstance.beginAnimation();
@@ -313,6 +314,16 @@ function IniciarAnimacion(){
     } 
 
     Estadisticas(); 
+}
+
+function resetPlayButtom(){
+    document.getElementById('Comenzar').style.backgroundImage = "url('play.png')";
+    valueSlider = 0;
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
+    processingInstance.setValueSlider(valueSlider);
+    iniciado = false;
+    iniciadoProceso = false;
 }
 
 function showVal(x){

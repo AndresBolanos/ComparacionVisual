@@ -134,6 +134,7 @@ void setValueSlider(int valueSlider){
 void beginAnimation(){
  // inicio = true;
   if (merges_click || splits_click || renames_click || moves_click || exclusions_click || conguencyG || congruency_click || splitsG || mergersG || movesG || renamesG || exclusionsG || newsG){
+    setup();
     animar = true;
     inicio = true;
     terminado = false;
@@ -228,7 +229,7 @@ void draw() {
   text(archivo1,300,-10);
   text(archivo2,900,-10);
   if (one_by_one){
-    if (animar){
+    if (animar) {
         if (inicio){
             inicio = false;
             congruency = true;
@@ -440,6 +441,8 @@ void draw() {
                       exclusions = false;
                       exclusions_click = false;
                       terminado = true;
+                      //cAMBIA LA IMAGEN DEL BOTON DE PLAY POR EL SIMBOLO DE PLAY
+                      resetPlayButtom();
                       break;
                     }
                   }
@@ -450,6 +453,8 @@ void draw() {
          else{
            exclusions = false;
            terminado = true;
+           //cAMBIA LA IMAGEN DEL BOTON DE PLAY POR EL SIMBOLO DE PLAY
+           resetPlayButtom();
          }
         }
         if (splits ||  (splits_click && splits)){
@@ -569,7 +574,6 @@ void draw() {
           }
         }
     }
-    
   }
   else{
     if (animar){
@@ -752,6 +756,8 @@ void draw() {
                       exclusions = false;
                       exclusions_click = false;
                       terminado = true;
+                      //cAMBIA LA IMAGEN DEL BOTON DE PLAY POR EL SIMBOLO DE PLAY
+                      resetPlayButtom();
                       break;
                     }
                   }
@@ -763,6 +769,8 @@ void draw() {
            exclusions = false;
            exclusions_click = false;
            terminado = true;
+           //cAMBIA LA IMAGEN DEL BOTON DE PLAY POR EL SIMBOLO DE PLAY
+           resetPlayButtom();
          }
         }
         if (splits || (splits_click && splits)){
@@ -1276,7 +1284,7 @@ void pintarNodos(flag){
      for (int i = 0; i < nodosDerechos.length; i++){
       textSize(14); 
       fill(124,122,122);
-      if (mergers || merges_Second || merges_click_auxiliary){
+      if (mergers || merges_Second || merges_click || merges_click_auxiliary){
         if (mergersG || merges_click){
           for (int m = 0; m < Listamergers.length; m++){
             if (one_by_one){
@@ -1310,12 +1318,12 @@ void pintarNodos(flag){
         else{
           for (int m = 0; m < ListaMoves.length; m++){
             if (one_by_one){
-              if (ListaMoves[m].name == nodosDerechos[i].name && m < posicionMoves){ 
+              if (ListaMoves[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionMoves){ 
                 fill(10,228,237);
                }
             }
             else{
-              if (ListaMoves[m].name == nodosDerechos[i].name){ 
+              if (ListaMoves[m].nodoDerecho.name == nodosDerechos[i].name){ 
                 fill(10,228,237);
                }
             }

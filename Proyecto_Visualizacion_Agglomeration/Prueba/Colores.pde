@@ -100,6 +100,7 @@ void draw(){
       CalcularPosicionesLineas(i);
     }
   }  
+  Paleta_Colores();
 }
 
 void keyPressed() {
@@ -468,6 +469,56 @@ void createAgglomeration(leftStructure,rightStructure){
       }
     }     
   } 
+}
+
+void Paleta_Colores(){
+  textSize(12)
+  //Color Congruence left
+  fill(14, 80, 217);
+  ellipse(715, 50, 15, 15);
+  //Color Congruence right
+  fill(13, 34, 201);
+  ellipse(835, 50, 15, 15);
+   //Color Splits left
+  fill(181, 9, 95);
+  ellipse(835, 70, 15, 15);
+  //Color Splits right
+  fill(255, 13, 255);
+  ellipse(715, 70, 15, 15);
+   //Color Merges left
+  fill(255, 78, 0);
+  ellipse(715, 90, 15, 15);
+  //Color Merges right
+  fill(255, 31, 0);
+  ellipse(835, 90, 15, 15);
+  //Color Moves left
+  fill(11, 255, 255);
+  ellipse(715, 110, 15, 15);
+  //Color Moves right
+  fill(7, 194, 184);
+  ellipse(835, 110, 15, 15);
+   //Color Renames left
+  fill(91, 255, 142);
+  ellipse(715, 130, 15, 15);
+  //Color Renames right
+  fill(66, 184, 102);
+  ellipse(835, 130, 15, 15);
+  //Color Exclusiones 
+  fill(223, 1, 1);
+  ellipse(715, 150, 15, 15);
+  //Color News 
+  fill(7, 255, 0);
+  ellipse(715, 170, 15, 15);
+
+  fill(0);
+  text(" is congruent with ", 730, 52);
+  text("split into", 750, 72);
+  text("merged into", 745, 92);
+  text("was moved to", 740, 112);
+  text("was renamed to", 740, 132);
+  text("excluded", 750, 152);
+  text("new", 760, 172);
+  text("Legend", 755, 22);
 }
 
 //Verify if exist an element in a String array
