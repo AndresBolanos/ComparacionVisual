@@ -310,7 +310,7 @@ void draw() {
           fill(255, 145, 0);
         }
       } 
-    
+      textAlign(LEFT);
       text(nodosIzquierdos[pos].name,nodosIzquierdos[pos].x-60,(nodosIzquierdos[pos].y*2.5)-50);
       fill(166, 166, 166);
       if (pos > 1){
