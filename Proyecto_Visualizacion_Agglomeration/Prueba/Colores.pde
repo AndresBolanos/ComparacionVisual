@@ -499,10 +499,10 @@ void Paleta_Colores(){
   fill(5, 143, 135);
   ellipse(770, 110, 15, 15);
    //Color Renames left
-  fill(91, 255, 142);
+  fill(234, 170, 165);
   ellipse(650, 130, 15, 15);
   //Color Renames right
-  fill(66, 184, 102);
+  fill(255, 139, 148);
   ellipse(770, 130, 15, 15);
   //Color Exclusiones 
   fill(208, 1, 1);

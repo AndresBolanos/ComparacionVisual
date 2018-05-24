@@ -149,6 +149,8 @@ void StopAnimation(){
 
 //Set one by one variable, called from Javascript (ScriptCarga.js)
 void setValueOneByOne(boolean valor){
+  //Setea el valo booleano
+  valor = false;
   one_by_one = valor;
 }
 
@@ -184,7 +186,6 @@ void setup(){
   posicionRename = 0;
   posicionMerges = 0;
   posicionSplits = 0;
-  one_by_one = false;
   mergers = false;
   moves = false;
   renames = false;
@@ -1035,7 +1036,7 @@ void pintarNodos(flag){
                     for (int s = 0; s < nodos.length; s++){
                       if (nodosIzquierdos[i].name == nodos[s]){
                         textSize(16); 
-                        fill(255, 145, 0);
+                        fill(255, 166, 86);
                       }
                     }
                 }
@@ -1043,7 +1044,7 @@ void pintarNodos(flag){
                    String [] nodos = Listamergers[m].nodosMergeIzquierdos;
                     for (int s = 0; s < nodos.length; s++){
                       if (nodosIzquierdos[i].name == nodos[s]){
-                        fill(255, 145, 0);
+                        fill(255, 166, 86);
                       }
                     }
                 }
@@ -1053,7 +1054,7 @@ void pintarNodos(flag){
                 for (int s = 0; s < nodos.length; s++){
                   if (nodosIzquierdos[i].name == nodos[s]){
                     textSize(16); 
-                    fill(255, 145, 0);
+                    fill(255, 166, 86);
                   }
                 }
               }
@@ -1066,16 +1067,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name && m == posicionMoves){
                   textSize(16); 
-                  fill(10,228,237);
+                  fill(9, 212, 212);
               }
               else if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name){
-                fill(10,228,237);
+                fill(9, 212, 212);
               }
             }
             else{
               if (ListaSeleccionados_Moves_I[m].name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(10,228,237);
+                fill(9, 212, 212);
               }
             }
           }
@@ -1085,16 +1086,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionMoves){
                   textSize(16); 
-                  fill(10,228,237);
+                  fill(9, 212, 212);
               }
               else if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                fill(10,228,237);
+                fill(9, 212, 212);
               }
             }
             else{
               if (ListaMoves[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(10,228,237);
+                fill(9, 212, 212);
               }
             }
           }
@@ -1107,16 +1108,16 @@ void pintarNodos(flag){
            if (one_by_one){
               if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name && m == posicionRename){
                 textSize(16); 
-                fill(91,255,142);
+                fill(234, 170, 165);
                }
                else if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name){
-                fill(91,255,142);
+                fill(234, 170, 165);
               }
            }
            else{
             if (ListaSeleccionados_Rename_I[m].name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(91,255,142);
+                fill(234, 170, 165);
                }
            }
          }
@@ -1126,16 +1127,16 @@ void pintarNodos(flag){
            if (one_by_one){
               if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionRename){
                 textSize(16); 
-                fill(91,255,142);
+                fill(234, 170, 165);
                }
                else if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
-                fill(91,255,142);
+                fill(234, 170, 165);
               }
            }
            else{
             if (ListaRenames[m].nodoIzquierdo.name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(91,255,142);
+                fill(234, 170, 165);
                }
            }
          }
@@ -1147,16 +1148,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name && m == posicionExclusiones){
                 textSize(16); 
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
               else if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name){
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
             }
             else{
               if (ListaSeleccionados_Exclusiones[m].name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
             }
           }
@@ -1166,16 +1167,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name && m == posicionExclusiones){
                 textSize(16); 
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
               else if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
             }
             else{
               if (ListaExcluidos[m].nombre == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(223,1,1);
+                fill(208, 1, 1);
               }
             }
           }
@@ -1188,16 +1189,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
                   textSize(16); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
               }
               else if(ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name){ 
-                fill(23, 18, 196);
+                fill(14,80,217);
               }
             }
             else{
               if (ListaSeleccionados_Conguentres_D[m].name == nodosIzquierdos[i].name){
                   textSize(16); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
                 }
             }
           }
@@ -1207,16 +1208,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaCongruency1[m].name == nodosIzquierdos[i].name && posicionCongruentes == m){
                   textSize(16); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
               }
               else if(ListaCongruency1[m].name == nodosIzquierdos[i].name){ 
-                fill(23, 18, 196);
+                fill(14,80,217);
               }
             }
             else{
               if (ListaCongruency1[m].name == nodosIzquierdos[i].name){
                   textSize(16); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
                 }
             }
           }
@@ -1228,16 +1229,16 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name && m == posicionSplits){
                 textSize(16); 
-                fill(255,0,191);
+                fill(255,13,255);
                }
                else if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
-                fill(255,0,191);
+                fill(255,13,255);
                }
             }
             else{
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
                 textSize(16); 
-                fill(255,0,191);
+                fill(255,13,255);
                }
             }
            }
@@ -1247,13 +1248,13 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (ListaSplitsA[m].name == nodosIzquierdos[i].name){
              textSize(16); 
-             fill(255,0,191);
+             fill(255,13,255);
           }
         }
         for (int m = 0; m < ListaSplits.length; m++){
             if (one_by_one){
               if (ListaSplits[m].NodoIzquierdo.name == nodosIzquierdos[i].name){
-                fill(255,0,191);
+                fill(255,13,255);
               }
             }
           }
@@ -1289,12 +1290,12 @@ void pintarNodos(flag){
           for (int m = 0; m < Listamergers.length; m++){
             if (one_by_one){
               if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name && m < posicionMerges){ 
-                fill(255, 145, 0);
+                fill(255, 166, 86);
               }
             }
             else{
               if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name){ 
-                fill(255, 145, 0);
+                fill(255, 166, 86);
               }
             }
           }
@@ -1305,12 +1306,12 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaSeleccionados_Moves_D.length; m++){
             if (one_by_one){
               if (ListaSeleccionados_Moves_D[m].name == nodosDerechos[i].name && m < posicionMoves){ 
-                fill(10,228,237);
+                fill(9, 212, 212);
                }
             }
             else{
               if (ListaSeleccionados_Moves_D[m].name == nodosDerechos[i].name){ 
-                fill(10,228,237);
+                fill(9, 212, 212);
                }
             }
           }
@@ -1319,12 +1320,12 @@ void pintarNodos(flag){
           for (int m = 0; m < ListaMoves.length; m++){
             if (one_by_one){
               if (ListaMoves[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionMoves){ 
-                fill(10,228,237);
+                fill(9, 212, 212);
                }
             }
             else{
               if (ListaMoves[m].nodoDerecho.name == nodosDerechos[i].name){ 
-                fill(10,228,237);
+                fill(9, 212, 212);
                }
             }
            }
@@ -1335,12 +1336,12 @@ void pintarNodos(flag){
            for (int m = 0; m < ListaSeleccionados_Rename_D.length; m++){
             if (one_by_one){
                 if (ListaSeleccionados_Rename_D[m].name == nodosDerechos[i].name && m < posicionRename){
-                  fill(91,255,142);
+                  fill(234, 170, 165);
                 }
               }
               else{
                  if (ListaSeleccionados_Rename_D[m].name == nodosDerechos[i].name){
-                  fill(91,255,142);
+                  fill(234, 170, 165);
                 }
               }
            }
@@ -1349,12 +1350,12 @@ void pintarNodos(flag){
            for (int m = 0; m < ListaRenames.length; m++){
             if (one_by_one){
                 if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name && m < posicionRename){
-                  fill(91,255,142);
+                  fill(234, 170, 165);
                 }
               }
               else{
                  if (ListaRenames[m].nodoDerecho.name == nodosDerechos[i].name){
-                  fill(91,255,142);
+                  fill(234, 170, 165);
                 }
               }
            }
@@ -1364,12 +1365,12 @@ void pintarNodos(flag){
          for (int m = 0; m < ListaNuevos.length; m++){
           if (one_by_one){
             if (ListaNuevos[m].nodoDerecha.name == nodosDerechos[i].name && m < posicionNuevos){
-              fill(8,138,0);
+              fill(7, 101, 0);
             }
           }
           else{
             if (ListaNuevos[m].nodoDerecha.name == nodosDerechos[i].name){
-              fill(8,138,0);
+              fill(7, 101, 0);
             }
           } 
         }
@@ -1380,13 +1381,13 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaSeleccionados_Conguentres_D[m].name == nodosDerechos[i].name && m < posicionCongruentes){
                   //textSize(20); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
                 }
             }
             else{
               if (ListaSeleccionados_Conguentres_D[m].name == nodosDerechos[i].name){
                // textSize(20); 
-                fill(23, 18, 196);
+                fill(14,80,217);
               }
             }
           }
@@ -1396,13 +1397,13 @@ void pintarNodos(flag){
             if (one_by_one){
               if (ListaCongruency1[m].name == nodosDerechos[i].name && m < posicionCongruentes){
                   //textSize(20); 
-                  fill(23, 18, 196);
+                  fill(14,80,217);
                 }
             }
             else{
               if (ListaCongruency1[m].name == nodosDerechos[i].name){
                // textSize(20); 
-                fill(23, 18, 196);
+                fill(14,80,217);
               }
             }
           }
@@ -1416,7 +1417,7 @@ void pintarNodos(flag){
                 Node [] lista = ListaSplits[m].NodosDerechos;
                 for (int s = 0; s < lista.length; s++){
                   if (lista[s].name == nodosDerechos[i].name){
-                     fill(255,0,191);
+                     fill(255,13,255);
                   }
                 }
               }
@@ -1428,12 +1429,12 @@ void pintarNodos(flag){
         for (int m = 0; m < ListaSplitsA.length; m++){
           if (one_by_one){
              if (ListaSplitsA[m].name == nodosDerechos[i].name){
-                fill(255,0,191);
+                fill(255,13,255);
              }
           }
           else{
              if (ListaSplitsA[m].name == nodosDerechos[i].name){
-              fill(255,0,191);
+              fill(255,13,255);
              }
           }
         }
@@ -1443,7 +1444,7 @@ void pintarNodos(flag){
                 Node [] lista = ListaSplits[m].NodosDerechos;
                 for (int s = 0; s < lista.length; s++){
                   if (lista[s].name == nodosDerechos[i].name){
-                     fill(255,0,191);
+                     fill(255,13,255);
                   }
                 }
               }

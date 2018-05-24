@@ -2473,7 +2473,7 @@ select[multiple].input-lg,textarea.input-lg {
  line-height:30px
 }
 .has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline,.has-success.checkbox label,.has-success.checkbox-inline label,.has-success.radio label,.has-success.radio-inline label {
- color:#3c763d
+ color:#000000
 }
 .has-success .form-control {
  border-color:#3c763d;

@@ -267,14 +267,9 @@ function loadFiles (file1, file2){
                             var arregloizuierda = processingInstance.retornarIzquierdosConguencia();
                             for (var i = 0; i < arregloizuierda.length; i++){
                                 if (arregloizuierda[i].nodo.name == d.name){
-                                    if (arregloizuierda[i].color == "Azul"){
-                                        document.getElementById(d.name+"1").style.color ="#1712C4";
-                                        document.getElementById(d.name+"2").style.color ="#1712C4";
-                                    }
-                                    else{
-                                        document.getElementById(d.name+"1").style.color ="#00E3FF";
-                                        document.getElementById(d.name+"2").style.color ="#00E3FF";
-                                    }
+                                    document.getElementById(d.name+"1").style.color ="#0E50D9";
+                                    document.getElementById(d.name+"2").style.color ="#0E50D9";
+
                                     document.getElementById(d.name+"1").style.fontSize = "large";
                                     document.getElementById(d.name+"2").style.fontSize = "large";
                                 }
@@ -313,7 +308,7 @@ function loadFiles (file1, file2){
                             var arregloizuierda = processingInstance.returnRename_MovesLeft();
                             for (var i = 0; i < arregloizuierda.length; i++){
                                 if (arregloizuierda[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#0AE4ED";
+                                    document.getElementById(d.name+"1").style.color ="#09D4D4";
                                     document.getElementById(d.name+"1").style.fontSize = "large";
                                 }
                             }
@@ -322,7 +317,7 @@ function loadFiles (file1, file2){
                                 var sinonimos = arregloderecha[i].Synonym;
                                 for (var s = 0; s < sinonimos.length; s++){
                                     if (sinonimos[s] == d.name){
-                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#0AE4ED";
+                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#09D4D4";
                                         document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
                                     }
                                 }
@@ -333,7 +328,7 @@ function loadFiles (file1, file2){
                             var arregloizuierda = processingInstance.returnRename_MovesLeft();
                             for (var i = 0; i < arregloizuierda.length; i++){
                                 if (arregloizuierda[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#5BFF8E";
+                                    document.getElementById(d.name+"1").style.color ="#EAAAA5";
                                     document.getElementById(d.name+"1").style.fontSize = "large";
                                 }
                             }
@@ -342,7 +337,7 @@ function loadFiles (file1, file2){
                                 var sinonimos = arregloderecha[i].Synonym;
                                 for (var s = 0; s < sinonimos.length; s++){
                                     if (sinonimos[s] == d.name){
-                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#5BFF8E";
+                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#EAAAA5";
                                         document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
                                     }
                                 }
@@ -352,7 +347,7 @@ function loadFiles (file1, file2){
                             exclusiones();
                             for (var i = 0; i < arregloEclusiones.length; i++){
                                 if (arregloEclusiones[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#DF0101";
+                                    document.getElementById(d.name+"1").style.color ="#D00101";
                                     document.getElementById(d.name+"1").style.fontSize = "large";
                                 }
                             } 
@@ -373,10 +368,10 @@ function loadFiles (file1, file2){
                                 }
                             }
                             if (document.getElementById(nodoDerecho+"2") != null){
-                                document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
+                                document.getElementById(nodoDerecho+"2").style.color ="#FFA656";
                                 document.getElementById(nodoDerecho+"2").style.fontSize = "large";
                                 for (var i = 0; i < nodosIzquierdos.length; i++){
-                                    document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
+                                    document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FFA656";
                                     document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
                                 }
                             }
@@ -409,8 +404,9 @@ function loadFiles (file1, file2){
                         var izquierda_M = processingInstance.returnRename_MovesLeft();
                         var derecha_M = processingInstance.returnRename_MovesRight();
                         var izquierda_C = processingInstance.retornarIzquierdosConguencia();
-                        processingInstance.drawMoves_Auxiliar(true,91,255,142,Pintar_Nodos,1,d.name);
+                        processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
                         var izquierda_R = processingInstance.returnRename_MovesLeft();
+                        var derecha_R = processingInstance.returnRename_MovesRight();
                         var izquierda_S = processingInstance.returnSplitsLeft();
                         var derecho_S = processingInstance.returnSplitsRight();
                         var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
@@ -419,15 +415,15 @@ function loadFiles (file1, file2){
                             for (var left = 0; left < izquierda_C.length; left++){
                                  document.getElementById("Congruencia").checked = true;
                                 if (izquierda_C[left].nodo.name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#1712C4";
+                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#0E50D9";
                                 }
                             }
                             for (var left = 0; left < izquierda_M.length; left++){
                                 document.getElementById("Moves").checked = true;
                                 if (izquierda_M[left].name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#0AE4ED";
+                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#09D4D4";
                                      for (var right = 0; right < derecha_M.length; right++){
-                                        document.getElementById(derecha_M[right].name+"2").style.color ="#0AE4ED";
+                                        document.getElementById(derecha_M[right].name+"2").style.color ="#09D4D4";
                                         document.getElementById(derecha_M[right].name+"2").style.fontSize = "large";
                                     }
                                 }
@@ -435,13 +431,17 @@ function loadFiles (file1, file2){
                             for (var left = 0; left < izquierda_R.length; left++){
                                 document.getElementById("Renames").checked = true;
                                 if (izquierda_R[left].name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#5BFF8E";
+                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#EAAAA5";
+                                     for (var right = 0; right < derecha_R.length; right++){
+                                        document.getElementById(derecha_R[right].name+"2").style.color ="#EAAAA5";
+                                        document.getElementById(derecha_R[right].name+"2").style.fontSize = "large";
+                                    }
                                 }
                             }
                             for (var left = 0; left < arregloEclusiones.length; left++){
                                 if (arregloEclusiones[left].name == Pintar_Nodos[i]){
                                     document.getElementById("Exclusions").checked = true;
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#DF0101";
+                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#D00101";
                                 }
                             }
                             for (var left = 0; left < izquierda_S.length; left++){
@@ -456,10 +456,10 @@ function loadFiles (file1, file2){
                             }
                             for (var left = 0; left < izquierdo_Merge.length; left++){
                                 document.getElementById("Mergers").checked = true;
-                                document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FF9100";
+                                document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
                                 document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
                                 for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
-                                    document.getElementById(derecho_Merge[left].name +"2").style.color ="#FF9100";
+                                    document.getElementById(derecho_Merge[left].name +"2").style.color ="#FFA656";
                                     document.getElementById(derecho_Merge[left].name +"2").style.fontSize = "large";
                                 }
                             }
@@ -585,13 +585,13 @@ function loadFiles (file1, file2){
                                 for (var i = 0; i < arregloderecha.length; i++){
                                     if (arregloderecha[i].name == d.name){
                                         congruente = arregloderecha[i].Synonym;
-                                        document.getElementById(d.name+"2").style.color ="#5BFF8E";
+                                        document.getElementById(d.name+"2").style.color ="#EAAAA5";
                                         document.getElementById(d.name+"2").style.fontSize = "large";
                                     }
                                 }
                                 if (congruente.length > 0){
                                     for (var s = 0; s < congruente.length; s++){
-                                        document.getElementById(congruente[s]+"1").style.color ="#5BFF8E";
+                                        document.getElementById(congruente[s]+"1").style.color ="#EAAAA5";
                                         document.getElementById(congruente[s]+"1").style.fontSize = "large";
                                     }
                                 }    
@@ -600,7 +600,7 @@ function loadFiles (file1, file2){
                                 pintarNuevos();
                                 for (var i = 0; i < arregloNuevos.length; i++){
                                     if (arregloNuevos[i].name == d.name){
-                                        document.getElementById(d.name+"2").style.color ="#088A00";
+                                        document.getElementById(d.name+"2").style.color ="#076501";
                                         document.getElementById(d.name+"2").style.fontSize = "large";
                                     }
                                 }
@@ -613,14 +613,14 @@ function loadFiles (file1, file2){
                                 for (var i = 0; i < arregloderecha.length; i++){
                                     if (arregloderecha[i].name == d.name){
                                         congruente = arregloderecha[i].Synonym;
-                                        document.getElementById(d.name+"2").style.color ="#0AE4ED";
+                                        document.getElementById(d.name+"2").style.color ="#09D4D4";
                                         document.getElementById(d.name+"2").style.fontSize = "large";
                                     }
                                 }
                                 if (congruente.length > 0){
                                     for (var s = 0; s < congruente.length; s++){
                                         try{
-                                            document.getElementById(congruente[s]+"1").style.color ="#0AE4ED";
+                                            document.getElementById(congruente[s]+"1").style.color ="#09D4D4";
                                             document.getElementById(congruente[s]+"1").style.fontSize = "large";
                                         }
                                         catch(e){
@@ -633,14 +633,9 @@ function loadFiles (file1, file2){
                                 var arregloderecha = processingInstance.retornarDerechosConguencia();
                                 for (var i = 0; i < arregloderecha.length; i++){
                                     if (arregloderecha[i].nodo.name == d.name){
-                                        if (arregloderecha[i].color == "Azul"){
-                                            document.getElementById(d.name+"1").style.color ="#1712C4";
-                                            document.getElementById(d.name+"2").style.color ="#1712C4";
-                                        }
-                                        else{
-                                            document.getElementById(d.name+"1").style.color ="#00E3FF";
-                                            document.getElementById(d.name+"2").style.color ="#00E3FF";
-                                        }
+                                        document.getElementById(d.name+"1").style.color ="#0E50D9";
+                                        document.getElementById(d.name+"2").style.color ="#0E50D9";
+        
                                         document.getElementById(d.name+"1").style.fontSize = "large";
                                         document.getElementById(d.name+"2").style.fontSize = "large";
                                     }
@@ -658,10 +653,10 @@ function loadFiles (file1, file2){
                                     }
                                 }
                                 if (document.getElementById(nodoDerecho+"2") != null){
-                                    document.getElementById(nodoDerecho+"2").style.color ="#FF9100";
+                                    document.getElementById(nodoDerecho+"2").style.color ="#FFA656";
                                     document.getElementById(nodoDerecho+"2").style.fontSize = "large";
                                     for (var i = 0; i < nodosIzquierdos.length; i++){
-                                        document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FF9100";
+                                        document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FFA656";
                                         document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
                                     }
                                 }
@@ -716,8 +711,9 @@ function loadFiles (file1, file2){
                             var derecha_M = processingInstance.returnRename_MovesRight();
                             var izquierda_M = processingInstance.returnRename_MovesLeft();
                             var izquierda_C = processingInstance.retornarDerechosConguencia();
-                            processingInstance.drawMoves_Auxiliar(true,91,255,142,Pintar_Nodos,1,d.name);
-                            var izquierda_R = processingInstance.returnRename_MovesRight();
+                            processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
+                            var derecha_R = processingInstance.returnRename_MovesRight();
+                            var izquierda_R = processingInstance.returnRename_MovesLeft();
                             var derecha_S = processingInstance.returnSplitsRight();
                             var izquierda_S = processingInstance.returnSplitsLeft();
                             var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
@@ -726,29 +722,33 @@ function loadFiles (file1, file2){
                                 for (var right = 0; right < izquierda_C.length; right++){
                                      document.getElementById("Congruencia").checked = true;
                                     if (izquierda_C[right].nodo.name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#1712C4";
+                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#0E50D9";
                                     }
                                 }
                                 for (var right = 0; right < derecha_M.length; right++){
                                     document.getElementById("Moves").checked = true;
                                     if (derecha_M[right].name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#0AE4ED";
+                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#09D4D4";
                                         for (var left = 0; left < derecha_M.length; left++){
-                                            document.getElementById(izquierda_M[left].name+"1").style.color ="#0AE4ED";
+                                            document.getElementById(izquierda_M[left].name+"1").style.color ="#09D4D4";
                                             document.getElementById(izquierda_M[left].name+"1").style.fontSize = "large";
                                         }
                                     }
                                 }
-                                for (var right = 0; right < izquierda_R.length; right++){
+                                for (var right = 0; right < derecha_R.length; right++){
                                     document.getElementById("Renames").checked = true;
-                                    if (izquierda_R[right].name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#5BFF8E";
+                                    if (derecha_R[right].name == Pintar_Nodos[i]){
+                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#EAAAA5";
+                                        for (var left = 0; left < izquierda_R.length; left++){
+                                            document.getElementById(izquierda_R[left].name+"1").style.color ="#EAAAA5";
+                                            document.getElementById(izquierda_R[left].name+"1").style.fontSize = "large";
+                                        }
                                     }
                                 }
                                 for (var right = 0; right < arregloNuevos.length; right++){
                                     if (arregloNuevos[right].name == Pintar_Nodos[i]){
                                         document.getElementById("News").checked = true;
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#088A00";
+                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#076501";
                                     }
                                 }
                                 for (var right = 0; right < derecha_S.length; right++){
@@ -762,10 +762,10 @@ function loadFiles (file1, file2){
                                 }
                                  for (var left = 0; left < izquierdo_Merge.length; left++){
                                         document.getElementById("Mergers").checked = true;
-                                        document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FF9100";
+                                        document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
                                         document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
                                         for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
-                                            document.getElementById(derecho_Merge[left].name +"2").style.color ="#FF9100";
+                                            document.getElementById(derecho_Merge[left].name +"2").style.color ="#FFA656";
                                             document.getElementById(derecho_Merge[left].name +"2").style.fontSize = "large";
                                         }
                                     }

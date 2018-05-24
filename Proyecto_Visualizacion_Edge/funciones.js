@@ -21,7 +21,7 @@ function CargarLineasIzquierdas(){
             for (var j = 0; j < izquierda.length; j++){
                 if (nodesLeft[i].name == izquierda[j].nodo.name){
                     if (izquierda[j].color == "Azul"){
-                        document.getElementById(nodesLeft[i].name+"1").style.color = "#1712C4";
+                        document.getElementById(nodesLeft[i].name+"1").style.color = "#0E50D9";
                     }
                 }
             }
@@ -30,7 +30,7 @@ function CargarLineasIzquierdas(){
             for (var j = 0; j < derecha.length; j++){
                 if (nodesRight[i].name == derecha[j].nodo.name){
                     if (derecha[j].color == "Azul"){
-                        document.getElementById(nodesRight[i].name+"2").style.color = "#1712C4";
+                        document.getElementById(nodesRight[i].name+"2").style.color = "#0E50D9";
                          cantidadCongruentes += 1;
                     }
                 }
@@ -149,7 +149,7 @@ function pintarNuevos(){
                 if (sinonimos.length == 0){
                     cantidadNuevos = cantidadNuevos+1;// it is a variable to save the amount of new nodes that exist
                     arregloNuevos.push(nodesRight[nodeR]);
-                    document.getElementById(nodesRight[nodeR].name+"2").style.color ="#088A00";
+                    document.getElementById(nodesRight[nodeR].name+"2").style.color ="#076501";
                 }
                 else{ //enter if exist Synonyms
                     var flag = false;
@@ -165,7 +165,7 @@ function pintarNuevos(){
                     if (flag == false){
                         cantidadNuevos = cantidadNuevos+1;//variable to save de amount of new nodes that exist
                         arregloNuevos.push(nodesRight[nodeR]);
-                        document.getElementById(nodesRight[nodeR].name+"2").style.color ="#088A00";
+                        document.getElementById(nodesRight[nodeR].name+"2").style.color ="#076501";
                     }
                 }
                 
@@ -249,10 +249,10 @@ function merge(){
         cantidadMergers = processingInstance.returnCantidadMergers();
         var derechos = processingInstance.returnDerechosMerge();
         for (var i = 0; i < izquierdos.length;i++){
-            document.getElementById(izquierdos[i].name+"1").style.color ="#FF9100";
+            document.getElementById(izquierdos[i].name+"1").style.color ="#FFA656";
         }
         for (var i = 0; i < derechos.length;i++){
-            document.getElementById(derechos[i].name+"2").style.color ="#FF9100";
+            document.getElementById(derechos[i].name+"2").style.color ="#FFA656";
         }
         document.getElementById("MergesStatsValue").innerHTML = cantidadMergers;
          window.sessionStorage.setItem("Merges_E", true);
@@ -286,13 +286,13 @@ function Move(){
     cantidadMoves = 0;
     moves = true;
     if (document.getElementById("Moves").checked){
-        processingInstance.drawMoves(false,10,228,237,"");
+        processingInstance.drawMoves(false,9,212,212,"");
         var izquierdos = processingInstance.returnRename_MovesLeft();
         var derechos = processingInstance.returnRename_MovesRight();
         cantidadMoves = processingInstance.returnMoves();
         for (var i = 0; i < izquierdos.length;i++){
-            document.getElementById(izquierdos[i].name+"1").style.color ="#0AE4ED";
-            document.getElementById(derechos[i].name+"2").style.color ="#0AE4ED";
+            document.getElementById(izquierdos[i].name+"1").style.color ="#09D4D4";
+            document.getElementById(derechos[i].name+"2").style.color ="#09D4D4";
         }
         document.getElementById("MovesStatsValue").innerHTML = cantidadMoves;
         window.sessionStorage.setItem("Moves_E", true);
@@ -327,13 +327,13 @@ function Rename(){
     renames = true;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (document.getElementById("Renames").checked){
-        processingInstance.drawMoves(true,91,255,142,"");
+        processingInstance.drawMoves(true,234, 170, 165,"");
         var izquierdos = processingInstance.returnRename_MovesLeft();
         var derechos = processingInstance.returnRename_MovesRight();
         cantidadRename = processingInstance.returnRenames();
         for (var i = 0; i < izquierdos.length;i++){
-            document.getElementById(izquierdos[i].name+"1").style.color ="#5BFF8E";
-            document.getElementById(derechos[i].name+"2").style.color ="#5BFF8E";
+            document.getElementById(izquierdos[i].name+"1").style.color ="#EAAAA5";
+            document.getElementById(derechos[i].name+"2").style.color ="#EAAAA5";
         }
         document.getElementById("RenamesStatsValue").innerHTML = cantidadRename;
         window.sessionStorage.setItem("Renames_E", true);
@@ -371,7 +371,7 @@ function exclusiones(){
             if (existeNombreDerecha(nodesLeft[node].name,nodesLeft[node].author,nodesLeft[node].record_scrutiny_date) == true){
                 cantidadEclusiones = cantidadEclusiones+1;
                 arregloEclusiones.push(nodesLeft[node]);
-                document.getElementById(nodesLeft[node].name+"1").style.color = "#DF0101";
+                document.getElementById(nodesLeft[node].name+"1").style.color = "#D00101";
             }
         }
         document.getElementById("ExclusionStatsValue").innerHTML = cantidadEclusiones;

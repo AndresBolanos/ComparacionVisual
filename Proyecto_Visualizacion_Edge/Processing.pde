@@ -24,7 +24,7 @@ void drawCongruency(String nombre,int grosor){
     Object [] derechos = nodesRight;
     CongruenciaDerechos = [];
     CongruenciaIzquierdos = [];
-    stroke(23, 18, 196);
+    stroke(14, 80, 217);
     noFill();
     curveTightness(-2);
     smooth();
@@ -38,7 +38,7 @@ void drawCongruency(String nombre,int grosor){
                 }
             }
     		if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true){
-                stroke(23, 18, 196);
+                stroke(14, 80, 217);
                 if (nombre == izquierdos[i].name){
                     strokeWeight(grosor);
                     int x1 = izquierdos[i].x+(textWidth(izquierdos[i].name)*1.6);
@@ -69,7 +69,7 @@ void drawCongruency_Auxiliar(String nombres,int grosor){
     Object [] derechos = nodesRight;
     CongruenciaDerechos = [];
     CongruenciaIzquierdos = [];
-    stroke(23, 18, 196);
+    stroke(14, 80, 217);
     noFill();
     curveTightness(-2);
     smooth();
@@ -83,7 +83,7 @@ void drawCongruency_Auxiliar(String nombres,int grosor){
                 }
             }
             if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true){
-                stroke(23, 18, 196);
+                stroke(14, 80, 217);
                 for (int k = 0; k < nombres.length; k++){
                     if (nombres[k] == izquierdos[i].name){
                         strokeWeight(0.5);

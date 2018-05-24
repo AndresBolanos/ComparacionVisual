@@ -22,7 +22,7 @@ void drawCongruency(){
     Object [] derechos = nodesRight;
     CongruenciaDerechos = [];
     CongruenciaIzquierdos = [];
-    stroke(23, 18, 196);
+    stroke(208, 1, 1);
     noFill();
     curveTightness(-2);
     strokeWeight(0);
@@ -67,7 +67,7 @@ void drawSplits(int grosor,string nombre){
     Object [] derechos = nodesRight;
     Object [] splitsL = [];
     Object [] splitsR = [];
-    stroke(255, 0, 191);
+    stroke(255,13,255);
     noFill();
     curveTightness(-2);
     smooth();
@@ -343,7 +343,7 @@ void merge(){
     Object [] derechos = nodesRight;
     String [] sinonimos = [];
     Object derecho;
-    stroke(255, 145, 0);
+    stroke(255, 166, 86);
     noFill();
     curveTightness(-2);
     strokeWeight(-1);

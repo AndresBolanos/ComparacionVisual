@@ -589,7 +589,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .sliderSplits {
-  background-color: #FF00BF;    
+  background-color: #FF0DFF;    
 }
 
 input:focus + .sliderSplits {
@@ -640,7 +640,7 @@ input:checked + .sliderSplits:before {
 }
 
 input:checked + .sliderMoves {
-  background-color: #0AE4ED;    
+  background-color: #09D4D4;    
 }
 
 input:focus + .sliderMoves {
@@ -691,7 +691,7 @@ input:checked + .sliderMoves:before {
 }
 
 input:checked + .sliderCongruent {
-  background-color: #1712C4;    
+  background-color: #0E50D9;    
 }
 
 input:focus + .sliderCongruent {
@@ -742,7 +742,7 @@ input:checked + .sliderCongruent:before {
 }
 
 input:checked + .sliderMerges {
-  background-color: #FF9100;    
+  background-color: #FFA656;    
 }
 
 input:focus + .sliderMerges {
@@ -793,7 +793,7 @@ input:checked + .sliderMerges:before {
 }
 
 input:checked + .sliderRename {
-  background-color: #5BFF8E;    
+  background-color: #EAAAA5;    
 }
 
 input:focus + .sliderRename {
@@ -844,7 +844,7 @@ input:checked + .sliderRename:before {
 }
 
 input:checked + .sliderNew {
-  background-color: #088A00;    
+  background-color: #076500;    
 }
 
 input:focus + .sliderNew {
@@ -895,7 +895,7 @@ input:checked + .sliderNew:before {
 }
 
 input:checked + .sliderExclusion {
-  background-color: #DF0101;    
+  background-color: #D00101;    
 }
 
 input:focus + .sliderExclusion {

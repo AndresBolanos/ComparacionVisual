@@ -403,17 +403,19 @@ function Estadisticas(){
 
 
 function setOneByOne(){
-    if (document.getElementById("OneByOne").checked = true){
+    if (document.getElementById("OneByOne").checked == true){
         onebyone = true;
         var processingInstance;
         processingInstance = Processing.getInstanceById('CANVAS');
         processingInstance.setValueOneByOne(true);
+        document.getElementById("OneByOne").checked = true;
     }
     else{
         onebyone = false;
         var processingInstance;
         processingInstance = Processing.getInstanceById('CANVAS');
         processingInstance.setValueOneByOne(false);
+        document.getElementById("OneByOne").checked = false;
     }
 }
 
