@@ -150,7 +150,6 @@ void StopAnimation(){
 //Set one by one variable, called from Javascript (ScriptCarga.js)
 void setValueOneByOne(boolean valor){
   //Setea el valo booleano
-  valor = false;
   one_by_one = valor;
 }
 

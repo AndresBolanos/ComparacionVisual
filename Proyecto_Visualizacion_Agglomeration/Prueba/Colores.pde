@@ -3,20 +3,25 @@ Node [] nodosIzquierdos;
 Node [] nodosDerechos;
 Object [] nodosTenues;
 
-int rightBaseR = 244;
+//Base color of he right taxonomy
+int rightBaseR = 244; 
 int rightBaseG = 164;
 int rightBaseB = 96;
 
+//Base colors of the left taxonomy
 int leftBaseR = 221;
 int leftBaseG = 196;
 int leftBaseB = 0;
 
+//X and Y positions to draw
 float scaleFactor = 1.0;
-float translateX = screen.width/2-200;
+float translateX = screen.width/2-200;  
 float translateY = 0.0;
 
+//Names of the files loades
 String archivo1 = "";
 String archivo2 = "";
+
 boolean Congruence = false;   //Flag activates the printing according to selected congruence node
 boolean moves = false;        //Flag activates the printing according to selected moves node
 boolean renames = false;      //Flag activates the printing according to selected rename node
@@ -25,25 +30,26 @@ boolean nuevos = false;       //Flag activates the printing according to selecte
 boolean splits = false;       //Flag activates the printing according to selected splits node
 boolean merges = false;
 
-Posiciones [] ListaPosiciones_I;  //Guarda las posiciones logicas de cada nodo de la izquierda
-Posiciones [] ListaPosiciones_D;  //Guarda las posiciones logicas de cada nodo de la izquierda
+Posiciones [] ListaPosiciones_I;          //Save the logic positiones of each left node
+Posiciones [] ListaPosiciones_D;          //Save the logic positiones of each right node
 String [] ListaConguentesPainted_I = [];
-Object [] ListaSeleccionados_Conguentres_I = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruencia y izquierdo
-Object [] ListaSeleccionados_Conguentres_D = []; //Almacena los nodos que se encuentran seleccionados en el momento de congruenciay derecho
-Object [] ListaSeleccionados_Moves_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de moves y izquierdo
-Object [] ListaSeleccionados_Moves_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de moves y derecho
-Object [] ListaSeleccionados_Rename_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de renames y izquierdo
-Object [] ListaSeleccionados_Rename_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de renames y derecho
-Object [] ListaSeleccionados_Exclusiones = [];//Almacena los nodos que se encuentran seleccionados en el momento de exclusiones
-Object [] ListaSeleccionados_Nuevos = [];//Almacena los nodos que se encuentran seleccionados en el momento de nuevos
-Object [] ListaSeleccionados_Splits_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de splits y izquierda
-Object [] ListaSeleccionados_Splits_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de splits y derecha
-Object [] ListaSeleccionados_Merges_I = [];//Almacena los nodos que se encuentran seleccionados en el momento de merges y izquierda
-Object [] ListaSeleccionados_Merges_D = [];//Almacena los nodos que se encuentran seleccionados en el momento de merges y derecha
+Object [] ListaSeleccionados_Conguentres_I = []; //Store the nodes that are selected as left congruence
+Object [] ListaSeleccionados_Conguentres_D = []; //Store the nodes that are selected as right congruence
+Object [] ListaSeleccionados_Moves_I = [];       //Store the nodes that are selected as left moves
+Object [] ListaSeleccionados_Moves_D = [];       //Store the nodes that are selected as right moves
+Object [] ListaSeleccionados_Rename_I = [];      //Store the nodes that are selected as left renames
+Object [] ListaSeleccionados_Rename_D = [];      //Store the nodes that are selected as right renames
+Object [] ListaSeleccionados_Exclusiones = [];   //Store the nodes that are selected as exclusionss
+Object [] ListaSeleccionados_Nuevos = [];        //Store the nodes that are selected as news
+Object [] ListaSeleccionados_Splits_I = [];      //Store the nodes that are selected as left splits
+Object [] ListaSeleccionados_Splits_D = [];      //Store the nodes that are selected as right splits
+Object [] ListaSeleccionados_Merges_I = [];      //Store the nodes that are selected as left merges
+Object [] ListaSeleccionados_Merges_D = [];      //Store the nodes that are selected as right merges
 
 boolean found = false;
 
 ////////////////////////////////Functions///////////////////////////////////
+//Set the names of the loaded files to the variables
 void setNames(name1,name2){
     archivo1 = name1;
     archivo2 = name2;
@@ -58,20 +64,26 @@ void setup(){
   nodosDerechos = new Node[derechos.length];   
   //agglomeration = new Node[izquierdos.length+derechos.length];  
   smooth();
+
   //Here load the nodes
   loadNodes(izquierdos,true);
   loadNodes(derechos,false);
   size (availableWidth,availableHeight+((nodesLeft.length+nodesRight.length)*15));
+
+  //Execute the algorithms 
   Splits();
   getMergers();
   Moves();
   Exclusiones();
   News()
   Congruencia(); 
+
   if (nodosIzquierdos.length > 0 && nodosDerechos.length > 0){ 
       ListaPosiciones_I = new ListaPosiciones_I[nodosIzquierdos.length-1]; 
       ListaPosiciones_D = new ListaPosiciones_D[nodosDerechos.length-1]; 
   }
+
+  //Set the flag to false, before the draw function
   Congruence = false;
   moves = false;
   renames = false;
@@ -81,6 +93,7 @@ void setup(){
   merges = false;
 }
 
+//This function is executed continuously
 void draw(){   
   myFont = createFont("Times New Roman", 14);
   textFont(myFont); 
@@ -95,6 +108,7 @@ void draw(){
   text(archivo2,450,300); 
   stroke(149,153,149);
   strokeWeight(-5);
+  //paint the identation lines node by node
   for (int i = 0; i < nodosTenues.length; i++){
     if (nodosTenues[i].children != undefined){
       CalcularPosicionesLineas(i);
@@ -103,6 +117,7 @@ void draw(){
   Paleta_Colores();
 }
 
+//On key pressed this function is executed and resize the dimensions
 void keyPressed() {
   if (key == 'r' ||  key == 'R') {
   scaleFactor = 1.0;
@@ -117,11 +132,13 @@ void keyPressed() {
   }
 }
 
+//On mouse dragged this function is executed and resize the dimensions
 void mouseDragged(MouseEvent e) {
   translateX += mouseX - pmouseX;
   translateY += mouseY - pmouseY;
 }
 
+//Set the color to each node of the new struture
 void cargarColores(){
   for(int nodeLeft=0;nodeLeft<nodosIzquierdos;nodeLeft++){    
     izquierdos[nodeLeft].R = nodosIzquierdos[nodeLeft].R;    
@@ -136,6 +153,7 @@ void cargarColores(){
   } 
 }
 
+//Create the logic array of all the agglomeration
 void createAgglomeration(leftStructure,rightStructure){  
   Object [] agglomeration = [];
 
@@ -471,6 +489,7 @@ void createAgglomeration(leftStructure,rightStructure){
   } 
 }
 
+//Draw the colors leyend on the page
 void Paleta_Colores(){
   textSize(12)
   //Color Congruence left
@@ -532,7 +551,8 @@ boolean existe_Elemento_Array(ele, arreglo){
   return false;
 }
 
-
+//On mouse click over all the pague this function is executed
+//Calculate the node that is selected and call the on click funcions of each task
 void mouseClicked() {
   ListaConguentesPainted_I = [];
   //Clean the variables that have the selected nodess
@@ -607,8 +627,8 @@ void Calcular_Nodo_Seleccionado(x, y){
   }
 }
 
-//Funcion para cargar los nodos al un arreglo de nodos
-//si flag es true entonces cargar los izquierdos si es false carga los derechos
+//Function to load the nodes to array of nodes
+//if the flag is true load the left nodes, else the right nodes
 void loadNodes(nodos,flag){
   int y = round((availableHeight-40)/nodos.length);
   for (int i = 0; i < nodos.length; i++){
@@ -635,7 +655,7 @@ void verificarSinonimos(arreglo,nombre){
     return false;
 }
 
-
+//Find all the splits
 int cantidadSplits = 0;
 void Splits(){
   Object [] splitsL = [];
@@ -679,6 +699,7 @@ void Splits(){
   }
 }
 
+//Find the splits of selected nodes and his tree
 void Splits_Selected(nombre,taxonomia){
   Object [] splitsL = [];
   Object [] splitsR = [];
@@ -758,7 +779,6 @@ int returnAmountSplits(){
 
 //////////////////////////////////////////////////////////////////////////
 //Function set color merges
-
 boolean existeNombre_Complejo(nombre,autor,date){
     Object [] izquierdos = nodosIzquierdos;
     for (int nodeL = 0; nodeL < izquierdos.length; nodeL++) {
@@ -777,6 +797,7 @@ int returnCantidadMergers(){
     return cantidadMergers;
 }
 
+//Fnd all the merges
 void getMergers(){
   cantidadMergers = 0;
   for (int nodeR = 0; nodeR < nodosDerechos.length; nodeR++){
@@ -859,7 +880,6 @@ void getMergers_Selected(nombre, taxonomia){
               }
 
             } 
-            
           }
           izquierdo = []; 
       } 
@@ -1147,9 +1167,9 @@ void Moves_Selected(bandera, nombre, taxonomia){
       Derechos = [];
     }
   }
+
 //////////////////////////////////////////////////////////////////////////
 //Set color exclusions
-
 boolean existeNombreComplejo(nodos,nombre,author,date){
      for (int nodeL = 0;nodeL<nodos.length;nodeL++){
         if (nodos[nodeL].name == nombre && nodos[nodeL].author == author && nodos[nodeL].record_scrutiny_date == date){
@@ -1179,6 +1199,7 @@ void Exclusiones(){
   }
 }
 
+//Find the exclusions nodes that are selected
 void Exclusiones_Selected(nombre){
   cantidadExclusiones = 0;
   for (int i = 0; i < nodosIzquierdos.length; i++){
@@ -1208,6 +1229,7 @@ int returnNuevos(){
   return cantidadNuevos;
 }
 
+//Check if a name and an author exist on the left taxonomy
 boolean existeNombre_ComplejoNuevos(nombre,autor){
     Object [] izquierdos = nodosIzquierdos;
     for (int nodeL = 0; nodeL < izquierdos.length; nodeL++) {
@@ -1219,6 +1241,7 @@ boolean existeNombre_ComplejoNuevos(nombre,autor){
     return true;
 }
 
+//Find all the new nodes
 void News(){
   cantidadNuevos = 0;
   for (int i = 0; i < nodosDerechos.length; i++){
@@ -1244,6 +1267,7 @@ void News(){
   }
 }
 
+//Find the news of node that is selected, and his tree
 void News_Selected(nombre){
   cantidadNuevos = 0;
   for (int i = 0; i < nodosDerechos.length; i++){
@@ -1287,6 +1311,7 @@ int returnCongruentes(){
   return cantidadCongurentes;
 }
 
+//Find all the congruence nodes
 void Congruencia(){
   cantidadCongurentes = 0;
   for (int i = 1;i<nodosIzquierdos.length;i++){
@@ -1412,8 +1437,9 @@ class Node{
 }
 
 
-//////////////////////////LIENAS TENUES///////////////////////////////
+//////////////////////////Tenues Lines///////////////////////////////
 
+//Return the level of each node in the taxonomy
 int contadorNivel = 1;
 int getNivel(nodo){
   if (nodo.parent == undefined){
@@ -1425,6 +1451,7 @@ int getNivel(nodo){
   }
 }
 
+//Draw the identation lines on the page
 void CalcularPosicionesLineas(int pos){
   contadorNivel = 1;
   getNivel(nodosTenues[pos]);
@@ -1455,6 +1482,7 @@ void CalcularPosicionesLineas(int pos){
   }
 }
 
+//Object that save the positions of each node on the page
 class Posiciones{
   String name;
   int x;

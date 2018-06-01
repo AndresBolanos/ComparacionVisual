@@ -20,7 +20,7 @@ var file1 = "";
 var file2 = "";
 
 
-
+//Load the last state of the page, sliders, etc
 function CargaBitacora(){ 
      setTimeout(function(){
             loadFiles('AmphibiaTest1.json','AmphibiaTest5.json');
@@ -76,7 +76,7 @@ function CargaBitacora(){
      },1000);
 }
 
-
+//Call splits function in processing to draw
 function setsplitsG(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -93,6 +93,7 @@ function setsplitsG(){
     }
 }
 
+//Call merges function in processing to draw
 function setsmergersG(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -109,6 +110,7 @@ function setsmergersG(){
     }
 }
 
+//Call moves function in processing to draw
 function setsmovesG(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -125,6 +127,7 @@ function setsmovesG(){
     }
 }
 
+//Call renames function in processing to draw
 function setsrenamesG(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -141,6 +144,7 @@ function setsrenamesG(){
     }
 }
 
+//Call exclusions function in processing to draw
 function setsexclusionsG(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -157,6 +161,7 @@ function setsexclusionsG(){
     }
 }
 
+//Call news function in processing to draw
 function setnewsG(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -173,6 +178,7 @@ function setnewsG(){
     }
 }
 
+//Call congruence function in processing to draw
 function setconguencyG(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -191,6 +197,7 @@ function setconguencyG(){
     }
 }
 
+//Call all tasks function in processing to draw
 function setAllG(){
     if (allG == false){
         conguencyG = false;
@@ -270,6 +277,7 @@ $(window).resize(function() {
 availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
+//Load the files and store in logic array
 function loadFiles (file1, file2){
     d3.json("Archivos-Datos/"+file1, function (err, data) {
         var Ltree = d3.layout.treelist()
@@ -334,7 +342,7 @@ function loadFiles (file1, file2){
     window.sessionStorage.setItem("File2_Ag", file2);
 }
 
-
+//Show the window that have all the files to load
 function nuevaventana (){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
