@@ -253,6 +253,7 @@ function loadFiles (file1, file2){
                     d3.selectAll(".selected").classed("selected", false);
                 })
                 .on("click", function (d) {
+                    //on click left nodes selection funcion
                     tocado = true;
                     //mostrarTodos();
                     var processingInstance;
@@ -261,213 +262,97 @@ function loadFiles (file1, file2){
                     if (encendido){
                          resetTextFull();
                     }
-                    if (!tocado){
-                        if(congruencia == true){
-                            processingInstance.drawCongruency(d.name,2);
-                            var arregloizuierda = processingInstance.retornarIzquierdosConguencia();
-                            for (var i = 0; i < arregloizuierda.length; i++){
-                                if (arregloizuierda[i].nodo.name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#0E50D9";
-                                    document.getElementById(d.name+"2").style.color ="#0E50D9";
 
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                    document.getElementById(d.name+"2").style.fontSize = "large";
-                                }
-                            }
-                         }
-                         if (splits == true){
-                            processingInstance.drawSplits(2,d.name); //Aqui mando el ancho de la linea
-                            var arregloIzquierdos =  processingInstance.returnSplitsLeft();
-                            for (var i = 0; i < arregloIzquierdos.length; i++){
-                                if (arregloIzquierdos[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#FF00BF";
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                }
-                            }
-                            var arregloDerechos =  processingInstance.returnSplitsRight();
-                            for (var i = 0; i < arregloDerechos.length; i++){
-                                if (arregloDerechos[i].Synonym.length == 0){
-                                    if (arregloDerechos[i].name == d.name){
-                                        document.getElementById(d.name+"2").style.color ="#FF00BF";
-                                        document.getElementById(d.name+"2").style.fontSize = "large";
-                                    }
-                                }
-                                else{
-                                    var sinonimos = arregloDerechos[i].Synonym;
-                                    for (var s = 0; s < sinonimos.length; s++){
-                                        if (sinonimos[s] == d.name){
-                                            document.getElementById(arregloDerechos[i].name+"2").style.color ="#FF00BF";
-                                            document.getElementById(arregloDerechos[i].name+"2").style.fontSize = "large";
-                                        }
-                                    }
-                                }
-                            }     
-                         }
-                         if (moves == true){
-                            processingInstance.drawMoves(false,10,228,237,d.name,2);
-                            var arregloizuierda = processingInstance.returnRename_MovesLeft();
-                            for (var i = 0; i < arregloizuierda.length; i++){
-                                if (arregloizuierda[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#09D4D4";
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                }
-                            }
-                            var arregloderecha = processingInstance.returnRename_MovesRight();
-                            for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
-                                var sinonimos = arregloderecha[i].Synonym;
-                                for (var s = 0; s < sinonimos.length; s++){
-                                    if (sinonimos[s] == d.name){
-                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#09D4D4";
-                                        document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
-                                    }
-                                }
-                            }                  
-                         }
-                         if (renames == true){
-                            processingInstance.drawMoves(true,91,255,142,d.name,2);
-                            var arregloizuierda = processingInstance.returnRename_MovesLeft();
-                            for (var i = 0; i < arregloizuierda.length; i++){
-                                if (arregloizuierda[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#EAAAA5";
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                }
-                            }
-                            var arregloderecha = processingInstance.returnRename_MovesRight();
-                            for (var i = 0; i < arregloderecha.length; i++){ //Agregar el asunto para q sea solo uno
-                                var sinonimos = arregloderecha[i].Synonym;
-                                for (var s = 0; s < sinonimos.length; s++){
-                                    if (sinonimos[s] == d.name){
-                                        document.getElementById(arregloderecha[i].name+"2").style.color ="#EAAAA5";
-                                        document.getElementById(arregloderecha[i].name+"2").style.fontSize = "large";
-                                    }
-                                }
-                            }                  
-                         }
-                         if (exclusions == true){
-                            exclusiones();
-                            for (var i = 0; i < arregloEclusiones.length; i++){
-                                if (arregloEclusiones[i].name == d.name){
-                                    document.getElementById(d.name+"1").style.color ="#D00101";
-                                    document.getElementById(d.name+"1").style.fontSize = "large";
-                                }
-                            } 
-                            arregloEclusiones = []; 
-                         }
-                         if (merges == true){
-                            processingInstance.merge(d.name,2);
-                            var nodoDerecho = "";
-                            var nodosIzquierdos = [];
-                            var arregloderecha = processingInstance.returnDerechosMerge();
-                            for (var i = 0; i < arregloderecha.length; i++){
-                                var sinonimos = arregloderecha[i].Synonym;
-                                for (var j = 0; j < sinonimos.length;j++){
-                                    if (sinonimos[j] == d.name){
-                                        nodoDerecho =  arregloderecha[i].name;
-                                        nodosIzquierdos = sinonimos;
-                                    }
-                                }
-                            }
-                            if (document.getElementById(nodoDerecho+"2") != null){
-                                document.getElementById(nodoDerecho+"2").style.color ="#FFA656";
-                                document.getElementById(nodoDerecho+"2").style.fontSize = "large";
-                                for (var i = 0; i < nodosIzquierdos.length; i++){
-                                    document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FFA656";
-                                    document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
-                                }
-                            }
-                         }
+                    Pintar_Nodos = [];
+                    resetTextFull();
+                    nombres_Left = [];
+                    for (var i = 0; i < nodesLeft.length; i++){
+                        //document.getElementById(nodesLeft[i].name+"1").style.fontSize = "x-small";
+                        if (nodesLeft[i].name == d.name){
+                            Save_Parents_Names_Left(nodesLeft[i].children);
+                        }
                     }
-                     else {
-                        resetTextFull();
-                        nombres_Left = [];
-                        if (autoclick == false){
-                            autoclick = true;
-                            $('#'+d.name+"2").click();
-                        }
-                        else{
-                            autoclick = false;
-                        }
-                        for (var i = 0; i < nodesLeft.length; i++){
-                            //document.getElementById(nodesLeft[i].name+"1").style.fontSize = "x-small";
-                            if (nodesLeft[i].name == d.name){
-                                Save_Parents_Names_Left(nodesLeft[i].children);
+                    document.getElementById(d.name+"1").style.fontSize = "large";
+                    Pintar_Nodos = Retornar_Nommbres_Left();
+                    Pintar_Nodos.push(d.name);
+                    processingInstance.drawCongruency_Auxiliar([d],1);
+                    processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
+                    processingInstance.drawSplits_Aux(0,Pintar_Nodos);
+                    processingInstance.merge_Aux(Pintar_Nodos,1);
+                    exclusiones_Aux();
+                    var izquierda_M = processingInstance.returnRename_MovesLeft();
+                    var derecha_M = processingInstance.returnRename_MovesRight();
+                    var izquierda_C = processingInstance.retornarIzquierdosConguencia();
+                    var derecha_C = processingInstance.retornarDerechosConguencia();
+                    processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
+                    var izquierda_R = processingInstance.returnRename_MovesLeft();
+                    var derecha_R = processingInstance.returnRename_MovesRight();
+                    var izquierda_S = processingInstance.returnSplitsLeft();
+                    var derecho_S = processingInstance.returnSplitsRight();
+                    var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
+                    var derecho_Merge = processingInstance.returnDerechosMerge();
+
+                    for (var left = 0; left < izquierda_C.length; left++){
+                        document.getElementById("Congruencia").checked = true;
+                        document.getElementById(izquierda_C[left].nodo.name+"1").style.color ="#0E50D9";
+                        document.getElementById(izquierda_C[left].nodo.name+"1").style.fontSize = "large";
+                    }
+                    for (var right = 0; right < derecha_C.length; right++){
+                        document.getElementById(derecha_C[right].nodo.name+"2").style.color ="#0E50D9";
+                        document.getElementById(derecha_C[right].nodo.name+"2").style.fontSize = "large";
+                    }
+                    for (var left = 0; left < izquierda_M.length; left++){
+                        document.getElementById("Moves").checked = true;
+                        document.getElementById(izquierda_M[left].name+"1").style.color ="#09D4D4";
+                        document.getElementById(izquierda_M[left].name+"1").style.fontSize = "large";
+                         
+                    }
+                    for (var right = 0; right < derecha_M.length; right++){
+                        document.getElementById(derecha_M[right].name+"2").style.color ="#09D4D4";
+                        document.getElementById(derecha_M[right].name+"2").style.fontSize = "large";
+                    }
+                    for (var left = 0; left < izquierda_R.length; left++){
+                        document.getElementById("Renames").checked = true;
+                        document.getElementById(izquierda_R[left].name+"1").style.color ="#EAAAA5";
+                        document.getElementById(izquierda_R[left].name+"1").style.fontSize = "large";
+                    }
+                    for (var right = 0; right < derecha_R.length; right++){
+                        document.getElementById(derecha_R[right].name+"2").style.color ="#EAAAA5";
+                        document.getElementById(derecha_R[right].name+"2").style.fontSize = "large";
+                    }
+                    for (var i = 0; i < Pintar_Nodos.length; i++){
+                        for (var left = 0; left < arregloEclusiones.length; left++){
+                            if (Pintar_Nodos[i] == arregloEclusiones[left].name){
+                                document.getElementById("Exclusions").checked = true;
+                                document.getElementById(arregloEclusiones[left].name+"1").style.color ="#D00101";
+                                document.getElementById(arregloEclusiones[left].name+"1").style.fontSize = "large";
                             }
                         }
-                        document.getElementById(d.name+"1").style.fontSize = "large";
-                        Pintar_Nodos = Retornar_Nommbres_Left();
-                        Pintar_Nodos.push(d.name);
-                        processingInstance.drawCongruency_Auxiliar(Pintar_Nodos,1);
-                        processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
-                        processingInstance.drawSplits_Aux(0.5,Pintar_Nodos);
-                        processingInstance.merge_Aux(Pintar_Nodos,1);
-                        exclusiones_Aux();
-                        var izquierda_M = processingInstance.returnRename_MovesLeft();
-                        var derecha_M = processingInstance.returnRename_MovesRight();
-                        var izquierda_C = processingInstance.retornarIzquierdosConguencia();
-                        processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
-                        var izquierda_R = processingInstance.returnRename_MovesLeft();
-                        var derecha_R = processingInstance.returnRename_MovesRight();
-                        var izquierda_S = processingInstance.returnSplitsLeft();
-                        var derecho_S = processingInstance.returnSplitsRight();
-                        var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
-                        var derecho_Merge = processingInstance.returnDerechosMerge();
-                        for (var i = 0; i < Pintar_Nodos.length; i++){
-                            for (var left = 0; left < izquierda_C.length; left++){
-                                 document.getElementById("Congruencia").checked = true;
-                                if (izquierda_C[left].nodo.name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#0E50D9";
-                                }
-                            }
-                            for (var left = 0; left < izquierda_M.length; left++){
-                                document.getElementById("Moves").checked = true;
-                                if (izquierda_M[left].name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#09D4D4";
-                                     for (var right = 0; right < derecha_M.length; right++){
-                                        document.getElementById(derecha_M[right].name+"2").style.color ="#09D4D4";
-                                        document.getElementById(derecha_M[right].name+"2").style.fontSize = "large";
-                                    }
-                                }
-                            }
-                            for (var left = 0; left < izquierda_R.length; left++){
-                                document.getElementById("Renames").checked = true;
-                                if (izquierda_R[left].name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#EAAAA5";
-                                     for (var right = 0; right < derecha_R.length; right++){
-                                        document.getElementById(derecha_R[right].name+"2").style.color ="#EAAAA5";
-                                        document.getElementById(derecha_R[right].name+"2").style.fontSize = "large";
-                                    }
-                                }
-                            }
-                            for (var left = 0; left < arregloEclusiones.length; left++){
-                                if (arregloEclusiones[left].name == Pintar_Nodos[i]){
-                                    document.getElementById("Exclusions").checked = true;
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#D00101";
-                                }
-                            }
-                            for (var left = 0; left < izquierda_S.length; left++){
-                                document.getElementById("Splits").checked = true;
-                                if (izquierda_S[left].name == Pintar_Nodos[i]){
-                                    document.getElementById(Pintar_Nodos[i]+"1").style.color ="#FF00BF";
-                                }
-                                for (var rigth = 0; rigth < derecho_S.length; rigth++){
-                                    document.getElementById(derecho_S[rigth].name +"2").style.color ="#FF00BF";
-                                    document.getElementById(derecho_S[rigth].name +"2").style.fontSize = "large";
-                                }
-                            }
-                            for (var left = 0; left < izquierdo_Merge.length; left++){
-                                document.getElementById("Mergers").checked = true;
-                                document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
-                                document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
-                                for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
-                                    document.getElementById(derecho_Merge[left].name +"2").style.color ="#FFA656";
-                                    document.getElementById(derecho_Merge[left].name +"2").style.fontSize = "large";
-                                }
-                            }
-                            document.getElementById(Pintar_Nodos[i]+"1").style.fontSize = "large";
-                        }
-                        Click = true;
-                        tocado = true;
-                     }
+                    }
+                    
+                    for (var left = 0; left < izquierda_S.length; left++){
+                        document.getElementById("Splits").checked = true;
+                        document.getElementById(izquierda_S[left].name+"1").style.color ="#FF00BF";
+                        document.getElementById(izquierda_S[left].name+"1").style.fontSize = "large";
+                        
+                    }
+                    for (var rigth = 0; rigth < derecho_S.length; rigth++){
+                        document.getElementById(derecho_S[rigth].name +"2").style.color ="#FF00BF";
+                        document.getElementById(derecho_S[rigth].name +"2").style.fontSize = "large";
+                    }
+                    
+                    for (var left = 0; left < izquierdo_Merge.length; left++){
+                        document.getElementById("Mergers").checked = true;
+                        document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
+                        document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
+  
+                    }
+                    for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
+                        document.getElementById(derecho_Merge[rigth].name +"2").style.color ="#FFA656";
+                        document.getElementById(derecho_Merge[rigth].name +"2").style.fontSize = "large";
+                    }
+                    Click = true;
+                    tocado = true;
                 });
             //add arrows if it is a folder
             entered.append("span").style("font-size", "15px").attr("class", function (d) {
@@ -569,6 +454,7 @@ function loadFiles (file1, file2){
                         d3.selectAll(".selected").classed("selected", false);
                     })
                     .on("click", function (d) {
+                        //on click right nodes selection funcion
                         tocado = true;
                         var processingInstance;
                         processingInstance = Processing.getInstanceById('CANVAS');
@@ -576,204 +462,111 @@ function loadFiles (file1, file2){
                         if (encendido){
                              resetTextFull();
                         }
-                        resetText();
-                        if (!tocado){
-                            if (renames == true){
-                                processingInstance.drawMoves(true,91,255,142,d.name,2);
-                                var congruente = [];
-                                var arregloderecha = processingInstance.returnRename_MovesRight();
-                                for (var i = 0; i < arregloderecha.length; i++){
-                                    if (arregloderecha[i].name == d.name){
-                                        congruente = arregloderecha[i].Synonym;
-                                        document.getElementById(d.name+"2").style.color ="#EAAAA5";
-                                        document.getElementById(d.name+"2").style.fontSize = "large";
-                                    }
-                                }
-                                if (congruente.length > 0){
-                                    for (var s = 0; s < congruente.length; s++){
-                                        document.getElementById(congruente[s]+"1").style.color ="#EAAAA5";
-                                        document.getElementById(congruente[s]+"1").style.fontSize = "large";
-                                    }
-                                }    
+                            //This section is to include the clickable nodes taxonomies with off switchers
+                        resetTextFull();
+                        nombres_Right = [];
+                        for (var i = 0; i < nodesRight.length; i++){
+                            document.getElementById(nodesRight[i].name+"2").style.fontSize = "small";
+                            if (nodesRight[i].name == d.name){
+                                Save_Parents_Names_Right(nodesRight[i].children);
                             }
-                            if (nuevos == true){
-                                pintarNuevos();
-                                for (var i = 0; i < arregloNuevos.length; i++){
-                                    if (arregloNuevos[i].name == d.name){
-                                        document.getElementById(d.name+"2").style.color ="#076501";
-                                        document.getElementById(d.name+"2").style.fontSize = "large";
-                                    }
-                                }
-                                arregloNuevos = [];
+                        }
+                        Pintar_Nodos = [];
+                        resetTextFull();
+                        nombres_Right = [];
+                        for (var i = 0; i < nodesRight.length; i++){
+                            //document.getElementById(nodesLeft[i].name+"1").style.fontSize = "x-small";
+                            if (nodesRight[i].name == d.name){
+                                Save_Parents_Names_Right(nodesRight[i].children);
                             }
-                             if (moves == true){
-                                processingInstance.drawMoves(false,10,228,237,d.name,2);
-                                var congruente = [];
-                                var arregloderecha = processingInstance.returnRename_MovesRight();
-                                for (var i = 0; i < arregloderecha.length; i++){
-                                    if (arregloderecha[i].name == d.name){
-                                        congruente = arregloderecha[i].Synonym;
-                                        document.getElementById(d.name+"2").style.color ="#09D4D4";
-                                        document.getElementById(d.name+"2").style.fontSize = "large";
-                                    }
-                                }
-                                if (congruente.length > 0){
-                                    for (var s = 0; s < congruente.length; s++){
-                                        try{
-                                            document.getElementById(congruente[s]+"1").style.color ="#09D4D4";
-                                            document.getElementById(congruente[s]+"1").style.fontSize = "large";
-                                        }
-                                        catch(e){
-                                        }
-                                    }
-                                }    
-                             }
-                              if(congruencia == true){
-                                 processingInstance.drawCongruency(d.name,2);
-                                var arregloderecha = processingInstance.retornarDerechosConguencia();
-                                for (var i = 0; i < arregloderecha.length; i++){
-                                    if (arregloderecha[i].nodo.name == d.name){
-                                        document.getElementById(d.name+"1").style.color ="#0E50D9";
-                                        document.getElementById(d.name+"2").style.color ="#0E50D9";
-        
-                                        document.getElementById(d.name+"1").style.fontSize = "large";
-                                        document.getElementById(d.name+"2").style.fontSize = "large";
-                                    }
-                                }
-                              }
-                              if (merges == true){
-                                processingInstance.merge(d.name,2);
-                                var nodoDerecho = "";
-                                var nodosIzquierdos = [];
-                                var arregloderecha = processingInstance.returnDerechosMerge();
-                                for (var i = 0; i < arregloderecha.length; i++){
-                                    if (arregloderecha[i].name == d.name){
-                                        nodoDerecho =  arregloderecha[i].name;
-                                        nodosIzquierdos = arregloderecha[i].Synonym;;
-                                    }
-                                }
-                                if (document.getElementById(nodoDerecho+"2") != null){
-                                    document.getElementById(nodoDerecho+"2").style.color ="#FFA656";
-                                    document.getElementById(nodoDerecho+"2").style.fontSize = "large";
-                                    for (var i = 0; i < nodosIzquierdos.length; i++){
-                                        document.getElementById(nodosIzquierdos[i]+"1").style.color ="#FFA656";
-                                        document.getElementById(nodosIzquierdos[i]+"1").style.fontSize = "large";
-                                    }
-                                }
-                              }
-                              if (splits == true){
-                                processingInstance.drawSplits(2,""); //Aqui mando el ancho de la linea
-                                var arregloDerechos =  processingInstance.returnSplitsRight();
-                                for (var i = 0; i < arregloDerechos.length; i++){
-                                    if (arregloDerechos[i].Synonym.length == 0){
-                                        if (arregloDerechos[i].name == d.name){
-                                            document.getElementById( d.name+"1").click();
-                                        }
-                                    }
-                                    else{
-                                        var sinonimos = arregloDerechos[i].Synonym;
-                                        for (var s = 0; s < sinonimos.length; s++){
-                                            if (arregloDerechos[i].name == d.name){
-                                                document.getElementById(sinonimos[s]+"1").click();
-                                            }
-                                        }
-                                    }
-                                }   
-                                splitsAux = true;  
-                              }
-                            }
-                          else{
-                                //This section is to include the clickable nodes taxonomies with off switchers
-                            resetTextFull();
-                            nombres_Right = [];
-                            for (var i = 0; i < nodesRight.length; i++){
-                                document.getElementById(nodesRight[i].name+"2").style.fontSize = "small";
-                                if (nodesRight[i].name == d.name){
-                                    Save_Parents_Names_Right(nodesRight[i].children);
+                        }
+                        document.getElementById(d.name+"1").style.fontSize = "large";
+                        Pintar_Nodos = Retornar_Nommbres_Right();
+                        Pintar_Nodos.push(d.name);
+                        processingInstance.drawCongruency_Auxiliar([d],1);
+                        processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
+                        processingInstance.drawSplits_Aux(0.5,Pintar_Nodos);
+                        processingInstance.merge_Aux(Pintar_Nodos,1);
+                        Nuevos_Aux();
+                        var izquierda_M = processingInstance.returnRename_MovesLeft();
+                        var derecha_M = processingInstance.returnRename_MovesRight();
+                        var izquierda_C = processingInstance.retornarIzquierdosConguencia();
+                        var derecha_C = processingInstance.retornarDerechosConguencia();
+                        processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
+                        var izquierda_R = processingInstance.returnRename_MovesLeft();
+                        var derecha_R = processingInstance.returnRename_MovesRight();
+                        var izquierda_S = processingInstance.returnSplitsLeft();
+                        var derecho_S = processingInstance.returnSplitsRight();
+                        var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
+                        var derecho_Merge = processingInstance.returnDerechosMerge();
+                        for (var left = 0; left < izquierda_C.length; left++){
+                            document.getElementById("Congruencia").checked = true;
+                            document.getElementById(izquierda_C[left].nodo.name+"1").style.color ="#0E50D9";
+                            document.getElementById(izquierda_C[left].nodo.name+"1").style.fontSize = "large";
+                        }
+
+                        for (var right = 0; right < derecha_C.length; right++){
+                            document.getElementById(derecha_C[right].nodo.name+"2").style.color ="#0E50D9";
+                            document.getElementById(derecha_C[right].nodo.name+"2").style.fontSize = "large";
+                        }
+
+                        for (var left = 0; left < izquierda_M.length; left++){
+                            document.getElementById("Moves").checked = true;
+                            document.getElementById(izquierda_M[left].name+"1").style.color ="#09D4D4";
+                            document.getElementById(izquierda_M[left].name+"1").style.fontSize = "large";  
+                        }
+
+                        for (var right = 0; right < derecha_M.length; right++){
+                            document.getElementById(derecha_M[right].name+"2").style.color ="#09D4D4";
+                            document.getElementById(derecha_M[right].name+"2").style.fontSize = "large";
+                        }
+
+                        for (var left = 0; left < izquierda_R.length; left++){
+                            document.getElementById("Renames").checked = true;
+                            document.getElementById(izquierda_R[left].name+"1").style.color ="#EAAAA5";
+                            document.getElementById(izquierda_R[left].name+"1").style.fontSize = "large";
+                        }
+
+                        for (var right = 0; right < derecha_R.length; right++){
+                            document.getElementById(derecha_R[right].name+"2").style.color ="#EAAAA5";
+                            document.getElementById(derecha_R[right].name+"2").style.fontSize = "large";
+                        }
+
+                        for (var i = 0; i < Pintar_Nodos.length; i++){
+                            for (var right = 0; right < arregloNuevos.length; right++){
+                                if (arregloNuevos[right].name == Pintar_Nodos[i]){
+                                    document.getElementById("News").checked = true;
+                                    document.getElementById(Pintar_Nodos[i]+"2").style.color ="#076501";
+                                    document.getElementById(Pintar_Nodos[i]+"2").style.fontSize = "large";
                                 }
                             }
-                            if (autoclick == false){
-                                autoclick = true;
-                                $('#'+d.name+"1").click();
-                            }
-                            else{
-                                autoclick = false;
-                            }
+                        }
+                        
+                        
+                        for (var left = 0; left < izquierda_S.length; left++){
+                            document.getElementById("Splits").checked = true;
+                            document.getElementById(izquierda_S[left].name+"1").style.color ="#FF00BF";
+                            document.getElementById(izquierda_S[left].name+"1").style.fontSize = "large";
                             
-                            document.getElementById(d.name+"2").style.fontSize = "large";
-                            Pintar_Nodos = Retornar_Nommbres_Right();
-                            Pintar_Nodos.push(d.name);
-                            processingInstance.drawCongruency_Auxiliar(Pintar_Nodos,1);
-                            processingInstance.drawMoves_Auxiliar(false,10,228,237,Pintar_Nodos,1,d.name);
-                            processingInstance.drawSplits_Aux(0.5,Pintar_Nodos);
-                            processingInstance.merge_Aux(Pintar_Nodos,1);
-                            Nuevos_Aux();
-                            var derecha_M = processingInstance.returnRename_MovesRight();
-                            var izquierda_M = processingInstance.returnRename_MovesLeft();
-                            var izquierda_C = processingInstance.retornarDerechosConguencia();
-                            processingInstance.drawMoves_Auxiliar(true,234, 170, 165,Pintar_Nodos,1,d.name);
-                            var derecha_R = processingInstance.returnRename_MovesRight();
-                            var izquierda_R = processingInstance.returnRename_MovesLeft();
-                            var derecha_S = processingInstance.returnSplitsRight();
-                            var izquierda_S = processingInstance.returnSplitsLeft();
-                            var izquierdo_Merge = processingInstance.returnIzquierdosMerge();
-                            var derecho_Merge = processingInstance.returnDerechosMerge();
-                            for (var i = 0; i < Pintar_Nodos.length; i++){
-                                for (var right = 0; right < izquierda_C.length; right++){
-                                     document.getElementById("Congruencia").checked = true;
-                                    if (izquierda_C[right].nodo.name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#0E50D9";
-                                    }
-                                }
-                                for (var right = 0; right < derecha_M.length; right++){
-                                    document.getElementById("Moves").checked = true;
-                                    if (derecha_M[right].name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#09D4D4";
-                                        for (var left = 0; left < derecha_M.length; left++){
-                                            document.getElementById(izquierda_M[left].name+"1").style.color ="#09D4D4";
-                                            document.getElementById(izquierda_M[left].name+"1").style.fontSize = "large";
-                                        }
-                                    }
-                                }
-                                for (var right = 0; right < derecha_R.length; right++){
-                                    document.getElementById("Renames").checked = true;
-                                    if (derecha_R[right].name == Pintar_Nodos[i]){
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#EAAAA5";
-                                        for (var left = 0; left < izquierda_R.length; left++){
-                                            document.getElementById(izquierda_R[left].name+"1").style.color ="#EAAAA5";
-                                            document.getElementById(izquierda_R[left].name+"1").style.fontSize = "large";
-                                        }
-                                    }
-                                }
-                                for (var right = 0; right < arregloNuevos.length; right++){
-                                    if (arregloNuevos[right].name == Pintar_Nodos[i]){
-                                        document.getElementById("News").checked = true;
-                                        document.getElementById(Pintar_Nodos[i]+"2").style.color ="#076501";
-                                    }
-                                }
-                                for (var right = 0; right < derecha_S.length; right++){
-                                    document.getElementById("Splits").checked = true;
-                                    document.getElementById(derecha_S[right].name +"2").style.color ="#FF00BF";
-                                    document.getElementById(derecha_S[right].name +"2").style.fontSize = "large";
-                                    for (var j  = 0 ; j < izquierda_S.length;j++){
-                                        document.getElementById(izquierda_S[j].name +"1").style.color ="#FF00BF";
-                                        document.getElementById(izquierda_S[j].name +"1").style.fontSize = "large";
-                                    }
-                                }
-                                 for (var left = 0; left < izquierdo_Merge.length; left++){
-                                        document.getElementById("Mergers").checked = true;
-                                        document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
-                                        document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
-                                        for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
-                                            document.getElementById(derecho_Merge[left].name +"2").style.color ="#FFA656";
-                                            document.getElementById(derecho_Merge[left].name +"2").style.fontSize = "large";
-                                        }
-                                    }
-                                document.getElementById(Pintar_Nodos[i]+"2").style.fontSize = "large";
-                            }
-                            Click = true; 
-                            tocado = true;
-                         }
+                        }
+
+                        for (var rigth = 0; rigth < derecho_S.length; rigth++){
+                            document.getElementById(derecho_S[rigth].name +"2").style.color ="#FF00BF";
+                            document.getElementById(derecho_S[rigth].name +"2").style.fontSize = "large";
+                        }
+                        
+                        for (var left = 0; left < izquierdo_Merge.length; left++){
+                            document.getElementById("Mergers").checked = true;
+                            document.getElementById(izquierdo_Merge[left].name +"1").style.color ="#FFA656";
+                            document.getElementById(izquierdo_Merge[left].name +"1").style.fontSize = "large";
+                        }
+
+                        for (var rigth = 0; rigth < derecho_Merge.length; rigth++){
+                            document.getElementById(derecho_Merge[rigth].name +"2").style.color ="#FFA656";
+                            document.getElementById(derecho_Merge[rigth].name +"2").style.fontSize = "large";
+                        }
+                        Click = true;
+                        tocado = true;       
                     });
                     var element  = document.getElementsByTagName("li");
                     for (var i = 0; i < element.length;i++){

@@ -15,6 +15,27 @@ void setup(){
 
 
 
+//Verifica si existe un elemento en un arreglo se strings
+boolean existe_Elemento_Array(ele, arreglo){
+  for (int i = 0; i < arreglo.length; i++){
+    if (arreglo[i] == ele){
+      return true;
+    }
+  }
+  return false;
+}
+
+//Verifica si existe un elemento en un arreglo de objetos
+boolean existe_Elemento_Array_Obj(ele, arreglo){
+  for (int i = 0; i < arreglo.length; i++){
+    if (arreglo[i].name == ele){
+      return true;
+    }
+  }
+  return false;
+}
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //This function is to draw the congruency lines en the canvas
 //Check the name, the author and de record_scrutiny_date and paint blue lines
@@ -81,28 +102,34 @@ void drawCongruency_Auxiliar(String nombres,int grosor){
                 if (izquierdos[i].name == listaSinonimos[s]){
                     acepto = false;
                 }
-            }
-            if (izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true){
-                stroke(14, 80, 217);
-                for (int k = 0; k < nombres.length; k++){
-                    if (nombres[k] == izquierdos[i].name){
-                        strokeWeight(0.5);
-                        int x1 = izquierdos[i].x+(textWidth(izquierdos[i].name)*1.6);
-                        int y1 = izquierdos[i].y-5;
-                        float x2 = derechos[j].x+anchoDiv+5;
-                        int y2 = derechos[j].y-5;
-                        int posX = x1;
-                        if (izquierdos[i].name.length <= 15){
-                            posX = posX + 12;
-                        }
-                        curve(x1*3, y1-50,posX+widthRigthP+50,y1,x2-5,y2,x2,y2+20);
-                        congruencia nodoI = new conguencia(izquierdos[i],"Azul");
-                        congruencia nodoD = new conguencia(derechos[j],"Azul");
-                        append(CongruenciaIzquierdos,nodoI);
-                        append(CongruenciaDerechos,nodoD);
+             }
+            for (int pos = 0; pos < nombres.length; pos++){
+                boolean subarbol = false; 
+                if (existe_Elemento_Array(nombres[pos].name, buscar_padres(izquierdos[i].name, izquierdos))){
+                    subarbol = true;
+                }
+                if (existe_Elemento_Array(nombres[pos].name, buscar_padres(derechos[j].name, derechos))){
+                    subarbol = true;
+                }
+                if ((izquierdos[i].name == derechos[j].name && izquierdos[i].author == derechos[j].author && acepto == true)  && (izquierdos[i].name == nombres[pos].name || derechos[j].name == nombres[pos].name || subarbol)){
+                    stroke(14, 80, 217);
+                    strokeWeight(0.5);
+                    int x1 = izquierdos[i].x+(textWidth(izquierdos[i].name)*1.6);
+                    int y1 = izquierdos[i].y-5;
+                    float x2 = derechos[j].x+anchoDiv+5;
+                    int y2 = derechos[j].y-5;
+                    int posX = x1;
+                    if (izquierdos[i].name.length <= 15){
+                        posX = posX + 12;
                     }
+                    curve(x1*3, y1-50,posX+widthRigthP+50,y1,x2-5,y2,x2,y2+20);
+                    congruencia nodoI = new conguencia(izquierdos[i],"Azul");
+                    congruencia nodoD = new conguencia(derechos[j],"Azul");
+                    append(CongruenciaIzquierdos,nodoI);
+                    append(CongruenciaDerechos,nodoD);
                 }
             }
+              
         }
     }
 }
@@ -197,7 +224,7 @@ int returnAmountSplits(){
     return cantidadSplits;
 }
 
-void drawSplits_Aux(int grosor,string nombres){
+void drawSplits_Aux(int grosor,String nombres){
     splitslPainted = [];
     splitsRPainted = [];
     cantidadSplits = 0;
