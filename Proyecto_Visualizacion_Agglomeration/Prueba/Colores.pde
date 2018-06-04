@@ -4,14 +4,14 @@ Node [] nodosDerechos;
 Object [] nodosTenues;
 
 //Base color of he right taxonomy
-int rightBaseR = 244; 
-int rightBaseG = 164;
-int rightBaseB = 96;
+int rightBaseR = 10; 
+int rightBaseG = 10;
+int rightBaseB = 10;
 
 //Base colors of the left taxonomy
-int leftBaseR = 221;
-int leftBaseG = 196;
-int leftBaseB = 0;
+int leftBaseR = 120;
+int leftBaseG = 126;
+int leftBaseB = 130;
 
 //X and Y positions to draw
 float scaleFactor = 1.0;
@@ -102,9 +102,9 @@ void draw(){
   background(255);
   createAgglomeration(izquierdos,derechos);     
   textSize(12);
-  fill(130,80, 64);
+  fill(leftBaseR, leftBaseG, leftBaseB);
   text(archivo1,-300,300);  
-  fill(223, 209, 33);
+  fill(rightBaseR, rightBaseG, rightBaseB);
   text(archivo2,450,300); 
   stroke(149,153,149);
   strokeWeight(-5);
@@ -217,7 +217,7 @@ void createAgglomeration(leftStructure,rightStructure){
     }
     else{
      if(agglomeration[i].position=="left"){
-        fill(130,80, 64);
+        fill(leftBaseR, leftBaseG, leftBaseB);
         if (splitsG){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
@@ -349,7 +349,7 @@ void createAgglomeration(leftStructure,rightStructure){
         AbsoluteY = AbsoluteY+20;
       }
      else{
-        fill(223, 209, 33);
+        fill(rightBaseR, rightBaseG, rightBaseB);
         if (splitsG){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
