@@ -242,7 +242,7 @@ void createAgglomeration(leftStructure,rightStructure){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
           int b = agglomeration[i].B;
-          if (r == 255 && g == 166 && b == 86){
+          if (r == 255 && g == 179 && b == 22){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
@@ -260,7 +260,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 255 && g == 166 && b == 86){
+              if (r == 255 && g == 179 && b == 22){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -282,7 +282,7 @@ void createAgglomeration(leftStructure,rightStructure){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
           int b = agglomeration[i].B;
-          if (r == 234 && g == 170 && b == 165){
+          if (r == 234 && g == 197 && b == 220){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
@@ -292,7 +292,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 234 && g == 170 && b == 165){
+              if (r == 234 && g == 197 && b == 220){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -302,7 +302,7 @@ void createAgglomeration(leftStructure,rightStructure){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
-            if (r == 223 && g == 1 && b == 1){
+            if (r == 255 && g == 0 && b == 8){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
@@ -312,7 +312,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 223 && g == 1 && b == 1){
+              if (r == 255 && g == 0 && b == 8){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -322,7 +322,7 @@ void createAgglomeration(leftStructure,rightStructure){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
           int b = agglomeration[i].B;
-          if (r == 14 && g == 80 && b == 217){
+          if (r == 82 && g == 105 && b == 217){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
@@ -332,7 +332,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 14 && g == 80 && b == 217){
+              if (r == 82 && g == 105 && b == 217){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -414,7 +414,7 @@ void createAgglomeration(leftStructure,rightStructure){
             int r = agglomeration[i].R;
             int g = agglomeration[i].G;
             int b = agglomeration[i].B;
-            if (r == 255  && g == 139 && b == 148){
+            if (r == 186  && g == 127 && b == 220){
               fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
             }
         }
@@ -424,7 +424,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 255  && g == 139 && b == 148){
+              if (r == 186  && g == 127 && b == 220){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -454,7 +454,7 @@ void createAgglomeration(leftStructure,rightStructure){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
           int b = agglomeration[i].B;
-          if (r == 13 && g == 34 && b == 102){
+          if (r == 20 && g == 60 && b == 127){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
@@ -464,7 +464,7 @@ void createAgglomeration(leftStructure,rightStructure){
               int r = agglomeration[i].R;
               int g = agglomeration[i].G;
               int b = agglomeration[i].B;
-              if (r == 13 && g == 34 && b == 102){
+              if (r == 20 && g == 60 && b == 127){
                 fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
               }
             }
@@ -474,7 +474,7 @@ void createAgglomeration(leftStructure,rightStructure){
           int r = agglomeration[i].R;
           int g = agglomeration[i].G;
           int b = agglomeration[i].B;
-          if (r == 13 && g == 34 && b == 102){
+          if (r == 20 && g == 60 && b == 127){
             fill(agglomeration[i].R, agglomeration[i].G, agglomeration[i].B);
           }
         }
@@ -494,19 +494,19 @@ void Paleta_Colores(){
   textSize(12)
   //Color Congruence left
   noStroke();
-  fill(14, 80, 217);
+  fill(82, 105, 217);
   ellipse(650, 50, 15, 15);
   //Color Congruence right
-  fill(26, 4, 127);
+  fill(20,60, 127);
   ellipse(770, 50, 15, 15);
    //Color Splits left
   fill(181, 9, 95);
   ellipse(770, 70, 15, 15);
   //Color Splits right
-  fill(255, 13, 255);
+  fill(255,   13, 255);
   ellipse(650, 70, 15, 15);
    //Color Merges left
-  fill(255, 166, 86);
+  fill(255, 179, 22);
   ellipse(650, 90, 15, 15);
   //Color Merges right
   fill(255, 101, 54);
@@ -518,13 +518,13 @@ void Paleta_Colores(){
   fill(5, 143, 135);
   ellipse(770, 110, 15, 15);
    //Color Renames left
-  fill(234, 170, 165);
+  fill(234, 197, 220);
   ellipse(650, 130, 15, 15);
   //Color Renames right
-  fill(255, 139, 148);
+  fill(186, 127, 220);
   ellipse(770, 130, 15, 15);
   //Color Exclusiones 
-  fill(208, 1, 1);
+  fill(255, 0, 8);
   ellipse(650, 150, 15, 15);
   //Color News 
   fill(7, 101, 0);
@@ -817,7 +817,7 @@ void getMergers(){
             for (int i = 0; i < nodosIzquierdos.length; i++){
               for (int j = 0; j < izquierdo.length; j++){
                 if (nodosIzquierdos[i].name == izquierdo[j].name){
-                  nodosIzquierdos[i].setRGB(255,166,86);
+                  nodosIzquierdos[i].setRGB(255,179,22);
                 }
               }
             }
@@ -1020,6 +1020,7 @@ void Moves(){
       Izquierdos = [];
       Derechos = [];
     }
+    //moves izquierda
     for (int left = 0; left < nodosIzquierdos.length; left++){
       for (int leftAux = 0; leftAux < listaIzquierdosM.length; leftAux++){
         if (nodosIzquierdos[left].name == listaIzquierdosM[leftAux].name){
@@ -1027,6 +1028,7 @@ void Moves(){
         }
       }
     }
+    //moves derecha
     for (int left = 0; left < nodosDerechos.length; left++){
       for (int leftAux = 0; leftAux < listaDerechosM.length; leftAux++){
         if (nodosDerechos[left].name == listaDerechosM[leftAux].name){
@@ -1034,17 +1036,19 @@ void Moves(){
         }
       }
     }
+    //rename izquierda
     for (int left = 0; left < nodosIzquierdos.length; left++){
       for (int leftAux = 0; leftAux < listaIzquierdosR.length; leftAux++){
         if (nodosIzquierdos[left].name == listaIzquierdosR[leftAux].name){
-           nodosIzquierdos[left].setRGB(234,170,165);
+           nodosIzquierdos[left].setRGB(234,197,220);
         }
       }
     }
+    //rename derecha
     for (int left = 0; left < nodosDerechos.length; left++){
       for (int leftAux = 0; leftAux < listaDerechosR.length; leftAux++){
         if (nodosDerechos[left].name == listaDerechosR[leftAux].name){
-           nodosDerechos[left].setRGB(255,139,148);
+           nodosDerechos[left].setRGB(186,127,220);
         }
       }
     }
@@ -1193,7 +1197,7 @@ void Exclusiones(){
   cantidadExclusiones = 0;
   for (int i = 0; i < nodosIzquierdos.length; i++){
     if (existeNombreComplejo(nodosDerechos, nodosIzquierdos[i].name, nodosIzquierdos[i].author, nodosIzquierdos[i].record_scrutiny_date)){
-      nodosIzquierdos[i].setRGB(223,1,1);
+      nodosIzquierdos[i].setRGB(255,0,8);
       cantidadExclusiones = cantidadExclusiones+1;
     }
   }
@@ -1319,8 +1323,8 @@ void Congruencia(){
       if (nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author && nodosIzquierdos[i].record_scrutiny_date == nodosDerechos[j].record_scrutiny_date){
         String [] sinonimos = nodosDerechos[j].Synonym;
         if (sinonimos.length == 0){
-            nodosIzquierdos[i].setRGB(14,80,217);
-            nodosDerechos[j].setRGB(13,34,102);
+            nodosIzquierdos[i].setRGB(82, 105, 217);
+            nodosDerechos[j].setRGB(20,60, 127);
             cantidadCongurentes += 1;
         }
         else{
@@ -1331,8 +1335,8 @@ void Congruencia(){
             }
           }
           if (flag){
-              nodosIzquierdos[i].setRGB(14,80,217);
-              nodosDerechos[j].setRGB(13,34,102);
+              nodosIzquierdos[i].setRGB(82, 105, 217);
+              nodosDerechos[j].setRGB(20,60, 127);
               cantidadCongurentes += 1;
           }
         }
@@ -1340,8 +1344,8 @@ void Congruencia(){
       else if(nodosIzquierdos[i].name == nodosDerechos[j].name && nodosIzquierdos[i].author == nodosDerechos[j].author){
        String [] sinonimos = nodosDerechos[j].Synonym;
         if (sinonimos.length == 0){
-            nodosIzquierdos[i].setRGB(14,80,217);
-            nodosDerechos[j].setRGB(13,34,102);
+            nodosIzquierdos[i].setRGB(82, 105, 217);
+            nodosDerechos[j].setRGB(20,60, 127);
             cantidadCongurentes += 1;
         }
         else{
@@ -1352,8 +1356,8 @@ void Congruencia(){
             }
           }
           if (flag){
-              nodosIzquierdos[i].setRGB(14,80,217);
-              nodosDerechos[j].setRGB(13,34,102);
+              nodosIzquierdos[i].setRGB(82, 105, 217);
+              nodosDerechos[j].setRGB(20,60, 127);
               cantidadCongurentes += 1;
           }
         }
