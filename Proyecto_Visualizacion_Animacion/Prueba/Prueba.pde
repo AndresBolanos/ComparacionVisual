@@ -131,7 +131,7 @@ void setValueSlider(int valueSlider){
     incrX = abs(valueSlider);
     incrY = abs(valueSlider);
     incrX = incrX-(abs(valueSlider*0.5))
-    incrY = incrY-(abs(valueSlider*0.5))
+    incrY = 2*(incrY-(abs(valueSlider*0.5)))
   }
 }
 
@@ -189,6 +189,7 @@ void setup(){
   renames_Second = false;
   news_Second = false;
   congruency_Second = false;
+  merges_Second = false;
   splits_Second = false;
 
   posicionNuevos = 0;
@@ -198,6 +199,7 @@ void setup(){
   posicionRename = 0;
   posicionMerges = 0;
   posicionSplits = 0;
+  
   mergers = false;
   moves = false;
   renames = false;
@@ -207,7 +209,7 @@ void setup(){
   splitsAux = false;
   ListaSplitsA = false;
   exclusions = false;
-  inicio = true;
+  //inicio = true;
   size (availableWidth,2000);
   Final = false;
   izquierdos = nodesLeft;
@@ -362,6 +364,7 @@ void draw() {
                       nodosIzquierdos[i].move(ListaSeleccionados_Moves_D[posicionMoves].x,ListaSeleccionados_Moves_D[posicionMoves].y);
                       if (nodosIzquierdos[i].x >= ListaSeleccionados_Moves_D[posicionMoves].x -6 && (nodosIzquierdos[i].y >= ListaSeleccionados_Moves_D[posicionMoves].y-6 || nodosIzquierdos[i].y >= ListaSeleccionados_Moves_D[posicionMoves].y+6)){
                         posicionMoves+=1;
+
                         removerNodos([i]);
                         if (posicionMoves == ListaSeleccionados_Moves_D.length){
                             moves = false;
@@ -375,7 +378,7 @@ void draw() {
                   else{
                       if (nodosIzquierdos[i].name == ListaMoves[posicionMoves].nodoIzquierdo.name){
                         nodosIzquierdos[i].move(ListaMoves[posicionMoves].nodoDerecho.x,ListaMoves[posicionMoves].nodoDerecho.y);
-                        if (nodosIzquierdos[i].x >= ListaMoves[posicionMoves].nodoDerecho.x -6 && (nodosIzquierdos[i].y >= ListaMoves[posicionMoves].nodoDerecho.y-6 || nodosIzquierdos[i].y >= ListaMoves[posicionMoves].nodoDerecho.y+6)){
+                        if (nodosIzquierdos[i].x >= ListaMoves[posicionMoves].nodoDerecho.x -6 && (nodosIzquierdos[i].y >= ListaMoves[posicionMoves].nodoDerecho.y-6 && nodosIzquierdos[i].y <= ListaMoves[posicionMoves].nodoDerecho.y+6)){
                           posicionMoves+=1;
                           removerNodos([i]);
                           if (posicionMoves == ListaMoves.length){
@@ -644,7 +647,7 @@ void draw() {
           inicio = false;
           congruency = true;
         }
-        if (mergers || (merges_click && merges)){
+        if (mergers || (merges_click && mergers)){
           if (mergersG || merges_click){
             merges_Second = true;
             if (Listamergers.length == 0){
@@ -732,11 +735,12 @@ void draw() {
                   for (j = 0; j < ListaMoves.length; j++){
                     if (nodosIzquierdos[i].name == ListaMoves[j].nodoIzquierdo.name){
                       nodosIzquierdos[i].move(ListaMoves[j].nodoDerecho.x,ListaMoves[j].nodoDerecho.y);
-                      if (nodosIzquierdos[i].x >= ListaMoves[j].nodoDerecho.x -6 && (nodosIzquierdos[i].y >= ListaMoves[j].nodoDerecho.y-6 || nodosIzquierdos[i].y >= ListaMoves[j].nodoDerecho.y+6)){
-                        removerNodos(posicionesMoves);
-                        moves = false;
-                        //moves_click = false;
-                        renames = true;
+                      int diferencia = abs(nodosIzquierdos[i].y - ListaMoves[j].nodoDerecho.y);
+                      if (nodosIzquierdos[i].x >= ListaMoves[j].nodoDerecho.x -6 && diferencia <= 6){
+                          removerNodos(posicionesMoves);
+                          moves = false;
+                          //moves_click = false;
+                          renames = true;
                       }
                     }
                   }
@@ -1034,7 +1038,7 @@ void Calcular_Nodo_Seleccionado(x, y){
     }
   }
   setup();
-
+  Clear();
 }
 
 
@@ -1413,17 +1417,33 @@ void pintarNodos(flag){
       fill(124,122,122);
       if (mergers || merges_Second || merges_click || merges_click_auxiliary){
         if (mergersG || merges_click){
-          for (int m = 0; m < Listamergers.length; m++){
-            if (one_by_one){
-              if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name && m < posicionMerges){ 
-                fill(255, 166, 86);
+          if (merges_click){
+            for (int m = 0; m < ListaSeleccionados_Merges_I.length; m++){
+              if (one_by_one){
+                if (ListaSeleccionados_Merges_I[m].nodoMergeDerecho.name == nodosDerechos[i].name && m < posicionMerges){ 
+                  fill(255, 166, 86);
+                }
+              }
+              else{
+                if (ListaSeleccionados_Merges_I[m].nodoMergeDerecho.name == nodosDerechos[i].name){ 
+                  fill(255, 166, 86);
+                }
               }
             }
-            else{
-              if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name){ 
-                fill(255, 166, 86);
+          }
+          else{
+              for (int m = 0; m < Listamergers.length; m++){
+                if (one_by_one){
+                  if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name && m < posicionMerges){ 
+                    fill(255, 166, 86);
+                  }
+                }
+                else{
+                  if (Listamergers[m].nodoMergeDerecho.name == nodosDerechos[i].name){ 
+                    fill(255, 166, 86);
+                  }
+                }
               }
-            }
           }
         }
       }

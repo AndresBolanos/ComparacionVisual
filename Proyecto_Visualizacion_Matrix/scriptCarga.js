@@ -108,15 +108,20 @@ function loadFiles (file1, file2){
             }
             render(data, data);
             try{
-                processingInstance.setup();
-                iniciar = true;
-                var archivo1 = file1.replace(".json", "");
-                var archivo2 = file2.replace(".json", "");
-                
-                processingInstance.setNames(archivo1,archivo2);   
-                processingInstance.set_Inicio(true);
-                processingInstance.setExclusiones(false);
-                processingInstance.setNuevos(false);
+                if (nodesLeft.length > 0 && nodesRight.length > 0){
+                    processingInstance.setup();
+                    iniciar = true;
+                    var archivo1 = file1.replace(".json", "");
+                    var archivo2 = file2.replace(".json", "");
+                    
+                    processingInstance.setNames(archivo1,archivo2);   
+                    processingInstance.set_Inicio(true);
+                    processingInstance.setExclusiones(false);
+                    processingInstance.setNuevos(false);
+                }
+                else{
+                    loadFiles(file1,file2);
+                }    
             }
             catch(e){
                 loadFiles(file1,file2);

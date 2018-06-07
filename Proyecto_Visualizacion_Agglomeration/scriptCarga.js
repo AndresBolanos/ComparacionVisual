@@ -335,10 +335,16 @@ function loadFiles (file1, file2){
             render(data, data);
              
             try{
-                processingInstance.setup();
-                var archivo1 = file1.replace(".json", "");
-                var archivo2 = file2.replace(".json", "");
-                processingInstance.setNames(archivo1,archivo2); 
+                if (nodesLeft.length > 0 && nodesRight.length > 0){
+                    processingInstance.setup();
+                    var archivo1 = file1.replace(".json", "");
+                    var archivo2 = file2.replace(".json", "");
+                   
+                    processingInstance.setNames(archivo1,archivo2);
+                }
+                else{
+                    loadFiles(file1,file2);
+                }    
             }
             catch(e){
                 loadFiles(file1,file2);
