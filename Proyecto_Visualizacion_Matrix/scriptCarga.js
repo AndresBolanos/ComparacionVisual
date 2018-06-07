@@ -64,8 +64,8 @@ function CargaBitacora(){
                          document.getElementById("Exclusions").checked = true;
                     }
                     VerificarChecks();
-            }, 1000);
-        },1000);
+            }, 2000);
+        },2000);
 }
 
 
@@ -77,7 +77,11 @@ availableHeight = $(window).height();
 //var margin = {top: -5, right: -5, bottom: -5, left: -5};
 var margin = -5;
 
+$(window).load(function(){ console.log("Hola")})
+
 function loadFiles (file1, file2){
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS'); 
    d3.json("Archivos-Datos/"+file1, function (err, data) {
         var Ltree = d3.layout.treelist()
             .childIndent(40)
@@ -103,23 +107,27 @@ function loadFiles (file1, file2){
                 nodesRight = nodes;
             }
             render(data, data);
+            try{
+                processingInstance.setup();
+                iniciar = true;
+                var archivo1 = file1.replace(".json", "");
+                var archivo2 = file2.replace(".json", "");
+                
+                processingInstance.setNames(archivo1,archivo2);   
+                processingInstance.set_Inicio(true);
+                processingInstance.setExclusiones(false);
+                processingInstance.setNuevos(false);
+            }
+            catch(e){
+                loadFiles(file1,file2);
+            }
             
-            iniciar = true;
-            var processingInstance;
-            processingInstance = Processing.getInstanceById('CANVAS'); 
-            var archivo1 = file1.replace(".json", "");
-            var archivo2 = file2.replace(".json", "");
-            processingInstance.setNames(archivo1,archivo2);         
-            processingInstance.setup();
-            processingInstance.set_Inicio(true);
-            processingInstance.setExclusiones(false);
-            processingInstance.setNuevos(false);
     });
     window.sessionStorage.setItem("File1_M", file1);
     window.sessionStorage.setItem("File2_M", file2);
 }
 
 //This functions is activated when page is full loaded.
-$(window).bind("load", function() {
+$(window).ready(function() {
     CargaBitacora(); //Call the function that load the latest state of the page.
 });

@@ -279,6 +279,8 @@ availableHeight = $(window).height();
 
 //Load the files and store in logic array
 function loadFiles (file1, file2){
+    var processingInstance;
+    processingInstance = Processing.getInstanceById('CANVAS');
     d3.json("Archivos-Datos/"+file1, function (err, data) {
         var Ltree = d3.layout.treelist()
             .childIndent(20)
@@ -331,12 +333,18 @@ function loadFiles (file1, file2){
                 nodesRight = nodes;
             }
             render(data, data);
-             var processingInstance;
-            processingInstance = Processing.getInstanceById('CANVAS');
-            var archivo1 = file1.replace(".json", "");
-            var archivo2 = file2.replace(".json", "");
-            processingInstance.setNames(archivo1,archivo2);   
-            processingInstance.setup();
+             
+            try{
+                processingInstance.setup();
+                var archivo1 = file1.replace(".json", "");
+                var archivo2 = file2.replace(".json", "");
+                processingInstance.setNames(archivo1,archivo2); 
+            }
+            catch(e){
+                loadFiles(file1,file2);
+            }
+              
+            
     });
     window.sessionStorage.setItem("File1_Ag", file1);
     window.sessionStorage.setItem("File2_Ag", file2);
