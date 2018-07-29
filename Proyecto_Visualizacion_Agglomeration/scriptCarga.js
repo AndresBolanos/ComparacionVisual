@@ -1,12 +1,13 @@
 
 var nodesLeft = []; //Global variable to the left nodes
 var nodesRight = [];//Global variable to the right nodes
-var availableWidth;
-var availableHeight;
-var valueSlider=0;
-var iniciado = false;
+var availableWidth; //Width of the frame
+var availableHeight;//Height of the frame
+var valueSlider=0;  //The initial value of the slider 0 movement
+var iniciado = false; //start variable to start the animation
 
-//Check variables
+//Check variables 
+//If one of this variable is true, the respective taks is executed.
 var splitsG = false;;
 var mergersG = false;;
 var movesG = false;
@@ -269,7 +270,7 @@ function setAllG(){
     }
 }
 
-
+//This function is execute automatically when the use make a resize in the page
 $(window).resize(function() {
     window.location.href = window.location.href;
 });
@@ -303,7 +304,7 @@ function loadFiles (file1, file2){
             render(data, data);
     });
 
-
+    //Load rigth taxonomy.
     d3.json("Archivos-Datos/"+file2, function (err, data) {
         var Ltree = d3.layout.treelist()
             .childIndent(20)
@@ -357,6 +358,7 @@ function loadFiles (file1, file2){
 }
 
 //Show the window that have all the files to load
+//Now this no is used, beacuse the taxonomies are loades automatically.
 function nuevaventana (){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');

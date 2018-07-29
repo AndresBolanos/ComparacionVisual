@@ -78,6 +78,7 @@ void setup(){
   News()
   Congruencia(); 
 
+  //Verify that the taxonomies have data
   if (nodosIzquierdos.length > 0 && nodosDerechos.length > 0){ 
       ListaPosiciones_I = new ListaPosiciones_I[nodosIzquierdos.length-1]; 
       ListaPosiciones_D = new ListaPosiciones_D[nodosDerechos.length-1]; 
@@ -154,6 +155,7 @@ void cargarColores(){
 }
 
 //Create the logic array of all the agglomeration
+//Save the color to each task and then compare the values to paint the node.
 void createAgglomeration(leftStructure,rightStructure){  
   Object [] agglomeration = [];
 
@@ -489,6 +491,7 @@ void createAgglomeration(leftStructure,rightStructure){
   } 
 }
 
+//LEYEND
 //Draw the colors leyend on the page
 void Paleta_Colores(){
   textSize(12)
@@ -551,7 +554,7 @@ boolean existe_Elemento_Array(ele, arreglo){
   return false;
 }
 
-//On mouse click over all the pague this function is executed
+//On mouse click over all the page this function is executed
 //Calculate the node that is selected and call the on click funcions of each task
 void mouseClicked() {
   ListaConguentesPainted_I = [];

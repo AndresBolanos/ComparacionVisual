@@ -453,6 +453,9 @@ function loadFiles (file1, file2){
                     .on("mouseout", function (d) {
                         d3.selectAll(".selected").classed("selected", false);
                     })
+                    //When the click is selected the methos inside of this section are executed.
+                    //Here we have the click methods.
+                    //Using pocessing methods.
                     .on("click", function (d) {
                         //on click right nodes selection funcion
                         tocado = true;
@@ -480,7 +483,7 @@ function loadFiles (file1, file2){
                                 Save_Parents_Names_Right(nodesRight[i].children);
                             }
                         }
-                        document.getElementById(d.name+"1").style.fontSize = "large";
+                        document.getElementById(d.name+"2").style.fontSize = "large";
                         Pintar_Nodos = Retornar_Nommbres_Right();
                         Pintar_Nodos.push(d.name);
                         processingInstance.drawCongruency_Auxiliar([d],1);

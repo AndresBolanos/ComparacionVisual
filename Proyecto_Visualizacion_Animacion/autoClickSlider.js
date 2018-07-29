@@ -97,7 +97,7 @@ function autoClickAll_ON(){
     // window.sessionStorage.setItem("Congruencia_M", true);
 }
 
-//This function is accesed from processing, to turn off the congruence slideron click
+//This function is accesed from processing, to turn off the congruence slider on click
 function autoClickAll_OFF(){
     document.getElementById("All").checked = false;
     //Almacenamiento del estado actual de la pagina en caso de cambio

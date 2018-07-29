@@ -7,7 +7,8 @@ var valueSlider=0;
 var iniciado = false;
 var iniciadoProceso = false;
 
-//Check variables
+//Check variables 
+//If one variable is true execute the task
 var splitsG = false;;
 var mergersG = false;;
 var movesG = false;
@@ -23,7 +24,8 @@ var terminado;
 var file1 = "";
 var file2 = "";
 
-
+//Save the statistics
+//Now the statistics are hidden.
 var cantidadSplits;
 var cantidadMergers;
 var cantidadRename;
@@ -33,6 +35,8 @@ var cantidadNuevos;
 var cantidadCongruentes;
 
 
+//Load the last state of the page, sliders that are on en the taxonomies.
+//Using session Storage (Browser).
 function CargaBitacora(){
     setTimeout(function() {
         loadFiles('AmphibiaTest1.json','AmphibiaTest4.json');
@@ -87,11 +91,12 @@ function CargaBitacora(){
     },1000);
 }
 
-
+//When the page is loaded o reloaded the pague need to be cleaned
 $(window).bind("load", function() {
     LimpiarCanvas();
 });
 
+//Clean the window, lines and sliders
 function LimpiarCanvas(){
     splits = false;
     moves = false;
@@ -110,7 +115,7 @@ function LimpiarCanvas(){
     document.getElementById("All").checked = false;
 }
 
-
+//This function is called to save the state of the session storage of splits.
 function setsplitsG(){
     if (splitsG == false){
         splitsG = true;
@@ -123,6 +128,7 @@ function setsplitsG(){
     console.log(splitsG);
 }
 
+//This function is called to save the state of the session storage of merges.
 function setsmergersG(){
     if (mergersG == false){
         mergersG = true;
@@ -135,6 +141,7 @@ function setsmergersG(){
     console.log(mergersG);
 }
 
+//This function is called to save the state of the session storage of moves.
 function setsmovesG(){
     if (movesG == false){
         movesG = true;
@@ -147,6 +154,7 @@ function setsmovesG(){
     console.log(movesG);
 }
 
+//This function is called to save the state of the session storage of renames.
 function setsrenamesG(){
     if (renamesG == false){
         renamesG = true;
@@ -159,6 +167,7 @@ function setsrenamesG(){
     console.log(renamesG);
 }
 
+//This function is called to save the state of the session storage of exclusions.
 function setsexclusionsG(){
     if (exclusionsG == false){
         exclusionsG = true;
@@ -171,6 +180,7 @@ function setsexclusionsG(){
     console.log(exclusionsG);
 }
 
+//This function is called to save the state of the session storage of news.
 function setnewsG(){
     if (newsG == false){
         newsG = true;
@@ -183,6 +193,7 @@ function setnewsG(){
     console.log(newsG);
 }
 
+//This function is called to save the state of the session storage of congruency.
 function setconguencyG(){
     if (conguencyG == false){
         conguencyG = true;
@@ -195,8 +206,7 @@ function setconguencyG(){
     console.log(conguencyG);
 }
 
-
-
+//This function is called to save the state of the session storage of all tasks.
 function setAllG(){
     if (allG == false){
         splitsG = true;
@@ -250,6 +260,8 @@ function setAllG(){
         window.sessionStorage.setItem("Splits_A", false);
     }
 }
+
+//Reset the window to the deafult values and configuration
 function Clear(){
     finish = true;
     var processingInstance;
@@ -283,6 +295,7 @@ function Clear(){
     document.getElementById("OneByOne").checked = false;
 }
 
+//This function is executed to start the animation
 var vel = 0;
 function IniciarAnimacion(){
     if (iniciadoProceso == false){
@@ -316,6 +329,7 @@ function IniciarAnimacion(){
     Estadisticas(); 
 }
 
+//To change the image of the buttom to default.
 function resetPlayButtom(){
     document.getElementById('Comenzar').style.backgroundImage = "url('play.png')";
     valueSlider = 0;
@@ -326,6 +340,7 @@ function resetPlayButtom(){
     iniciadoProceso = false;
 }
 
+//Get the value velocity of the sider
 function showVal(x){
     vel = x;
     valueSlider = document.getElementById('Slider').value;
@@ -342,6 +357,7 @@ $(window).resize(function() {
 availableWidth = $(window).width(); //size of the width of the screen
 availableHeight = $(window).height();
 
+//Load the files from the JSON and store in the arrays
 function loadFiles (file1, file2){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -414,7 +430,7 @@ function Estadisticas(){
     document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
 }
 
-
+//Set the one by one slider
 function setOneByOne(){
     if (document.getElementById("OneByOne").checked == true){
         onebyone = true;
@@ -432,6 +448,8 @@ function setOneByOne(){
     }
 }
 
+//Now is not used, but can be used to mantain clean the animation when is finish
+//Clean at the end.
 var finish = true;
 function demonio(){
     //console.log("Se ejecuta");
@@ -458,7 +476,8 @@ function demonio(){
 }
 
 
-
+//Function if the loade page need to be used
+//Call this function from the HTML.
 function nuevaventana (){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
