@@ -329,9 +329,8 @@ function loadFiles (file1, file2){
                         nodes[node]["G"] = 0;
                         nodes[node]["B"] = 0;
                     }
-                    
+                    nodesRight = nodes;
                 }
-                nodesRight = nodes;
             }
             render(data, data);
              

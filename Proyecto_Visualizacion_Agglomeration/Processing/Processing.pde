@@ -531,7 +531,7 @@ void Paleta_Colores(){
   ellipse(650, 150, 15, 15);
   //Color News 
   fill(7, 101, 0);
-  ellipse(650, 170, 15, 15);
+  ellipse(770, 170, 15, 15);
 
   fill(0);
   text(" is congruent with ", 665, 52);
