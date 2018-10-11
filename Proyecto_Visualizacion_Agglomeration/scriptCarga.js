@@ -45,31 +45,31 @@ function CargaBitacora(){
                 else{
                     if (window.sessionStorage.getItem('Congruencia_Ag') == "true" ){
                          document.getElementById("Congruencia").checked = true;
-                         setconguencyG();
+                         Click_Congruence();
                     }
                      if (window.sessionStorage.getItem('Splits_Ag') == "true" ){
                          document.getElementById("Splits").checked = true;
-                         setsplitsG();
+                         Click_Splits();
                     }
                     if (window.sessionStorage.getItem('Merges_Ag') == "true" ){
                          document.getElementById("Mergers").checked = true;
-                         setsmergersG();
+                         Click_Merge();
                     }
                     if (window.sessionStorage.getItem('Nuevos_Ag') == "true" ){
                          document.getElementById("News").checked = true;
-                         setnewsG();
+                         Click_News();
                     }
                     if (window.sessionStorage.getItem('Moves_Ag') == "true" ){
                          document.getElementById("Moves").checked = true;
-                         setsmovesG();
+                         Click_Moves();
                     }
                     if (window.sessionStorage.getItem('Renames_Ag') == "true" ){
                          document.getElementById("Renames").checked = true;
-                         setsrenamesG();
+                         Click_Renames();
                     }
                     if (window.sessionStorage.getItem('Exclusions_Ag') == "true" ){
                          document.getElementById("Exclusions").checked = true;
-                         setsexclusionsG();
+                         Click_Exclusions();
                     }
                 }
                 
@@ -186,7 +186,7 @@ function Click_Congruence(){
     if (conguencyG == false){
         console.log("Seee");
         conguencyG = true;
-        processingInstance.Congruencia(); 
+        processingInstance.drawCongruence(); 
         var cantidadCongruentes = processingInstance.returnCongruentes(); 
         document.getElementById("CongruenceStatsValue").innerHTML = cantidadCongruentes;
         window.sessionStorage.setItem("Congruencia_Ag", true);
