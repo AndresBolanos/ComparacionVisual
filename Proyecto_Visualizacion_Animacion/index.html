@@ -4,15 +4,16 @@
          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
          <meta name="description" content="Hierarchy comparison - colouring"/>
          <title> Comparación taxonomías </title>
-         <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
          <script src="bootstrap.min.js"></script>
          <link href="menu.css" rel="stylesheet">
          <link href="fonts.css" rel="stylesheet">
+         <script type="text/javascript" src="jquery-2.2.3.js"></script>
+         <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
          <link href="bootstrap.min.css" rel="stylesheet">
          <link href="estilo.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <script src="d3.js"></script>
-          <script type="text/javascript" src="menu.js"></script>
+         <script type="text/javascript" src="menu.js"></script>
          <script type="text/javascript" src="treelist.js"></script>
          <script src="processing.js"></script>
          <link href="example" rel="stylesheet/scss" type="text/css">
@@ -32,42 +33,42 @@
             <form> 
               <label class="labelCongruence">Congruence</label>
               <label class="switchCongruence">
-                <input  id="Congruencia" type="checkbox" onclick="setconguencyG()">
+                <input  id="Congruencia" type="checkbox" onclick="Click_Congruence()">
                 <span class="sliderCongruent round"></span>                
               </label> 
               <label class="labelSplits">Splits</label>
               <label class="switchSplits">
-                <input id="Splits" type="checkbox" onclick="setsplitsG()">
+                <input id="Splits" type="checkbox" onclick="Click_Splits()">
                 <span class="sliderSplits round"></span>                
               </label> 
               <label class="labelMerges">Merges</label>
               <label class="switchMerges">
-                <input id="Mergers" type="checkbox" onclick="setsmergersG()">
+                <input id="Mergers" type="checkbox" onclick="Click_Merge()">
                 <span class="sliderMerges round"></span>                
               </label>
               <label class="labelMoves">Moves</label>
               <label class="switchMoves">
-                <input id="Moves" type="checkbox" onclick="setsmovesG()">
+                <input id="Moves" type="checkbox" onclick="Click_Moves()">
                 <span class="sliderMoves round"></span>                
               </label>
               <label class="labelRenames">Renames</label>
               <label class="switchRenames">
-                <input id="Renames" type="checkbox" onclick="setsrenamesG()">
+                <input id="Renames" type="checkbox" onclick="Click_Renames()">
                 <span class="sliderRename round"></span>                
               </label>
               <label class="labelNew">New</label>
               <label class="switchNew">
-                <input id="News" type="checkbox" onclick="setnewsG()">
+                <input id="News" type="checkbox" onclick="Click_News()">
                 <span class="sliderNew round"></span>                
               </label>
               <label class="labelExclusions">Exclusions</label>
               <label class="switchExclusions">
-                <input id="Exclusions" type="checkbox" onclick="setsexclusionsG()">
+                <input id="Exclusions" type="checkbox" onclick="Click_Exclusions()">
                 <span class="sliderExclusion round"></span>                
               </label>
               <label class="labelAll">All</label>
               <label class="switchAll">
-                <input id="All" type="checkbox" onclick="setAllG()">
+                <input id="All" type="checkbox" onclick="All_Tasks()">
                 <span class="slider round"></span>                
               </label>
               <label class="labelClear">Reset</label>

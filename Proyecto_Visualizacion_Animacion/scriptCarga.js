@@ -54,36 +54,36 @@ function CargaBitacora(){
                 )
                 {
                      document.getElementById("All").checked = true;
-                     setAllG();
+                     All_Tasks();
                 }
             else{
                 if (window.sessionStorage.getItem('Congruencia_A') == "true" ){
                      document.getElementById("Congruencia").checked = true;
-                     setconguencyG();
+                     Click_Congruence();
                 }
                  if (window.sessionStorage.getItem('Splits_A') == "true" ){
                      document.getElementById("Splits").checked = true;
-                     setsplitsG();
+                     Click_Splits();
                 }
                 if (window.sessionStorage.getItem('Merges_A') == "true" ){
                      document.getElementById("Mergers").checked = true;
-                     setsmergersG();
+                     Click_Merge();
                 }
                 if (window.sessionStorage.getItem('Nuevos_A') == "true" ){
                      document.getElementById("News").checked = true;
-                     setnewsG();
+                     Click_News();
                 }
                 if (window.sessionStorage.getItem('Moves_A') == "true" ){
                      document.getElementById("Moves").checked = true;
-                     setsmovesG();
+                     Click_Moves();
                 }
                 if (window.sessionStorage.getItem('Renames_A') == "true" ){
                      document.getElementById("Renames").checked = true;
-                     setsrenamesG();
+                     Click_Renames();
                 }
                 if (window.sessionStorage.getItem('Exclusions_A') == "true" ){
                      document.getElementById("Exclusions").checked = true;
-                     setsexclusionsG();
+                     Click_Exclusions();
                 }
             }
             
@@ -116,7 +116,7 @@ function LimpiarCanvas(){
 }
 
 //This function is called to save the state of the session storage of splits.
-function setsplitsG(){
+function Click_Splits(){
     if (splitsG == false){
         splitsG = true;
         window.sessionStorage.setItem("Splits_A", true);
@@ -129,7 +129,7 @@ function setsplitsG(){
 }
 
 //This function is called to save the state of the session storage of merges.
-function setsmergersG(){
+function Click_Merge(){
     if (mergersG == false){
         mergersG = true;
         window.sessionStorage.setItem("Merges_A", true);
@@ -138,11 +138,10 @@ function setsmergersG(){
         mergersG = false;
         window.sessionStorage.setItem("Merges_A", false);
     }
-    console.log(mergersG);
 }
 
 //This function is called to save the state of the session storage of moves.
-function setsmovesG(){
+function Click_Moves(){
     if (movesG == false){
         movesG = true;
         window.sessionStorage.setItem("Moves_A", true);
@@ -151,11 +150,10 @@ function setsmovesG(){
         movesG = false;
         window.sessionStorage.setItem("Moves_A", false);
     }
-    console.log(movesG);
 }
 
 //This function is called to save the state of the session storage of renames.
-function setsrenamesG(){
+function Click_Renames(){
     if (renamesG == false){
         renamesG = true;
         window.sessionStorage.setItem("Renames_A", true);
@@ -164,11 +162,10 @@ function setsrenamesG(){
         renamesG = false;
         window.sessionStorage.setItem("Renames_A", false);
     }
-    console.log(renamesG);
 }
 
 //This function is called to save the state of the session storage of exclusions.
-function setsexclusionsG(){
+function Click_Exclusions(){
     if (exclusionsG == false){
         exclusionsG = true;
         window.sessionStorage.setItem("Exclusions_A", true);
@@ -181,7 +178,7 @@ function setsexclusionsG(){
 }
 
 //This function is called to save the state of the session storage of news.
-function setnewsG(){
+function Click_News(){
     if (newsG == false){
         newsG = true;
         window.sessionStorage.setItem("Nuevos_A", true);
@@ -194,7 +191,7 @@ function setnewsG(){
 }
 
 //This function is called to save the state of the session storage of congruency.
-function setconguencyG(){
+function Click_Congruence(){
     if (conguencyG == false){
         conguencyG = true;
         window.sessionStorage.setItem("Congruencia_A", true);
@@ -207,7 +204,7 @@ function setconguencyG(){
 }
 
 //This function is called to save the state of the session storage of all tasks.
-function setAllG(){
+function All_Tasks(){
     if (allG == false){
         splitsG = true;
         mergersG = true;
@@ -277,7 +274,7 @@ function Clear(){
     processingInstance.setup();
     processingInstance.setValueOneByOne(false);
     allG = true;
-    setAllG();
+    All_Tasks();
     document.getElementById("All").checked = false;
     document.getElementById('Slider').checked = "0";
     //valueSlider = document.getElementById('Slider').value;

@@ -221,12 +221,12 @@ void setup(){
   //Here load the nodes
   loadNodes(izquierdos,true);
   loadNodes(derechos,false);
-  News();
-  Exclusiones();
-  getMergers();
-  Moves();
-  Splits();
-  Congruencia();
+  drawNews();
+  drawExclusions();
+  drawMergers();
+  drawMoves();
+  drawSplits();
+  drawCongruence();
   clickeadofrom = false;
   posicionNuevos = 0;
 }
@@ -283,7 +283,7 @@ void draw() {
                               posicionMerges+=1;
                               if (posicionMerges == ListaSeleccionados_Merges_I.length){
                                   mergers = false;
-                                  getMergers();
+                                  drawMergers();
                                   //merges_click = false;
                                   moves = true;
                                   paro = true;
@@ -326,7 +326,7 @@ void draw() {
                               posicionMerges+=1;
                               if (posicionMerges == Listamergers.length){
                                   mergers = false;
-                                  getMergers();
+                                  drawMergers();
                                   //merges_click = false;
                                   moves = true;
                                   paro = true;
@@ -573,7 +573,7 @@ void draw() {
                       if (posicionSplits == ListaSplits.length){
                         splits = false;
                         splitsAux = false;
-                        Splits();
+                        drawSplits();
                         mergers = true;
                         break;
                       }
@@ -670,7 +670,7 @@ void draw() {
                              mergers = false;
                              //merges_click = false;
                              moves = true;
-                             getMergers();
+                             drawMergers();
                              break;
                             }
                         }
@@ -693,7 +693,7 @@ void draw() {
                              mergers = false;
                              //merges_click = false;
                              moves = true;
-                             getMergers();
+                             drawMergers();
                              break;
                             }
                         }
@@ -705,7 +705,7 @@ void draw() {
           else{
             mergers = false;
             merges_click = false;
-            getMergers();
+            drawMergers();
             moves = true;
           }
         }
@@ -920,7 +920,7 @@ void draw() {
                       removerNodos(getPosicionesFinalesSplit());
                       splitsAux2 = false;
                       mergers = true;
-                      Splits();
+                      drawSplits();
                       //splits_click = false;
                       break;
                     }
@@ -1676,7 +1676,7 @@ int calcularCantidadNodos(){
 }
 
 object [] izquierdo = [];
-void getMergers(){
+void drawMergers(){
   cantidadMerges = 0;
   Listamergers = [];
   Listamergers = new Merge[calcularCantidadNodos()];
@@ -1828,7 +1828,7 @@ int [] getPosicionesMoves_Renames(nodos){
   return posiciones;
 }
 
-void Moves(){
+void drawMoves(){
    cantidadRenames = 0;
    cantidadMoves = 0;
    Object [] Derechos = [];
@@ -2035,7 +2035,7 @@ boolean existeNombreComplejo(nodos,nombre,author,date){
      return true;
 }
 
-void Exclusiones(){
+void drawExclusions(){
   int cantidad = 0;
   cantidadExclusiones = 0;
   for (int i = 1; i < nodosIzquierdos.length; i++){
@@ -2084,7 +2084,7 @@ boolean existeNombre_ComplejoAux(nombre,autor,date){
     return true;
 } 
 
-void News(){
+void drawNews(){
   cantidadNews = 0;
   Excl_News [] nodos = [];
   for (int i = 1; i < nodosDerechos.length; i++){
@@ -2144,7 +2144,7 @@ int [] getposicionesCongruengy(click){
   return posiciones;
 }
 
-void Congruencia(){
+void drawCongruence(){
   ListaCongruency1 = [];
   cantidadCongruentes = 0;
   for (int i = 1;i<nodosIzquierdos.length;i++){
@@ -2241,7 +2241,7 @@ int [] getPosicionesSplits(){
   return posiciones;
 }
 
-void Splits(){
+void drawSplits(){
   cantidadSplits =0;
   Object [] splitsL = [];
   Object [] splitsR = [];
