@@ -71,12 +71,12 @@ void setup(){
   size (availableWidth,availableHeight+((nodesLeft.length+nodesRight.length)*15));
 
   //Execute the algorithms 
-  Splits();
-  getMergers();
-  Moves();
-  Exclusiones();
-  News()
-  Congruencia(); 
+  drawSplits();
+  drawMergers();
+  drawMoves();
+  drawExclusions();
+  drawNews()
+  drawCongruence(); 
 
   //Verify that the taxonomies have data
   if (nodosIzquierdos.length > 0 && nodosDerechos.length > 0){ 
@@ -660,7 +660,7 @@ void verificarSinonimos(arreglo,nombre){
 
 //Find all the splits
 int cantidadSplits = 0;
-void Splits(){
+void drawSplits (){
   Object [] splitsL = [];
   Object [] splitsR = [];
   Node [] derechos = [];
@@ -801,7 +801,7 @@ int returnCantidadMergers(){
 }
 
 //Fnd all the merges
-void getMergers(){
+void drawMergers(){
   cantidadMergers = 0;
   for (int nodeR = 0; nodeR < nodosDerechos.length; nodeR++){
       derecho = nodosDerechos[nodeR];
@@ -952,7 +952,7 @@ int returnRenames(){
 }
 
 //Find the moves of slider buttoms
-void Moves(){
+void drawMoves(){
    Object [] Derechos = [];
    Object [] Izquierdos = [];
    Object [] listaIzquierdosM = [];
@@ -1196,7 +1196,7 @@ boolean existeNombreComplejo(nodos,nombre,author,date){
 }
 
 int cantidadExclusiones = 0;
-void Exclusiones(){
+void drawExclusions(){
   cantidadExclusiones = 0;
   for (int i = 0; i < nodosIzquierdos.length; i++){
     if (existeNombreComplejo(nodosDerechos, nodosIzquierdos[i].name, nodosIzquierdos[i].author, nodosIzquierdos[i].record_scrutiny_date)){
@@ -1249,7 +1249,7 @@ boolean existeNombre_ComplejoNuevos(nombre,autor){
 }
 
 //Find all the new nodes
-void News(){
+void drawNews(){
   cantidadNuevos = 0;
   for (int i = 0; i < nodosDerechos.length; i++){
     if (existeNombre_ComplejoNuevos(nodosDerechos[i].name,nodosDerechos[i].author)){
@@ -1319,7 +1319,7 @@ int returnCongruentes(){
 }
 
 //Find all the congruence nodes
-void Congruencia(){
+void drawCongruence(){
   cantidadCongurentes = 0;
   for (int i = 1;i<nodosIzquierdos.length;i++){
     for (int j = 0;j<nodosDerechos.length;j++){

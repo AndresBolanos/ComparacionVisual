@@ -78,7 +78,7 @@ function CargaBitacora(){
 }
 
 //Call splits function in processing to draw
-function setsplitsG(){
+function Click_Splits(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (splitsG == false){
@@ -95,7 +95,7 @@ function setsplitsG(){
 }
 
 //Call merges function in processing to draw
-function setsmergersG(){
+function Click_Merge(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (mergersG == false){
@@ -112,7 +112,7 @@ function setsmergersG(){
 }
 
 //Call moves function in processing to draw
-function setsmovesG(){
+function Click_Moves(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (movesG == false){
@@ -129,7 +129,7 @@ function setsmovesG(){
 }
 
 //Call renames function in processing to draw
-function setsrenamesG(){
+function Click_Renames(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (renamesG == false){
@@ -146,7 +146,7 @@ function setsrenamesG(){
 }
 
 //Call exclusions function in processing to draw
-function setsexclusionsG(){
+function Click_Exclusions(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (exclusionsG == false){
@@ -163,7 +163,7 @@ function setsexclusionsG(){
 }
 
 //Call news function in processing to draw
-function setnewsG(){
+function Click_News(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (newsG == false){
@@ -180,7 +180,7 @@ function setnewsG(){
 }
 
 //Call congruence function in processing to draw
-function setconguencyG(){
+function Click_Congruence(){
      var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (conguencyG == false){
@@ -199,7 +199,7 @@ function setconguencyG(){
 }
 
 //Call all tasks function in processing to draw
-function setAllG(){
+function All_Tasks(){
     if (allG == false){
         conguencyG = false;
         newsG = false;
@@ -208,14 +208,13 @@ function setAllG(){
         movesG = false;
         mergersG = false;
         splitsG = false;
-        console.log("Enciende");
-        setsmergersG();
-        setconguencyG();
-        setnewsG();
-        setsexclusionsG();
-        setsrenamesG();
-        setsplitsG();
-        setsmovesG();
+        Click_Merge();
+        Click_Congruence();
+        Click_News();
+        Click_Exclusions();
+        Click_Renames();
+        Click_Splits();
+        Click_Moves();
         allG = true;
         document.getElementById("Congruencia").checked = true;
         document.getElementById("Splits").checked = true;
@@ -244,13 +243,13 @@ function setAllG(){
         movesG = true;
         mergersG = true;
         splitsG = true;
-        setconguencyG();
-        setnewsG();
-        setsexclusionsG();
-        setsrenamesG();
-        setsmergersG();
-        setsplitsG();
-        setsmovesG();
+        Click_Merge();
+        Click_Congruence();
+        Click_News();
+        Click_Exclusions();
+        Click_Renames();
+        Click_Splits();
+        Click_Moves();
         document.getElementById("Congruencia").checked = false;
         document.getElementById("Splits").checked = false;
         document.getElementById("Mergers").checked = false;
