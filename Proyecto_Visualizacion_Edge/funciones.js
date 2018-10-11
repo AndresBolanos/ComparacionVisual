@@ -4,7 +4,7 @@
 
 //Function to call processing function that paint the lines in the screen
 //the lines are painted from right to left
-function CargarLineasIzquierdas(){
+function Click_Congruence(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
      if (encendido){
@@ -133,7 +133,7 @@ function pintarNuevos_Aux(){
 
 //A function to paint the new nodes
 //This function search nodes in the right taxonomy that not exist in the left taxonomy
-function pintarNuevos(){
+function Click_News(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -195,7 +195,7 @@ function pintarNuevos(){
 //First we clean up both taxonomies with de for
 //Then ckeck each node of the left taxonomy and search the name of this node in the Synonyms of the right taxonomy 
 //A split exist if two or more nodes in the right taxonomy have as Synonym the name of the left node
-function pintarSplits(){
+function Click_Splits(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -234,7 +234,7 @@ function pintarSplits(){
 
 //This function is to get the mergers
 //We check if the name of the Synonym in the left taxonomy exist as name of a node in the right taxonomy
-function merge(){
+function Click_Merge(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -244,7 +244,7 @@ function merge(){
     processingInstance = Processing.getInstanceById('CANVAS');
     merges = true;
     if (document.getElementById("Mergers").checked){
-        processingInstance.merge("",0.75);
+        processingInstance.drawMerges("",0.75);
         var izquierdos = processingInstance.returnIzquierdosMerge();
         cantidadMergers = processingInstance.returnCantidadMergers();
         var derechos = processingInstance.returnDerechosMerge();
@@ -276,7 +276,7 @@ function merge(){
 //Call the processing function  drawMoves with the flag with the value of false and the RGB colors
 //Call with false beacause the  Rename_Move  algoritm is used to move and rename functions, so the flag y to identify the disctincts algoritms
 //The move and rename function are different beacuase in the rename the parent are the same and in the move are different
-function Move(){
+function Click_Move(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -317,7 +317,7 @@ function Move(){
 
 //This is the principal rename function that the radio button call
 //This functions works as the move function but call the processing function with the flag with true value and RGB colors
-function Rename(){
+function Click_Rename(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -359,7 +359,7 @@ function Rename(){
 //Check one by one the nodes of the left taxonomy
 //use the existeNombreDerecha function to check if exist the name of if exist in the synonyms
 //if not exist we paint the nodes
-function exclusiones(){
+function Click_Exclusions(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
@@ -427,26 +427,26 @@ function Nuevos_Aux(){
 
 
 //Function to show all the functionalities
-function mostrarTodos(){
+function All_Tasks(){
     if (encendido){
          LimpiarCanvas();
          encendido = false;
     }
     if (document.getElementById("All").checked){
         document.getElementById("Congruencia").checked = true;
-        CargarLineasIzquierdas();
+        Click_Congruence();
         document.getElementById("Splits").checked = true;
-        pintarSplits();
+        Click_Splits();
         document.getElementById("News").checked = true;
-        pintarNuevos();
+        Click_News();
         document.getElementById("Moves").checked = true;
-        Move();
+        Click_Move();
         document.getElementById("Mergers").checked = true;
-        merge();
+        Click_Merge();
         document.getElementById("Exclusions").checked = true;
-        exclusiones();
+        Click_Exclusions();
         document.getElementById("Renames").checked = true;
-        Rename();
+        Click_Rename();
         window.sessionStorage.setItem("All_E", true);
         window.sessionStorage.setItem("Congruencia_E", true);
         window.sessionStorage.setItem("Nuevos_E", true);

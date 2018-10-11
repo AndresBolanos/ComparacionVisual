@@ -617,7 +617,7 @@ int returnCantidadMergers(){
 }
 
 //This function draw the mergers lines in the processing canvas
-void merge(string nombre,int grosor){
+void drawMerges(string nombre,int grosor){
     cantidadMergers = 0;
     izquierdosPainted = [];
     derechosPainted = [];
