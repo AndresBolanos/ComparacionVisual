@@ -5,7 +5,7 @@
 //This functions call congruende processing and turn on or off the slider
 //Function to call processing function that paint the lines in the screen
 //the lines are painted from right to left
-function CargarLineasIzquierdas(){
+function Click_Congruence(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (document.getElementById("Congruencia").checked){
@@ -44,7 +44,7 @@ function LimpiarCanvas(){
 
 //A function to paint the new nodes
 //This function search nodes in the right taxonomy that not exist in the left taxonomy
-function pintarNuevos(){
+function Click_News(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     cantidadNuevos = 0;
@@ -94,7 +94,7 @@ function pintarNuevos(){
 //First we clean up both taxonomies with de for
 //Then ckeck each node of the left taxonomy and search the name of this node in the Synonyms of the right taxonomy 
 //A split exist if two or more nodes in the right taxonomy have as Synonym the name of the left node
-function pintarSplits(){
+function Click_Splits(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     cantidadSplits = 0;
@@ -119,12 +119,12 @@ function pintarSplits(){
 
 //This function is to get the mergers
 //We check if the name of the Synonym in the left taxonomy exist as name of a node in the right taxonomy
-function merge(){
+function Click_Merge(){
     cantidadMergers = 0;
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     if (document.getElementById("Mergers").checked){
-        processingInstance.merge();
+        processingInstance.drawMerge();
         processingInstance.setMerges(true);
         var izquierdos = processingInstance.returnIzquierdosMerge();
         cantidadMergers = processingInstance.returnCantidadMergers();
@@ -145,7 +145,7 @@ function merge(){
 //Call the processing function  drawMoves with the flag with the value of false and the RGB colors
 //Call with false beacause the  Rename_Move  algoritm is used to move and rename functions, so the flag y to identify the disctincts algoritms
 //The move and rename function are different beacuase in the rename the parent are the same and in the move are different
-function Move(){
+function Click_Move(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     cantidadMoves = 0;
@@ -170,7 +170,7 @@ function Move(){
 
 //This is the principal rename function that the radio button call
 //This functions works as the move function but call the processing function with the flag with true value and RGB colors
-function Rename(){
+function Click_Rename(){
     cantidadRename = 0;
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
@@ -197,7 +197,7 @@ function Rename(){
 //Check one by one the nodes of the left taxonomy
 //use the existeNombreDerecha function to check if exist the name of if exist in the synonyms
 //if not exist we paint the nodes
-function exclusiones(){
+function Click_Exclusions(){
     var processingInstance;
     processingInstance = Processing.getInstanceById('CANVAS');
     cantidadEclusiones = 0;
@@ -222,30 +222,30 @@ function exclusiones(){
 }
 
 //Function to show all the functionalities
-function mostrarTodos(){
+function All_Tasks(){
     if (document.getElementById("All").checked){
         document.getElementById("Splits").checked = true;
-        pintarSplits();
+        Click_Splits();
         document.getElementById("News").checked = true;
-        pintarNuevos();
+        Click_News();
         document.getElementById("Moves").checked = true;
-        Move();        
+        Click_Move();        
         document.getElementById("Mergers").checked = true;
-        merge();
+        Click_Merge();
         document.getElementById("Exclusions").checked = true;
-        exclusiones();
+        Click_Exclusions();
         document.getElementById("Renames").checked = true;
-        Rename();
+        Click_Rename();
         document.getElementById("Congruencia").checked = true;
-        CargarLineasIzquierdas();
-         window.sessionStorage.setItem("All_M", true);
-         window.sessionStorage.setItem("Congruencia_M", true);
-         window.sessionStorage.setItem("Nuevos_M", true);
-         window.sessionStorage.setItem("Exclusions_M", true);
-         window.sessionStorage.setItem("Renames_M", true);
-         window.sessionStorage.setItem("Moves_M", true);
-         window.sessionStorage.setItem("Merges_M", true);
-         window.sessionStorage.setItem("Splits_M", true);
+        Click_Congruence();
+        window.sessionStorage.setItem("All_M", true);
+        window.sessionStorage.setItem("Congruencia_M", true);
+        window.sessionStorage.setItem("Nuevos_M", true);
+        window.sessionStorage.setItem("Exclusions_M", true);
+        window.sessionStorage.setItem("Renames_M", true);
+        window.sessionStorage.setItem("Moves_M", true);
+        window.sessionStorage.setItem("Merges_M", true);
+        window.sessionStorage.setItem("Splits_M", true);
     }
     else{
         var processingInstance;
@@ -261,13 +261,13 @@ function mostrarTodos(){
         processingInstance.setExclusiones(false);
         LimpiarCanvas();
         window.sessionStorage.setItem("All_M", false);
-         window.sessionStorage.setItem("Congruencia_M", false);
-         window.sessionStorage.setItem("Nuevos_M", false);
-         window.sessionStorage.setItem("Exclusions_M", false);
-         window.sessionStorage.setItem("Renames_M", false);
-         window.sessionStorage.setItem("Moves_M", false);
-         window.sessionStorage.setItem("Merges_M", false);
-         window.sessionStorage.setItem("Splits_M", false);
+        window.sessionStorage.setItem("Congruencia_M", false);
+        window.sessionStorage.setItem("Nuevos_M", false);
+        window.sessionStorage.setItem("Exclusions_M", false);
+        window.sessionStorage.setItem("Renames_M", false);
+        window.sessionStorage.setItem("Moves_M", false);
+        window.sessionStorage.setItem("Merges_M", false);
+        window.sessionStorage.setItem("Splits_M", false);
     }
     
 }

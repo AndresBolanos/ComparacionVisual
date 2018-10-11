@@ -32,25 +32,25 @@ function existeNombreDerecha(nombre,author,date){
 //This functions is to check if the checks are activated 
 function VerificarChecks(){
     if (document.getElementById("Splits").checked){
-        pintarSplits();
+        Click_Splits();
     }
     if (document.getElementById("News").checked){
-        pintarNuevos();
+        Click_News();
     }
     if (document.getElementById("Moves").checked){
-        Move();
+        Click_Move();
     }
     if (document.getElementById("Congruencia").checked){
-        CargarLineasIzquierdas();
+        Click_Congruence();
     }
     if (document.getElementById("Mergers").checked){
-        merge();
+        Click_Merge();
     }
     if (document.getElementById("Exclusions").checked){
-        exclusiones();
+        Click_Exclusions();
     }
     if (document.getElementById("Renames").checked){
-        Rename();
+        Click_Rename();
     }
 }
 

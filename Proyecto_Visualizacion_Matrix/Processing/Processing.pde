@@ -1179,7 +1179,7 @@ int returnCantidadMergers(){
 }
 
 //This function draw the mergers lines in the processing canvas
-void merge(){
+void drawMerge(){
     cantidadMergers = 0;
     Object [] izquierdos = nodesLeft;
     Object [] derechos = nodesRight;

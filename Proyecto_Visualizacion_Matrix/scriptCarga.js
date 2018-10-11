@@ -90,6 +90,7 @@ function loadFiles (file1, file2){
                 var nodes = Ltree.nodes(data),
                 duration = 1000;
                 nodesLeft = nodes;
+                
             }
             render(data, data);
     });
