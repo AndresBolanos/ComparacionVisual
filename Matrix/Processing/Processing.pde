@@ -140,9 +140,7 @@ void setup() {
     if (nodosIzquierdos.length > 0 && nodosDerechos.length > 0){ 
       ListaPosiciones_I = new ListaPosiciones_I[nodosIzquierdos.length-1]; 
       ListaPosiciones_D = new ListaPosiciones_D[nodosDerechos.length-1]; 
-    }
-    
-    
+    }  
 }
 
 //variables to on click function

@@ -1,11 +1,11 @@
  <!DOCTYPE html>
     <head>
          <meta charset="utf-8"/>
-         <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="../Abrir_Taxonomias/index.html">
          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
          <meta name="description" content="Hierarchy comparison - colouring"/>
-         <title> Comparación taxonomías </title>
-         <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+         <title>Taxonomies comparison</title>
+         <script type="text/javascript" src="jquery-2.2.3.js"></script>
+         <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
          <script src="bootstrap.min.js"></script>
          <link href="bootstrap.min.css" rel="stylesheet">
          <link href="estilo.css" rel="stylesheet">
@@ -14,20 +14,20 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <script src="d3.js"></script>
          <script src="processing.js"></script>
-         <meta http-equiv="Access-Control-Allow-Origin" content="*"> 
-
+         
+        
     </head>
     <header>
       <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-random"> Edge Drawing</i></a> 
-        <a href="../Proyecto_Visualizacion_Matrix/index.html"><i class="fa fa-table"> Matrix</i></a> 
-        <a href="../Proyecto_Visualizacion_Animacion/index.html"><i class="fa fa-forward"> Animation</i></a> 
-        <a href="../Proyecto_Visualizacion_Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>         
+        <a href="../EdgeDrawing/index.html"><i class="fa fa-random"> Edge Drawing</i></a> 
+        <a class="active" href="#"><i class="fa fa-table"> Matrix</i></a> 
+        <a href="../Animation/index.html"><i class="fa fa-forward"> Animation</i></a> 
+        <a href="../Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>       
       </div>
       <div id="mainToolBox">
-        <label class="Tasks">Tasks</label>
+         <label class="Tasks">Tasks</label>
         <label class="Arrow"> ></label>
-           <!--<a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>-->
+         <!--<a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>-->
           <div id="leftToolBox">
             <form> 
               <label class="labelCongruence">Congruence</label>
@@ -69,7 +69,7 @@
               <label class="switchAll">
                 <input id="All" type="checkbox" onclick= "All_Tasks()">
                 <span class="slider round"></span>                
-              </label>      
+              </label>         
             </form> 
             <div class="verticalLine"></div>
             <label class="labelCongruenceStats">Congruences</label>
@@ -88,36 +88,24 @@
             <label id="ExclusionStatsValue" class="labelExclusionStatsValue">0</label>
           </div>                                                
         </div>
-    </header>
-    <body> 
-    <nav>
+         <nav>
           <ul>
-            <li><a href="#"  onclick=" loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');"><span class="icon-folder-open"></span>Open</a></li>
+            <li><a href="#" onclick=" loadFiles('AmphibiaTest1.json','AmphibiaTest3.json');"><span class="icon-folder-open"></span>Open</a></li>
+            <!--
+              loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
+              nuevaventana();
+            -->
           </ul>
-        </nav>              
-        <!--
-          loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
-          nuevaventana();
-      -->
-      <canvas id="CANVAS" data-processing-sources="Processing/Processing.pde"></canvas>
-      <h3 class="label1" id="label1"></h3> 
-      <h3 class="label2" id="label2"></h3>   
-      <div id="Contenedor" class="row">
-            <div  class="col-md-6 " id="leftSide">
-              <svg id = "CanvasLineasTenues"  width="500">  
-              </svg>  
-            </div>
-            <div class="col-md-6" id="rightSide">
-               <svg id = "CanvasLineasTenues2"  width="500">  
-              </svg>  
-              
-            </div>
-        </div> 
-                  
+        </nav>
+    </header>
+    <body>               
+        <canvas id="CANVAS" data-processing-sources="Processing/Processing.pde"></canvas>                 
     </body>
+
+    <script type="text/javascript" src="menu.js"></script>
      <script type="text/javascript" src="treelist.js"></script>
-     <script type="text/javascript" src="menu.js"></script>
+     <script type="text/javascript" src="scriptCarga.js"></script>
      <script type="text/javascript" src="funciones.js"></script>
      <script type="text/javascript" src="funciones_Auxiliares.js"></script>
-     <script type="text/javascript" src="scriptCarga.js"></script>
+     <script type="text/javascript" src="autoClickSlider.js"></script>
 </html>

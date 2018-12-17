@@ -1,9 +1,10 @@
  <!DOCTYPE html>
     <head>
          <meta charset="utf-8"/>
+         <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="../Abrir_Taxonomias/index.html">
          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
          <meta name="description" content="Hierarchy comparison - colouring"/>
-         <title> Comparación taxonomías </title>
+         <title>Taxonomies comparison</title>
          <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
          <script src="bootstrap.min.js"></script>
          <link href="bootstrap.min.css" rel="stylesheet">
@@ -12,24 +13,21 @@
          <link href="fonts.css" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <script src="d3.js"></script>
-         <script type="text/javascript" src="menu.js"></script>
-         <script type="text/javascript" src="treelist.js"></script>
-         <script type="text/javascript" src="scriptCarga.js"></script>
-         <script type="text/javascript" src="funciones.js"></script>
-         <script type="text/javascript" src="autoClickSlider.js"></script>
          <script src="processing.js"></script>
+         <meta http-equiv="Access-Control-Allow-Origin" content="*"> 
+
     </head>
     <header>
       <div class="icon-bar">
-        <a href="../Proyecto_Visualizacion_Edge/index.html"><i class="fa fa-random"> Edge Drawing</i></a>  
-        <a href="../Proyecto_Visualizacion_Matrix/index.html"><i class="fa fa-table"> Matrix</i></a> 
-        <a href="../Proyecto_Visualizacion_Animacion/index.html"><i class="fa fa-forward"> Animation</i></a>
-        <a class="active" href="#"><i class="fa fa-arrows-alt"> Agglomeration</i></a>         
+        <a class="active" href="#"><i class="fa fa-random"> Edge Drawing</i></a> 
+        <a href="../Matrix/index.html"><i class="fa fa-table"> Matrix</i></a> 
+        <a href="../Animation/index.html"><i class="fa fa-forward"> Animation</i></a> 
+        <a href="../Agglomeration/index.html"><i class="fa fa-arrows-alt"> Agglomeration</i></a>         
       </div>
       <div id="mainToolBox">
-         <label class="Tasks">Tasks</label>
-          <label class="Arrow"> ></label>
-        <!--<a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>-->
+        <label class="Tasks">Tasks</label>
+        <label class="Arrow"> ></label>
+           <!--<a href="#" onclick='main()' class="bt-menu"><span class="icon-menu"></span>Menu</a>-->
           <div id="leftToolBox">
             <form> 
               <label class="labelCongruence">Congruence</label>
@@ -39,68 +37,87 @@
               </label> 
               <label class="labelSplits">Splits</label>
               <label class="switchSplits">
-                <input id="Splits" type="checkbox" onclick="Click_Splits()">
-                <span class="sliderSplits round"></span>                
+                <input id="Splits" type="checkbox" value="MostrarLineas"  onclick= "Click_Splits()">
+                <span class="sliderSplits round" value="MostrarLineas"></span>                
               </label> 
               <label class="labelMerges">Merges</label>
               <label class="switchMerges">
-                <input id="Mergers" type="checkbox" onclick="Click_Merge()">
+                <input id="Mergers" type="checkbox"  onclick= "Click_Merge()">
                 <span class="sliderMerges round"></span>                
               </label>
               <label class="labelMoves">Moves</label>
               <label class="switchMoves">
-                <input id="Moves" type="checkbox" onclick="Click_Moves()">
+                <input id="Moves" type="checkbox"  onclick= "Click_Move()">
                 <span class="sliderMoves round"></span>                
               </label>
               <label class="labelRenames">Renames</label>
               <label class="switchRenames">
-                <input id="Renames" type="checkbox" onclick="Click_Renames()">
+                <input id="Renames" type="checkbox" onclick= "Click_Rename()">
                 <span class="sliderRename round"></span>                
               </label>
               <label class="labelNew">New</label>
               <label class="switchNew">
-                <input id="News" type="checkbox" onclick="Click_News()">
+                <input id="News" type="checkbox" onclick= "Click_News()">
                 <span class="sliderNew round"></span>                
               </label>
               <label class="labelExclusions">Exclusions</label>
               <label class="switchExclusions">
-                <input id="Exclusions" type="checkbox" onclick="Click_Exclusions()">
+                <input  id="Exclusions" type="checkbox" onclick= "Click_Exclusions()">
                 <span class="sliderExclusion round"></span>                
               </label>
               <label class="labelAll">All</label>
               <label class="switchAll">
-                <input  id="All" type="checkbox" onclick="All_Tasks()">
+                <input id="All" type="checkbox" onclick= "All_Tasks()">
                 <span class="slider round"></span>                
-              </label>
-            </form>
+              </label>      
+            </form> 
             <div class="verticalLine"></div>
             <label class="labelCongruenceStats">Congruences</label>
-            <label  id="CongruenceStatsValue" class="labelCongruenceStatsValue">0</label>
+            <label id="CongruenceStatsValue" class="labelCongruenceStatsValue">0</label>
             <label class="labelSplitsStats">Splits</label>
-            <label  id="SplitsStatsValue" class="labelSplitsStatsValue">0</label>
+            <label id="SplitsStatsValue" class="labelSplitsStatsValue">0</label>
             <label class="labelMergesStats">Merges</label>
             <label id="MergesStatsValue" class="labelMergesStatsValue">0</label>
             <label class="labelMovesStats">Moves</label>
-            <label id="MovesStatsValue"  class="labelMovesStatsValue">0</label>
+            <label id="MovesStatsValue" class="labelMovesStatsValue">0</label>
             <label class="labelRenamesStats">Renames</label>
-            <label id="RenamesStatsValue"  class="labelRenamesStatsValue">0</label>
+            <label id="RenamesStatsValue" class="labelRenamesStatsValue">0</label>
             <label class="labelNewStats">New</label>
             <label id="NewStatsValue" class="labelNewStatsValue">0</label>
             <label class="labelExclusionStats">Exclusions</label>
-            <label  id="ExclusionStatsValue"  class="labelExclusionStatsValue">0</label>              
-          </div>                                                            
+            <label id="ExclusionStatsValue" class="labelExclusionStatsValue">0</label>
+          </div>                                                
         </div>
-         <nav>
-            <ul>
-              <li><a href="#" onclick=" loadFiles('AmphibiaTest1.json','AmphibiaTest5.json');"><span class="icon-folder-open"></span>Open</a></li>
-              <!--
-                  loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
-                  nuevaventana();
-              -->
-            </ul>
-          </nav>
     </header>
-    <body>        
-      <canvas id="CANVAS" data-processing-sources="Processing/Processing.pde"></canvas>                           
+    <body> 
+    <nav>
+          <ul>
+            <li><a href="#"  onclick=" loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');"><span class="icon-folder-open"></span>Open</a></li>
+          </ul>
+        </nav>              
+        <!--
+          loadFiles('AmphibiaTest1.json','AmphibiaTest2.json');
+          nuevaventana();
+      -->
+      <canvas id="CANVAS" data-processing-sources="Processing/Processing.pde"></canvas>
+      <h3 class="label1" id="label1"></h3> 
+      <h3 class="label2" id="label2"></h3>   
+      <div id="Contenedor" class="row">
+            <div  class="col-md-6 " id="leftSide">
+              <svg id = "CanvasLineasTenues"  width="500">  
+              </svg>  
+            </div>
+            <div class="col-md-6" id="rightSide">
+               <svg id = "CanvasLineasTenues2"  width="500">  
+              </svg>  
+              
+            </div>
+        </div> 
+                  
     </body>
+     <script type="text/javascript" src="treelist.js"></script>
+     <script type="text/javascript" src="menu.js"></script>
+     <script type="text/javascript" src="funciones.js"></script>
+     <script type="text/javascript" src="funciones_Auxiliares.js"></script>
+     <script type="text/javascript" src="scriptCarga.js"></script>
 </html>
